@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[电鸭社区]]></title>
+        <description><![CDATA[电鸭社区]]></description>
+        <link>https://eleduck.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Fri, 28 Aug 2026 01:38:39 GMT</lastBuildDate>
+        <atom:link href="https://eleduck.com/feed/latest.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 28 Aug 2026 01:38:38 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2026]]></copyright>
+        <language><![CDATA[zh-CN]]></language>
+        <item>
+            <title><![CDATA[找nRF52840硬件+固件原型工程师打包接单]]></title>
+            <description><![CDATA[Flutter 蓝牙 BLE 手机端接单（原型联调）。已有代码骨架（flutterblueplus+sqflite，连接/实时/对比三页），按我 nRF52840 硬件协议改 UUID 与数据解析，安卓真机跑通，交 APK+源码。无后端无账号。预算 1500–3000，含 1 次协议微调。 ]]></description>
+            <link>https://eleduck.com/posts/qzf8lz</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/qzf8lz</guid>
+            <pubDate>Fri, 28 Aug 2026 00:09:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[[8年]经验 [全栈]开发者｜寻求靠谱远程/外包合作]]></title>
+            <description><![CDATA[先简单介绍一下我自己。我是一名拥有 [8] 年开发经验的 [技术方向] 工程师，目前base在 [西安] ，希望通过电鸭这个平台结识更多志同道合的伙伴，找到靠谱的远程或外包项目机会。 【关于我】 · [8] 年一线开发经验，具备 [独立完成从需求分析、技术选型、开发实现到部署运维] 的完整闭环能力 · 有 [3] 年远程/外包接单经历，熟悉远程协作的节奏与沟通方式 · 代码质量有保障，注重可维护性]]></description>
+            <link>https://eleduck.com/posts/QZfYmo</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/QZfYmo</guid>
+            <pubDate>Thu, 27 Aug 2026 22:08:40 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[一个人 × AI，两周上线一个 AI 产品并完成备案：我的全流程复盘]]></title>
+            <description><![CDATA[先说结果：lianlian.chat （可访问），一个 AI 健身教练产品，用户输入身体数据和目标，AI 生成个性化一周训练计划。从第一行代码到域名备案、HTTPS 上线，我一个人完成，全程用 AI 编程（Claude Code）实现，我不会传统意义上的写代码。 这篇不聊鸡汤，只聊过程中真实踩过的坑和做过的决策，给同样想独立做 AI 产品的朋友一些参照。 一、Prompt 工程：AI 输出不稳定是]]></description>
+            <link>https://eleduck.com/posts/Ygf5yX</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/Ygf5yX</guid>
+            <pubDate>Thu, 27 Aug 2026 16:50:26 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[一个人写操作系统，一周出了初版]]></title>
+            <description><![CDATA[过去一周，我用 Rust 从零写了一个操作系统内核的初版。 不是课程作业，不是玩具，目标很明确：在 256MB 的边缘设备上，用 32MB 内核常驻内存跑起多容器服务。 为什么自己写？因为 Linux 在 256MB 设备上太吃力——空闲内存 50~80MB，跑两三个容器就超 200MB。RTOS 又没有 MMU，跑不了容器。两头都够不着。 那就自己写一个。 砍掉什么？ 99% 的驱动（只留 UA]]></description>
+            <link>https://eleduck.com/posts/rdf4Yz</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/rdf4Yz</guid>
+            <pubDate>Thu, 27 Aug 2026 16:45:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[给我开发一个wifi贴码小程序]]></title>
+            <description><![CDATA[。。。。。。。。。。。 ]]></description>
+            <link>https://eleduck.com/posts/GzfAGb</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/GzfAGb</guid>
+            <pubDate>Thu, 27 Aug 2026 16:26:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[AI视频初试]]></title>
+            <description><![CDATA[想找会AI agent开发的，能做出来ai视频面试的这种的，精准面试，可以一起加入做技术合伙人的  ]]></description>
+            <link>https://eleduck.com/posts/wwfDmV</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/wwfDmV</guid>
+            <pubDate>Thu, 27 Aug 2026 14:13:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[AI视觉设计师 （远程职位）]]></title>
+            <description><![CDATA[AI视觉设计师 （远程职位） 负责客户公司自有广告联盟平台的广告素材设计与生产，主要以平面广告设计、GIF动态素材及AI生成式素材为核心，与广告策略优化师紧密配合，根据产品特点、用户画像、广告位场景及历史数据，高效完成广告素材的设计、迭代与批量交付。 本岗位不是单纯的传统平面设计岗位，需要具备较强的广告效果意识，能够理解CTR、A/B测试、素材疲劳等基本广告优化逻辑，并根据优化师提供的数据反馈快速]]></description>
+            <link>https://eleduck.com/posts/5BfvO7</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/5BfvO7</guid>
+            <pubDate>Thu, 27 Aug 2026 13:53:18 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【全职远程】HR COE 专家｜职级、绩效与组织发展｜薪资面议]]></title>
+            <description><![CDATA[🌟公司介绍 这是一家采用远程及异步协作方式的团队，岗位所服务的业务场景涉及互联网与数字内容。团队重视专业判断、事实依据和长期可复用的制度建设，希望找到一位能够从 0 到 1 搭建并持续维护 COE 体系的伙伴，而不仅是按照现成流程执行。 🌟业务与产品 公司业务围绕互联网及数字内容相关产品开展。随着业务和团队发展，公司需要系统建设职级、绩效、岗位说明书、组织诊断、干部任免标准及制度标准库。 这个岗位]]></description>
+            <link>https://eleduck.com/posts/74frRg</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/74frRg</guid>
+            <pubDate>Thu, 27 Aug 2026 12:57:37 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[后端开发工程师（海外远程) 8-12k]]></title>
+            <description><![CDATA[一、公司及项目介绍 我司是一支面向海外市场的技术团队，产品已经完成市场验证，拥有真实用户，目前正处于高速增长阶段。 公司已建立一套完整、规范的敏捷开发体系，包括：   Agile敏捷开发流程   CI/CD自动化构建与部署   代码审查、自动化测试及版本管理   基于AI Coding Agent的Coding工作流 项目并非从零开始，现有产品、技术架构及开发流程均已稳定运行。我们希望寻找一位经验]]></description>
+            <link>https://eleduck.com/posts/OGf0xg</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/OGf0xg</guid>
+            <pubDate>Thu, 27 Aug 2026 10:44:58 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[感觉codex越来越不经用了]]></title>
+            <description><![CDATA[最近用 Codex 有个很明显的感觉：5 小时用量是不是消耗得越来越快了？ 以前感觉能用挺久，现在稍微让它多改几个文件、跑几轮任务，额度就蹭蹭往下掉。 不知道是我最近用得比较多，还是 Codex 单次任务的消耗变高了？ 大家最近有没有同感？ 有没有懂的大佬知道，codex 5 小时用量到底是怎么计算的？有没有什么办法可以降低消耗、让额度用得更久一点？ 求大佬指点一下 🙏 ]]></description>
+            <link>https://eleduck.com/posts/Ygf5vB</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/Ygf5vB</guid>
+            <pubDate>Thu, 27 Aug 2026 08:51:17 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[16k-20k/线上面试/混合办公/AI agent应用开发]]></title>
+            <description><![CDATA[公司简介 ai agent开发 企业AI定制化落地 岗位职责 负责公司AI agent开发，会RPA开发，数据治理。 参与企业 AI Agent 平台建设； * 开发 Agent 管理、Prompt管理、知识库管理、模型管理等后台能力； * 建设用户权限、日志管理、数据统计等企业级能力； * 提升 AI 应用交付效率和可维护性。 任职要求 . Python开发能力 具备扎实 Python 开发能力]]></description>
+            <link>https://eleduck.com/posts/b2fn9J</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/b2fn9J</guid>
+            <pubDate>Thu, 27 Aug 2026 07:33:26 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[招聘兼職外貿詢盤獵手]]></title>
+            <description><![CDATA[我們是香港公司，工廠在惠州，主要生產針對母嬰行業，美妝個護行業和寵物用品行業的硅膠產品。現尋找兼職外貿詢盤獵手，有興趣請聯繫。 要求： 熟悉各種海外社媒，有在社媒開發客戶的經驗，能自己開發新客戶，取得有效詢盤。 合作模式： - 零底薪，按有效詢盤結算，一個有效詢盤獎勵200元。 目標客戶： - 歐美嬰童品牌 - 美妝個護品牌 - 寵物用品品牌 我們提供 - 工廠認證證書：ISO 9001, ISO]]></description>
+            <link>https://eleduck.com/posts/ARfE9l</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/ARfE9l</guid>
+            <pubDate>Thu, 27 Aug 2026 07:17:22 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[社区招聘｜电鸭给自己找个可以长期合作的产品+UI设计师，擅长使用AI的]]></title>
+            <description><![CDATA[社区接下来要做一波动作，也会相应的完成品牌和视觉的再升级。 需要找个合适的小伙伴，不了解我们的可以看看这个：https://eleduck.com/posts/MZXfoe (https://eleduck.com/posts/MZXfoe) 职位二：产品经理+设计师（兼职，按时薪80-100¥）   既做过产品经理，也做过UI/UX设计师；   能熟练使用figma来输出原型和设计稿；  要有2]]></description>
+            <link>https://eleduck.com/posts/x0fRxy</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/x0fRxy</guid>
+            <pubDate>Thu, 27 Aug 2026 06:57:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[大龄友好/找一个前端合伙人，远程，一起做AI产业工具]]></title>
+            <description><![CDATA[大家好，我是浙江濮院的，做了15年毛衣。现在在做一个AI产品叫毛知道，M1已经跑通了（支付宝真实支付链路+AI出图6场景全过），现在找一个前端扎实的人长期合伙。 做什么 AI三视角出图：客户描述需求，AI 10秒生成正/侧/背面成衣效果图（M1已完成） VL智能识别纱线：拍照识别颜色、支数、成分、工艺（M2） 智能找纱匹配：从出图到找纱到下单，一条链路打通（M3-M4） 后端Python+Fast]]></description>
+            <link>https://eleduck.com/posts/JpfWqW</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/JpfWqW</guid>
+            <pubDate>Thu, 27 Aug 2026 01:47:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[[远程] 瑞士房地产公司招聘 Webmaster / IT Support（长期合作）]]></title>
+            <description><![CDATA[关于我们 Vikara AG 是一家总部位于瑞士巴塞尔（Basel）的房地产企业，目前业务覆盖瑞士、泰国及中国深圳。 我们正在寻找一位可靠、长期合作的远程 IT 支持人员，负责公司网站及日常 IT 维护工作。 工作内容 网站项目（首期） 负责建设并维护两家公司官网：   Vikara Basel（瑞士）   Vikara Shenzhen（中国） 网站主要内容：   公司介绍   项目展示   房]]></description>
+            <link>https://eleduck.com/posts/Djf82a</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/Djf82a</guid>
+            <pubDate>Wed, 26 Aug 2026 22:52:39 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[问问都是怎么开始的]]></title>
+            <description><![CDATA[本人37岁，是C#开发工程师。 上家公司从中国关闭撤离后，想转型做点别的。想着AI时代，维护这块总得是人工干的吧。就重新找了一个桌面运维的工作。报课学了网络和安全运维的课程，但发现进公司后，大部分工作就是修电脑，而且工资很低（在上海）。 看到社区里有很多数字游民和OPC大佬，我也想做这，但不知道怎么开始？兜了一圈，发现做项目的机会都没有，需求也找不到。。。。 想问问社区里的大伙儿，都是怎么开始第一]]></description>
+            <link>https://eleduck.com/posts/82fbEd</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/82fbEd</guid>
+            <pubDate>Wed, 26 Aug 2026 22:38:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[疑似发现一个骗子企业，useblocky，面试骗局]]></title>
+            <description><![CDATA[大家最近找工作的时候小心点这家公司 一个印度口音的人 面试的时候让你看UI，给你一个链接的 通通不要信，web3面试也有部分是骗子 所有的要让你下载本地运行的，统统不要相信 ]]></description>
+            <link>https://eleduck.com/posts/kRfAzQ</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/kRfAzQ</guid>
+            <pubDate>Wed, 26 Aug 2026 13:57:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[【已结束】标题：【远程/外包招募】iOS开发者 — 轻量开单系统 iPad App（100%离线 + 蓝牙热敏打印）]]></title>
+            <description><![CDATA[预算：5000～8000 一、 项目概述 本项目为一款专用于档口高频开单的 iPad 离线轻量开单工具 App（主要运行于 iPad / iPad mini 横屏系统）。 产品定位为“计算器型工具”，不上网、不上云、无需后台及数据库存管理，纯粹用于现场快速计算金额并连接 80mm 蓝牙热敏小票机即时出单。 二、 核心功能与逻辑要求 1. 纯本地离线运行与数据防失真：  软件所有数据存在设备本地，无]]></description>
+            <link>https://eleduck.com/posts/lafmoz</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/lafmoz</guid>
+            <pubDate>Wed, 26 Aug 2026 12:06:44 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[关于信贷风控模型的怪事]]></title>
+            <description><![CDATA[今天给大家留个问题，供大家讨论。大家是否注意到所谓的大公司通过数据训练弄出来的风控模型还不如资深专家给的一个经验模型准确？大家想知道这是什么原因吗？为什么数据训练弄出来的风控模型不如一个资深专家给出的经验模型？大家觉得银行动不动就花大几百万买个模型是交智商税吗？欢迎跟帖讨论。 ]]></description>
+            <link>https://eleduck.com/posts/njfWrO</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/njfWrO</guid>
+            <pubDate>Wed, 26 Aug 2026 09:43:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[跨境合规 × AI自动化 | 帮企业把"人工盯法规"变成"AI自动跑"]]></title>
+            <description><![CDATA[跨境合规 × AI自动化 | 帮企业把"人工盯法规"变成"AI自动跑" 【关于我】 十多年跨境合规从业经验，现在独立做AI自动化服务。不是纯技术外包，也不是纯咨询，我做的事情是：把合规业务逻辑用AI Agent落地成自动化系统。 简单说，你告诉我哪件事现在靠人盯、靠人查、靠人整理，我来帮你用AI把它跑起来。 【服务内容】 一、法规政策自动监控 自动抓取国内外监管网站、政府公告、WTO通报等，按你关]]></description>
+            <link>https://eleduck.com/posts/XNf2Q4</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/XNf2Q4</guid>
+            <pubDate>Wed, 26 Aug 2026 09:30:06 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[抽空开发了一款类角色扮演的小程序，欢迎来玩，可陶冶个人情操噢]]></title>
+            <description><![CDATA[如题，由于软著审核进度缓慢且非常严格问题，app尚未上线，最近上线了微信小程序，智者来也——与历史上最具智慧的人交友和对话。在这里，中华历史上最具智慧的先贤触手可及。与他们畅聊人生、诗词与思想，聆听跨越千年的回响。 wx小程序码：[图片] ]]></description>
+            <link>https://eleduck.com/posts/gYf74n</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/gYf74n</guid>
+            <pubDate>Wed, 26 Aug 2026 08:39:34 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[寻找海外增长合伙人｜中国入境游｜欧美 B2B｜SEO / GEO / Ads]]></title>
+            <description><![CDATA[我们正在做一个面向欧美市场的中国入境游项目，核心客户主要包括海外旅行社、Tour Operator、Travel Advisor / Travel Agency、定制旅行机构、企业团体及其他 B 端客户。 目前我们的中国境内供应链、产品、报价和交付体系已经比较成熟，包括目的地资源、酒店、用车、导游、特色体验、线路设计、报价及落地执行等。 简单来说： 后端产品和交付能力已经具备，现在最缺的是把欧美市]]></description>
+            <link>https://eleduck.com/posts/v5foRG</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/v5foRG</guid>
+            <pubDate>Wed, 26 Aug 2026 06:48:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[海外运营背景 + 数据实战派｜承接生产/供应链/运营类数据分析项目]]></title>
+            <description><![CDATA[一句话介绍： 8年外企离岸运营+数据分析经验，能用数据帮您定位质量痛点、优化流程、降本提效——刚用AI Agent完成了一份工厂生产报表分析，直指机台风险与数据治理漏洞。 我能为您解决什么问题？ 生产质量分析：直通率、不良率、机台/工序/人员维度下钻，定位TOP不良原因，给出可落地的改善方案（RACI+时间线+KPI）。 运营数据治理：MES/ERP数据空缺、字段污染、口径不一致——帮您诊断并推动]]></description>
+            <link>https://eleduck.com/posts/W9fQGk</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/W9fQGk</guid>
+            <pubDate>Wed, 26 Aug 2026 04:12:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[人在国内，我如何找到海外远程工作]]></title>
+            <description><![CDATA[两年前人在国内找到了北美的远程工作。朋友也是差不多那时候，直投了日本的远程岗位，现在在日本工作。 现在在公司也待了一段时间了，就来记录一下当时是怎么投的，给朋友们做个参考。 找的那阵没有什么方法，就是觉得国内卷，想看看外面有没有能远程干的。打开各个招聘平台才发现，remote 这个词基本不能信。有的是国内外包，有的是 Upwork 单，有的标题写远程，正文是 Remote (US)。收藏夹里一堆，]]></description>
+            <link>https://eleduck.com/posts/5Bfva7</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/5Bfva7</guid>
+            <pubDate>Tue, 25 Aug 2026 17:10:15 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[AI+预测市场 L-X【招募合伙人】全盘招募负责人/AI工程师/数据工程师/社区运营负责人/内容负责人/大使总监]]></title>
+            <description><![CDATA[一、项目介绍 L-X 是一个构建在 Polymarket 共享流动性之上的去中心化预测市场智能交易层与数据分析终端。我们不重新造一个预测市场，而是站在 Polymarket 的订单簿和流动性上，做一层"智能交易 + AI 分析"的上层协议。协议核心解决预测市场三大痛点：流动性割裂、参与门槛高、缺乏参考信号。让普通人也能轻松参与预测市场。 推特主页：https://x.com/LX_Intel 创始]]></description>
+            <link>https://eleduck.com/posts/74frVg</link>
+            <guid isPermaLink="true">https://eleduck.com/posts/74frVg</guid>
+            <pubDate>Tue, 25 Aug 2026 15:58:08 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

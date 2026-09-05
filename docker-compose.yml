@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: remote-job-monitor-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: job_monitor
+      POSTGRES_USER: job_monitor
+      POSTGRES_PASSWORD: job_monitor_local
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/create_jobs_table.sql:/docker-entrypoint-initdb.d/01-create_jobs_table.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U job_monitor -d job_monitor"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: remote-job-monitor-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      DB_TYPE: postgresdb
+      DB_POSTGRESDB_HOST: postgres
+      DB_POSTGRESDB_PORT: 5432
+      DB_POSTGRESDB_DATABASE: job_monitor
+      DB_POSTGRESDB_USER: job_monitor
+      DB_POSTGRESDB_PASSWORD: job_monitor_local
+      N8N_HOST: localhost
+      N8N_PORT: 5678
+      N8N_PROTOCOL: http
+      WEBHOOK_URL: http://localhost:5678/
+      GENERIC_TIMEZONE: Asia/Shanghai
+      TZ: Asia/Shanghai
+      N8N_ENCRYPTION_KEY: local-development-only-change-before-network-use
+    volumes:
+      - n8n_data:/home/node/.n8n
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  n8n_data:

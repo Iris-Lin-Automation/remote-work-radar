@@ -1,0 +1,182 @@
+{
+  "name": "Job Monitor - Phase 1 Ingest",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 4
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-200, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://himalayas.app/jobs/api",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "limit", "value": "20" },
+            { "name": "offset", "value": "0" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "http-himalayas",
+      "name": "HTTP Request - Himalayas",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [80, 100]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://jobicy.com/api/v2/remote-jobs",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "count", "value": "50" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "http-jobicy",
+      "name": "HTTP Request - Jobicy",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [80, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.arbeitnow.com/api/job-board-api",
+        "options": {}
+      },
+      "id": "http-arbeitnow",
+      "name": "HTTP Request - Arbeitnow",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [80, 500]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.first().json.jobs || [];\n\nfunction stripHtml(s) {\n  return (s || '').replace(/<[^>]*>/g, '').trim();\n}\n\nreturn items.map(job => ({\n  json: {\n    source: 'himalayas',\n    source_job_id: job.guid,\n    title: job.title,\n    company: job.companyName,\n    company_url: null,\n    description_raw: job.description || job.excerpt || '',\n    description_clean: stripHtml(job.description || job.excerpt || ''),\n    location_raw: (job.locationRestrictions && job.locationRestrictions.length)\n      ? job.locationRestrictions.join(', ')\n      : 'Worldwide',\n    employment_type: job.employmentType || null,\n    salary_min: job.minSalary || null,\n    salary_max: job.maxSalary || null,\n    salary_currency: job.currency || null,\n    published_at: job.pubDate ? new Date(job.pubDate * 1000).toISOString() : null,\n    apply_url: job.applicationLink\n  }\n}));"
+      },
+      "id": "normalize-himalayas",
+      "name": "Normalize Himalayas",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [320, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.first().json.jobs || [];\n\nfunction stripHtml(s) {\n  return (s || '').replace(/<[^>]*>/g, '').trim();\n}\n\nreturn items.map(job => ({\n  json: {\n    source: 'jobicy',\n    source_job_id: String(job.id),\n    title: job.jobTitle,\n    company: job.companyName,\n    company_url: null,\n    description_raw: job.jobDescription || job.jobExcerpt || '',\n    description_clean: stripHtml(job.jobDescription || job.jobExcerpt || ''),\n    location_raw: job.jobGeo || 'Anywhere',\n    employment_type: (job.jobType && job.jobType[0]) || null,\n    salary_min: job.salaryMin ? Number(job.salaryMin) : null,\n    salary_max: job.salaryMax ? Number(job.salaryMax) : null,\n    salary_currency: job.salaryCurrency || null,\n    published_at: job.pubDate ? new Date(job.pubDate).toISOString() : null,\n    apply_url: job.url\n  }\n}));"
+      },
+      "id": "normalize-jobicy",
+      "name": "Normalize Jobicy",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [320, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.first().json.data || [];\n\nfunction stripHtml(s) {\n  return (s || '').replace(/<[^>]*>/g, '').trim();\n}\n\nreturn items.map(job => ({\n  json: {\n    source: 'arbeitnow',\n    source_job_id: job.slug,\n    title: job.title,\n    company: job.company_name,\n    company_url: null,\n    description_raw: job.description || '',\n    description_clean: stripHtml(job.description || ''),\n    location_raw: job.remote ? `Remote (${job.location || 'EU'})` : (job.location || 'Unknown'),\n    employment_type: (job.job_types && job.job_types[0]) || null,\n    salary_min: null,\n    salary_max: null,\n    salary_currency: null,\n    published_at: job.created_at ? new Date(job.created_at * 1000).toISOString() : null,\n    apply_url: job.url\n  }\n}));"
+      },
+      "id": "normalize-arbeitnow",
+      "name": "Normalize Arbeitnow",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [320, 500]
+    },
+    {
+      "parameters": {
+        "mode": "append",
+        "numberInputs": 3,
+        "options": {}
+      },
+      "id": "merge-node",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [580, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "function normalize(str) {\n  return (str || '')\n    .toLowerCase()\n    .replace(/[^a-z0-9]+/g, ' ')\n    .trim();\n}\n\nreturn $input.all().map(item => {\n  const job = item.json;\n  const key = normalize(job.company) + '|' + normalize(job.title);\n  return {\n    json: {\n      ...job,\n      dedup_key: key\n    }\n  };\n});"
+      },
+      "id": "compute-dedup-key",
+      "name": "Compute Dedup Key",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [800, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO jobs (\n  source, source_job_id, title, company, company_url,\n  description_raw, description_clean, location_raw,\n  employment_type, salary_min, salary_max, salary_currency,\n  published_at, apply_url, dedup_key, first_seen_at, last_seen_at\n) VALUES (\n  $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, now(), now()\n)\nON CONFLICT (dedup_key) DO UPDATE SET\n  last_seen_at = now(),\n  title = EXCLUDED.title,\n  description_raw = EXCLUDED.description_raw,\n  description_clean = EXCLUDED.description_clean;",
+        "options": {
+          "queryReplacement": "={{ [$json.source, $json.source_job_id, $json.title, $json.company, $json.company_url, $json.description_raw, $json.description_clean, $json.location_raw, $json.employment_type, $json.salary_min, $json.salary_max, $json.salary_currency, $json.published_at, $json.apply_url, $json.dedup_key] }}"
+        }
+      },
+      "id": "postgres-upsert",
+      "name": "Postgres - Upsert Jobs",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1040, 300],
+      "credentials": {
+        "postgres": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "Job Monitor Postgres"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          { "node": "HTTP Request - Himalayas", "type": "main", "index": 0 },
+          { "node": "HTTP Request - Jobicy", "type": "main", "index": 0 },
+          { "node": "HTTP Request - Arbeitnow", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "HTTP Request - Himalayas": {
+      "main": [[{ "node": "Normalize Himalayas", "type": "main", "index": 0 }]]
+    },
+    "HTTP Request - Jobicy": {
+      "main": [[{ "node": "Normalize Jobicy", "type": "main", "index": 0 }]]
+    },
+    "HTTP Request - Arbeitnow": {
+      "main": [[{ "node": "Normalize Arbeitnow", "type": "main", "index": 0 }]]
+    },
+    "Normalize Himalayas": {
+      "main": [[{ "node": "Merge", "type": "main", "index": 0 }]]
+    },
+    "Normalize Jobicy": {
+      "main": [[{ "node": "Merge", "type": "main", "index": 1 }]]
+    },
+    "Normalize Arbeitnow": {
+      "main": [[{ "node": "Merge", "type": "main", "index": 2 }]]
+    },
+    "Merge": {
+      "main": [[{ "node": "Compute Dedup Key", "type": "main", "index": 0 }]]
+    },
+    "Compute Dedup Key": {
+      "main": [[{ "node": "Postgres - Upsert Jobs", "type": "main", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "phase1-job-monitor"
+  }
+}

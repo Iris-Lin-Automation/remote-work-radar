@@ -1,0 +1,83 @@
+# 依赖文件
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 输出文件
+output/
+*.log
+logs/
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+
+# 备份文件
+*.bak
+*.backup
+
+# 浏览器缓存
+data/eleduck-browser-profile/
+
+# n8n 工作流（如果包含敏感信息）
+workflows/*.json
+!workflows/*.example.json
+
+# 个人配置文件
+config/my-profile.md
+config/profile.json
+
+# 构建产物
+dist/
+build/
+
+# Docker
+.dockerignore
+# ===== 个人画像 / 本地配置（含私密环境与个人偏好，不公开）=====
+config/
+.continue/
+
+# ===== 抓取/缓存数据（岗位数据与手动采集=运行时产物）=====
+data/
+*.json.cache
+manual-inbox*
+
+# ===== n8n 密钥工作流（默认全部排除，仅允许 .example）=====
+*.credential.json
+*credentials*.json
+.credential.db

@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Disallow: /profile/*
+
+# Host
+Host: https://eleduck.com
+
+# Sitemaps
+Sitemap: https://eleduck.com/sitemap.xml
+Sitemap: https://eleduck.com/server-sitemap.xml
