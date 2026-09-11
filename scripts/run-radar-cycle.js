@@ -74,10 +74,15 @@ const MAX_AGE_HOURS = parseInt(process.env.RADAR_MAX_AGE_HOURS || '4', 10);
 // ✅ = 经测试可用   ❌ = 封锁 GitHub Actions IP，已移除
 const SOURCES = [
   // ── 国内中文源
-  { key: 'v2ex_jobs',           url: 'https://www.v2ex.com/feed/jobs.xml',          name: 'V2EX·招聘'      },  // ✅
-  { key: 'eleduck',             url: 'https://eleduck.com/feed/latest.xml',         name: '电鸭社区'       },  // ✅
-  { key: 'yuancheng_work',      url: 'https://yuancheng.work/feed',                 name: '远程.work·全部' },  // ✅
-  { key: 'yuancheng_overseas',  url: 'https://yuancheng.work/overseas/feed',        name: '远程.work·海外' },  // ✅ 海外专区
+  { key: 'v2ex_jobs',       url: 'https://www.v2ex.com/feed/jobs.xml',                         name: 'V2EX·招聘'      },  // ✅
+  { key: 'eleduck',         url: 'https://eleduck.com/feed/latest.xml',                        name: '电鸭社区'       },  // ✅
+  // ── 远程.work（按分类订阅，/feed 超时 /overseas/feed 是评论空 feed）
+  { key: 'yw_dev',          url: 'https://yuancheng.work/remote-development-jobs/feed',        name: '远程.work·开发' },  // ✅
+  { key: 'yw_ops',          url: 'https://yuancheng.work/remote-operation-jobs/feed',          name: '远程.work·运营' },  // ✅
+  { key: 'yw_mkt',          url: 'https://yuancheng.work/remote-marketing-jobs/feed',          name: '远程.work·市场' },  // ✅
+  { key: 'yw_prod',         url: 'https://yuancheng.work/remote-product-jobs/feed',            name: '远程.work·产品' },  // ✅
+  { key: 'yw_sales',        url: 'https://yuancheng.work/remote-sales-jobs/feed',              name: '远程.work·销售' },  // ✅
+  { key: 'yw_other',        url: 'https://yuancheng.work/remote-other-jobs/feed',              name: '远程.work·其他' },  // ✅
   // ── 海外英文源（仅保留稳定可用的）
   { key: 'jobicy',         url: 'https://jobicy.com/?feed=job_feed',        name: 'Jobicy'     },  // ✅ 200条
   { key: 'wwr_support',   url: 'https://weworkremotely.com/categories/remote-customer-support-jobs.rss', name: 'WWR·客服' }, // ✅
