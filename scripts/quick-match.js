@@ -39,14 +39,28 @@ const L1_MIN_HITS     = parseInt(process.env.RADAR_L1_MIN_HITS    || '1',  10);
 
 /** 内置兜底关键词（画像文件缺失时使用） */
 const FALLBACK_KEYWORDS = [
-  '远程', 'remote', 'wfh', '全职',
-  '台湾', '跨境', '出海', '海外',
-  'qa', '测试', '质量', '功能测试', '自动化测试',
-  '数据', 'sql', 'excel', 'python',
-  '运营', '电商', '跨境电商',
-  '客服', '支持', '售后',
-  'ai', '人工智能', '自动化',
-  '外包', '兼职', '项目', '合同',
+  // 远程相关
+  '远程', 'remote', 'wfh', 'work from home', 'distributed', 'anywhere',
+  '全职', 'full-time', 'full time',
+  // 地区偏好
+  '台湾', '台灣', '跨境', '出海', '海外', '香港', '澳门', '新加坡',
+  'taiwan', 'hong kong', 'hk', 'macau', 'singapore', 'sea', 'apac',
+  // QA / 测试
+  'qa', '测试', '质量', 'quality assurance', 'test engineer', 'software tester',
+  'functional testing', 'regression', '功能测试', '自动化测试',
+  // 电商运营
+  '电商', 'e-commerce', 'ecommerce', 'shopify', 'amazon', 'tiktok shop',
+  '跨境电商', 'cross-border', 'lazada', 'shopee',
+  // 数据
+  '数据', 'data', 'sql', 'excel', 'analyst', 'analytics',
+  // 运营
+  '运营', 'operations', 'ops', 'coordinator', 'specialist',
+  // 内容/社媒
+  'tiktok', 'content', '内容', '社媒', 'social media', 'moderator',
+  // 客服支持
+  '客服', 'customer support', 'customer service', 'support', 'success',
+  // 语言优势
+  'mandarin', 'chinese', 'bilingual', '中文',
 ];
 
 /**

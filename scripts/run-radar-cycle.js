@@ -70,12 +70,20 @@ const MAX_SEEN      = 2000;
 // 只处理最近 N 小时内发布的帖子（防止首次运行时推送大量旧帖）
 const MAX_AGE_HOURS = parseInt(process.env.RADAR_MAX_AGE_HOURS || '4', 10);
 
-// RSS 数据源
+// RSS / JSON 数据源
+// ── 国内中文源（招聘/外包社区）
+// ── 海外英文源（覆盖 QA、电商、运营等远程岗位）
 const SOURCES = [
-  { key: 'v2ex_jobs',        url: 'https://www.v2ex.com/feed/jobs.xml',         name: 'V2EX·招聘'  },
-  { key: 'v2ex_outsourcing', url: 'https://www.v2ex.com/feed/outsourcing.xml',  name: 'V2EX·外包'  },
-  { key: 'eleduck',          url: 'https://eleduck.com/feed/latest.xml',        name: '电鸭社区'   },
-  { key: 'yuancheng_work',   url: 'https://yuancheng.work/feed',                name: '远程.work'  },
+  // 国内源
+  { key: 'v2ex_jobs',        url: 'https://www.v2ex.com/feed/jobs.xml',                            name: 'V2EX·招聘'         },
+  { key: 'eleduck',          url: 'https://eleduck.com/feed/latest.xml',                           name: '电鸭社区'          },
+  { key: 'yuancheng_work',   url: 'https://yuancheng.work/feed',                                   name: '远程.work'         },
+  // 海外英文源（均有公开 RSS，无需账号）
+  { key: 'remoteok',         url: 'https://remoteok.com/remote-jobs.rss',                          name: 'RemoteOK'          },
+  { key: 'jobicy',           url: 'https://jobicy.com/?feed=job_feed',                             name: 'Jobicy'            },
+  { key: 'arbeitnow',        url: 'https://www.arbeitnow.com/feed',                                name: 'Arbeitnow'         },
+  { key: 'wwr_all',          url: 'https://weworkremotely.com/categories/remote-jobs.rss',         name: 'WeWorkRemotely'    },
+  { key: 'wwr_support',      url: 'https://weworkremotely.com/categories/remote-customer-support-jobs.rss', name: 'WWR·客服/支持' },
 ];
 
 // ────────────────────────────────────────────────────────────────
