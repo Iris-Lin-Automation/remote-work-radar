@@ -74,9 +74,10 @@ const MAX_AGE_HOURS = parseInt(process.env.RADAR_MAX_AGE_HOURS || '4', 10);
 // ✅ = 经测试可用   ❌ = 封锁 GitHub Actions IP，已移除
 const SOURCES = [
   // ── 国内中文源
-  { key: 'v2ex_jobs',      url: 'https://www.v2ex.com/feed/jobs.xml',       name: 'V2EX·招聘'  },  // ✅
-  { key: 'eleduck',        url: 'https://eleduck.com/feed/latest.xml',      name: '电鸭社区'   },  // ✅
-  { key: 'yuancheng_work', url: 'https://yuancheng.work/feed',              name: '远程.work'  },  // ✅
+  { key: 'v2ex_jobs',           url: 'https://www.v2ex.com/feed/jobs.xml',          name: 'V2EX·招聘'      },  // ✅
+  { key: 'eleduck',             url: 'https://eleduck.com/feed/latest.xml',         name: '电鸭社区'       },  // ✅
+  { key: 'yuancheng_work',      url: 'https://yuancheng.work/feed',                 name: '远程.work·全部' },  // ✅
+  { key: 'yuancheng_overseas',  url: 'https://yuancheng.work/overseas/feed',        name: '远程.work·海外' },  // ✅ 海外专区
   // ── 海外英文源（仅保留稳定可用的）
   { key: 'jobicy',         url: 'https://jobicy.com/?feed=job_feed',        name: 'Jobicy'     },  // ✅ 200条
   { key: 'wwr_support',   url: 'https://weworkremotely.com/categories/remote-customer-support-jobs.rss', name: 'WWR·客服' }, // ✅
