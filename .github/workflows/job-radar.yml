@@ -1,0 +1,95 @@
+name: Remote Work Radar — 定时扫描 + Telegram 推送
+
+# ─────────────────────────────────────────────────────────────
+# 触发条件
+# ─────────────────────────────────────────────────────────────
+on:
+  # 每 20 分钟自动运行一次（UTC 时间，北京时间 = UTC+8）
+  # 如果想改为每 30 分钟：*/30 * * * *
+  schedule:
+    - cron: '*/20 * * * *'
+
+  # 允许手动点击「Run workflow」按钮触发（调试时很有用）
+  workflow_dispatch:
+    inputs:
+      send_heartbeat:
+        description: '无新帖时是否发送心跳消息到 Telegram'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['true', 'false']
+
+# ─────────────────────────────────────────────────────────────
+# 权限：需要写入仓库（用于提交 seen_jobs.json）
+# ─────────────────────────────────────────────────────────────
+permissions:
+  contents: write
+
+jobs:
+  scan-and-notify:
+    name: 扫描新岗位并推送
+    runs-on: ubuntu-latest
+    timeout-minutes: 10   # 单次最多跑 10 分钟，防止卡死占用额度
+
+    steps:
+      # ── Step 1: Checkout 代码（带写入凭据，用于后面的 git push）
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # 使用带写权限的 token（默认 GITHUB_TOKEN 即可）
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Step 2: 设置 Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          # 缓存 node_modules，加速后续运行
+          cache: 'npm'
+
+      # ── Step 3: 安装依赖（只安装 production 依赖，节省时间）
+      - name: Install dependencies
+        run: npm ci --omit=dev
+
+      # ── Step 4: 确保 data/ 目录存在
+      - name: Ensure data directory exists
+        run: mkdir -p data
+
+      # ── Step 5: 运行主扫描脚本
+      - name: Run radar cycle
+        env:
+          # ── 必填 Secrets
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+
+          # ── Groq 极速 AI 打分（推荐填，免费）
+          # 不填则跳过 AI 打分，仅靠关键词过滤
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+          # ── 可选：AI 打分阈值（0-100），默认 55
+          # RADAR_SCORE_THRESHOLD: 55
+
+          # ── 可选：额外关键词（叠加在画像关键词之上，逗号分隔）
+          RADAR_KEYWORDS: ${{ secrets.RADAR_KEYWORDS }}
+
+          # ── 心跳开关（手动触发时遵从输入；定时触发时默认关闭）
+          TELEGRAM_SEND_HEARTBEAT: ${{ github.event.inputs.send_heartbeat || 'false' }}
+
+        run: node scripts/run-radar-cycle.js
+
+      # ── Step 6: 把更新的 seen_jobs.json 提交回仓库
+      #    [skip ci] 标记阻止此提交再次触发 workflow
+      - name: Commit updated seen_jobs.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 只有 seen_jobs.json 发生变化时才提交（避免空提交报错）
+          if git diff --quiet data/seen_jobs.json 2>/dev/null; then
+            echo "seen_jobs.json 没有变化，跳过提交"
+          else
+            git add data/seen_jobs.json
+            git commit -m "chore: update seen jobs [skip ci]"
+            git push
+            echo "✅ seen_jobs.json 已提交"
+          fi

@@ -73,7 +73,10 @@ config/
 .continue/
 
 # ===== 抓取/缓存数据（岗位数据与手动采集=运行时产物）=====
-data/
+# 忽略 data/ 下所有文件，但例外两个状态文件（Actions 需要 commit 它们）
+data/*
+!data/.gitkeep
+!data/seen_jobs.json
 *.json.cache
 manual-inbox*
 
