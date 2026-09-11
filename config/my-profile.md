@@ -1,76 +1,99 @@
-# 求职画像 / Candidate Profile
+# 求职画像 / Candidate Profile — Iris Lin 林彩婷
 
-## 目标岗位（按优先级）/ Target Roles
+> 核心定位：AI 自动化方案架构师（跨境电商 + B2B 获客 + 业务自动化方向）
+> Core Positioning: AI Automation Solution Architect — cross-border e-commerce, B2B lead gen, business workflow automation
 
-### 🇨🇳 中文岗位（国内/台湾/港澳华人公司）
-1. n8n / Dify / Coze AI 工作流自动化工程师
-2. 低代码平台开发 / AI Agent 搭建
-3. 跨境电商运营（亚马逊 / TikTok Shop / Shopify）
-4. 商业分析师 / 数据运营
-5. 出海业务运营协调（台湾、港澳、新加坡公司优先）
-6. 前端 / 全栈（小型网站、工具产品）
+---
 
-### 🌍 English Roles (Global Remote / Taiwan / SEA)
-1. AI Workflow Developer / Automation Engineer (n8n, Dify, Make)
-2. No-Code / Low-Code Platform Specialist
-3. Cross-border E-commerce Operations (Amazon, Shopify, TikTok Shop)
-4. Data Operations / Business Analyst
-5. AI Solutions Coordinator / Implementation Specialist
-6. Frontend Developer (lightweight tools & websites)
+## 目标岗位 / Target Roles
+
+### 优先级 1（最高匹配）
+- AI 自动化工程师 / AI Workflow Builder / AI Automation Engineer
+- n8n / Dify / Make 工作流开发 / Low-code AI Automation Specialist
+- B2B 获客自动化 / B2B Lead Generation (Tech-enabled)
+- AI Agent 开发 / LangGraph Multi-agent Builder
+
+### 优先级 2（高匹配）
+- 全栈开发（AI 方向）/ Full-Stack Developer (AI-focused, FastAPI + React/Next.js)
+- 数据运营 / 数据分析师 / Data Operations / Business Analyst
+- 跨境电商自动化专员 / Cross-border E-commerce Automation
+- 飞书 / Slack 生态开发 / Feishu Bot & Workflow Developer
+
+### 优先级 3（可接受）
+- AI 产品助理 / 方案顾问 / AI Solutions Coordinator
+- 数据采集 / API 集成 / Web Research Automation
+- Chrome Extension Developer (Manifest V3)
 
 ---
 
 ## 核心技能 / Core Skills
 
-### AI 自动化 / AI Automation
-- **n8n**：搭建多节点自动化工作流，API 对接、定时任务、Webhook 触发
-- **Dify / Coze / FastGPT**：构建 AI Agent、RAG 知识库、对话流
-- **Make (Integromat)**：跨平台集成与自动化
-- **Prompt Engineering**：针对业务场景设计系统提示词
+### AI & LLM Integration
+- LangGraph multi-agent orchestration, LiteLLM multi-model routing
+- Dify workflow / RAG knowledge base / AI Agent building
+- Claude API (Anthropic), DeepSeek API, OpenAI API
+- Prompt Engineering (system prompts, structured output, chain-of-thought)
+- FastAPI + OpenAI-compatible backend (e.g., heal-companion memory engine)
 
-### 跨境电商 / Cross-border E-commerce
-- 平台：Amazon、Shopify、TikTok Shop、Lazada、Shopee
-- 商品上架、广告投放基础、订单管理、售后处理
-- KOL / 红人合作协调
-- 竞品分析、选品调研
+### Python Backend & Automation
+- Python 3.11+: FastAPI, pandas, asyncio, retry with exponential backoff
+- Reddit API (PRAW), Notion API, Hunter.io, Apollo data pipeline
+- Windows Task Scheduler, BAT scripting, Docker Compose deployment
+- Vercel Serverless Functions, Cloudflare Workers
 
-### 数据与分析 / Data & Analysis
-- Excel / Google Sheets（透视表、VLOOKUP、数据清洗）
-- 基础 SQL 查询
-- 数据报告撰写、商业洞察整理
-- A/B 测试基础理解
+### Frontend & Full-Stack
+- React 18/19, Next.js 14/15, TypeScript, Tailwind CSS
+- Framer Motion, Glassmorphism UI, Chat UI (chatscope)
+- Chrome Extension Manifest V3, Side Panel API, Content Script injection
+- jsPDF, html-to-image, SVG rendering, Dagre graph algorithm
 
-### 前端开发 / Frontend
-- HTML / CSS / JavaScript 基础
-- 能独立搭建展示型网站和落地页
-- 会用 Cursor / Lovable 等 AI 工具快速出页面
+### 飞书 / Feishu Ecosystem
+- 飞书交互式卡片（Card JSON 2.0）, 飞书多维表格 Bitable API
+- 飞书 Bot / Webhook 机器人, 影刀 RPA 对接
+- Slack Bot, Discord Webhook (equivalent)
 
-### 工具与协作 / Tools
-- 飞书 / Lark、Notion、Jira、Confluence
-- GitHub 基础操作
-- 中英双语沟通（母语中文，英文可流畅书面沟通）
+### Business & E-commerce
+- 千川投放分析 / ROI / CPA 自动计算 / 多账号数据归集
+- Shopify, Amazon, TikTok Shop, Lazada / cross-border e-commerce operations
+- B2B lead enrichment: Apollo → LinkedIn outreach → personalized cold email
+- 统计建模: Nomogram survival prediction, medical data (J&J internship background)
+
+---
+
+## 代表项目 / Key Projects (for context scoring)
+1. **AI_Find_Customer** — LangGraph + LiteLLM + 飞书Bot B2B 客户挖掘系统
+2. **qianchuan-feishu-analytics** — 千川/抖店多账号飞书日报，ROI自动计算，影刀RPA全闭环
+3. **NotionB2B / GlassPortal** — Notion API → B2B 品牌门户自动生成，Next.js + jsPDF
+4. **heal-companion** — 三层记忆引擎 AI 情感陪伴，FastAPI + Live2D + TTS + Docker
+5. **leadgen-app** — BYOK 模型 B2B 外呼控制台，Dify + Vercel Serverless
+6. **LinkedIn_B2B_Agent** — Apollo 线索 → DeepSeek 个性化 LinkedIn 邀请信
+7. **nova-flow** — 个人 AI 架构师企业官网，Next.js 15 + Cloudflare Workers
+8. **painpoint.er** — Reddit 产品痛点 AI 分析器，PRAW + OpenAI，MIT 开源
+9. **notion-editorial-graph** — Notion 知识图谱 Chrome 扩展，Manifest V3 + Dagre
+10. **linkedin_job_agent** — Claude/DeepSeek 双模 Cover Letter + B2B 开发信生成器
 
 ---
 
 ## 硬性条件 / Hard Requirements
-- **全职远程，不坐班**（Full-time remote only, no relocation）
+- **全职远程，不坐班** (Full-time remote, no relocation, no on-site)
 - 接受：全职 / 合同制 / 项目制（≥20h/week）
-- 时区：UTC+8（北京/台北），可与欧美团队有 4 小时重叠
-- 工作模式：**每天集中 4-6 小时，不接受非工作时间随叫随到**
+- 时区：UTC+8（广州/台北），可与欧美团队有 4 小时重叠
+- 工作模式：每天集中 4-6 小时，结构化异步协作优先
 
 ---
 
-## 加分项（AI 打分时权重更高）/ Positive Signals
-- 公司在台湾、香港、澳门、新加坡、东南亚，或完全远程公司
-- 提到 n8n、Dify、Make、低代码、AI Agent、工作流
-- 跨境电商、出海、TikTok、独立站
-- 有薪资范围说明
-- 提供直接联系方式（邮箱 / 微信 / 表单）
-- 说明偏好 Mandarin speaker 或华人背景
+## 加分项 / Strong Positive Signals
+- 岗位提到：n8n / Dify / LangGraph / Make / LangChain / workflow automation / AI agent
+- B2B / lead generation / Apollo / outreach / cold email automation
+- 跨境电商 / cross-border / TikTok Shop / Shopify / Amazon automation
+- 飞书 / Feishu / Slack / Notion API 集成开发
+- FastAPI / Python / React / Next.js / TypeScript
+- 台湾、香港、新加坡公司，或完全远程公司（remote-first）
+- 有薪资范围 / 直接联系方式
 
 ## 减分项 / Negative Signals
-- 需要坐班 / 到指定城市办公
-- 要求 5 年以上经验的 Senior 岗
-- 纯美国 / 欧洲时区且无亚洲重叠
-- 要求特定国家工作许可（美国绿卡、欧盟公民身份等）
-- 岗位与 AI / 自动化 / 电商完全无关（如传统制造、线下服务）
+- 需坐班或迁移到特定城市
+- 纯 Java / .NET / 传统企业软件（与 AI 自动化无关）
+- 要求 5 年以上纯开发经验的 Senior 岗位
+- 纯美欧时区无亚洲重叠
+- 要求特定国籍/工作签证（美国绿卡、欧盟公民身份等）
