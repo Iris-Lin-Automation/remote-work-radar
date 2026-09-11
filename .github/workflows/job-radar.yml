@@ -71,7 +71,7 @@ jobs:
           RADAR_SCORE_THRESHOLD: "55"
 
           # ── 时间窗口：只处理最近 N 小时内发布的帖子
-          RADAR_MAX_AGE_HOURS: "4"
+          RADAR_MAX_AGE_HOURS: "8"
 
           # ── 可选：额外关键词（叠加在画像关键词之上，逗号分隔）
           RADAR_KEYWORDS: ${{ secrets.RADAR_KEYWORDS }}

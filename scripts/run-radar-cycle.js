@@ -71,19 +71,19 @@ const MAX_SEEN      = 2000;
 const MAX_AGE_HOURS = parseInt(process.env.RADAR_MAX_AGE_HOURS || '4', 10);
 
 // RSS / JSON 数据源
-// ── 国内中文源（招聘/外包社区）
-// ── 海外英文源（覆盖 QA、电商、运营等远程岗位）
+// ✅ = 经测试可用   ❌ = 封锁 GitHub Actions IP，已移除
 const SOURCES = [
-  // 国内源
-  { key: 'v2ex_jobs',        url: 'https://www.v2ex.com/feed/jobs.xml',                            name: 'V2EX·招聘'         },
-  { key: 'eleduck',          url: 'https://eleduck.com/feed/latest.xml',                           name: '电鸭社区'          },
-  { key: 'yuancheng_work',   url: 'https://yuancheng.work/feed',                                   name: '远程.work'         },
-  // 海外英文源（均有公开 RSS，无需账号）
-  { key: 'remoteok',         url: 'https://remoteok.com/remote-jobs.rss',                          name: 'RemoteOK'          },
-  { key: 'jobicy',           url: 'https://jobicy.com/?feed=job_feed',                             name: 'Jobicy'            },
-  { key: 'arbeitnow',        url: 'https://www.arbeitnow.com/feed',                                name: 'Arbeitnow'         },
-  { key: 'wwr_all',          url: 'https://weworkremotely.com/categories/remote-jobs.rss',         name: 'WeWorkRemotely'    },
-  { key: 'wwr_support',      url: 'https://weworkremotely.com/categories/remote-customer-support-jobs.rss', name: 'WWR·客服/支持' },
+  // ── 国内中文源
+  { key: 'v2ex_jobs',      url: 'https://www.v2ex.com/feed/jobs.xml',       name: 'V2EX·招聘'  },  // ✅
+  { key: 'eleduck',        url: 'https://eleduck.com/feed/latest.xml',      name: '电鸭社区'   },  // ✅
+  { key: 'yuancheng_work', url: 'https://yuancheng.work/feed',              name: '远程.work'  },  // ✅
+  // ── 海外英文源（仅保留稳定可用的）
+  { key: 'jobicy',         url: 'https://jobicy.com/?feed=job_feed',        name: 'Jobicy'     },  // ✅ 200条
+  { key: 'wwr_support',   url: 'https://weworkremotely.com/categories/remote-customer-support-jobs.rss', name: 'WWR·客服' }, // ✅
+  { key: 'remotive',       url: 'https://remotive.com/api/remote-jobs?limit=50', name: 'Remotive', type: 'json' }, // ✅ JSON API
+  // ❌ RemoteOK       → 410 封锁云端 IP
+  // ❌ WeWorkRemotely → 403 封锁云端 IP
+  // ❌ Arbeitnow      → XML 格式损坏
 ];
 
 // ────────────────────────────────────────────────────────────────
@@ -141,9 +141,45 @@ const rssParser = new Parser({
   customFields: { item: ['content:encoded', 'description'] },
 });
 
+// Remotive JSON API 的格式转换
+function normalizeRemotiveItem(job, sourceKey) {
+  const content = [job.description || '', job.tags ? job.tags.join(' ') : ''].join(' ');
+  return {
+    source:      sourceKey,
+    sourceName:  'Remotive',
+    title:       stripHtml(job.title || ''),
+    url:         job.url || null,
+    content,
+    contentText: stripHtml(content),
+    publishedAt: job.publication_date || null,
+    dedupKey:    dedupKey(sourceKey, job.url, job.title),
+  };
+}
+
 async function fetchSource(source) {
   try {
     log(`📡 抓取 ${source.name} …`);
+
+    // JSON API（目前只有 Remotive）
+    if (source.type === 'json') {
+      const https = require('https');
+      const data = await new Promise((resolve, reject) => {
+        const req = https.get(source.url, { headers: { 'User-Agent': 'RemoteWorkRadar/1.0' } }, res => {
+          let raw = '';
+          res.on('data', c => { raw += c; });
+          res.on('end', () => {
+            try { resolve(JSON.parse(raw)); } catch (e) { reject(e); }
+          });
+        });
+        req.on('error', reject);
+        req.setTimeout(15000, () => req.destroy(new Error('timeout')));
+      });
+      const jobs = (data.jobs || []).map(j => normalizeRemotiveItem(j, source.key));
+      log(`   ✅ ${jobs.length} 条`);
+      return jobs;
+    }
+
+    // RSS
     const feed = await rssParser.parseURL(source.url);
     log(`   ✅ ${feed.items.length} 条`);
     return feed.items.map(item => {
