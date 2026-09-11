@@ -66,8 +66,9 @@ jobs:
           # 不填则跳过 AI 打分，仅靠关键词过滤
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
-          # ── 可选：AI 打分阈值（0-100），默认 55
-          # RADAR_SCORE_THRESHOLD: 55
+          # ── AI 打分阈值（0-100）
+          # 测试阶段设 0，正式使用时改回 55
+          RADAR_SCORE_THRESHOLD: "0"
 
           # ── 时间窗口：只处理最近 N 小时内的帖子（默认 4，初次测试用 48）
           RADAR_MAX_AGE_HOURS: "48"

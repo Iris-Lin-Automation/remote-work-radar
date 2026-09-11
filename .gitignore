@@ -69,7 +69,9 @@ build/
 # Docker
 .dockerignore
 # ===== 个人画像 / 本地配置（含私密环境与个人偏好，不公开）=====
-config/
+config/*
+# 例外：基础画像文件（不含敏感信息，Groq 打分需要）
+!config/my-profile.md
 .continue/
 
 # ===== 抓取/缓存数据（岗位数据与手动采集=运行时产物）=====
