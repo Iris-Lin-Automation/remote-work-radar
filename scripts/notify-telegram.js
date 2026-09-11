@@ -69,6 +69,21 @@ function extractContacts(text) {
   };
 }
 
+/**
+ * 从「公司名招聘…」标题里抽出公司名。
+ * 远程.work 公开 RSS 标题几乎都是这个格式，例如：
+ *   Canonical招聘全职远程工作云工程经理
+ *   重庆汉联汽车销售有限公司招聘全职远程工作HR
+ */
+function extractCompany(title) {
+  const t = String(title || '').trim();
+  const m = t.match(/^(.+?)招聘/);
+  if (!m) return null;
+  const name = m[1].replace(/\s+/g, ' ').trim();
+  if (!name || name.length > 40) return null;
+  return name;
+}
+
 // ────────────────────────────────────────────────────────────
 // 2. 消息格式化
 // ────────────────────────────────────────────────────────────
@@ -82,10 +97,17 @@ function escHtml(str) {
 }
 
 const SOURCE_LABELS = {
-  v2ex_jobs:        'V2EX·招聘',
-  v2ex_outsourcing: 'V2EX·外包',
-  eleduck:          '电鸭社区',
-  yuancheng_work:   '远程.work',
+  v2ex_jobs:           'V2EX·招聘',
+  v2ex_outsourcing:    'V2EX·外包',
+  eleduck:             '电鸭社区',
+  yuancheng_work:      '远程.work',
+  yuancheng_overseas:  '远程.work·海外',
+  yw_dev:              '远程.work·开发',
+  yw_ops:              '远程.work·运营',
+  yw_mkt:              '远程.work·市场',
+  yw_prod:             '远程.work·产品',
+  yw_sales:            '远程.work·销售',
+  yw_other:            '远程.work·其他',
 };
 
 /**
@@ -109,6 +131,11 @@ function formatJobMessage(job) {
 
   // ── 岗位信息
   lines.push(`<b>标题：</b>${escHtml(job.title)}`);
+  const company = job.company || extractCompany(job.title);
+  if (company) {
+    const q = encodeURIComponent(`${company} careers remote`);
+    lines.push(`<b>公司：</b>${escHtml(company)}  ·  <a href="https://www.google.com/search?q=${q}">搜官网/招聘页</a>`);
+  }
   if (job.publishedAt) {
     // 只显示日期 + 时间，不显示毫秒
     const dt = new Date(job.publishedAt);
@@ -145,6 +172,9 @@ function formatJobMessage(job) {
     contacts.forms.forEach(f =>
       lines.push(`  📋 <a href="${escHtml(f)}">投递表单</a>`)
     );
+    lines.push('');
+  } else if (String(job.source || '').startsWith('yw_') || job.source === 'yuancheng_work') {
+    lines.push('📬 <i>RSS 里没有邮箱/微信。会员岗通常锁申请入口，可用上面公司名搜 Greenhouse / Lever / 官网直接投。</i>');
     lines.push('');
   } else {
     lines.push('📬 <i>未检测到公开联系方式，请点击原帖查看</i>');
@@ -235,6 +265,7 @@ async function sendHeartbeat(botToken, chatId, checkedCount) {
 
 module.exports = {
   extractContacts,
+  extractCompany,
   formatJobMessage,
   sendTelegramMessage,
   sendHeartbeat,
