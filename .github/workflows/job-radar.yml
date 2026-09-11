@@ -67,8 +67,8 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
           # ── AI 打分阈值（0-100），低于此分数不推送
-          # 55 = 只推"可能合适"以上的岗位，可根据推送量调整
-          RADAR_SCORE_THRESHOLD: "55"
+          # 测试阶段用 30，跑稳后改回 55
+          RADAR_SCORE_THRESHOLD: "30"
 
           # ── 时间窗口：只处理最近 N 小时内发布的帖子
           RADAR_MAX_AGE_HOURS: "8"
