@@ -76,8 +76,8 @@ jobs:
           # ── 可选：额外关键词（叠加在画像关键词之上，逗号分隔）
           RADAR_KEYWORDS: ${{ secrets.RADAR_KEYWORDS }}
 
-          # ── 心跳开关（手动触发时遵从输入；定时触发时默认关闭）
-          TELEGRAM_SEND_HEARTBEAT: ${{ github.event.inputs.send_heartbeat || 'false' }}
+          # ── 心跳开关：true = 即使无新岗位也发一条"在线确认"消息
+          TELEGRAM_SEND_HEARTBEAT: ${{ github.event.inputs.send_heartbeat || 'true' }}
 
         run: node scripts/run-radar-cycle.js
 
@@ -88,11 +88,11 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 只有 seen_jobs.json 发生变化时才提交（避免空提交报错）
-          if git diff --quiet data/seen_jobs.json 2>/dev/null; then
+          # -f 强制跳过 gitignore；--cached 检测暂存区变化（兼容新文件和修改）
+          git add -f data/seen_jobs.json
+          if git diff --cached --quiet; then
             echo "seen_jobs.json 没有变化，跳过提交"
           else
-            git add data/seen_jobs.json
             git commit -m "chore: update seen jobs [skip ci]"
             git push
             echo "✅ seen_jobs.json 已提交"
