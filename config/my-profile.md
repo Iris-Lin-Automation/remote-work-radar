@@ -12,18 +12,20 @@
 - n8n / Dify / Make 工作流开发 / Low-code AI Automation Specialist
 - B2B 获客自动化 / B2B Lead Generation (Tech-enabled)
 - AI Agent 开发 / LangGraph Multi-agent Builder
+- AI 产品经理 / AI Product（应用向，非纯算法）
 
-### 优先级 2（高匹配）
+### 优先级 2（高匹配 / 可技能迁移）
 - 全栈开发（AI 方向）/ Full-Stack Developer (AI-focused, FastAPI + React/Next.js)
+- 电商运营 / 跨境电商运营（能用自动化/数据分析提效）
 - 数据运营 / 数据分析师 / Data Operations / Business Analyst
-- 跨境电商自动化专员 / Cross-border E-commerce Automation
 - 飞书 / Slack 生态开发 / Feishu Bot & Workflow Developer
+- 增长运营 / Growth Ops（获客、投放数据、报表自动化）
 
 ### 优先级 3（可接受）
 - AI 产品助理 / 方案顾问 / AI Solutions Coordinator
 - 数据采集 / API 集成 / Web Research Automation
 - Chrome Extension Developer (Manifest V3)
-
+- 内容/用户运营（需远程，且涉及工具/流程提效）
 ---
 
 ## 核心技能 / Core Skills
@@ -84,16 +86,20 @@
 
 ## 加分项 / Strong Positive Signals
 - 岗位提到：n8n / Dify / LangGraph / Make / LangChain / workflow automation / AI agent
+- AI 产品 / AI 应用 / GPT / chatbot / RAG / 知识库（非纯算法研究岗）
 - B2B / lead generation / Apollo / outreach / cold email automation
-- 跨境电商 / cross-border / TikTok Shop / Shopify / Amazon automation
+- 跨境电商 / 电商运营 / cross-border / TikTok Shop / Shopify / Amazon / 投放报表
 - 飞书 / Feishu / Slack / Notion API 集成开发
-- FastAPI / Python / React / Next.js / TypeScript
+- FastAPI / Python / React / Next.js / TypeScript / 低代码
 - 台湾、香港、新加坡公司，或完全远程公司（remote-first）
 - 有薪资范围 / 直接联系方式
+- 接受技能迁移：运营岗可用自动化提效、产品岗需要 AI 落地能力
 
 ## 减分项 / Negative Signals
 - 需坐班或迁移到特定城市
-- 纯 Java / .NET / 传统企业软件（与 AI 自动化无关）
+- 纯 Java / .NET / 传统企业软件（与 AI/自动化/运营提效无关）
 - 要求 5 年以上纯开发经验的 Senior 岗位
 - 纯美欧时区无亚洲重叠
 - 要求特定国籍/工作签证（美国绿卡、欧盟公民身份等）
+- 纯算法/机器学习研究岗（无产品或工程落地）
+- 标注员 / 评测员 / 刷单类众包

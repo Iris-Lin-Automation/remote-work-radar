@@ -4,10 +4,9 @@ name: Remote Work Radar — 定时扫描 + Telegram 推送
 # 触发条件
 # ─────────────────────────────────────────────────────────────
 on:
-  # 每 20 分钟自动运行一次（UTC 时间，北京时间 = UTC+8）
-  # 如果想改为每 30 分钟：*/30 * * * *
+  # 每 2 小时一次（GitHub 免费额度下 */20 经常被跳过/延迟，看起来像「一天一条」）
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '0 */2 * * *'
 
   # 允许手动点击「Run workflow」按钮触发（调试时很有用）
   workflow_dispatch:
@@ -67,18 +66,18 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
           # ── AI 打分阈值（0-100），低于此分数不推送
-          # 测试阶段用 30，跑稳后改回 55
-          RADAR_SCORE_THRESHOLD: "30"
+          # 放宽：AI产品/电商运营/可迁移技能也推
+          RADAR_SCORE_THRESHOLD: "25"
 
           # ── 时间窗口：只处理最近 N 小时内发布的帖子
-          RADAR_MAX_AGE_HOURS: "8"
+          # 8h 太窄 → RSS 半天不更新就天天 0 新帖；放宽到 24h
+          RADAR_MAX_AGE_HOURS: "24"
 
           # ── 可选：额外关键词（叠加在画像关键词之上，逗号分隔）
           RADAR_KEYWORDS: ${{ secrets.RADAR_KEYWORDS }}
 
-          # ── 心跳开关：true = 即使无新岗位也发一条"在线确认"消息
-          TELEGRAM_SEND_HEARTBEAT: ${{ github.event.inputs.send_heartbeat || 'true' }}
-
+          # ── 心跳默认关：有命中才推，避免「每天一条在线确认」误以为只有一条岗
+          TELEGRAM_SEND_HEARTBEAT: ${{ github.event.inputs.send_heartbeat || 'false' }}
         run: node scripts/run-radar-cycle.js
 
       # ── Step 6: 把更新的 seen_jobs.json 提交回仓库

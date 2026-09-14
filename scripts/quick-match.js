@@ -41,32 +41,35 @@ const L1_MIN_HITS     = parseInt(process.env.RADAR_L1_MIN_HITS    || '1',  10);
 const FALLBACK_KEYWORDS = [
   // 远程条件
   '远程', 'remote', 'wfh', 'work from home', 'distributed', 'anywhere', 'full-time remote',
-  '全职', 'full-time',
+  '全职', 'full-time', '居家',
   // 地区偏好
   '台湾', '台灣', '跨境', '出海', '海外', '香港', '澳门', '新加坡',
   'taiwan', 'hong kong', 'hk', 'singapore', 'sea', 'apac',
-  // AI 自动化核心（Iris 最强项）
+  // AI 自动化核心
   'n8n', 'dify', 'make', 'zapier', 'langgraph', 'langchain', 'flowise',
   'ai automation', 'workflow automation', 'ai agent', 'agent',
   'ai工作流', '自动化', '工作流', 'ai自动化', 'rpa',
-  // LLM / AI 开发
-  'llm', 'openai', 'claude', 'deepseek', 'prompt', 'rag', 'vector',
-  '大模型', 'ai开发', 'ai应用', 'prompt工程',
+  // AI 产品 / 应用（技能可迁移）
+  'ai产品', 'ai product', 'product manager', '产品经理', '产品运营',
+  'ai应用', 'llm应用', 'gpt', 'chatbot', '智能客服', 'copilot',
+  'prompt', 'rag', 'knowledge base', '知识库',
+  // LLM / 开发
+  'llm', 'openai', 'claude', 'deepseek', 'vector',
+  '大模型', 'ai开发', 'prompt工程',
   // Python & 全栈
   'python', 'fastapi', 'react', 'next.js', 'nextjs', 'typescript',
-  'full-stack', 'fullstack', 'full stack', '全栈',
+  'full-stack', 'fullstack', 'full stack', '全栈', 'no-code', 'low-code', '低代码',
   // B2B 获客
   'b2b', 'lead generation', 'lead gen', 'apollo', 'outreach',
-  'linkedin', 'cold email', '获客', '线索',
-  // 跨境电商
-  '电商', 'e-commerce', 'ecommerce', 'shopify', 'amazon', 'tiktok shop',
+  'linkedin', 'cold email', '获客', '线索', 'growth', '增长',
+  // 跨境电商 / 电商运营
+  '电商', '电商运营', 'e-commerce', 'ecommerce', 'shopify', 'amazon', 'tiktok shop',
   '跨境电商', 'cross-border', 'lazada', 'shopee', '千川', '抖店',
-  // 飞书 / 协作工具集成
+  '投放', '运营', 'operations', 'ops', '数据运营', '内容运营', '用户运营',
+  // 飞书 / 协作
   '飞书', 'feishu', 'lark', 'notion', 'slack bot', 'webhook',
-  // 数据分析
-  '数据', 'data', 'sql', 'pandas', 'analyst', 'analytics', 'dashboard',
-  // 运营类
-  '运营', 'operations', 'ops', '数据运营',
+  // 数据
+  '数据', 'data', 'sql', 'pandas', 'analyst', 'analytics', 'dashboard', '报表',
 ];
 
 /**
@@ -149,8 +152,9 @@ function groqQuickScore(jobTitle, jobSnippet, profileSummary, groqKey) {
   return new Promise((resolve, reject) => {
     const systemPrompt = `你是求职相关性判断助手。
 根据候选人画像，判断一条招聘帖子与候选人的相关性。
+候选人接受技能迁移：AI产品/AI应用、电商运营、数据运营、获客增长、低代码自动化，只要远程且能用到自动化/AI/数据/运营能力，都应给中高分。
 只输出纯 JSON，不要任何解释文字：{"score": 0到100的整数, "reason": "15字以内说明"}
-score 含义：0=完全无关, 30=弱相关, 55=可能合适, 75=比较匹配, 90+=高度匹配`;
+score 含义：0=完全无关（纯销售线下/纯Java后端等）, 35=沾边可迁移, 55=可能合适, 75=比较匹配, 90+=高度匹配`;
 
     const userPrompt = `【候选人画像摘要】
 ${profileSummary}
