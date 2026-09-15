@@ -83,12 +83,15 @@ const SOURCES = [
   { key: 'yw_prod',         url: 'https://yuancheng.work/remote-product-jobs/feed',            name: '远程.work·产品' },  // ✅
   { key: 'yw_sales',        url: 'https://yuancheng.work/remote-sales-jobs/feed',              name: '远程.work·销售' },  // ✅
   { key: 'yw_other',        url: 'https://yuancheng.work/remote-other-jobs/feed',              name: '远程.work·其他' },  // ✅
-  // ── 海外英文源（仅保留稳定可用的）
-  { key: 'jobicy',         url: 'https://jobicy.com/?feed=job_feed',        name: 'Jobicy'     },  // ✅ 200条
-  { key: 'wwr_support',   url: 'https://weworkremotely.com/categories/remote-customer-support-jobs.rss', name: 'WWR·客服' }, // ✅
-  { key: 'remotive',       url: 'https://remotive.com/api/remote-jobs?limit=50', name: 'Remotive', type: 'json' }, // ✅ JSON API
+  // ── 海外英文源（垂直：APAC / 技能分类，噪音低于全站聚合）
+  { key: 'jobicy_apac',    url: 'https://jobicy.com/api/v2/remote-jobs?count=50&geo=apac', name: 'Jobicy·APAC', type: 'json', parser: 'jobicy' }, // ✅
+  { key: 'himalayas',      url: 'https://himalayas.app/jobs/api?limit=50&offset=0',        name: 'Himalayas',   type: 'json', parser: 'himalayas' }, // ✅
+  { key: 'remotive_dev',   url: 'https://remotive.com/api/remote-jobs?limit=30&category=software-dev', name: 'Remotive·开发', type: 'json', parser: 'remotive' }, // ✅
+  { key: 'remotive_prod',  url: 'https://remotive.com/api/remote-jobs?limit=20&category=product',      name: 'Remotive·产品', type: 'json', parser: 'remotive' }, // ✅
+  { key: 'wwr_programming', url: 'https://weworkremotely.com/categories/remote-programming-jobs.rss', name: 'WWR·开发' }, // ⚠️ Actions 偶发 403
+  { key: 'wwr_product',     url: 'https://weworkremotely.com/categories/remote-product-jobs.rss',     name: 'WWR·产品' }, // ⚠️ Actions 偶发 403
   // ❌ RemoteOK       → 410 封锁云端 IP
-  // ❌ WeWorkRemotely → 403 封锁云端 IP
+  // ❌ WWR 全站       → 403 封锁云端 IP（分类 RSS 有时可用）
   // ❌ Arbeitnow      → XML 格式损坏
 ];
 
@@ -147,40 +150,116 @@ const rssParser = new Parser({
   customFields: { item: ['content:encoded', 'description'] },
 });
 
-// Remotive JSON API 的格式转换
-function normalizeRemotiveItem(job, sourceKey) {
-  const content = [job.description || '', job.tags ? job.tags.join(' ') : ''].join(' ');
+function fetchJson(url) {
+  const https = require('https');
+  return new Promise((resolve, reject) => {
+    const req = https.get(url, {
+      headers: {
+        'User-Agent': 'RemoteWorkRadar/1.0',
+        'Accept': 'application/json',
+      },
+    }, res => {
+      let raw = '';
+      res.on('data', c => { raw += c; });
+      res.on('end', () => {
+        if (res.statusCode && res.statusCode >= 400) {
+          reject(new Error(`HTTP ${res.statusCode}`));
+          return;
+        }
+        try { resolve(JSON.parse(raw)); } catch (e) { reject(e); }
+      });
+    });
+    req.on('error', reject);
+    req.setTimeout(20000, () => req.destroy(new Error('timeout')));
+  });
+}
+
+function normalizeRemotiveItem(job, source) {
+  const location = job.candidate_required_location || '';
+  const content = [
+    job.description || '',
+    job.tags ? job.tags.join(' ') : '',
+    location,
+    job.job_type || '',
+  ].join(' ');
   return {
-    source:      sourceKey,
-    sourceName:  'Remotive',
+    source:      source.key,
+    sourceName:  source.name,
     title:       stripHtml(job.title || ''),
     url:         job.url || null,
     content,
     contentText: stripHtml(content),
     publishedAt: job.publication_date || null,
-    dedupKey:    dedupKey(sourceKey, job.url, job.title),
+    location,
+    dedupKey:    dedupKey('remotive', job.url || job.id, job.title),
   };
+}
+
+function normalizeJobicyItem(job, source) {
+  const location = job.jobGeo || 'Anywhere';
+  const content = [
+    job.jobDescription || job.jobExcerpt || '',
+    Array.isArray(job.jobIndustry) ? job.jobIndustry.join(' ') : '',
+    Array.isArray(job.jobType) ? job.jobType.join(' ') : '',
+    location,
+  ].join(' ');
+  const url = job.url || null;
+  return {
+    source:      source.key,
+    sourceName:  source.name,
+    title:       stripHtml(job.jobTitle || ''),
+    url,
+    content,
+    contentText: stripHtml(content),
+    publishedAt: job.pubDate || null,
+    location,
+    dedupKey:    dedupKey('jobicy', url || job.id, job.jobTitle),
+  };
+}
+
+function normalizeHimalayasItem(job, source) {
+  const location = (job.locationRestrictions && job.locationRestrictions.length)
+    ? job.locationRestrictions.join(', ')
+    : 'Worldwide';
+  const content = [
+    job.description || job.excerpt || '',
+    Array.isArray(job.categories) ? job.categories.join(' ') : '',
+    Array.isArray(job.parentCategories) ? job.parentCategories.join(' ') : '',
+    location,
+    job.employmentType || '',
+  ].join(' ');
+  const url = job.applicationLink || job.guid || null;
+  return {
+    source:      source.key,
+    sourceName:  source.name,
+    title:       stripHtml(job.title || ''),
+    url,
+    content,
+    contentText: stripHtml(content),
+    publishedAt: job.pubDate || null,
+    location,
+    dedupKey:    dedupKey('himalayas', url || job.guid, job.title),
+  };
+}
+
+function normalizeJsonJobs(data, source) {
+  const parser = source.parser || 'remotive';
+  if (parser === 'jobicy') {
+    return (data.jobs || []).map(j => normalizeJobicyItem(j, source));
+  }
+  if (parser === 'himalayas') {
+    return (data.jobs || []).map(j => normalizeHimalayasItem(j, source));
+  }
+  return (data.jobs || []).map(j => normalizeRemotiveItem(j, source));
 }
 
 async function fetchSource(source) {
   try {
     log(`📡 抓取 ${source.name} …`);
 
-    // JSON API（目前只有 Remotive）
     if (source.type === 'json') {
-      const https = require('https');
-      const data = await new Promise((resolve, reject) => {
-        const req = https.get(source.url, { headers: { 'User-Agent': 'RemoteWorkRadar/1.0' } }, res => {
-          let raw = '';
-          res.on('data', c => { raw += c; });
-          res.on('end', () => {
-            try { resolve(JSON.parse(raw)); } catch (e) { reject(e); }
-          });
-        });
-        req.on('error', reject);
-        req.setTimeout(15000, () => req.destroy(new Error('timeout')));
-      });
-      const jobs = (data.jobs || []).map(j => normalizeRemotiveItem(j, source.key));
+      const data = await fetchJson(source.url);
+      const jobs = normalizeJsonJobs(data, source);
       log(`   ✅ ${jobs.length} 条`);
       return jobs;
     }
@@ -221,6 +300,9 @@ function buildMessage(job) {
     const line = `\n⚡ <b>AI 快速评分：${job.groqScore}/100</b>  <code>${bar}</code>`;
     const note = job.groqReason ? `  <i>${job.groqReason}</i>` : '';
     msg += line + note;
+  }
+  if (job.eligLabels && job.eligLabels.length) {
+    msg += `\n🌐 <b>地区信号：</b>${job.eligLabels.join(' · ')}`;
   }
   return msg;
 }
@@ -273,7 +355,20 @@ async function main() {
 
   log(`🔍 Layer 1 通过：${l1Passed.length} 条`);
 
-  if (l1Passed.length === 0) {
+  // ── Layer 1.5：英文 eligibility 硬过滤（签证/地区硬门槛）
+  const eligible = [];
+  let rejectedElig = 0;
+  for (const job of l1Passed) {
+    const elig = matcher.eligibility(job);
+    if (elig.rejected) {
+      rejectedElig++;
+      continue;
+    }
+    eligible.push({ ...job, eligBoost: elig.boost, eligLabels: elig.labels });
+  }
+  log(`🌐 Eligibility 通过：${eligible.length} 条（硬过滤丢弃 ${rejectedElig}）`);
+
+  if (eligible.length === 0) {
     saveSeenKeys(seenKeys);
     if (SEND_HEARTBEAT) {
       await sendHeartbeat(BOT_TOKEN, CHAT_ID, allItems.length);
@@ -285,17 +380,21 @@ async function main() {
 
   // ── Layer 2：Groq 极速打分（串行，每条约 1 秒，避免并发触发限流）
   const scored = [];
-  for (const job of l1Passed) {
+  for (const job of eligible) {
     const { score, reason, skipped } = await matcher.layer2(job);
+    const adjusted = skipped
+      ? score
+      : Math.max(0, Math.min(100, score + (job.eligBoost || 0)));
     scored.push({
       ...job,
-      groqScore:       score,
+      groqScore:       adjusted,
       groqReason:      reason,
       groqScoreSkipped: skipped,
       hitKeywords:     job.l1Hits,
     });
     if (!skipped) {
-      log(`   🤖 ${job.title.slice(0, 45)} → ${score}分 (${reason})`);
+      const boostNote = job.eligBoost ? ` boost${job.eligBoost > 0 ? '+' : ''}${job.eligBoost}` : '';
+      log(`   🤖 ${job.title.slice(0, 45)} → ${adjusted}分 (${reason}${boostNote})`);
     }
   }
 

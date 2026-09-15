@@ -2,6 +2,7 @@
  * quick-match.js — 两层极速相关性判断
  * ─────────────────────────────────────────────────────────────────
  * Layer 1 (0ms)  : 从 config/my-profile.md 自动提取关键词，做文本粗筛
+ * Layer 1.5      : 英文 eligibility 硬过滤（签证/地区）+ APAC/Worldwide 加分
  * Layer 2 (1-2s) : Groq API 极速打分（仅对通过 Layer 1 的帖子）
  *
  * 设计原则：
@@ -33,6 +34,28 @@ const GROQ_MODEL    = process.env.GROQ_QUICK_MODEL || 'llama-3.1-8b-instant';
 const SCORE_THRESHOLD = parseInt(process.env.RADAR_SCORE_THRESHOLD || '55', 10);
 const L1_MIN_HITS     = parseInt(process.env.RADAR_L1_MIN_HITS    || '1',  10);
 
+/** 明确不可投（大陆候选人）——硬丢弃 */
+const HARD_REJECT_PATTERNS = [
+  /\bus\s*(only|citizen|citizenship)\b/i,
+  /\beu\s*(only|citizen|citizenship)\b/i,
+  /\bmust\s+be\s+(located\s+)?in\s+(the\s+)?(us|usa|united states|uk|canada|eu|europe)\b/i,
+  /\bonly\s+(open\s+to|hiring)\s+(candidates\s+)?(in|from)\s+(the\s+)?(us|usa|uk|canada|eu)\b/i,
+  /\b(require|requires|required|need|needs)\s+.{0,40}\b(us|usa|united states)\s+(work\s+)?(authorization|visa|permit)\b/i,
+  /\b(green\s*card|uscis|h-?1b|opt\s+required)\b/i,
+  /\bmust\s+have\s+(the\s+)?right\s+to\s+work\s+in\s+(the\s+)?(us|usa|uk|eu)\b/i,
+  /\bcandidates\s+must\s+reside\s+in\s+(the\s+)?(us|usa|united states|uk|canada)\b/i,
+  /\bno\s+(remote|applicants?)\s+from\s+(china|asia|apac)\b/i,
+];
+
+/** Worldwide / APAC / 合同制 —— 加分信号 */
+const BOOST_PATTERNS = [
+  { re: /\b(worldwide|work\s+from\s+anywhere|anywhere\s+in\s+the\s+world|location[- ]independent)\b/i, boost: 12, label: 'worldwide' },
+  { re: /\b(apac|asia[- ]pacific|asia\s+timezone|utc\+?8|gmt\+?8)\b/i, boost: 12, label: 'apac-tz' },
+  { re: /\b(singapore|hong\s*kong|taiwan|sea\s+region)\b/i, boost: 10, label: 'sg-hk-tw' },
+  { re: /\b(independent\s+contractor|b2b\s+contract|contractor\s+(ok|welcome|friendly)|freelance\s+contract)\b/i, boost: 8, label: 'contractor' },
+  { re: /\b(async(-|\s)?first|asynchronous\s+work|fully\s+async)\b/i, boost: 6, label: 'async' },
+];
+
 // ─────────────────────────────────────────────────────────────────
 // Layer 1：从画像文件自动提取关键词
 // ─────────────────────────────────────────────────────────────────
@@ -41,14 +64,14 @@ const L1_MIN_HITS     = parseInt(process.env.RADAR_L1_MIN_HITS    || '1',  10);
 const FALLBACK_KEYWORDS = [
   // 远程条件
   '远程', 'remote', 'wfh', 'work from home', 'distributed', 'anywhere', 'full-time remote',
-  '全职', 'full-time', '居家',
+  '全职', 'full-time', '居家', 'worldwide', 'work from anywhere',
   // 地区偏好
   '台湾', '台灣', '跨境', '出海', '海外', '香港', '澳门', '新加坡',
-  'taiwan', 'hong kong', 'hk', 'singapore', 'sea', 'apac',
+  'taiwan', 'hong kong', 'hk', 'singapore', 'sea', 'apac', 'asia',
   // AI 自动化核心
   'n8n', 'dify', 'make', 'zapier', 'langgraph', 'langchain', 'flowise',
   'ai automation', 'workflow automation', 'ai agent', 'agent',
-  'ai工作流', '自动化', '工作流', 'ai自动化', 'rpa',
+  'ai工作流', '自动化', '工作流', 'ai自动化', 'rpa', 'automation engineer',
   // AI 产品 / 应用（技能可迁移）
   'ai产品', 'ai product', 'product manager', '产品经理', '产品运营',
   'ai应用', 'llm应用', 'gpt', 'chatbot', '智能客服', 'copilot',
@@ -123,6 +146,38 @@ function loadProfileKeywords() {
   return keywords;
 }
 
+/**
+ * Layer 1.5：英文 eligibility。
+ * 返回 { rejected, boost, labels, reason }
+ */
+function checkEligibility(job) {
+  const hay = `${job.title || ''} ${job.contentText || ''} ${job.location || ''}`;
+  const labels = [];
+
+  for (const re of HARD_REJECT_PATTERNS) {
+    if (re.test(hay)) {
+      return {
+        rejected: true,
+        boost: 0,
+        labels: ['visa-block'],
+        reason: `硬过滤：${re.source.slice(0, 40)}`,
+      };
+    }
+  }
+
+  let boost = 0;
+  for (const { re, boost: b, label } of BOOST_PATTERNS) {
+    if (re.test(hay)) {
+      boost += b;
+      labels.push(label);
+    }
+  }
+  // 加分封顶，避免 Worldwide+APAC+contractor 叠到过高
+  boost = Math.min(boost, 20);
+
+  return { rejected: false, boost, labels, reason: labels.join('|') || 'ok' };
+}
+
 // ─────────────────────────────────────────────────────────────────
 // Layer 2：Groq 极速打分
 // ─────────────────────────────────────────────────────────────────
@@ -150,11 +205,15 @@ function loadProfileSummary() {
  */
 function groqQuickScore(jobTitle, jobSnippet, profileSummary, groqKey) {
   return new Promise((resolve, reject) => {
-    const systemPrompt = `你是求职相关性判断助手。
+    const systemPrompt = `你是求职相关性判断助手。候选人在中国大陆（UTC+8），找全职/合同制远程岗。
 根据候选人画像，判断一条招聘帖子与候选人的相关性。
 候选人接受技能迁移：AI产品/AI应用、电商运营、数据运营、获客增长、低代码自动化，只要远程且能用到自动化/AI/数据/运营能力，都应给中高分。
+硬规则：
+- 要求美国/欧盟/英国公民身份或当地工作签证且不可 contractor → score ≤ 20
+- Worldwide / Anywhere / APAC / Singapore / Hong Kong / UTC+8 / contractor 友好 → 至少 +10 倾向
+- 纯线下销售、纯 Java/.NET 传统后端、纯算法研究 → 低分
 只输出纯 JSON，不要任何解释文字：{"score": 0到100的整数, "reason": "15字以内说明"}
-score 含义：0=完全无关（纯销售线下/纯Java后端等）, 35=沾边可迁移, 55=可能合适, 75=比较匹配, 90+=高度匹配`;
+score 含义：0=完全无关, 35=沾边可迁移, 55=可能合适, 75=比较匹配, 90+=高度匹配`;
 
     const userPrompt = `【候选人画像摘要】
 ${profileSummary}
@@ -249,6 +308,11 @@ function createMatcher() {
       return hits;
     },
 
+    /** Layer 1.5：签证/地区硬过滤 + APAC/Worldwide 加分 */
+    eligibility(job) {
+      return checkEligibility(job);
+    },
+
     /**
      * Layer 2：Groq 极速打分（Layer 1 通过后才调用）。
      * 返回 { score, reason, skipped }
@@ -273,4 +337,4 @@ function createMatcher() {
   };
 }
 
-module.exports = { createMatcher };
+module.exports = { createMatcher, checkEligibility };
