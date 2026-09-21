@@ -33,6 +33,7 @@ const path   = require('path');
 const Parser = require('rss-parser');
 const {
   formatJobMessage,
+  formatDailyDigest,
   sendTelegramMessage,
   sendHeartbeat,
 } = require('./notify-telegram');
@@ -60,6 +61,8 @@ if (fs.existsSync(envPath)) {
 const BOT_TOKEN      = process.env.TELEGRAM_BOT_TOKEN || '';
 const CHAT_ID        = process.env.TELEGRAM_CHAT_ID   || '';
 const SEND_HEARTBEAT = process.env.TELEGRAM_SEND_HEARTBEAT === 'true';
+// 每天（上海时区）最多发一条日报摘要；设 false 可关闭
+const SEND_DAILY_DIGEST = process.env.RADAR_DAILY_DIGEST !== 'false';
 
 // 额外关键词（叠加在画像关键词之上，不替换）
 const EXTRA_KEYWORDS = (process.env.RADAR_KEYWORDS || '')
@@ -117,28 +120,69 @@ function dedupKey(source, link, title) {
   return `${source}|${id}`;
 }
 
-function loadSeenKeys() {
+function shanghaiDate() {
+  // en-CA → YYYY-MM-DD
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' });
+}
+
+function shanghaiDateLabel() {
+  return new Date().toLocaleDateString('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+}
+
+function loadSeenState() {
   try {
     if (fs.existsSync(STATE_FILE)) {
       const raw = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
-      return new Set(Array.isArray(raw.keys) ? raw.keys : []);
+      return {
+        keys: new Set(Array.isArray(raw.keys) ? raw.keys : []),
+        lastDigestDate: raw.lastDigestDate || null,
+      };
     }
   } catch (e) {
     log(`⚠️  读取 seen_jobs.json 失败（重置）：${e.message}`);
   }
-  return new Set();
+  return { keys: new Set(), lastDigestDate: null };
 }
 
-function saveSeenKeys(seenSet) {
+function saveSeenState(seenSet, meta = {}) {
   const dir = path.dirname(STATE_FILE);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   const arr     = [...seenSet];
   const trimmed = arr.length > MAX_SEEN ? arr.slice(arr.length - MAX_SEEN) : arr;
-  fs.writeFileSync(
-    STATE_FILE,
-    JSON.stringify({ updatedAt: new Date().toISOString(), keys: trimmed }, null, 2),
-    'utf8'
-  );
+  const payload = {
+    updatedAt: new Date().toISOString(),
+    keys: trimmed,
+  };
+  if (meta.lastDigestDate) payload.lastDigestDate = meta.lastDigestDate;
+  fs.writeFileSync(STATE_FILE, JSON.stringify(payload, null, 2), 'utf8');
+}
+
+/** 每天最多发一条日报；成功后写回 lastDigestDate */
+async function maybeSendDailyDigest(stats, lastDigestDate) {
+  if (!SEND_DAILY_DIGEST) return lastDigestDate;
+  const today = shanghaiDate();
+  if (lastDigestDate === today) {
+    log(`📅 今日日报已发过（${today}），跳过`);
+    return lastDigestDate;
+  }
+  try {
+    const msg = formatDailyDigest({
+      ...stats,
+      dateLabel: shanghaiDateLabel(),
+      maxAgeHours: MAX_AGE_HOURS,
+    });
+    await sendTelegramMessage(msg, BOT_TOKEN, CHAT_ID);
+    log(`📅 已发送 Radar 日报（${today}）`);
+    return today;
+  } catch (err) {
+    log(`⚠️  日报发送失败：${err.message}`);
+    return lastDigestDate;
+  }
 }
 
 // ────────────────────────────────────────────────────────────────
@@ -322,7 +366,9 @@ async function main() {
   const matcher = createMatcher();
 
   // ── 读取已见状态
-  const seenKeys = loadSeenKeys();
+  const seenState = loadSeenState();
+  const seenKeys = seenState.keys;
+  let lastDigestDate = seenState.lastDigestDate;
   log(`📂 已记录 ${seenKeys.size} 条历史帖子`);
 
   // ── 并行抓取所有源
@@ -355,6 +401,15 @@ async function main() {
 
   log(`🔍 Layer 1 通过：${l1Passed.length} 条`);
 
+  const baseStats = {
+    scraped: allItems.length,
+    newItems: newItems.length,
+    l1: l1Passed.length,
+    eligible: 0,
+    rejectedElig: 0,
+    sent: 0,
+  };
+
   // ── Layer 1.5：英文 eligibility 硬过滤（签证/地区硬门槛）
   const eligible = [];
   let rejectedElig = 0;
@@ -366,10 +421,13 @@ async function main() {
     }
     eligible.push({ ...job, eligBoost: elig.boost, eligLabels: elig.labels });
   }
+  baseStats.eligible = eligible.length;
+  baseStats.rejectedElig = rejectedElig;
   log(`🌐 Eligibility 通过：${eligible.length} 条（硬过滤丢弃 ${rejectedElig}）`);
 
   if (eligible.length === 0) {
-    saveSeenKeys(seenKeys);
+    lastDigestDate = await maybeSendDailyDigest(baseStats, lastDigestDate);
+    saveSeenState(seenKeys, { lastDigestDate });
     if (SEND_HEARTBEAT) {
       await sendHeartbeat(BOT_TOKEN, CHAT_ID, allItems.length);
       log('💤 无命中，已发送心跳');
@@ -415,8 +473,11 @@ async function main() {
     }
   }
 
+  baseStats.sent = sentCount;
+  lastDigestDate = await maybeSendDailyDigest(baseStats, lastDigestDate);
+
   // ── 保存状态
-  saveSeenKeys(seenKeys);
+  saveSeenState(seenKeys, { lastDigestDate });
   log(`💾 状态已保存（共记录 ${seenKeys.size} 条）`);
   log(`✅ 本轮完成：推送 ${sentCount} 条 / Layer1 ${l1Passed.length} 条 / 总扫描 ${allItems.length} 条`);
 }

@@ -76,8 +76,9 @@ jobs:
           # ── 可选：额外关键词（叠加在画像关键词之上，逗号分隔）
           RADAR_KEYWORDS: ${{ secrets.RADAR_KEYWORDS }}
 
-          # ── 心跳默认关：有命中才推，避免「每天一条在线确认」误以为只有一条岗
+          # ── 心跳默认关：有命中才推岗位；日报默认开（每天一条报平安）
           TELEGRAM_SEND_HEARTBEAT: ${{ github.event.inputs.send_heartbeat || 'false' }}
+          RADAR_DAILY_DIGEST: "true"
         run: node scripts/run-radar-cycle.js
 
       # ── Step 6: 把更新的 seen_jobs.json 提交回仓库

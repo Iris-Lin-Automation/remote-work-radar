@@ -263,10 +263,35 @@ async function sendHeartbeat(botToken, chatId, checkedCount) {
   return sendTelegramMessage(msg, botToken, chatId);
 }
 
+/**
+ * 每日摘要（报平安）：有岗仍单独推，这条只说明系统在跑 + 漏斗数字。
+ * @param {object} stats
+ *   dateLabel, scraped, newItems, l1, eligible, rejectedElig, sent, maxAgeHours
+ */
+function formatDailyDigest(stats) {
+  const s = stats || {};
+  const lines = [
+    `📡 <b>Radar 日报</b> · ${escHtml(s.dateLabel || '')}`,
+    '系统正常，定时扫描在跑。',
+    '',
+    `📥 抓取 <b>${s.scraped ?? 0}</b> 条`,
+    `🆕 ${s.maxAgeHours ?? 24}h 新帖 <b>${s.newItems ?? 0}</b> 条`,
+    `🔍 Layer1 <b>${s.l1 ?? 0}</b> → 🌐 可投 <b>${s.eligible ?? 0}</b>（签证踢掉 ${s.rejectedElig ?? 0}）→ 🎯 推送 <b>${s.sent ?? 0}</b> 条`,
+    '',
+  ];
+  if ((s.sent ?? 0) > 0) {
+    lines.push(`本轮已单独推送 ${s.sent} 条岗位，这条只是日报。`);
+  } else {
+    lines.push('本轮无命中（筛选偏严时常见）。有岗会单独推，这条只是报平安。');
+  }
+  return lines.join('\n');
+}
+
 module.exports = {
   extractContacts,
   extractCompany,
   formatJobMessage,
+  formatDailyDigest,
   sendTelegramMessage,
   sendHeartbeat,
 };
