@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T19:42:22.002Z",
+  "updatedAt": "2026-10-15T22:53:56.629Z",
   "keys": [
     "v2ex_jobs|https://www.v2ex.com/t/1241268",
     "eleduck|https://eleduck.com/posts/Djf8OB",
@@ -1676,7 +1676,19 @@
     "jobicy|https://jobicy.com/jobs/155391-site-reliability-engineer-4",
     "jobicy|https://jobicy.com/jobs/155393-executive-assistant-to-the-ceo-3",
     "jobicy|https://jobicy.com/jobs/155389-platform-engineer-managed-postgres",
-    "jobicy|https://jobicy.com/jobs/155385-ai-platform-engineer"
+    "jobicy|https://jobicy.com/jobs/155385-ai-platform-engineer",
+    "yw_dev|https://yuancheng.work/6669.html",
+    "yw_dev|https://yuancheng.work/6667.html",
+    "yw_dev|https://yuancheng.work/6665.html",
+    "yw_ops|https://yuancheng.work/6674.html",
+    "yw_ops|https://yuancheng.work/6670.html",
+    "yw_ops|https://yuancheng.work/6664.html",
+    "yw_ops|https://yuancheng.work/6662.html",
+    "yw_mkt|https://yuancheng.work/6673.html",
+    "yw_mkt|https://yuancheng.work/6666.html",
+    "yw_mkt|https://yuancheng.work/6661.html",
+    "yw_prod|https://yuancheng.work/6668.html",
+    "yw_sales|https://yuancheng.work/6672.html"
   ],
   "lastDigestDate": "2026-10-16"
 }
