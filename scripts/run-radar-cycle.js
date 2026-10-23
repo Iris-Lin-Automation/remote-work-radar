@@ -63,15 +63,21 @@ const CHAT_ID        = process.env.TELEGRAM_CHAT_ID   || '';
 const SEND_HEARTBEAT = process.env.TELEGRAM_SEND_HEARTBEAT === 'true';
 // 每天（上海时区）最多发一条日报摘要；设 false 可关闭
 const SEND_DAILY_DIGEST = process.env.RADAR_DAILY_DIGEST !== 'false';
+// 一次性回放：忽略「已见过」，把时间窗内可投岗位再推一遍
+const REPLAY = process.env.RADAR_REPLAY === 'true';
 
 // 额外关键词（叠加在画像关键词之上，不替换）
 const EXTRA_KEYWORDS = (process.env.RADAR_KEYWORDS || '')
   .split(',').map(k => k.trim().toLowerCase()).filter(Boolean);
 
 const STATE_FILE    = path.join(__dirname, '..', 'data', 'seen_jobs.json');
+const PUSHED_FILE   = path.join(__dirname, '..', 'data', 'pushed_jobs.json');
 const MAX_SEEN      = 2000;
+const MAX_PUSHED    = 300;
 // 只处理最近 N 小时内发布的帖子（防止首次运行时推送大量旧帖）
-const MAX_AGE_HOURS = parseInt(process.env.RADAR_MAX_AGE_HOURS || '4', 10);
+const MAX_AGE_HOURS = REPLAY
+  ? parseInt(process.env.RADAR_REPLAY_HOURS || '168', 10)
+  : parseInt(process.env.RADAR_MAX_AGE_HOURS || '4', 10);
 
 // RSS / JSON 数据源
 // ✅ = 经测试可用   ❌ = 封锁 GitHub Actions IP，已移除
@@ -160,6 +166,51 @@ function saveSeenState(seenSet, meta = {}) {
   };
   if (meta.lastDigestDate) payload.lastDigestDate = meta.lastDigestDate;
   fs.writeFileSync(STATE_FILE, JSON.stringify(payload, null, 2), 'utf8');
+}
+
+function loadPushed() {
+  try {
+    if (fs.existsSync(PUSHED_FILE)) {
+      const raw = JSON.parse(fs.readFileSync(PUSHED_FILE, 'utf8'));
+      return Array.isArray(raw.jobs) ? raw.jobs : [];
+    }
+  } catch (e) {
+    log(`⚠️  读取 pushed_jobs.json 失败：${e.message}`);
+  }
+  return [];
+}
+
+function savePushed(jobs) {
+  const dir = path.dirname(PUSHED_FILE);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const trimmed = jobs.length > MAX_PUSHED ? jobs.slice(jobs.length - MAX_PUSHED) : jobs;
+  fs.writeFileSync(PUSHED_FILE, JSON.stringify({
+    updatedAt: new Date().toISOString(),
+    jobs: trimmed,
+  }, null, 2), 'utf8');
+}
+
+function recordPushed(job) {
+  const jobs = loadPushed();
+  jobs.push({
+    at: new Date().toISOString(),
+    title: job.title || '',
+    url: job.url || '',
+    source: job.sourceName || job.source || '',
+    score: job.groqScore ?? null,
+  });
+  savePushed(jobs);
+}
+
+function formatPushIndex(jobs, title) {
+  const lines = [`📋 <b>${title}</b>`, `共 ${jobs.length} 条`, ''];
+  jobs.forEach((job, i) => {
+    const name = String(job.title || '无标题').slice(0, 80);
+    const safe = name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    if (job.url) lines.push(`${i + 1}. <a href="${String(job.url).replace(/&/g, '&amp;')}">${safe}</a>`);
+    else lines.push(`${i + 1}. ${safe}`);
+  });
+  return lines.join('\n');
 }
 
 /** 每天最多发一条日报；成功后写回 lastDigestDate */
@@ -377,8 +428,10 @@ async function main() {
 
   // ── 过滤：未见过 AND 发布时间在 MAX_AGE_HOURS 以内
   const cutoff = Date.now() - MAX_AGE_HOURS * 60 * 60 * 1000;
+  if (REPLAY) log(`🔁 回放模式：忽略已见记录，时间窗 ${MAX_AGE_HOURS} 小时`);
+
   const newItems = allItems.filter(job => {
-    if (seenKeys.has(job.dedupKey)) return false;          // 已见过，跳过
+    if (!REPLAY && seenKeys.has(job.dedupKey)) return false; // 已见过，跳过
     if (!job.publishedAt) return true;                     // 没有发布时间，宽松放行
     const pubTime = new Date(job.publishedAt).getTime();
     if (isNaN(pubTime)) return true;                       // 时间格式异常，放行
@@ -436,9 +489,13 @@ async function main() {
     return;
   }
 
-  // ── Layer 2：Groq 极速打分（串行，每条约 1 秒，避免并发触发限流）
+  // ── Layer 2：Groq 极速打分（回放时跳过，避免几十条串行打分拖太久）
   const scored = [];
   for (const job of eligible) {
+    if (REPLAY) {
+      scored.push({ ...job, groqScore: null, groqReason: '', groqScoreSkipped: true, hitKeywords: job.l1Hits });
+      continue;
+    }
     const { score, reason, skipped } = await matcher.layer2(job);
     const adjusted = skipped
       ? score
@@ -460,14 +517,32 @@ async function main() {
   const toNotify = scored;
   log(`🎯 可投全部推送：${toNotify.length} 条（分数不再拦截）`);
 
-  // ── 推送到 Telegram
+  // ── 推送到 Telegram（先发一份目录，方便回看）
   let sentCount = 0;
+  if (toNotify.length) {
+    const indexTitle = REPLAY ? '回放：最近可投岗位' : '本轮可投岗位';
+    const chunk = 20;
+    for (let i = 0; i < toNotify.length; i += chunk) {
+      const part = toNotify.slice(i, i + chunk);
+      const title = toNotify.length > chunk
+        ? `${indexTitle}（${i + 1}-${i + part.length}）`
+        : indexTitle;
+      try {
+        await sendTelegramMessage(formatPushIndex(part, title), BOT_TOKEN, CHAT_ID);
+        log(`📋 已推送目录 ${i + 1}-${i + part.length}`);
+        await new Promise(r => setTimeout(r, 1200));
+      } catch (err) {
+        log(`   ⚠️  目录推送失败：${err.message}`);
+      }
+    }
+  }
   for (const job of toNotify) {
     try {
       const msg = buildMessage(job);
       await sendTelegramMessage(msg, BOT_TOKEN, CHAT_ID);
+      recordPushed(job);
       sentCount++;
-      log(`   📨 已推送（${job.groqScore}分）：${job.title.slice(0, 55)}`);
+      log(`   📨 已推送：${job.title.slice(0, 55)}`);
       await new Promise(r => setTimeout(r, 1200));  // Telegram 限速保险
     } catch (err) {
       log(`   ⚠️  推送失败：${err.message}`);

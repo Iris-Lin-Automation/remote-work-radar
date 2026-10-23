@@ -79,6 +79,7 @@ config/*
 data/*
 !data/.gitkeep
 !data/seen_jobs.json
+!data/pushed_jobs.json
 *.json.cache
 manual-inbox*
 

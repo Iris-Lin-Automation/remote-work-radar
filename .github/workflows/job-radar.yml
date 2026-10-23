@@ -17,6 +17,12 @@ on:
         default: 'false'
         type: choice
         options: ['true', 'false']
+      replay:
+        description: '忽略已见记录，把最近7天可投岗位再推一遍'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
 
 # ─────────────────────────────────────────────────────────────
 # 权限：需要写入仓库（用于提交 seen_jobs.json）
@@ -78,6 +84,7 @@ jobs:
           # ── 心跳默认关：有命中才推岗位；日报默认开（每天一条报平安）
           TELEGRAM_SEND_HEARTBEAT: ${{ github.event.inputs.send_heartbeat || 'false' }}
           RADAR_DAILY_DIGEST: "true"
+          RADAR_REPLAY: ${{ github.event.inputs.replay || 'false' }}
         run: node scripts/run-radar-cycle.js
 
       # ── Step 6: 把更新的 seen_jobs.json 提交回仓库
@@ -88,7 +95,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           # -f 强制跳过 gitignore；--cached 检测暂存区变化（兼容新文件和修改）
-          git add -f data/seen_jobs.json
+          git add -f data/seen_jobs.json data/pushed_jobs.json
           if git diff --cached --quiet; then
             echo "seen_jobs.json 没有变化，跳过提交"
           else
