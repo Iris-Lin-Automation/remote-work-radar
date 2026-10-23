@@ -65,9 +65,8 @@ jobs:
           # 不填则跳过 AI 打分，仅靠关键词过滤
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
-          # ── AI 打分阈值（0-100），低于此分数不推送
-          # 放宽：AI产品/电商运营/可迁移技能也推
-          RADAR_SCORE_THRESHOLD: "25"
+          # ── 分数只写在消息里，不再用来拦推送（可投的全部推）
+          RADAR_SCORE_THRESHOLD: "0"
 
           # ── 时间窗口：只处理最近 N 小时内发布的帖子
           # 8h 太窄 → RSS 半天不更新就天天 0 新帖；放宽到 24h

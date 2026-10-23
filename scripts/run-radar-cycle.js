@@ -456,8 +456,9 @@ async function main() {
     }
   }
 
-  const toNotify = scored.filter(job => job.groqScore >= matcher.threshold);
-  log(`🎯 Layer 2 通过（≥${matcher.threshold}分）：${toNotify.length} 条`);
+  // 分数只作参考，不再拦截。可投的全部推送（签证硬门槛仍在上面丢掉）。
+  const toNotify = scored;
+  log(`🎯 可投全部推送：${toNotify.length} 条（分数不再拦截）`);
 
   // ── 推送到 Telegram
   let sentCount = 0;

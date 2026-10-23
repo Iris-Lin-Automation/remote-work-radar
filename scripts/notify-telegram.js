@@ -276,13 +276,13 @@ function formatDailyDigest(stats) {
     '',
     `📥 抓取 <b>${s.scraped ?? 0}</b> 条`,
     `🆕 ${s.maxAgeHours ?? 24}h 新帖 <b>${s.newItems ?? 0}</b> 条`,
-    `🔍 Layer1 <b>${s.l1 ?? 0}</b> → 🌐 可投 <b>${s.eligible ?? 0}</b>（签证踢掉 ${s.rejectedElig ?? 0}）→ 🎯 推送 <b>${s.sent ?? 0}</b> 条`,
+    `🔍 Layer1 <b>${s.l1 ?? 0}</b> → 🌐 可投并推送 <b>${s.sent ?? 0}</b> 条（签证踢掉 ${s.rejectedElig ?? 0}）`,
     '',
   ];
   if ((s.sent ?? 0) > 0) {
     lines.push(`本轮已单独推送 ${s.sent} 条岗位，这条只是日报。`);
   } else {
-    lines.push('本轮无命中（筛选偏严时常见）。有岗会单独推，这条只是报平安。');
+    lines.push('本轮没有可投新帖。有岗会直接推，这条只是报平安。');
   }
   return lines.join('\n');
 }
