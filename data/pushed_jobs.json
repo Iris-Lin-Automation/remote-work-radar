@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T03:24:16.792Z",
+  "updatedAt": "2026-10-24T08:40:39.380Z",
   "jobs": [
     {
       "at": "2026-10-23T04:12:34.997Z",
@@ -1371,6 +1371,69 @@
       "title": "实测了一圈国内远程接单平台：哪些还能用、哪些已经关了（2026.10）",
       "url": "https://eleduck.com/posts/4lfRXd",
       "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T08:40:27.390Z",
+      "title": "SEO 专员",
+      "url": "https://www.v2ex.com/t/1251482",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T08:40:28.891Z",
+      "title": "SEO专员",
+      "url": "https://eleduck.com/posts/x0fXJO",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T08:40:30.391Z",
+      "title": "Site Reliability / Gitops Engineer",
+      "url": "https://jobicy.com/jobs/149553-site-reliability-gitops-engineer",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T08:40:31.882Z",
+      "title": "Software Engineer - App Stores",
+      "url": "https://jobicy.com/jobs/149552-software-engineer-app-stores",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-24T08:40:33.384Z",
+      "title": "Performance Engineer - Open Source",
+      "url": "https://jobicy.com/jobs/149551-performance-engineer-open-source",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-24T08:40:34.901Z",
+      "title": "Enterprise Project Manager",
+      "url": "https://jobicy.com/jobs/149549-enterprise-project-manager",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-24T08:40:36.387Z",
+      "title": "Cloud Professional Services Manager",
+      "url": "https://jobicy.com/jobs/149548-cloud-professional-services-manager",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-24T08:40:37.873Z",
+      "title": "Cribl: Director, Product Management (Security)",
+      "url": "https://weworkremotely.com/remote-jobs/cribl-director-product-management-security",
+      "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T08:40:39.380Z",
+      "title": "Gusto, Inc.: Payment Operations Analyst",
+      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-payment-operations-analyst",
+      "source": "WWR·产品",
       "score": 0
     }
   ]
