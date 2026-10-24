@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T08:40:39.380Z",
+  "updatedAt": "2026-10-24T13:50:20.339Z",
   "jobs": [
     {
       "at": "2026-10-23T04:12:34.997Z",
@@ -1434,6 +1434,34 @@
       "title": "Gusto, Inc.: Payment Operations Analyst",
       "url": "https://weworkremotely.com/remote-jobs/gusto-inc-payment-operations-analyst",
       "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T13:50:15.860Z",
+      "title": "[全职 / AI 公司] 后端开发工程师｜招募像姚顺雨一样，有技术追求的工程师",
+      "url": "https://www.v2ex.com/t/1251531",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T13:50:17.357Z",
+      "title": "[全职 / AI 公司] 大数据开发工程师｜招募像姚顺雨一样，有技术追求的工程师",
+      "url": "https://www.v2ex.com/t/1251510",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T13:50:18.857Z",
+      "title": "招 1 名全栈工程师（AI 伴侣方向）",
+      "url": "https://www.v2ex.com/t/1251506",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-24T13:50:20.339Z",
+      "title": "一个 PHP 程序员，为什么要做自己的源码平台？",
+      "url": "https://eleduck.com/posts/rdf3Eq",
+      "source": "电鸭社区",
       "score": 0
     }
   ]
