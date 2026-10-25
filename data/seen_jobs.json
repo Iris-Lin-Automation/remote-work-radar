@@ -1,9 +1,6 @@
 {
-  "updatedAt": "2026-10-25T04:28:28.241Z",
+  "updatedAt": "2026-10-25T10:47:11.247Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/149048-qa-automation-lead-gn-data-intelligence",
-    "jobicy|https://jobicy.com/jobs/149072-customer-service-manager-cy",
-    "jobicy|https://jobicy.com/jobs/149073-customer-service-manager-gr",
     "jobicy|https://jobicy.com/jobs/149049-ai-enablement-lead-gn-data-intelligence",
     "jobicy|https://jobicy.com/jobs/149057-senior-site-reliability-engineer-hardware-automation",
     "jobicy|https://jobicy.com/jobs/149060-offensive-security-engineer",
@@ -2000,7 +1997,10 @@
     "v2ex_jobs|https://www.v2ex.com/t/1251611",
     "eleduck|https://eleduck.com/posts/5Bf1mb",
     "eleduck|https://eleduck.com/posts/74f8lp",
-    "eleduck|https://eleduck.com/posts/pqfAJV"
+    "eleduck|https://eleduck.com/posts/pqfAJV",
+    "v2ex_jobs|https://www.v2ex.com/t/1251653",
+    "eleduck|https://eleduck.com/posts/0XfxO9",
+    "eleduck|https://eleduck.com/posts/wwfLV1"
   ],
   "lastDigestDate": "2026-10-25"
 }
