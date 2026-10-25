@@ -1,10 +1,6 @@
 {
-  "updatedAt": "2026-10-25T00:00:40.223Z",
+  "updatedAt": "2026-10-25T04:28:28.241Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/149070-customer-service-manager-cz",
-    "jobicy|https://jobicy.com/jobs/149075-customer-service-manager-uk",
-    "jobicy|https://jobicy.com/jobs/149074-customer-service-manager-pt",
-    "jobicy|https://jobicy.com/jobs/149071-customer-service-manager-pl",
     "jobicy|https://jobicy.com/jobs/149048-qa-automation-lead-gn-data-intelligence",
     "jobicy|https://jobicy.com/jobs/149072-customer-service-manager-cy",
     "jobicy|https://jobicy.com/jobs/149073-customer-service-manager-gr",
@@ -2000,7 +1996,11 @@
     "jobicy|https://jobicy.com/jobs/156837-director-supplier-relations-apac",
     "jobicy|https://jobicy.com/jobs/156841-new-business-account-executive",
     "jobicy|https://jobicy.com/jobs/156836-talent-acquisition-partner-contract",
-    "jobicy|https://jobicy.com/jobs/156821-senior-product-manager-genai"
+    "jobicy|https://jobicy.com/jobs/156821-senior-product-manager-genai",
+    "v2ex_jobs|https://www.v2ex.com/t/1251611",
+    "eleduck|https://eleduck.com/posts/5Bf1mb",
+    "eleduck|https://eleduck.com/posts/74f8lp",
+    "eleduck|https://eleduck.com/posts/pqfAJV"
   ],
   "lastDigestDate": "2026-10-25"
 }
