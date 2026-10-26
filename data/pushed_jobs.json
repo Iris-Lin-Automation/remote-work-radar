@@ -1,139 +1,6 @@
 {
-  "updatedAt": "2026-10-26T03:21:19.625Z",
+  "updatedAt": "2026-10-26T09:45:03.497Z",
   "jobs": [
-    {
-      "at": "2026-10-23T04:12:34.997Z",
-      "title": "业务经理助理 / 项目经理 有能力的来",
-      "url": "https://www.v2ex.com/t/1251218",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:36.512Z",
-      "title": "忍辱负重还是勇敢跳槽",
-      "url": "https://www.v2ex.com/t/1251190",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:38.022Z",
-      "title": "字节 Data｜ 2027 届全职与实习岗位（个人内推）",
-      "url": "https://www.v2ex.com/t/1251159",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:39.527Z",
-      "title": "[全职 / AI 公司] 测试开发工程师｜招募像姚顺雨一样，有技术追求的工程师",
-      "url": "https://www.v2ex.com/t/1251134",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:41.038Z",
-      "title": "技术项目经理（游戏运维中台方向）来了来了",
-      "url": "https://www.v2ex.com/t/1250973",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:42.619Z",
-      "title": "招聘 llvm / mlir / ai 编译器 相关岗位(不限年龄)",
-      "url": "https://www.v2ex.com/t/1250894",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:44.129Z",
-      "title": "招聘 FPGA 工程师，欢迎投递",
-      "url": "https://www.v2ex.com/t/1250883",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:45.641Z",
-      "title": "短剧公司招远程 Golang 后端工程师 20-40k 面议",
-      "url": "https://www.v2ex.com/t/1250841",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:47.163Z",
-      "title": "[招募] 高级网络安全研究员 / 渗透测试专家",
-      "url": "https://www.v2ex.com/t/1250797",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:48.722Z",
-      "title": "LLM 应用研发工程师 远程 急急急",
-      "url": "https://www.v2ex.com/t/1250726",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:50.225Z",
-      "title": "高级服务器开发工程师 远程",
-      "url": "https://www.v2ex.com/t/1250716",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:51.736Z",
-      "title": "remote 新媒体负责人（海外/国内）\\*1（40k+绩效）//新媒体运营（越南市场）\\*3（18-20K）//新媒体运营（海外）\\*3（18-20K）",
-      "url": "https://www.v2ex.com/t/1250601",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:53.296Z",
-      "title": "蚂蚁集团—OceanBase—招人招人",
-      "url": "https://www.v2ex.com/t/1250585",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:54.814Z",
-      "title": "马来西亚招聘｜ Google 百度 SEO",
-      "url": "https://www.v2ex.com/t/1250343",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:56.322Z",
-      "title": "[智慧城市方向] 成都国企科技公司招聘软件开发工程师",
-      "url": "https://www.v2ex.com/t/1250274",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:57.837Z",
-      "title": "招聘： SEO 产品经理， SOC 安全运营中心工程师（优先海外），资深视觉设计师（海外常驻）， Web3 资深 UI 设计师（海外常驻），产品经理（合约方向）。",
-      "url": "https://www.v2ex.com/t/1250192",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:12:59.343Z",
-      "title": "[成都/Remote] [急招] Backend Engineer（Trading Platform）",
-      "url": "https://www.v2ex.com/t/1250118",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:00.843Z",
-      "title": "紧急：高级 AI 全栈工程师（Agent 方向）高薪 50-75k",
-      "url": "https://www.v2ex.com/t/1250045",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:02.355Z",
-      "title": "MES 软件工程师（.NET 方向）",
-      "url": "https://www.v2ex.com/t/1249926",
-      "source": "V2EX·招聘",
-      "score": null
-    },
     {
       "at": "2026-10-23T04:13:03.867Z",
       "title": "招聘： AI 质量评估工程师",
@@ -2065,6 +1932,174 @@
       "url": "https://eleduck.com/posts/VvfaNO",
       "source": "电鸭社区",
       "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:28.007Z",
+      "title": "求远程兼职｜TikTok印尼运营＋AI视频图片＋网站搭建",
+      "url": "https://eleduck.com/posts/rdf3aq",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:29.535Z",
+      "title": "AI Agent / n8n 兼职开发｜GitHub开源Skill二次开发",
+      "url": "https://eleduck.com/posts/jAfWJg",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:31.091Z",
+      "title": "一个开源语音输入：Typeless的开源平替，支持windows/linux/macos/android",
+      "url": "https://eleduck.com/posts/a4fbdr",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:32.798Z",
+      "title": "免费白嫖claude-opus-5-5, gpt-6.1-sol、 grok-4.7、deepseek-v4.1-flash",
+      "url": "https://eleduck.com/posts/R3fvzO",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:34.320Z",
+      "title": "寻找长期兼职技术合作伙伴｜AI API 网关维护与客户技术支持",
+      "url": "https://eleduck.com/posts/ARfdLm",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:35.872Z",
+      "title": "【全职远程】12K–15K/月｜Product Designer 产品设计师｜AI 短剧创作工具｜3–5 年经验",
+      "url": "https://eleduck.com/posts/x0fX9O",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:37.395Z",
+      "title": "【免费推荐/海外远程】25K-35K/DevSecOps Engineer/一体化社区平台",
+      "url": "https://eleduck.com/posts/JpfVkv",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:38.930Z",
+      "title": "来，一起做鸭｜想找个能把电鸭带上更高维度的增长运营合伙人",
+      "url": "https://eleduck.com/posts/Djfy0N",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:40.470Z",
+      "title": "【招聘】英语翻译（IT 方向）｜美国知识产权团队｜15-18W / 年",
+      "url": "https://eleduck.com/posts/BaflEW",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:41.982Z",
+      "title": "【免费推荐/全职远程】年薪40-70W/AI交易研究员/国际控股公司",
+      "url": "https://eleduck.com/posts/laf5Gk",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:43.503Z",
+      "title": "马来西亚技术开发公司招聘全职远程工作高级前端开发工程师",
+      "url": "https://yuancheng.work/6835.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:45.023Z",
+      "title": "枫叶枫叶招聘全职远程工作运营",
+      "url": "https://yuancheng.work/6867.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:46.545Z",
+      "title": "数字资产量化交易团队招聘全职远程工作运营助理",
+      "url": "https://yuancheng.work/6840.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:48.077Z",
+      "title": "Territory Manager (Limestone Coast)",
+      "url": "https://jobicy.com/jobs/157051-territory-manager-limestone-coast",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:49.595Z",
+      "title": "Business Development Executive (Shepparton)",
+      "url": "https://jobicy.com/jobs/157044-business-development-executive-shepparton",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:51.124Z",
+      "title": "Territory Manager (Bourke, and surrounds)",
+      "url": "https://jobicy.com/jobs/157049-territory-manager-bourke-and-surrounds",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:52.656Z",
+      "title": "Safety Engineer (Backend Leaning)",
+      "url": "https://jobicy.com/jobs/157048-safety-engineer-backend-leaning",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:54.206Z",
+      "title": "Financial Accounting Manager",
+      "url": "https://jobicy.com/jobs/157046-financial-accounting-manager",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:55.747Z",
+      "title": "B2B Marketing - Singapore & NE Asia",
+      "url": "https://jobicy.com/jobs/157052-b2b-marketing-singapore-ne-asia",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T09:44:57.354Z",
+      "title": "Enterprise Account Executive - Japan",
+      "url": "https://jobicy.com/jobs/157050-enterprise-account-executive-japan",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:44:58.873Z",
+      "title": "Enterprise Key Account Manager (Waikato)",
+      "url": "https://jobicy.com/jobs/157047-enterprise-key-account-manager-waikato",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:45:00.461Z",
+      "title": "Systems Architect - APAC",
+      "url": "https://jobicy.com/jobs/157045-systems-architect-apac",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-26T09:45:01.980Z",
+      "title": "Digital Experience Lead (CX)",
+      "url": "https://jobicy.com/jobs/157043-digital-experience-lead-cx",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T09:45:03.497Z",
+      "title": "Reddit: Engineering Manager, Knowledge Graph Platform",
+      "url": "https://weworkremotely.com/remote-jobs/reddit-engineering-manager-knowledge-graph-platform",
+      "source": "WWR·产品",
+      "score": 8
     }
   ]
 }
