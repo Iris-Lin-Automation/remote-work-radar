@@ -1,195 +1,6 @@
 {
-  "updatedAt": "2026-10-26T09:45:03.497Z",
+  "updatedAt": "2026-10-26T16:31:28.639Z",
   "jobs": [
-    {
-      "at": "2026-10-23T04:13:03.867Z",
-      "title": "招聘： AI 质量评估工程师",
-      "url": "https://www.v2ex.com/t/1249872",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:05.367Z",
-      "title": "招聘： 机构 BDM， C++低延迟交易系统工程师，量化策略研究员（高频交易与做市），项目经理/项目总监（PMO），财务经理，斯巴达业务负责人，资深量化风险专家（交易与对冲），资深量化交易专家（对冲策略）。",
-      "url": "https://www.v2ex.com/t/1249780",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:06.880Z",
-      "title": "SEO 增长专员（社招）",
-      "url": "https://www.v2ex.com/t/1249740",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:08.384Z",
-      "title": "[南京] SHEIN 内推：算法、 Java 后台、测试、数据/数仓、安全、架构、前端等， 20-90k。10.17 更新",
-      "url": "https://www.v2ex.com/t/1249598",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:09.896Z",
-      "title": "招远程兼职助理",
-      "url": "https://www.v2ex.com/t/1249475",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:11.403Z",
-      "title": "AI 全栈开发工程师（后端 Go 方向）",
-      "url": "https://www.v2ex.com/t/1249442",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:12.911Z",
-      "title": "[ 招聘 ] 网易—招聘 资深云计算开发工程师、资深云计算安全开发工程师 | Base 杭州",
-      "url": "https://www.v2ex.com/t/1249436",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:14.429Z",
-      "title": "[部门直招]京东国际化 · 前端开发工程师（北京/深圳 · 全职）",
-      "url": "https://www.v2ex.com/t/1249382",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:15.938Z",
-      "title": "[珠海横琴] 博士后 1 名，博士毕业 3 年内，年收入约 52 万，全职在站",
-      "url": "https://www.v2ex.com/t/1249373",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:17.704Z",
-      "title": "「北京」高级信息安全工程师（Senior Security Engineer）",
-      "url": "https://www.v2ex.com/t/1249364",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:19.253Z",
-      "title": "[募集] 日本东京 IT 会社 GSD|招 PM/PL、软件开发工程师，正社员/个人事业主，可协助工签",
-      "url": "https://www.v2ex.com/t/1249338",
-      "source": "V2EX·招聘",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:20.767Z",
-      "title": "寻找做过英语单词词库产品的开发者｜高中单词集训系统｜Web端+微信小程序+后台｜可二开/源码买断",
-      "url": "https://eleduck.com/posts/z1fBZB",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:22.268Z",
-      "title": "海外日常】清迈大学留学生：12年后端，最近在折腾 AI Agent 与 RAG 的一些心得",
-      "url": "https://eleduck.com/posts/qzf1v8",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:23.897Z",
-      "title": "后端开发工程师（海外远程) 10-15k",
-      "url": "https://eleduck.com/posts/QZfL2p",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:25.402Z",
-      "title": "现有软件项目需要远程兼职UI设计和PM",
-      "url": "https://eleduck.com/posts/Ygf2kE",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:26.910Z",
-      "title": "新加坡汽车公司招聘巴西HRM",
-      "url": "https://eleduck.com/posts/5Bf174",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:28.433Z",
-      "title": "[志愿搬运/远程]Animator / Illustrator 动画师/Video Editor 纪录片 / 电影剪辑师/Bilibili 增长与数据分析顾问",
-      "url": "https://eleduck.com/posts/pqfAgR",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:29.937Z",
-      "title": "免费内推｜海外商务总监（全远程办公，签订合同，欧元发薪，底薪根据能力谈➕绩效）",
-      "url": "https://eleduck.com/posts/OGf1wy",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:31.445Z",
-      "title": "web3行业招聘财务专家顾问，全程线上工作！",
-      "url": "https://eleduck.com/posts/z1fBZl",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:32.957Z",
-      "title": "跨所搬砖还赚不赚钱？30天30102个样本实测：正净利 0 次，以及你 bot 报的那个 12% 肥价差是什么",
-      "url": "https://eleduck.com/posts/QZfL20",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:34.458Z",
-      "title": "【兼职】跨境电商广告投放操盘手（Google / Meta）｜ 底薪 + 提成",
-      "url": "https://eleduck.com/posts/Ygf2k9",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:35.973Z",
-      "title": "可远程代搭飞书多维表格｜客户/线索 CRM 看板（含跟进与成交状态）",
-      "url": "https://eleduck.com/posts/a4fbLR",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:37.477Z",
-      "title": "AI摸鱼求职-boss批量投递工具",
-      "url": "https://eleduck.com/posts/x0fXAg",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:39.065Z",
-      "title": "工作室负责人",
-      "url": "https://eleduck.com/posts/K7fak4",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:40.579Z",
-      "title": "独立开发出海日记：我做了个“不联网”的加密笔记 App（附踩坑复盘）",
-      "url": "https://eleduck.com/posts/JpfV8a",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:42.096Z",
-      "title": "人事实习运营",
-      "url": "https://eleduck.com/posts/4lfR3y",
-      "source": "电鸭社区",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:13:43.600Z",
-      "title": "〖海外远程〗Union Link LLC|美国短租运营经理 Short-Term Rental Operations Manager|REMOTE|Full-time|月薪 10000 元",
-      "url": "https://eleduck.com/posts/BafloZ",
-      "source": "电鸭社区",
-      "score": null
-    },
     {
       "at": "2026-10-23T04:13:45.134Z",
       "title": "多年后端开发，想转大模型——免费出人力/接小项目换实战经验",
@@ -2100,6 +1911,195 @@
       "url": "https://weworkremotely.com/remote-jobs/reddit-engineering-manager-knowledge-graph-platform",
       "source": "WWR·产品",
       "score": 8
+    },
+    {
+      "at": "2026-10-26T16:30:48.004Z",
+      "title": "游戏平台运营",
+      "url": "https://www.v2ex.com/t/1252047",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:30:49.537Z",
+      "title": "游戏公司远程直招 服务端/买量策划/数据运营/运营/双语客服/平台运营/发行负责/SEO 增长/AI 视频/素材/影游导演/AIGC 影像/核心导演/短剧编剧/短剧剪辑/创作者运营/产品数据/产品经理/游戏 UI/特效",
+      "url": "https://www.v2ex.com/t/1252042",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:30:51.069Z",
+      "title": "[广州/西安][外包][汇丰项目] 帮 HR 找英语好的 Java 开发， Senior DevRel 方向（不支持长期远程）",
+      "url": "https://www.v2ex.com/t/1252035",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:30:52.592Z",
+      "title": "27届结课找实习，外贸/ToB/外企方向怎么选？求前辈建议",
+      "url": "https://eleduck.com/posts/dDfpJa",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:30:54.160Z",
+      "title": "远程兼职客户跟进助理｜女装批发｜25—35元/小时｜可用AI翻译",
+      "url": "https://eleduck.com/posts/QZfLrp",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:30:55.771Z",
+      "title": "折腾了一段时间 AI Agent，发现最麻烦的根本不是模型",
+      "url": "https://eleduck.com/posts/Ygf2lE",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:30:57.386Z",
+      "title": "Senior Solutions Architect (Singapore)",
+      "url": "https://jobicy.com/jobs/157159-senior-solutions-architect-singapore",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T16:30:58.932Z",
+      "title": "Senior Solutions Architect - Japan",
+      "url": "https://jobicy.com/jobs/157157-senior-solutions-architect-japan",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:31:00.464Z",
+      "title": "CX Technology Lead",
+      "url": "https://jobicy.com/jobs/157153-cx-technology-lead",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:31:02.028Z",
+      "title": "Senior Clinical Project Manager",
+      "url": "https://jobicy.com/jobs/157158-senior-clinical-project-manager",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:31:03.589Z",
+      "title": "Senior Professional Services Engineer, Japan",
+      "url": "https://jobicy.com/jobs/157152-senior-professional-services-engineer-japan",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:31:05.183Z",
+      "title": "Senior Accountant",
+      "url": "https://jobicy.com/jobs/157156-senior-accountant-5",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-26T16:31:06.730Z",
+      "title": "Senior Solutions Architect",
+      "url": "https://jobicy.com/jobs/157154-senior-solutions-architect-3",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:31:08.273Z",
+      "title": "CX Data Analytics and Insights Lead",
+      "url": "https://jobicy.com/jobs/157151-cx-data-analytics-and-insights-lead",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:31:09.851Z",
+      "title": "Backend Engineer, Java - Web 3 Wallet",
+      "url": "https://jobicy.com/jobs/157144-backend-engineer-java-web-3-wallet",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T16:31:11.397Z",
+      "title": "Account Executive (Korean Speaking)",
+      "url": "https://jobicy.com/jobs/157148-account-executive-korean-speaking",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T16:31:12.930Z",
+      "title": "Binance Acceleration Program - Product Data Analyst",
+      "url": "https://jobicy.com/jobs/157147-binance-acceleration-program-product-data-analyst-2",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T16:31:14.467Z",
+      "title": "Motion Designer (Permanent work from home)",
+      "url": "https://jobicy.com/jobs/157142-motion-designer-permanent-work-from-home",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-26T16:31:16.111Z",
+      "title": "Account Executive (Singapore)",
+      "url": "https://jobicy.com/jobs/157145-account-executive-singapore",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T16:31:17.647Z",
+      "title": "Manager, Client Analytics Partnerships",
+      "url": "https://jobicy.com/jobs/157087-manager-client-analytics-partnerships",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-26T16:31:19.186Z",
+      "title": "Senior Customer Success Engineer, Japan",
+      "url": "https://jobicy.com/jobs/157095-senior-customer-success-engineer-japan",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-26T16:31:20.756Z",
+      "title": "Lead Customer Advocacy Manager, APJ",
+      "url": "https://jobicy.com/jobs/157094-lead-customer-advocacy-manager-apj",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-26T16:31:22.321Z",
+      "title": "Intermediate Security Engineer, Security Incident Response Team (SIRT)",
+      "url": "https://jobicy.com/jobs/157093-intermediate-security-engineer-security-incident-response-team-sirt",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-26T16:31:23.862Z",
+      "title": "Senior Customer Success Manager - APJ",
+      "url": "https://jobicy.com/jobs/157091-senior-customer-success-manager-apj",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-26T16:31:25.435Z",
+      "title": "Field CTO",
+      "url": "https://jobicy.com/jobs/157090-field-cto-2",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T16:31:26.999Z",
+      "title": "Enterprise Account Executive",
+      "url": "https://jobicy.com/jobs/157088-enterprise-account-executive-28",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-26T16:31:28.639Z",
+      "title": "Senior Manager of Success Architects",
+      "url": "https://jobicy.com/jobs/157096-senior-manager-of-success-architects",
+      "source": "Jobicy·APAC",
+      "score": 20
     }
   ]
 }
