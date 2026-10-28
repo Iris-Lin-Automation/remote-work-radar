@@ -1,111 +1,6 @@
 {
-  "updatedAt": "2026-10-28T00:59:27.887Z",
+  "updatedAt": "2026-10-28T07:56:25.727Z",
   "jobs": [
-    {
-      "at": "2026-10-23T04:15:34.887Z",
-      "title": "Account Manager - Japan",
-      "url": "https://jobicy.com/jobs/143813-customer-success-japan",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:36.411Z",
-      "title": "AI Chatbot Product Manager",
-      "url": "https://jobicy.com/jobs/147145-ai-chatbot-product-manager",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:37.919Z",
-      "title": "C++/Rust Graphics and Windowing System Software Engineer - Mir",
-      "url": "https://jobicy.com/jobs/151197-c-rust-graphics-and-windowing-system-software-engineer-mir",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:39.512Z",
-      "title": "Embedded Devices Software Solution Sales Manager (APAC)",
-      "url": "https://jobicy.com/jobs/151196-embedded-devices-software-solution-sales-manager-apac",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:41.019Z",
-      "title": "Senior Web Security Engineer, Browser Platform",
-      "url": "https://jobicy.com/jobs/151281-senior-web-security-engineer-browser-platform",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:42.602Z",
-      "title": "Solutions Engineer, Singapore",
-      "url": "https://jobicy.com/jobs/156253-solutions-engineer-singapore",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:44.131Z",
-      "title": "Materials Sourcing Manager, Wool",
-      "url": "https://jobicy.com/jobs/156251-materials-sourcing-manager-wool",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:45.795Z",
-      "title": "Database Support Engineer (Japanese Speaking)",
-      "url": "https://jobicy.com/jobs/156249-database-support-engineer-japanese-speaking",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:47.300Z",
-      "title": "Product Support Engineer - APAC",
-      "url": "https://jobicy.com/jobs/156252-product-support-engineer-apac",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:48.801Z",
-      "title": "Regional Sales Director, Singapore",
-      "url": "https://jobicy.com/jobs/156248-regional-sales-director-singapore",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:50.319Z",
-      "title": "Technical Account Manager",
-      "url": "https://jobicy.com/jobs/156247-technical-account-manager-7",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:51.823Z",
-      "title": "Enterprise Solutions Consultant, ANZ",
-      "url": "https://jobicy.com/jobs/156246-enterprise-solutions-consultant-anz",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:53.333Z",
-      "title": "Accounts Receivable Clerk",
-      "url": "https://jobicy.com/jobs/156250-accounts-receivable-clerk-2",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:54.852Z",
-      "title": "Manager, Product Support - APAC",
-      "url": "https://jobicy.com/jobs/156244-manager-product-support-apac",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:15:56.355Z",
-      "title": "Commercial Account Manager",
-      "url": "https://jobicy.com/jobs/156211-commercial-account-manager-2",
-      "source": "Jobicy·APAC",
-      "score": null
-    },
     {
       "at": "2026-10-23T04:15:57.865Z",
       "title": "Enterprise Account Executive - Singapore",
@@ -2100,6 +1995,111 @@
       "url": "https://jobicy.com/jobs/157441-channel-account-manager-3",
       "source": "Jobicy·APAC",
       "score": 12
+    },
+    {
+      "at": "2026-10-28T07:56:04.531Z",
+      "title": "AI 全栈工程师（Agent 方向）",
+      "url": "https://www.v2ex.com/t/1252554",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:06.036Z",
+      "title": "杭州 AI 岗位招聘",
+      "url": "https://www.v2ex.com/t/1252526",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:07.538Z",
+      "title": "remote 高级前端开发工程师（Vue3） 20-30K 工作经验： 9 年及以上（40 以内）",
+      "url": "https://www.v2ex.com/t/1252502",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:09.051Z",
+      "title": "[杭州][行业头部互联网] 招聘 AI Agent 算法相关工程师， Agentic、安全、虚拟陪伴相关",
+      "url": "https://www.v2ex.com/t/1252499",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:10.570Z",
+      "title": "[广州番禺 Java 岗 HC 多] SHEIN 商品中心社招内推：高级 Java 工程师 ×5、供应链算法工程师 ×2、测试 ×1",
+      "url": "https://www.v2ex.com/t/1252484",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:12.090Z",
+      "title": "[海外] [远程] 薪资 40 万-80 万 RMB/年, AI 数据采集/逆向/爬虫工程师， Golang",
+      "url": "https://www.v2ex.com/t/1252471",
+      "source": "V2EX·招聘",
+      "score": 6
+    },
+    {
+      "at": "2026-10-28T07:56:13.598Z",
+      "title": "寻弱电设计工程师",
+      "url": "https://www.v2ex.com/t/1252412",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:15.112Z",
+      "title": "急~12K-15K招聘国内远程 海外社媒运营（需英文口语、FB经验）",
+      "url": "https://eleduck.com/posts/OGf1KW",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:16.634Z",
+      "title": "付费求教！小程序迁移虚拟支付后还能分账吗？",
+      "url": "https://eleduck.com/posts/rdf3gv",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:18.159Z",
+      "title": "给远程团队搭了一套 AI 工作台：一个入口，五个模型，账单全透明",
+      "url": "https://eleduck.com/posts/2LfW38",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:19.678Z",
+      "title": "招聘-厦门市某外企外包，要求电气相关专业",
+      "url": "https://eleduck.com/posts/4lfRl8",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:21.197Z",
+      "title": "大一新生目前应该怎么规划",
+      "url": "https://eleduck.com/posts/kRfZYL",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:22.698Z",
+      "title": "Storyblok: Senior Database Reliability Engineer I - Germany/Austria/UK",
+      "url": "https://weworkremotely.com/remote-jobs/storyblok-senior-database-reliability-engineer-i-germany-austria-uk",
+      "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-28T07:56:24.218Z",
+      "title": "Carrot: Product Design Lead",
+      "url": "https://weworkremotely.com/remote-jobs/carrot-product-design-lead",
+      "source": "WWR·产品",
+      "score": 12
+    },
+    {
+      "at": "2026-10-28T07:56:25.727Z",
+      "title": "Collibra: Manager, Professional Services Federal",
+      "url": "https://weworkremotely.com/remote-jobs/collibra-manager-professional-services-federal",
+      "source": "WWR·产品",
+      "score": 0
     }
   ]
 }
