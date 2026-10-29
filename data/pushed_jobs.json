@@ -1,97 +1,6 @@
 {
-  "updatedAt": "2026-10-29T08:04:27.522Z",
+  "updatedAt": "2026-10-29T16:37:03.249Z",
   "jobs": [
-    {
-      "at": "2026-10-23T22:54:37.599Z",
-      "title": "Aquifer招聘全职远程工作开发经理",
-      "url": "https://yuancheng.work/6858.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T22:54:39.105Z",
-      "title": "Discord招聘全职远程工作工程经理，平台安全",
-      "url": "https://yuancheng.work/6855.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T22:54:40.615Z",
-      "title": "Storyblok招聘全职远程工作Salesforce 负责人",
-      "url": "https://yuancheng.work/6857.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T22:54:42.127Z",
-      "title": "OnTheGoSystems招聘全职远程工作内容与编辑主管",
-      "url": "https://yuancheng.work/6859.html",
-      "source": "远程.work·市场",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T22:54:43.649Z",
-      "title": "Storyblok招聘全职远程工作合作伙伴经理",
-      "url": "https://yuancheng.work/6856.html",
-      "source": "远程.work·销售",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T22:54:45.164Z",
-      "title": "Ping Identity招聘全职远程工作渠道客户经理",
-      "url": "https://yuancheng.work/6854.html",
-      "source": "远程.work·销售",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T22:54:46.666Z",
-      "title": "T-Maxx International招聘兼职远程工作德语法语语音录制贡献者",
-      "url": "https://yuancheng.work/6862.html",
-      "source": "远程.work·其他",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T22:54:48.182Z",
-      "title": "Business Development Associate (Consumer)",
-      "url": "https://jobicy.com/jobs/156619-business-development-associate-consumer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T22:54:49.688Z",
-      "title": "Key Account Manager",
-      "url": "https://jobicy.com/jobs/156609-key-account-manager-2",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T03:24:16.792Z",
-      "title": "实测了一圈国内远程接单平台：哪些还能用、哪些已经关了（2026.10）",
-      "url": "https://eleduck.com/posts/4lfRXd",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T08:40:27.390Z",
-      "title": "SEO 专员",
-      "url": "https://www.v2ex.com/t/1251482",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T08:40:28.891Z",
-      "title": "SEO专员",
-      "url": "https://eleduck.com/posts/x0fXJO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T08:40:30.391Z",
-      "title": "Site Reliability / Gitops Engineer",
-      "url": "https://jobicy.com/jobs/149553-site-reliability-gitops-engineer",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-10-24T08:40:31.882Z",
       "title": "Software Engineer - App Stores",
@@ -2099,6 +2008,97 @@
       "title": "ZoomInfo Technologies LLC: Principal Applied AI Engineer - Entity Agents",
       "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-applied-ai-engineer-entity-agents",
       "source": "WWR·产品",
+      "score": 12
+    },
+    {
+      "at": "2026-10-29T16:36:44.940Z",
+      "title": "大佬们看看我这简历怎么优化",
+      "url": "https://www.v2ex.com/t/1252960",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:46.460Z",
+      "title": "招聘： Rust 工程师（量化交易系统）",
+      "url": "https://www.v2ex.com/t/1252953",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:47.980Z",
+      "title": "[上海] 外企 Kong 核心研发扩招｜聊聊 RustChinaConf 2026 参会体会，顺带为 Kong 核心研发团队招募 4 位网络 AI 工程师 (AI/Rust /Lua /Gateway/网络系统)",
+      "url": "https://www.v2ex.com/t/1252914",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:49.508Z",
+      "title": "个人号、客户号来回切，分享一个免费的 Claude 环境管理工具",
+      "url": "https://eleduck.com/posts/wwfLad",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:51.032Z",
+      "title": "游戏技术大牛合伙已有Demo",
+      "url": "https://eleduck.com/posts/5Bf1lm",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:52.564Z",
+      "title": "GAP5个月了，刚在gpt上问remote的工作找到这，和大家交流一下",
+      "url": "https://eleduck.com/posts/74f8Wq",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:54.101Z",
+      "title": "【英文办公】兼职8k-12k/月｜居家办公｜后端与 DevOps 工程师（NestJS）",
+      "url": "https://eleduck.com/posts/Ygf2WO",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:55.618Z",
+      "title": "我在自己电脑上造了个\"AI 员工\"：本地 Agent 工作台的架构设计和踩坑记录",
+      "url": "https://eleduck.com/posts/rdf3zv",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:57.159Z",
+      "title": "[兼职] 招募IT方向课程作者（远程/60%高分成）",
+      "url": "https://eleduck.com/posts/b2fANv",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:36:58.684Z",
+      "title": "【已结束】招聘｜兼职全栈工程师｜AI 聊天",
+      "url": "https://eleduck.com/posts/a4fbKo",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:37:00.224Z",
+      "title": "sheniandaji2026招聘全职/兼职远程工作高级产品经理",
+      "url": "https://yuancheng.work/6784.html",
+      "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:37:01.732Z",
+      "title": "Senior Staff Accountant",
+      "url": "https://jobicy.com/jobs/157733-senior-staff-accountant",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T16:37:03.249Z",
+      "title": "Enterprise Account Executive - China",
+      "url": "https://jobicy.com/jobs/157729-enterprise-account-executive-china-2",
+      "source": "Jobicy·APAC",
       "score": 12
     }
   ]
