@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-10-28T20:47:22.743Z",
+  "updatedAt": "2026-10-29T01:33:42.992Z",
   "jobs": [
-    {
-      "at": "2026-10-23T04:16:30.370Z",
-      "title": "Clover Health: Data Analyst, Clinical Data Effectiveness",
-      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-      "source": "WWR·产品",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:16:31.912Z",
-      "title": "Legion: Principal Product Manager, Agentic AI",
-      "url": "https://weworkremotely.com/remote-jobs/legion-principal-product-manager-agentic-ai",
-      "source": "WWR·产品",
-      "score": null
-    },
     {
       "at": "2026-10-23T04:16:33.456Z",
       "title": "Customer.io: Global Controller",
@@ -2099,6 +2085,20 @@
       "title": "ElevenMusic - Content Creator & Strategist",
       "url": "https://jobicy.com/jobs/157536-elevenmusic-content-creator-strategist",
       "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T01:33:41.480Z",
+      "title": "几个AI Agent一起开发项目，为什么每个都说完成了，系统却跑不起来？",
+      "url": "https://eleduck.com/posts/gYfYoy",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T01:33:42.992Z",
+      "title": "Supabase招聘全职远程工作FinOps 数据工程师",
+      "url": "https://yuancheng.work/6985.html",
+      "source": "远程.work·开发",
       "score": 0
     }
   ]
