@@ -1,76 +1,6 @@
 {
-  "updatedAt": "2026-10-29T16:37:03.249Z",
+  "updatedAt": "2026-10-29T22:28:06.487Z",
   "jobs": [
-    {
-      "at": "2026-10-24T08:40:31.882Z",
-      "title": "Software Engineer - App Stores",
-      "url": "https://jobicy.com/jobs/149552-software-engineer-app-stores",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-24T08:40:33.384Z",
-      "title": "Performance Engineer - Open Source",
-      "url": "https://jobicy.com/jobs/149551-performance-engineer-open-source",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-24T08:40:34.901Z",
-      "title": "Enterprise Project Manager",
-      "url": "https://jobicy.com/jobs/149549-enterprise-project-manager",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-24T08:40:36.387Z",
-      "title": "Cloud Professional Services Manager",
-      "url": "https://jobicy.com/jobs/149548-cloud-professional-services-manager",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-24T08:40:37.873Z",
-      "title": "Cribl: Director, Product Management (Security)",
-      "url": "https://weworkremotely.com/remote-jobs/cribl-director-product-management-security",
-      "source": "WWR·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T08:40:39.380Z",
-      "title": "Gusto, Inc.: Payment Operations Analyst",
-      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-payment-operations-analyst",
-      "source": "WWR·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T13:50:15.860Z",
-      "title": "[全职 / AI 公司] 后端开发工程师｜招募像姚顺雨一样，有技术追求的工程师",
-      "url": "https://www.v2ex.com/t/1251531",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T13:50:17.357Z",
-      "title": "[全职 / AI 公司] 大数据开发工程师｜招募像姚顺雨一样，有技术追求的工程师",
-      "url": "https://www.v2ex.com/t/1251510",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T13:50:18.857Z",
-      "title": "招 1 名全栈工程师（AI 伴侣方向）",
-      "url": "https://www.v2ex.com/t/1251506",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T13:50:20.339Z",
-      "title": "一个 PHP 程序员，为什么要做自己的源码平台？",
-      "url": "https://eleduck.com/posts/rdf3Eq",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-10-24T17:13:00.305Z",
       "title": "App 开发工程师",
@@ -2100,6 +2030,76 @@
       "url": "https://jobicy.com/jobs/157729-enterprise-account-executive-china-2",
       "source": "Jobicy·APAC",
       "score": 12
+    },
+    {
+      "at": "2026-10-29T22:27:52.464Z",
+      "title": "AI 写代码越来越快，程序员以后靠什么拿高工资？",
+      "url": "https://eleduck.com/posts/0XfxRB",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T22:27:54.021Z",
+      "title": "Senior Strategic Account Executive - SEA",
+      "url": "https://jobicy.com/jobs/157922-senior-strategic-account-executive-sea",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-29T22:27:55.562Z",
+      "title": "Territory Manager (Traralgon)",
+      "url": "https://jobicy.com/jobs/157921-territory-manager-traralgon",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T22:27:57.107Z",
+      "title": "Account Executive (Melbourne)",
+      "url": "https://jobicy.com/jobs/157920-account-executive-melbourne",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-29T22:27:58.649Z",
+      "title": "Senior Manager, Customer Success",
+      "url": "https://jobicy.com/jobs/157919-senior-manager-customer-success-2",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-29T22:28:00.200Z",
+      "title": "Territory Manager (Wagga Wagga)",
+      "url": "https://jobicy.com/jobs/157918-territory-manager-wagga-wagga",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T22:28:01.823Z",
+      "title": "Senior Pre-Sales Solutions Engineer (Singapore)",
+      "url": "https://jobicy.com/jobs/157917-senior-pre-sales-solutions-engineer-singapore",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-29T22:28:03.370Z",
+      "title": "Presales Architect",
+      "url": "https://jobicy.com/jobs/157916-presales-architect",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-29T22:28:04.939Z",
+      "title": "Sales Development Representative, APAC",
+      "url": "https://jobicy.com/jobs/157915-sales-development-representative-apac",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-29T22:28:06.487Z",
+      "title": "Public Sector Partnerships - Australia",
+      "url": "https://jobicy.com/jobs/157913-public-sector-partnerships-australia",
+      "source": "Jobicy·APAC",
+      "score": 0
     }
   ]
 }
