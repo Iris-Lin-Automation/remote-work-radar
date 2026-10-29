@@ -1,230 +1,6 @@
 {
-  "updatedAt": "2026-10-29T01:33:42.992Z",
+  "updatedAt": "2026-10-29T08:04:27.522Z",
   "jobs": [
-    {
-      "at": "2026-10-23T04:16:33.456Z",
-      "title": "Customer.io: Global Controller",
-      "url": "https://weworkremotely.com/remote-jobs/customer-io-global-controller",
-      "source": "WWR·产品",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:16:34.963Z",
-      "title": "PagerDuty: Senior Solutions Consultant",
-      "url": "https://weworkremotely.com/remote-jobs/pagerduty-senior-solutions-consultant",
-      "source": "WWR·产品",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:16:36.473Z",
-      "title": "EBANX: [Talent pool] Key Account Managment Specialist",
-      "url": "https://weworkremotely.com/remote-jobs/ebanx-talent-pool-key-account-managment-specialist",
-      "source": "WWR·产品",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T04:16:37.991Z",
-      "title": "Fivetran : Enterprise Sales Director",
-      "url": "https://weworkremotely.com/remote-jobs/fivetran-enterprise-sales-director",
-      "source": "WWR·产品",
-      "score": null
-    },
-    {
-      "at": "2026-10-23T09:07:05.744Z",
-      "title": "程序员远程工作真的靠谱？",
-      "url": "https://www.v2ex.com/t/1251220",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:07.304Z",
-      "title": "Java 后端接单｜10 年经验｜整单交付：管理系统 / 小程序后端 / API 对接",
-      "url": "https://eleduck.com/posts/98f9Qv",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:08.816Z",
-      "title": "快速成长启野需要【职位】反爬虫安全专家",
-      "url": "https://eleduck.com/posts/W9fxaB",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:10.334Z",
-      "title": "VPS 专属 Telegram 守护bot，开放少量部署名额",
-      "url": "https://eleduck.com/posts/3EfRrn",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:11.838Z",
-      "title": "制造业什么岗位可以远程办公呢？",
-      "url": "https://eleduck.com/posts/ZXfBJ7",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:13.376Z",
-      "title": "以独立开发的方式做了一个 AI 工作台，嵌入了多个 AI 工具项目",
-      "url": "https://eleduck.com/posts/1nfO9y",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:14.883Z",
-      "title": "2B企业 寻找阿里国际站店铺装修设计师",
-      "url": "https://eleduck.com/posts/GzfR7D",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:16.426Z",
-      "title": "全程远程办公（可居家）｜全职｜外贸｜贸易",
-      "url": "https://eleduck.com/posts/0Xfxk9",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:17.933Z",
-      "title": "自学 Dify + Ollama，做了一个电商客服 Demo，想听听大家的改进建议",
-      "url": "https://eleduck.com/posts/5Bf17b",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T09:07:19.483Z",
-      "title": "一个被优化的人，如何用\"七秒鱼\"这个品牌重新出发？",
-      "url": "https://eleduck.com/posts/74f8qp",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T14:40:49.173Z",
-      "title": "🎬 招 43 个坑 ｜ AI 短剧 × 新媒体 × 技术",
-      "url": "https://www.v2ex.com/t/1251354",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T14:40:50.696Z",
-      "title": "[全职 / AI 公司] 前端工程师｜招募像姚顺雨一样，有技术追求的工程师",
-      "url": "https://www.v2ex.com/t/1251346",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T14:40:52.232Z",
-      "title": "东京 IT 招聘： PM/PL/软件工程师，日语 N2 起，可协助办理签证",
-      "url": "https://www.v2ex.com/t/1251326",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T14:40:53.758Z",
-      "title": "技术人多看看普通人的实在需求",
-      "url": "https://eleduck.com/posts/njfDLV",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T14:40:55.291Z",
-      "title": "找AI服务商招商顾问合伙人，纯佣金合作",
-      "url": "https://eleduck.com/posts/N0fnyp",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T14:40:56.856Z",
-      "title": "美甲产品采购专员（广东 · 远程兼职）",
-      "url": "https://eleduck.com/posts/VvfaAO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T14:40:58.388Z",
-      "title": "Business Services Team Manager",
-      "url": "https://jobicy.com/jobs/156580-business-services-team-manager",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:00.129Z",
-      "title": "Performance Engineer - Performance Analysis & Tuning",
-      "url": "https://jobicy.com/jobs/156581-performance-engineer-performance-analysis-tuning",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:01.678Z",
-      "title": "Performance Engineer - Benchmarking",
-      "url": "https://jobicy.com/jobs/156582-performance-engineer-benchmarking",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:03.224Z",
-      "title": "Business Development Representative",
-      "url": "https://jobicy.com/jobs/156578-business-development-representative-20",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:04.805Z",
-      "title": "Supalite Engineer",
-      "url": "https://jobicy.com/jobs/156576-supalite-engineer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:06.347Z",
-      "title": "Cloud Platform Engineer",
-      "url": "https://jobicy.com/jobs/156583-cloud-platform-engineer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:07.877Z",
-      "title": "Release Engineer",
-      "url": "https://jobicy.com/jobs/156579-release-engineer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:09.414Z",
-      "title": "Early Childhood Teacher (PT)",
-      "url": "https://jobicy.com/jobs/156577-early-childhood-teacher-pt-3",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:10.958Z",
-      "title": "Early Childhood Teacher",
-      "url": "https://jobicy.com/jobs/156575-early-childhood-teacher-2",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-23T14:41:12.498Z",
-      "title": "Influencer Outreach Specialist",
-      "url": "https://jobicy.com/jobs/156481-influencer-outreach-specialist",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-23T19:47:32.339Z",
-      "title": "Adoption Strategist - APAC",
-      "url": "https://jobicy.com/jobs/156604-adoption-strategist-apac",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-23T19:47:33.878Z",
-      "title": "Committee for Children: Senior Product Manager - Edtech Innovation",
-      "url": "https://weworkremotely.com/remote-jobs/committee-for-children-senior-product-manager-edtech-innovation",
-      "source": "WWR·产品",
-      "score": 0
-    },
     {
       "at": "2026-10-23T22:54:37.599Z",
       "title": "Aquifer招聘全职远程工作开发经理",
@@ -2100,6 +1876,230 @@
       "url": "https://yuancheng.work/6985.html",
       "source": "远程.work·开发",
       "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:41.043Z",
+      "title": "ai 应用创业公司招聘-北京",
+      "url": "https://www.v2ex.com/t/1252876",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:42.531Z",
+      "title": "Base 厦门，招后端工程师主 Java 。薪资 12-16K。有没有比较 Geek、动手能力强的小伙子。",
+      "url": "https://www.v2ex.com/t/1252864",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:44.041Z",
+      "title": "上午刚给自己项目开源，下午就收到 hr 裁员，卧槽了，我还没发育完呢",
+      "url": "https://eleduck.com/posts/x0fXgN",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:45.529Z",
+      "title": "远程岗都在要求会 AI Coding（Cursor/Claude），这是真需求还是跟风？",
+      "url": "https://eleduck.com/posts/JpfVAV",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:47.017Z",
+      "title": "头部平台招链上数据开发工程师/EVM交易路由工程师 （Go、Solidity）¥35k-70k",
+      "url": "https://eleduck.com/posts/oQfRwr",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:48.502Z",
+      "title": "2026年，AI编程已经这么强了，个人开发者还有必要学传统编程吗？",
+      "url": "https://eleduck.com/posts/BaflRG",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:50.189Z",
+      "title": "有时候我就在想，我到底是在追求自己想要的人生，还是一直在逃离那个我无法接受的、普通的自己？",
+      "url": "https://eleduck.com/posts/laf5K3",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:51.682Z",
+      "title": "【企业直招/全职远程】25K-50K｜测试开发 · SRE · HRBP｜出海金融科技平台",
+      "url": "https://eleduck.com/posts/L5f0Wv",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:53.216Z",
+      "title": "【远程外包／预算2000元】武侠RPG一套武学＋获取支线，游戏内完整验收",
+      "url": "https://eleduck.com/posts/njfDvn",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:54.696Z",
+      "title": "Territory Manager (Northland)",
+      "url": "https://jobicy.com/jobs/157717-territory-manager-northland",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:56.207Z",
+      "title": "Binance Accelerator Program- Monitorship",
+      "url": "https://jobicy.com/jobs/157712-binance-accelerator-program-monitorship",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-29T08:03:57.688Z",
+      "title": "Territory Manager (Murray & Mallee)",
+      "url": "https://jobicy.com/jobs/157715-territory-manager-murray-mallee",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:03:59.172Z",
+      "title": "Territory Manager (North Canterbury)",
+      "url": "https://jobicy.com/jobs/157713-territory-manager-north-canterbury",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:00.659Z",
+      "title": "Binance Accelerator Program - Marketing (South East Asia)",
+      "url": "https://jobicy.com/jobs/157710-binance-accelerator-program-marketing-south-east-asia",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:02.162Z",
+      "title": "Binance Accelerator Program - Events",
+      "url": "https://jobicy.com/jobs/157704-binance-accelerator-program-events",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-29T08:04:03.647Z",
+      "title": "Product Specialist, Agriculture - Australia",
+      "url": "https://jobicy.com/jobs/157709-product-specialist-agriculture-australia",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:05.139Z",
+      "title": "Enterprise Key Account Manager (Southland)",
+      "url": "https://jobicy.com/jobs/157707-enterprise-key-account-manager-southland",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:06.635Z",
+      "title": "Business Development Executive (North Canterbury)",
+      "url": "https://jobicy.com/jobs/157705-business-development-executive-north-canterbury",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:08.121Z",
+      "title": "Account Manager (Northern Southland)",
+      "url": "https://jobicy.com/jobs/157703-account-manager-northern-southland",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:09.621Z",
+      "title": "Binance Accelerator Program - Data Scientist (User Growth)",
+      "url": "https://jobicy.com/jobs/157702-binance-accelerator-program-data-scientist-user-growth",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-29T08:04:11.103Z",
+      "title": "Binance Accelerator Program - Data Scientist (Recommendation/Square Community)",
+      "url": "https://jobicy.com/jobs/157700-binance-accelerator-program-data-scientist-recommendation-square-community",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-29T08:04:12.593Z",
+      "title": "Binance Accelerator Program - Data Scientist (LLM & Trading)",
+      "url": "https://jobicy.com/jobs/157697-binance-accelerator-program-data-scientist-llm-trading",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-29T08:04:14.101Z",
+      "title": "Regional Sales Manager (Lower North Island, Dairy)",
+      "url": "https://jobicy.com/jobs/157701-regional-sales-manager-lower-north-island-dairy",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:15.589Z",
+      "title": "Territory Manager (Roma)",
+      "url": "https://jobicy.com/jobs/157699-territory-manager-roma",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:17.082Z",
+      "title": "Accountant (Permanent work from home)",
+      "url": "https://jobicy.com/jobs/157698-accountant-permanent-work-from-home",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-29T08:04:18.574Z",
+      "title": "Renewal Specialist, Services Sales - APAC",
+      "url": "https://jobicy.com/jobs/157696-renewal-specialist-services-sales-apac",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-29T08:04:20.062Z",
+      "title": "Sr Customer Success Manager",
+      "url": "https://jobicy.com/jobs/157695-sr-customer-success-manager-8",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-29T08:04:21.556Z",
+      "title": "Enterprise Sales Manager (NSW)",
+      "url": "https://jobicy.com/jobs/157694-enterprise-sales-manager-nsw",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:23.050Z",
+      "title": "Junior Accountant (Permanent work from home)",
+      "url": "https://jobicy.com/jobs/157693-junior-accountant-permanent-work-from-home",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-29T08:04:24.537Z",
+      "title": "Typeform: Senior AI Engineer - EU",
+      "url": "https://weworkremotely.com/remote-jobs/typeform-senior-ai-engineer-eu",
+      "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:26.033Z",
+      "title": "Typeform: Senior AI Engineer - US",
+      "url": "https://weworkremotely.com/remote-jobs/typeform-senior-ai-engineer-us",
+      "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-29T08:04:27.522Z",
+      "title": "ZoomInfo Technologies LLC: Principal Applied AI Engineer - Entity Agents",
+      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-applied-ai-engineer-entity-agents",
+      "source": "WWR·产品",
+      "score": 12
     }
   ]
 }
