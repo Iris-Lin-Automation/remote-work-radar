@@ -1,76 +1,6 @@
 {
-  "updatedAt": "2026-10-29T22:28:06.487Z",
+  "updatedAt": "2026-10-30T04:30:38.756Z",
   "jobs": [
-    {
-      "at": "2026-10-24T17:13:00.305Z",
-      "title": "App 开发工程师",
-      "url": "https://www.v2ex.com/t/1251580",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T17:13:01.846Z",
-      "title": "给一家保险代理公司做了两个月业务系统，甲方最在意的不是功能",
-      "url": "https://eleduck.com/posts/z1fB1B",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T17:13:03.384Z",
-      "title": "独立接单半年，我把作品集从\"截图堆\"改成了\"能点开看的东西\"",
-      "url": "https://eleduck.com/posts/qzf1Z8",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T17:13:04.913Z",
-      "title": "一个人接单，\"接单之后\"那堆事，我做了个工具，想请几位帮忙试试",
-      "url": "https://eleduck.com/posts/QZfLbp",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-24T17:13:06.443Z",
-      "title": "Enterprise Account Executive - South Korea",
-      "url": "https://jobicy.com/jobs/156751-enterprise-account-executive-south-korea",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-24T17:13:07.974Z",
-      "title": "National Business Development Manager - Fire & Life Safety products (Sydney or Melbourne)",
-      "url": "https://jobicy.com/jobs/156750-national-business-development-manager-fire-life-safety-products-sydney-or-melbourne",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-24T17:13:09.495Z",
-      "title": "Contract Talent Acquisition Sourcer, Sales (APJ)",
-      "url": "https://jobicy.com/jobs/156747-contract-talent-acquisition-sourcer-sales-apj",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-24T17:13:11.020Z",
-      "title": "Country Manager (Bangkok, Thailand)",
-      "url": "https://jobicy.com/jobs/156746-country-manager-bangkok-thailand",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-24T17:13:12.546Z",
-      "title": "Network Engineer",
-      "url": "https://jobicy.com/jobs/156737-network-engineer-2",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-24T17:13:14.071Z",
-      "title": "Senior Product Manager, Ad Monetization",
-      "url": "https://jobicy.com/jobs/156738-senior-product-manager-ad-monetization",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
     {
       "at": "2026-10-24T17:13:15.593Z",
       "title": "AP/AR Lead",
@@ -2099,6 +2029,76 @@
       "title": "Public Sector Partnerships - Australia",
       "url": "https://jobicy.com/jobs/157913-public-sector-partnerships-australia",
       "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:25.115Z",
+      "title": "效能督查官，运维助理，后端工程师， AI 短剧导演， AIGC 视频生成师",
+      "url": "https://www.v2ex.com/t/1253103",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:26.631Z",
+      "title": "[南京] 信息化工程师 | 信息化系统 / AI 应用研发 / Go / Python 15-25K 无偿内推",
+      "url": "https://www.v2ex.com/t/1253074",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:28.134Z",
+      "title": "熟人合作项目复盘",
+      "url": "https://eleduck.com/posts/GzfRgk",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:29.646Z",
+      "title": "今年秋招好难啊，软件应届生求大佬指点",
+      "url": "https://eleduck.com/posts/0XfxRp",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:31.177Z",
+      "title": "【长期兼职｜东莞优先】跨境社媒摄影剪辑，审美优先，时间自由",
+      "url": "https://eleduck.com/posts/wwfLa5",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:32.706Z",
+      "title": "【英文办公】兼职8k-12k/月｜居家办公｜资深 AI 工程师（大模型 / RAG / 中国本地化）",
+      "url": "https://eleduck.com/posts/5Bf1lk",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:34.211Z",
+      "title": "找不到工作也找不到活干有点恼火",
+      "url": "https://eleduck.com/posts/pqfAN3",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:35.725Z",
+      "title": "14年清结算老兵：我是如何用DeepSeek+Python，独立开发出一套自动化对账工具的？",
+      "url": "https://eleduck.com/posts/z1fBxd",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:37.240Z",
+      "title": "新加坡三维扫描服务商行/月薪一万、招线上兼职文员",
+      "url": "https://eleduck.com/posts/rdf3BB",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T04:30:38.756Z",
+      "title": "虎牙直播间采集",
+      "url": "https://eleduck.com/posts/GzfRg9",
+      "source": "电鸭社区",
       "score": 0
     }
   ]
