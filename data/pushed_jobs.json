@@ -1,90 +1,6 @@
 {
-  "updatedAt": "2026-10-30T18:59:52.859Z",
+  "updatedAt": "2026-10-30T23:28:31.423Z",
   "jobs": [
-    {
-      "at": "2026-10-25T00:00:37.508Z",
-      "title": "Talent Acquisition Partner - Contract",
-      "url": "https://jobicy.com/jobs/156836-talent-acquisition-partner-contract",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T00:00:39.019Z",
-      "title": "Senior Product Manager - GenAI",
-      "url": "https://jobicy.com/jobs/156821-senior-product-manager-genai",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T04:28:22.290Z",
-      "title": "[全职 / AI 公司] AI 应用开发工程师｜招募像姚顺雨一样，有技术追求的工程师",
-      "url": "https://www.v2ex.com/t/1251611",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T04:28:23.840Z",
-      "title": "OpenAI把最强模型关小黑屋了：网线一拔，AI还怎么学坏？",
-      "url": "https://eleduck.com/posts/5Bf1mb",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T04:28:25.456Z",
-      "title": "寻找餐饮品牌营销企划负责人｜兼职 / 长期合作",
-      "url": "https://eleduck.com/posts/74f8lp",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T04:28:27.038Z",
-      "title": "【远程兼职】两轮车换电项目寻技术/业务顾问（按时计费 / 弹性答疑）",
-      "url": "https://eleduck.com/posts/pqfAJV",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T10:47:06.978Z",
-      "title": "[深圳/上海/南京/广州/珠海] SHEIN 测试岗内推 全量 15 岗（15-65k）",
-      "url": "https://www.v2ex.com/t/1251653",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T10:47:08.529Z",
-      "title": "跨境 Listing 有流量没转化时，我怎么拆竞品再重写",
-      "url": "https://eleduck.com/posts/0XfxO9",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T10:47:10.045Z",
-      "title": "【远程合作/接项目】AI Agent、AI应用、Python全栈开发｜可承接完整项目交付",
-      "url": "https://eleduck.com/posts/wwfLV1",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:35:54.444Z",
-      "title": "Senior Solutions Engineer | Tokyo, Japan | Remote",
-      "url": "https://jobicy.com/jobs/156990-senior-solutions-engineer-tokyo-japan-remote",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:35:55.979Z",
-      "title": "Linux Software Engineer - Ubuntu for Next-Gen Silicon (multiple roles and seniority levels)",
-      "url": "https://jobicy.com/jobs/156997-linux-software-engineer-ubuntu-for-next-gen-silicon-multiple-roles-and-seniority-levels",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:35:57.588Z",
-      "title": "Senior Financial Analyst (FP&A)",
-      "url": "https://jobicy.com/jobs/156989-senior-financial-analyst-fpa",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-10-25T15:35:59.123Z",
       "title": "IoT Field Engineer - China & Region",
@@ -2100,6 +2016,90 @@
       "url": "https://jobicy.com/jobs/157979-technical-writer-part-time-fixed-term-3-months-australia",
       "source": "Jobicy·APAC",
       "score": 12
+    },
+    {
+      "at": "2026-10-30T23:28:14.278Z",
+      "title": "我新上线一个小项目，帮大家快速查找大厂外企工作的，求职者营地： qzzyd.com。",
+      "url": "https://www.v2ex.com/t/1253332",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:15.834Z",
+      "title": "Account Executive (New Logo Hunter)",
+      "url": "https://jobicy.com/jobs/158098-account-executive-new-logo-hunter",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-30T23:28:17.388Z",
+      "title": "Field Specialist (Tasman)",
+      "url": "https://jobicy.com/jobs/158085-field-specialist-tasman",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:18.948Z",
+      "title": "Technical Designer",
+      "url": "https://jobicy.com/jobs/158084-technical-designer",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:20.500Z",
+      "title": "Field Operations Specialist (Tasmania)",
+      "url": "https://jobicy.com/jobs/158083-field-operations-specialist-tasmania",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:22.057Z",
+      "title": "AI & Automation Analyst",
+      "url": "https://jobicy.com/jobs/158081-ai-automation-analyst",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:23.609Z",
+      "title": "Field Operations Specialist (New South Wales)",
+      "url": "https://jobicy.com/jobs/158080-field-operations-specialist-new-south-wales",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:25.165Z",
+      "title": "Pattern Maker",
+      "url": "https://jobicy.com/jobs/158079-pattern-maker",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:26.764Z",
+      "title": "Senior Web Designer",
+      "url": "https://jobicy.com/jobs/158078-senior-web-designer",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:28.320Z",
+      "title": "Field & Event Marketing Manager, APAC (Singapore)",
+      "url": "https://jobicy.com/jobs/158077-field-event-marketing-manager-apac-singapore",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-10-30T23:28:29.870Z",
+      "title": "Merchant Support Specialist (Shopify)",
+      "url": "https://jobicy.com/jobs/158075-merchant-support-specialist-shopify",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-30T23:28:31.423Z",
+      "title": "Contract Recruiter",
+      "url": "https://jobicy.com/jobs/158074-contract-recruiter-2",
+      "source": "Jobicy·APAC",
+      "score": 20
     }
   ]
 }
