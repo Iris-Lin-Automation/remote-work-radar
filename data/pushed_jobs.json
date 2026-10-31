@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-10-31T04:12:27.809Z",
+  "updatedAt": "2026-10-31T11:43:34.238Z",
   "jobs": [
-    {
-      "at": "2026-10-25T15:36:00.650Z",
-      "title": "Senior Product Manager, User Acquisition",
-      "url": "https://jobicy.com/jobs/156992-senior-product-manager-user-acquisition",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
     {
       "at": "2026-10-25T15:36:02.248Z",
       "title": "Account Executive",
@@ -2098,6 +2091,13 @@
       "at": "2026-10-31T04:12:27.808Z",
       "title": "【全职·全国远程/贵阳坐班】AI Agent 开发工程师｜早期团队直招",
       "url": "https://eleduck.com/posts/2LfWJv",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T11:43:34.238Z",
+      "title": "独立开发 AI 视频商业 SaaS 踩坑：大模型限流与长任务卡顿怎么破？",
+      "url": "https://eleduck.com/posts/ARfdvn",
       "source": "电鸭社区",
       "score": 0
     }
