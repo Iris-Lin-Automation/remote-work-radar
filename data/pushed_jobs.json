@@ -1,90 +1,6 @@
 {
-  "updatedAt": "2026-10-31T11:43:34.238Z",
+  "updatedAt": "2026-10-31T16:51:54.365Z",
   "jobs": [
-    {
-      "at": "2026-10-25T15:36:02.248Z",
-      "title": "Account Executive",
-      "url": "https://jobicy.com/jobs/156994-account-executive-27",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:03.899Z",
-      "title": "Project Manager (Service Operations)",
-      "url": "https://jobicy.com/jobs/156993-project-manager-service-operations",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:05.446Z",
-      "title": "Partner Operations Analyst",
-      "url": "https://jobicy.com/jobs/156991-partner-operations-analyst",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:07.003Z",
-      "title": "Senior Technical Support Engineer",
-      "url": "https://jobicy.com/jobs/156968-senior-technical-support-engineer",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:08.540Z",
-      "title": "Senior Accounting Associate",
-      "url": "https://jobicy.com/jobs/156964-senior-accounting-associate",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:10.070Z",
-      "title": "Global Investigator - Triage (APAC)",
-      "url": "https://jobicy.com/jobs/156961-global-investigator-triage-apac",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-25T15:36:11.617Z",
-      "title": "Global Investigator (APAC)",
-      "url": "https://jobicy.com/jobs/156965-global-investigator-apac",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-25T15:36:13.227Z",
-      "title": "Strategic Account Executive - Singapore",
-      "url": "https://jobicy.com/jobs/156962-strategic-account-executive-singapore",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-25T15:36:14.769Z",
-      "title": "Sales Development - ANZ",
-      "url": "https://jobicy.com/jobs/156967-sales-development-anz",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:16.323Z",
-      "title": "Senior Automation & Process Specialist",
-      "url": "https://jobicy.com/jobs/156966-senior-automation-process-specialist",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:17.896Z",
-      "title": "Sales Team Manager",
-      "url": "https://jobicy.com/jobs/156960-sales-team-manager",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T15:36:19.535Z",
-      "title": "Software Engineer - Branching",
-      "url": "https://jobicy.com/jobs/156947-software-engineer-branching",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
     {
       "at": "2026-10-25T15:36:21.071Z",
       "title": "Platform Engineer - Compute Capacity",
@@ -2100,6 +2016,90 @@
       "url": "https://eleduck.com/posts/ARfdvn",
       "source": "电鸭社区",
       "score": 0
+    },
+    {
+      "at": "2026-10-31T16:51:37.199Z",
+      "title": "接网站修复 / 落地页 / 网络排障 / Python 小自动化｜远程",
+      "url": "https://eleduck.com/posts/a4fbDd",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T16:51:38.762Z",
+      "title": "Software Developer",
+      "url": "https://jobicy.com/jobs/158207-software-developer-2",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T16:51:40.311Z",
+      "title": "AI Trainers Network - English",
+      "url": "https://jobicy.com/jobs/158206-ai-trainers-network-english",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-31T16:51:41.869Z",
+      "title": "Recruiter, Sales (APJ)",
+      "url": "https://jobicy.com/jobs/158205-recruiter-sales-apj",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-31T16:51:43.419Z",
+      "title": "Senior Marketing Strategist",
+      "url": "https://jobicy.com/jobs/158204-senior-marketing-strategist",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T16:51:44.996Z",
+      "title": "AI Data Quality Specialist - English (Philippines)",
+      "url": "https://jobicy.com/jobs/158203-ai-data-quality-specialist-english-philippines",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T16:51:46.565Z",
+      "title": "Security Operations Analyst",
+      "url": "https://jobicy.com/jobs/158202-security-operations-analyst-2",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-31T16:51:48.115Z",
+      "title": "Manager, Sales Recruiting (APJ)",
+      "url": "https://jobicy.com/jobs/158201-manager-sales-recruiting-apj",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-10-31T16:51:49.677Z",
+      "title": "Senior HubSpot Implementation Specialist",
+      "url": "https://jobicy.com/jobs/158200-senior-hubspot-implementation-specialist",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T16:51:51.253Z",
+      "title": "Ads Quality Rater - Vietnamese (Vietnam)",
+      "url": "https://jobicy.com/jobs/158199-ads-quality-rater-vietnamese-vietnam",
+      "source": "Jobicy·APAC",
+      "score": 8
+    },
+    {
+      "at": "2026-10-31T16:51:52.811Z",
+      "title": "Technical Manager (Kuala Lumpur, Malaysia)",
+      "url": "https://jobicy.com/jobs/158198-technical-manager-kuala-lumpur-malaysia",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-10-31T16:51:54.365Z",
+      "title": "Vice President, International",
+      "url": "https://jobicy.com/jobs/158146-vice-president-international",
+      "source": "Jobicy·APAC",
+      "score": 12
     }
   ]
 }
