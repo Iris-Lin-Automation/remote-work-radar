@@ -1,97 +1,6 @@
 {
-  "updatedAt": "2026-10-31T16:51:54.365Z",
+  "updatedAt": "2026-10-31T21:00:51.028Z",
   "jobs": [
-    {
-      "at": "2026-10-25T15:36:21.071Z",
-      "title": "Platform Engineer - Compute Capacity",
-      "url": "https://jobicy.com/jobs/156946-platform-engineer-compute-capacity",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:22.620Z",
-      "title": "Distributed Systems Engineer",
-      "url": "https://jobicy.com/jobs/156945-distributed-systems-engineer-3",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:24.209Z",
-      "title": "AWS Gaming GTM Segment Lead",
-      "url": "https://jobicy.com/jobs/156944-aws-gaming-gtm-segment-lead",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:25.809Z",
-      "title": "Senior Data Analyst - Marketing",
-      "url": "https://jobicy.com/jobs/156941-senior-data-analyst-marketing",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:27.349Z",
-      "title": "Software Engineer - Storage",
-      "url": "https://jobicy.com/jobs/156940-software-engineer-storage",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:28.960Z",
-      "title": "Platform Security Engineer (AMER/APAC)",
-      "url": "https://jobicy.com/jobs/156948-platform-security-engineer-amer-apac",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-25T15:36:30.517Z",
-      "title": "Product Manager - Realtime",
-      "url": "https://jobicy.com/jobs/156943-product-manager-realtime",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:32.096Z",
-      "title": "Technical Account Management (TAM) Leader",
-      "url": "https://jobicy.com/jobs/156942-technical-account-management-tam-leader",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-25T15:36:33.662Z",
-      "title": "Data API Engineer",
-      "url": "https://jobicy.com/jobs/156939-data-api-engineer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:35.219Z",
-      "title": "Medical Expert, Fertility (Contractor)",
-      "url": "https://jobicy.com/jobs/156901-medical-expert-fertility-contractor",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-25T15:36:36.787Z",
-      "title": "Threat Detection Analyst (Japanese & English speaking)",
-      "url": "https://jobicy.com/jobs/156878-threat-detection-analyst-japanese-english-speaking-2",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-25T18:44:06.381Z",
-      "title": "高级 Unity3D 游戏开发工程师 1 名 远程办公",
-      "url": "https://www.v2ex.com/t/1251724",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T18:44:07.892Z",
-      "title": "想找个远程兼职",
-      "url": "https://eleduck.com/posts/98f9Wv",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-10-25T22:18:24.876Z",
       "title": "Inspectiv招聘项目远程工作Bug Bounty 安全研究员",
@@ -2100,6 +2009,97 @@
       "url": "https://jobicy.com/jobs/158146-vice-president-international",
       "source": "Jobicy·APAC",
       "score": 12
+    },
+    {
+      "at": "2026-10-31T21:00:33.026Z",
+      "title": "Metabase招聘全职远程工作软件工程师（前端）",
+      "url": "https://yuancheng.work/7020.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:34.519Z",
+      "title": "Metabase招聘全职远程工作安全工程师",
+      "url": "https://yuancheng.work/7019.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:36.013Z",
+      "title": "Supabase招聘全职远程工作软件工程师 – AI 工具基础设施",
+      "url": "https://yuancheng.work/7016.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:37.502Z",
+      "title": "Metabase招聘全职远程工作后端软件工程师",
+      "url": "https://yuancheng.work/7015.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:39.074Z",
+      "title": "Metabase招聘全职远程工作工程经理",
+      "url": "https://yuancheng.work/7012.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:40.562Z",
+      "title": "Metabase招聘全职远程工作客户成功工程师",
+      "url": "https://yuancheng.work/7024.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:42.062Z",
+      "title": "Supabase招聘全职远程工作产品经理（管理与治理）",
+      "url": "https://yuancheng.work/7023.html",
+      "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:43.563Z",
+      "title": "Metabase招聘全职远程工作技术产品负责人",
+      "url": "https://yuancheng.work/7021.html",
+      "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:45.054Z",
+      "title": "Supabase招聘全职远程工作产品经理 – Spark",
+      "url": "https://yuancheng.work/7022.html",
+      "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:46.538Z",
+      "title": "Metabase招聘全职远程工作合作伙伴负责人",
+      "url": "https://yuancheng.work/7017.html",
+      "source": "远程.work·销售",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:48.051Z",
+      "title": "Metabase招聘全职远程工作企业客户经理",
+      "url": "https://yuancheng.work/7013.html",
+      "source": "远程.work·销售",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:49.543Z",
+      "title": "Metabase招聘全职远程工作开源社区倡导者",
+      "url": "https://yuancheng.work/7018.html",
+      "source": "远程.work·其他",
+      "score": 0
+    },
+    {
+      "at": "2026-10-31T21:00:51.028Z",
+      "title": "Director, Talent Management",
+      "url": "https://jobicy.com/jobs/158221-director-talent-management",
+      "source": "Jobicy·APAC",
+      "score": 0
     }
   ]
 }
