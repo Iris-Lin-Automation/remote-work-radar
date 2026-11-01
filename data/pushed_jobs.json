@@ -1,160 +1,6 @@
 {
-  "updatedAt": "2026-11-01T08:44:27.324Z",
+  "updatedAt": "2026-11-01T16:35:59.709Z",
   "jobs": [
-    {
-      "at": "2026-10-25T22:18:30.815Z",
-      "title": "VRChat招聘全职远程工作Unity技术美术（事件管线）",
-      "url": "https://yuancheng.work/6894.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:32.297Z",
-      "title": "VRChat招聘全职远程工作推荐系统工程师",
-      "url": "https://yuancheng.work/6892.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:33.777Z",
-      "title": "Enveritas招聘全职远程工作后端软件工程师 – Python/Postgres",
-      "url": "https://yuancheng.work/6889.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:35.260Z",
-      "title": "VRChat招聘全职远程工作信任与安全副总裁",
-      "url": "https://yuancheng.work/6893.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:36.740Z",
-      "title": "Center for AI Risk Management & Alignment (CARMA)招聘全职/兼职远程工作高级研究员，民用安全科学",
-      "url": "https://yuancheng.work/6902.html",
-      "source": "远程.work·其他",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:38.219Z",
-      "title": "CARMA招聘全职远程工作高级经济学家（变革性AI影响）",
-      "url": "https://yuancheng.work/6901.html",
-      "source": "远程.work·其他",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:39.700Z",
-      "title": "CARMA招聘全职/兼职远程工作AI 攻防动态首席研究员",
-      "url": "https://yuancheng.work/6895.html",
-      "source": "远程.work·其他",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T03:21:18.107Z",
-      "title": "招聘（CEX）： Google SEO 站群&寄生虫运营专家",
-      "url": "https://www.v2ex.com/t/1251797",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T03:21:19.625Z",
-      "title": "【全球全职远程】30K-100K人民币等值/月｜Research Scientist 创始研究科学家｜Cookiy Labs",
-      "url": "https://eleduck.com/posts/VvfaNO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:28.007Z",
-      "title": "求远程兼职｜TikTok印尼运营＋AI视频图片＋网站搭建",
-      "url": "https://eleduck.com/posts/rdf3aq",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:29.535Z",
-      "title": "AI Agent / n8n 兼职开发｜GitHub开源Skill二次开发",
-      "url": "https://eleduck.com/posts/jAfWJg",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:31.091Z",
-      "title": "一个开源语音输入：Typeless的开源平替，支持windows/linux/macos/android",
-      "url": "https://eleduck.com/posts/a4fbdr",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:32.798Z",
-      "title": "免费白嫖claude-opus-5-5, gpt-6.1-sol、 grok-4.7、deepseek-v4.1-flash",
-      "url": "https://eleduck.com/posts/R3fvzO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:34.320Z",
-      "title": "寻找长期兼职技术合作伙伴｜AI API 网关维护与客户技术支持",
-      "url": "https://eleduck.com/posts/ARfdLm",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:35.872Z",
-      "title": "【全职远程】12K–15K/月｜Product Designer 产品设计师｜AI 短剧创作工具｜3–5 年经验",
-      "url": "https://eleduck.com/posts/x0fX9O",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:37.395Z",
-      "title": "【免费推荐/海外远程】25K-35K/DevSecOps Engineer/一体化社区平台",
-      "url": "https://eleduck.com/posts/JpfVkv",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:38.930Z",
-      "title": "来，一起做鸭｜想找个能把电鸭带上更高维度的增长运营合伙人",
-      "url": "https://eleduck.com/posts/Djfy0N",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:40.470Z",
-      "title": "【招聘】英语翻译（IT 方向）｜美国知识产权团队｜15-18W / 年",
-      "url": "https://eleduck.com/posts/BaflEW",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:41.982Z",
-      "title": "【免费推荐/全职远程】年薪40-70W/AI交易研究员/国际控股公司",
-      "url": "https://eleduck.com/posts/laf5Gk",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:43.503Z",
-      "title": "马来西亚技术开发公司招聘全职远程工作高级前端开发工程师",
-      "url": "https://yuancheng.work/6835.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:45.023Z",
-      "title": "枫叶枫叶招聘全职远程工作运营",
-      "url": "https://yuancheng.work/6867.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:46.545Z",
-      "title": "数字资产量化交易团队招聘全职远程工作运营助理",
-      "url": "https://yuancheng.work/6840.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
     {
       "at": "2026-10-26T09:44:48.077Z",
       "title": "Territory Manager (Limestone Coast)",
@@ -2100,6 +1946,160 @@
       "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-product-manager-identity",
       "source": "WWR·产品",
       "score": 12
+    },
+    {
+      "at": "2026-11-01T16:35:27.327Z",
+      "title": "招聘： CTO/Rust 量化/C++低延迟/撮合交易/市场负责人/资深视觉/UI 设计/合约产品",
+      "url": "https://www.v2ex.com/t/1253546",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:29.642Z",
+      "title": "做了个数据库文档生成工具，专治\"老项目零文档\"，开始卖钱了",
+      "url": "https://eleduck.com/posts/0Xfx2p",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:31.134Z",
+      "title": "大佬们，我最近面试了两家，技术都没过关，求大佬指点",
+      "url": "https://eleduck.com/posts/pqfAl3",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:32.626Z",
+      "title": "API中转站找一个业务合伙人",
+      "url": "https://eleduck.com/posts/dDfpyV",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:34.118Z",
+      "title": "Territory Sales Manager",
+      "url": "https://jobicy.com/jobs/158336-territory-sales-manager",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:35.612Z",
+      "title": "Territory Manager (Jericho)",
+      "url": "https://jobicy.com/jobs/158334-territory-manager-jericho",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:37.103Z",
+      "title": "AI Trainers Network - Korean and Chinese Simplified Bilingual",
+      "url": "https://jobicy.com/jobs/158333-ai-trainers-network-korean-and-chinese-simplified-bilingual",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:38.593Z",
+      "title": "Senior Support Engineer",
+      "url": "https://jobicy.com/jobs/158332-senior-support-engineer-3",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-01T16:35:40.077Z",
+      "title": "Territory Manager (Fitzroy South)",
+      "url": "https://jobicy.com/jobs/158330-territory-manager-fitzroy-south",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:41.569Z",
+      "title": "Vice President of Retail, APAC",
+      "url": "https://jobicy.com/jobs/158329-vice-president-of-retail-apac",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-11-01T16:35:43.090Z",
+      "title": "AI Trainers Network - Korean",
+      "url": "https://jobicy.com/jobs/158328-ai-trainers-network-korean",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-01T16:35:44.734Z",
+      "title": "Senior Solutions Architect- Sydney",
+      "url": "https://jobicy.com/jobs/158327-senior-solutions-architect-sydney",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:46.226Z",
+      "title": "Regional Sales Manager (Central & Northern Victoria)",
+      "url": "https://jobicy.com/jobs/158325-regional-sales-manager-central-northern-victoria",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:47.736Z",
+      "title": "Territory Manager (Horsham)",
+      "url": "https://jobicy.com/jobs/158313-territory-manager-horsham",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:49.223Z",
+      "title": "AI Trainers Network - English (Philippines)",
+      "url": "https://jobicy.com/jobs/158312-ai-trainers-network-english-philippines",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:50.707Z",
+      "title": "Field Specialist (Taranaki)",
+      "url": "https://jobicy.com/jobs/158311-field-specialist-taranaki",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:52.198Z",
+      "title": "AI Trainers Network - English (New Zealand)",
+      "url": "https://jobicy.com/jobs/158310-ai-trainers-network-english-new-zealand",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:53.695Z",
+      "title": "Field Specialist (Northland)",
+      "url": "https://jobicy.com/jobs/158309-field-specialist-northland",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:55.189Z",
+      "title": "AI Trainers Network - English (Australia)",
+      "url": "https://jobicy.com/jobs/158308-ai-trainers-network-english-australia",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:56.679Z",
+      "title": "Customer Solution Architect (AU, NZ, SG)",
+      "url": "https://jobicy.com/jobs/158307-customer-solution-architect-au-nz-sg",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-11-01T16:35:58.212Z",
+      "title": "Technical Support Engineer (Shopify)",
+      "url": "https://jobicy.com/jobs/158306-technical-support-engineer-shopify",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T16:35:59.709Z",
+      "title": "Solution Engineer",
+      "url": "https://jobicy.com/jobs/158305-solution-engineer",
+      "source": "Jobicy·APAC",
+      "score": 20
     }
   ]
 }
