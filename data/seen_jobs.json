@@ -1,10 +1,6 @@
 {
-  "updatedAt": "2026-11-01T00:42:28.850Z",
+  "updatedAt": "2026-11-01T08:44:28.527Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/150787-account-based-marketing-manager",
-    "jobicy|https://jobicy.com/jobs/150701-part-time-virtual-travel-assistant-affiliate-recruiter-management",
-    "jobicy|https://jobicy.com/jobs/150642-sales-customer-service-representative-insurance-or-bank-exp-wfh-dayshift",
-    "v2ex_jobs|https://www.v2ex.com/t/1242275",
     "v2ex_jobs|https://www.v2ex.com/t/1242273",
     "eleduck|https://eleduck.com/posts/qzf8xR",
     "eleduck|https://eleduck.com/posts/QZfYdL",
@@ -2000,7 +1996,11 @@
     "yw_sales|https://yuancheng.work/7017.html",
     "yw_sales|https://yuancheng.work/7013.html",
     "yw_other|https://yuancheng.work/7018.html",
-    "jobicy|https://jobicy.com/jobs/158221-director-talent-management"
+    "jobicy|https://jobicy.com/jobs/158221-director-talent-management",
+    "v2ex_jobs|https://www.v2ex.com/t/1253538",
+    "eleduck|https://eleduck.com/posts/QZfLo5",
+    "eleduck|https://eleduck.com/posts/jAfWaL",
+    "wwr_product|https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-product-manager-identity"
   ],
   "lastDigestDate": "2026-11-01"
 }

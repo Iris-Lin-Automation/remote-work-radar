@@ -1,34 +1,6 @@
 {
-  "updatedAt": "2026-10-31T21:00:51.028Z",
+  "updatedAt": "2026-11-01T08:44:27.324Z",
   "jobs": [
-    {
-      "at": "2026-10-25T22:18:24.876Z",
-      "title": "Inspectiv招聘项目远程工作Bug Bounty 安全研究员",
-      "url": "https://yuancheng.work/6903.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:26.369Z",
-      "title": "Center for AI Risk Management & Alignment (CARMA)招聘全职远程工作研究工程师 – 面向多尺度对齐的新型AI平台",
-      "url": "https://yuancheng.work/6900.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:27.853Z",
-      "title": "CARMA招聘全职远程工作AI安全论证平台研究工程师",
-      "url": "https://yuancheng.work/6897.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-25T22:18:29.332Z",
-      "title": "VRChat招聘全职远程工作信任与安全工程师",
-      "url": "https://yuancheng.work/6898.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
     {
       "at": "2026-10-25T22:18:30.815Z",
       "title": "VRChat招聘全职远程工作Unity技术美术（事件管线）",
@@ -2100,6 +2072,34 @@
       "url": "https://jobicy.com/jobs/158221-director-talent-management",
       "source": "Jobicy·APAC",
       "score": 0
+    },
+    {
+      "at": "2026-11-01T08:44:22.722Z",
+      "title": "[远程/全职][内推]交易所长期招聘开发/测试/安全/运维/产品/运营等远程岗位",
+      "url": "https://www.v2ex.com/t/1253538",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T08:44:24.281Z",
+      "title": "远程兼职全栈工程师 · 海外 AI 虚拟人交互与沉浸内容平台",
+      "url": "https://eleduck.com/posts/QZfLo5",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T08:44:25.787Z",
+      "title": "【上海找创业合伙人】我有垂直自媒体获客与私域成交经验，寻找AI产品/技术型共同创始人",
+      "url": "https://eleduck.com/posts/jAfWaL",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-01T08:44:27.324Z",
+      "title": "ZoomInfo Technologies LLC: Principal Product Manager - Identity",
+      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-product-manager-identity",
+      "source": "WWR·产品",
+      "score": 12
     }
   ]
 }
