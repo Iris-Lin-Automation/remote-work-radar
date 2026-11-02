@@ -1,202 +1,6 @@
 {
-  "updatedAt": "2026-11-02T08:55:40.031Z",
+  "updatedAt": "2026-11-02T19:59:30.625Z",
   "jobs": [
-    {
-      "at": "2026-10-26T16:31:16.111Z",
-      "title": "Account Executive (Singapore)",
-      "url": "https://jobicy.com/jobs/157145-account-executive-singapore",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T16:31:17.647Z",
-      "title": "Manager, Client Analytics Partnerships",
-      "url": "https://jobicy.com/jobs/157087-manager-client-analytics-partnerships",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-26T16:31:19.186Z",
-      "title": "Senior Customer Success Engineer, Japan",
-      "url": "https://jobicy.com/jobs/157095-senior-customer-success-engineer-japan",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:31:20.756Z",
-      "title": "Lead Customer Advocacy Manager, APJ",
-      "url": "https://jobicy.com/jobs/157094-lead-customer-advocacy-manager-apj",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-26T16:31:22.321Z",
-      "title": "Intermediate Security Engineer, Security Incident Response Team (SIRT)",
-      "url": "https://jobicy.com/jobs/157093-intermediate-security-engineer-security-incident-response-team-sirt",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-26T16:31:23.862Z",
-      "title": "Senior Customer Success Manager - APJ",
-      "url": "https://jobicy.com/jobs/157091-senior-customer-success-manager-apj",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-26T16:31:25.435Z",
-      "title": "Field CTO",
-      "url": "https://jobicy.com/jobs/157090-field-cto-2",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T16:31:26.999Z",
-      "title": "Enterprise Account Executive",
-      "url": "https://jobicy.com/jobs/157088-enterprise-account-executive-28",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T16:31:28.639Z",
-      "title": "Senior Manager of Success Architects",
-      "url": "https://jobicy.com/jobs/157096-senior-manager-of-success-architects",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-26T22:19:16.580Z",
-      "title": "免费内推需要人在欧洲｜海外商务总监（全远程办公，签订合同，欧元发薪，底薪根据能力谈➕绩效）",
-      "url": "https://eleduck.com/posts/5Bf1Eb",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:20.870Z",
-      "title": "[上海杨浦][全职到岗][税前 15K] 招 IT 与自动化工程师｜跨境网络维护＋ AI 工作流",
-      "url": "https://www.v2ex.com/t/1252175",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:22.483Z",
-      "title": "[全英文 HC] RMB 42–85 万/年 Senior AI Inference Infrastructure | LLM Data | Speech AI 东京 Voice AI / AI Agent 公司",
-      "url": "https://www.v2ex.com/t/1252151",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:24.093Z",
-      "title": "【免费推荐/全球远程】15K-30K/产品内容增长/ 旧金山 AI 公司",
-      "url": "https://eleduck.com/posts/rdf3av",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:25.682Z",
-      "title": "【免费推荐/全球远程】15K-30K/AI 全栈工程师/ 旧金山 AI 公司",
-      "url": "https://eleduck.com/posts/GzfRrD",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:27.251Z",
-      "title": "AI 写代码确实快了，但为什么项目还是没快多少？",
-      "url": "https://eleduck.com/posts/0Xfxw9",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:28.812Z",
-      "title": "【免费推荐/全球远程】30K-100K/研究科学家/ 旧金山 AI 公司",
-      "url": "https://eleduck.com/posts/2LfWla",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:30.375Z",
-      "title": "Supabase招聘全职/兼职远程工作Multigres 工程师",
-      "url": "https://yuancheng.work/6920.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:31.956Z",
-      "title": "Center for AI Risk Management & Alignment (CARMA)招聘全职远程工作高级技术专家（AI风险评估）",
-      "url": "https://yuancheng.work/6918.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:33.525Z",
-      "title": "Supabase招聘全职远程工作AI 平台工程师",
-      "url": "https://yuancheng.work/6916.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T03:49:35.085Z",
-      "title": "Supabase招聘全职远程工作支持工程师（亚太周末）",
-      "url": "https://yuancheng.work/6919.html",
-      "source": "远程.work·运营",
-      "score": 12
-    },
-    {
-      "at": "2026-10-27T03:49:36.651Z",
-      "title": "Supabase招聘全职远程工作技术支持工程师",
-      "url": "https://yuancheng.work/6917.html",
-      "source": "远程.work·运营",
-      "score": 12
-    },
-    {
-      "at": "2026-10-27T09:37:19.675Z",
-      "title": "remote 高级算法工程师 35-50K//后端 GO 开发工程师 20-40k 面议",
-      "url": "https://www.v2ex.com/t/1252308",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:21.242Z",
-      "title": "Crypto CEX 诚聘 Node.js 后端开发工程师（DEX 行情与链上交易方向）薪水 30K-50K RMB 纯远程办公",
-      "url": "https://www.v2ex.com/t/1252295",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:22.804Z",
-      "title": "[东京]人在国内也能投：日本 IT 会社直招-GSD 招聘 PG/SE/PM・PL/IT 营业（年收 300-1000 万日元，可办理工签）",
-      "url": "https://www.v2ex.com/t/1252264",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:24.370Z",
-      "title": "【招聘合作｜远程接单网页工程师】",
-      "url": "https://eleduck.com/posts/W9fxNG",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:25.941Z",
-      "title": "终于终于还是发帖了一个拉胯人的生活",
-      "url": "https://eleduck.com/posts/Vvfanr",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:27.517Z",
-      "title": "【全职远程/Fully Remote】AI后端开发工程师 40-50k / AIGC",
-      "url": "https://eleduck.com/posts/3EfRWG",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:29.076Z",
-      "title": "【招聘】工业设计师｜智能戒指外观设计项目合作",
-      "url": "https://eleduck.com/posts/1nfOxo",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-10-27T09:37:30.627Z",
       "title": "聊聊出海独立开发、小团队用海外云的三个暗坑：风控封号、流量刺客与合规开票",
@@ -2100,6 +1904,202 @@
       "url": "https://weworkremotely.com/remote-jobs/descript-lead-editor-product-manager",
       "source": "WWR·产品",
       "score": 0
+    },
+    {
+      "at": "2026-11-02T19:58:49.512Z",
+      "title": "阿里巴巴 Token Foundry Infra 团队社招",
+      "url": "https://www.v2ex.com/t/1253934",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:58:51.034Z",
+      "title": "宁波慈溪高新区招聘 AI 应用工程师",
+      "url": "https://www.v2ex.com/t/1253904",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:58:52.590Z",
+      "title": "【接单】短视频脚本 / 角色设定 / 产品上架文案，¥60 起，先给大纲不满意不收钱",
+      "url": "https://eleduck.com/posts/jAfWEL",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:58:54.103Z",
+      "title": "【远程兼职】招AIGC视频制作助理｜提供脚本｜会录屏剪辑优先",
+      "url": "https://eleduck.com/posts/b2fAVw",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:58:55.616Z",
+      "title": "面试官真正偏爱这四类求职者",
+      "url": "https://eleduck.com/posts/a4fbRd",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:58:57.157Z",
+      "title": "远程全职招聘｜UI视觉设计师 丨15K～30K/月",
+      "url": "https://eleduck.com/posts/K7fa28",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:58:58.671Z",
+      "title": "【远程】美国洛杉矶卡车公司招调度一名（英语沟通）｜在家办公",
+      "url": "https://eleduck.com/posts/oQfRJZ",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:00.191Z",
+      "title": "远程居家办公-小红书远程运营，全远程，签劳动合同。",
+      "url": "https://eleduck.com/posts/DjfyKq",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:01.708Z",
+      "title": "Freelance Game Localization Specialist (English -> Chinese Simplified)",
+      "url": "https://eleduck.com/posts/82fK0X",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:03.224Z",
+      "title": "[志愿搬运/远程] 远程办公/AIGC影视团队招聘",
+      "url": "https://eleduck.com/posts/4lfRkL",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:04.737Z",
+      "title": "AI全栈工程师｜核心开发负责人 西安或远程",
+      "url": "https://eleduck.com/posts/XNfOl1",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:06.252Z",
+      "title": "核心数据采集工程团队招聘全职远程工作高级软件工程师",
+      "url": "https://yuancheng.work/6999.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:07.778Z",
+      "title": "梵星传媒招聘全职远程工作高级算法工程师",
+      "url": "https://yuancheng.work/6993.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:09.305Z",
+      "title": "深圳众睿思管理咨询有限公司招聘项目远程工作全栈开发工程",
+      "url": "https://yuancheng.work/6991.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:10.823Z",
+      "title": "Cargothrive Innovations Inc.招聘兼职远程工作物流代运营操作",
+      "url": "https://yuancheng.work/7026.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:12.346Z",
+      "title": "AI角色交互创业团队招聘全职/兼职远程工作AI 交互产品负责人",
+      "url": "https://yuancheng.work/7007.html",
+      "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:13.860Z",
+      "title": "KYB Analyst - 1 year contractor",
+      "url": "https://jobicy.com/jobs/158541-kyb-analyst-1-year-contractor",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T19:59:15.379Z",
+      "title": "Global Inventory Planner",
+      "url": "https://jobicy.com/jobs/158538-global-inventory-planner",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:16.890Z",
+      "title": "Earn Product Operation Manager (Tradfi)",
+      "url": "https://jobicy.com/jobs/158537-earn-product-operation-manager-tradfi",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T19:59:18.417Z",
+      "title": "Territory Manager (Bunbury)",
+      "url": "https://jobicy.com/jobs/158536-territory-manager-bunbury",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:19.929Z",
+      "title": "Online Support Representative",
+      "url": "https://jobicy.com/jobs/158534-online-support-representative",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:21.459Z",
+      "title": "Territory Manager (Port Augusta)",
+      "url": "https://jobicy.com/jobs/158533-territory-manager-port-augusta",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:22.979Z",
+      "title": "Binance Accelerator Program - VIP Institutional Growth & Operations",
+      "url": "https://jobicy.com/jobs/158532-binance-accelerator-program-vip-institutional-growth-operations",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T19:59:24.497Z",
+      "title": "Engineer III",
+      "url": "https://jobicy.com/jobs/158531-engineer-iii",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:26.072Z",
+      "title": "Junior Quality Specialist",
+      "url": "https://jobicy.com/jobs/158530-junior-quality-specialist",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:27.587Z",
+      "title": "Account Management Lead - Lower South Island",
+      "url": "https://jobicy.com/jobs/158529-account-management-lead-lower-south-island",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T19:59:29.112Z",
+      "title": "Senior Customer Success Manager - APAC",
+      "url": "https://jobicy.com/jobs/158528-senior-customer-success-manager-apac",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-02T19:59:30.625Z",
+      "title": "Embedded Devices Software Solution Sales Account Manager",
+      "url": "https://jobicy.com/jobs/158506-embedded-devices-software-solution-sales-account-manager",
+      "source": "Jobicy·APAC",
+      "score": 20
     }
   ]
 }
