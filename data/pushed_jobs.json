@@ -1,195 +1,6 @@
 {
-  "updatedAt": "2026-11-01T21:43:22.888Z",
+  "updatedAt": "2026-11-02T08:55:40.031Z",
   "jobs": [
-    {
-      "at": "2026-10-26T09:44:51.124Z",
-      "title": "Territory Manager (Bourke, and surrounds)",
-      "url": "https://jobicy.com/jobs/157049-territory-manager-bourke-and-surrounds",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:52.656Z",
-      "title": "Safety Engineer (Backend Leaning)",
-      "url": "https://jobicy.com/jobs/157048-safety-engineer-backend-leaning",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:54.206Z",
-      "title": "Financial Accounting Manager",
-      "url": "https://jobicy.com/jobs/157046-financial-accounting-manager",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:55.747Z",
-      "title": "B2B Marketing - Singapore & NE Asia",
-      "url": "https://jobicy.com/jobs/157052-b2b-marketing-singapore-ne-asia",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T09:44:57.354Z",
-      "title": "Enterprise Account Executive - Japan",
-      "url": "https://jobicy.com/jobs/157050-enterprise-account-executive-japan",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:44:58.873Z",
-      "title": "Enterprise Key Account Manager (Waikato)",
-      "url": "https://jobicy.com/jobs/157047-enterprise-key-account-manager-waikato",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:45:00.461Z",
-      "title": "Systems Architect - APAC",
-      "url": "https://jobicy.com/jobs/157045-systems-architect-apac",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-26T09:45:01.980Z",
-      "title": "Digital Experience Lead (CX)",
-      "url": "https://jobicy.com/jobs/157043-digital-experience-lead-cx",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T09:45:03.497Z",
-      "title": "Reddit: Engineering Manager, Knowledge Graph Platform",
-      "url": "https://weworkremotely.com/remote-jobs/reddit-engineering-manager-knowledge-graph-platform",
-      "source": "WWR·产品",
-      "score": 8
-    },
-    {
-      "at": "2026-10-26T16:30:48.004Z",
-      "title": "游戏平台运营",
-      "url": "https://www.v2ex.com/t/1252047",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:30:49.537Z",
-      "title": "游戏公司远程直招 服务端/买量策划/数据运营/运营/双语客服/平台运营/发行负责/SEO 增长/AI 视频/素材/影游导演/AIGC 影像/核心导演/短剧编剧/短剧剪辑/创作者运营/产品数据/产品经理/游戏 UI/特效",
-      "url": "https://www.v2ex.com/t/1252042",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:30:51.069Z",
-      "title": "[广州/西安][外包][汇丰项目] 帮 HR 找英语好的 Java 开发， Senior DevRel 方向（不支持长期远程）",
-      "url": "https://www.v2ex.com/t/1252035",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:30:52.592Z",
-      "title": "27届结课找实习，外贸/ToB/外企方向怎么选？求前辈建议",
-      "url": "https://eleduck.com/posts/dDfpJa",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:30:54.160Z",
-      "title": "远程兼职客户跟进助理｜女装批发｜25—35元/小时｜可用AI翻译",
-      "url": "https://eleduck.com/posts/QZfLrp",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:30:55.771Z",
-      "title": "折腾了一段时间 AI Agent，发现最麻烦的根本不是模型",
-      "url": "https://eleduck.com/posts/Ygf2lE",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:30:57.386Z",
-      "title": "Senior Solutions Architect (Singapore)",
-      "url": "https://jobicy.com/jobs/157159-senior-solutions-architect-singapore",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T16:30:58.932Z",
-      "title": "Senior Solutions Architect - Japan",
-      "url": "https://jobicy.com/jobs/157157-senior-solutions-architect-japan",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:31:00.464Z",
-      "title": "CX Technology Lead",
-      "url": "https://jobicy.com/jobs/157153-cx-technology-lead",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:31:02.028Z",
-      "title": "Senior Clinical Project Manager",
-      "url": "https://jobicy.com/jobs/157158-senior-clinical-project-manager",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:31:03.589Z",
-      "title": "Senior Professional Services Engineer, Japan",
-      "url": "https://jobicy.com/jobs/157152-senior-professional-services-engineer-japan",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:31:05.183Z",
-      "title": "Senior Accountant",
-      "url": "https://jobicy.com/jobs/157156-senior-accountant-5",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-26T16:31:06.730Z",
-      "title": "Senior Solutions Architect",
-      "url": "https://jobicy.com/jobs/157154-senior-solutions-architect-3",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:31:08.273Z",
-      "title": "CX Data Analytics and Insights Lead",
-      "url": "https://jobicy.com/jobs/157151-cx-data-analytics-and-insights-lead",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-26T16:31:09.851Z",
-      "title": "Backend Engineer, Java - Web 3 Wallet",
-      "url": "https://jobicy.com/jobs/157144-backend-engineer-java-web-3-wallet",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T16:31:11.397Z",
-      "title": "Account Executive (Korean Speaking)",
-      "url": "https://jobicy.com/jobs/157148-account-executive-korean-speaking",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T16:31:12.930Z",
-      "title": "Binance Acceleration Program - Product Data Analyst",
-      "url": "https://jobicy.com/jobs/157147-binance-acceleration-program-product-data-analyst-2",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-26T16:31:14.467Z",
-      "title": "Motion Designer (Permanent work from home)",
-      "url": "https://jobicy.com/jobs/157142-motion-designer-permanent-work-from-home",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
     {
       "at": "2026-10-26T16:31:16.111Z",
       "title": "Account Executive (Singapore)",
@@ -2099,6 +1910,195 @@
       "title": "SKELAR招聘全职远程工作业务合伙人",
       "url": "https://yuancheng.work/7030.html",
       "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:54:59.803Z",
+      "title": "[阿里] Token Foundry Infra（Qwen 大模型底座）社招内推",
+      "url": "https://www.v2ex.com/t/1253866",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:01.337Z",
+      "title": "技术与 AI 岗位招聘｜ Go、 Java 、前端、算法及 Agent 等 30 个岗位",
+      "url": "https://www.v2ex.com/t/1253860",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:02.872Z",
+      "title": "招聘： Position ：量化交易系统工程师（Rust/Kotlin）",
+      "url": "https://www.v2ex.com/t/1253849",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:04.414Z",
+      "title": "上海｜外企｜黄浦区淮海中路｜ WLB｜ AI Agent 应用开发工程师招聘｜ 15K",
+      "url": "https://www.v2ex.com/t/1253828",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:05.959Z",
+      "title": "急招！坐班上海算法负责人/CTO--商品算法多模态大模型方向",
+      "url": "https://www.v2ex.com/t/1253785",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:07.508Z",
+      "title": "远程兼职: React Native Mobile Engineer RN 移动开发工程师",
+      "url": "https://www.v2ex.com/t/1253721",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:09.050Z",
+      "title": "[内推]20261102 渣打银行 广州 & 天津 | 52 个在招岗位",
+      "url": "https://www.v2ex.com/t/1253680",
+      "source": "V2EX·招聘",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T08:55:10.579Z",
+      "title": "【可接】订单表 vs 发货表核对｜差异Excel｜小改99｜标准199｜不出镜",
+      "url": "https://eleduck.com/posts/Bafl9j",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:12.107Z",
+      "title": "二十多年机电/自动化老兵居家远程：PLC / 触摸屏 / C# 上位机均可合作",
+      "url": "https://eleduck.com/posts/laf5ka",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:13.924Z",
+      "title": "[接单] 6年AI工程 · 交付能跑的AI应用：知识库问答 / 文档解析 / 语音智能体 / 业务Agent",
+      "url": "https://eleduck.com/posts/EQfzRN",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:15.457Z",
+      "title": "可接｜AI 大模型定制：AI 微调 / LoRA / RAG 知识库 / AI 智能体 / AI 数字人 · 本地部署 · 按项目交付",
+      "url": "https://eleduck.com/posts/N0fn1K",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:16.987Z",
+      "title": "[接单] 8年产品经理转数据分析 - Excel 建模 / 家庭财务模型 / 报表整理",
+      "url": "https://eleduck.com/posts/98f9Zy",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:18.515Z",
+      "title": "做自己的产品到底应该多久看数据一次，说说我自己的经验",
+      "url": "https://eleduck.com/posts/v5fYL0",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:20.056Z",
+      "title": "长期远程兼职: React Native Mobile Engineer RN移动开发工程师",
+      "url": "https://eleduck.com/posts/yGf5GV",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:21.592Z",
+      "title": "CCNA/ITIL/PMP 外资企业网络工程师｜中小企业网络建设、远程办公组网、包月运维",
+      "url": "https://eleduck.com/posts/W9fxdL",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:23.119Z",
+      "title": "可接｜远程 Cursor/环境排障与装环境（SI Bot）",
+      "url": "https://eleduck.com/posts/Vvfal2",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:24.693Z",
+      "title": "月薪3000起｜招聘海外短视频运营的兼职伙伴（AI短剧·远程兼职）",
+      "url": "https://eleduck.com/posts/GzfRKk",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:26.220Z",
+      "title": "Regulatory Legal Counsel - US Monitorships",
+      "url": "https://jobicy.com/jobs/158465-regulatory-legal-counsel-us-monitorships",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T08:55:27.747Z",
+      "title": "Product Counsel – Equities & Tokenized Securities",
+      "url": "https://jobicy.com/jobs/158463-product-counsel-equities-tokenized-securities",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T08:55:29.276Z",
+      "title": "KYC & KYB Manager",
+      "url": "https://jobicy.com/jobs/158458-kyc-kyb-manager",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T08:55:30.812Z",
+      "title": "Earn Operation BD (Onchain Direction)",
+      "url": "https://jobicy.com/jobs/158445-earn-operation-bd-onchain-direction",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T08:55:32.339Z",
+      "title": "Data Product Manager, Derivatives (12 months contract)",
+      "url": "https://jobicy.com/jobs/158439-data-product-manager-derivatives-12-months-contract",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-02T08:55:33.875Z",
+      "title": "Data Analyst (12 months contract)",
+      "url": "https://jobicy.com/jobs/158437-data-analyst-12-months-contract",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T08:55:35.419Z",
+      "title": "Compliance Product Manager",
+      "url": "https://jobicy.com/jobs/158427-compliance-product-manager",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-02T08:55:36.966Z",
+      "title": "Community & Events Manager- APAC",
+      "url": "https://jobicy.com/jobs/158425-community-events-manager-apac",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-02T08:55:38.492Z",
+      "title": "Otter.ai: Senior Solution Architect",
+      "url": "https://weworkremotely.com/remote-jobs/otter-ai-senior-solution-architect",
+      "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-11-02T08:55:40.031Z",
+      "title": "Descript: Lead Editor Product Manager",
+      "url": "https://weworkremotely.com/remote-jobs/descript-lead-editor-product-manager",
+      "source": "WWR·产品",
       "score": 0
     }
   ]
