@@ -1,48 +1,6 @@
 {
-  "updatedAt": "2026-11-02T19:59:30.625Z",
+  "updatedAt": "2026-11-03T02:10:35.334Z",
   "jobs": [
-    {
-      "at": "2026-10-27T09:37:30.627Z",
-      "title": "聊聊出海独立开发、小团队用海外云的三个暗坑：风控封号、流量刺客与合规开票",
-      "url": "https://eleduck.com/posts/GzfRb9",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:32.197Z",
-      "title": "Walli：跨框架高性能聊天组件与低运维成本 AI Agent 平台 （https://www.wallibot.dev/）",
-      "url": "https://eleduck.com/posts/0XfxBB",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:33.756Z",
-      "title": "犒己诚邀UXUI合伙人",
-      "url": "https://eleduck.com/posts/5Bf1Nm",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:35.312Z",
-      "title": "急需一个TikTok截流系统",
-      "url": "https://eleduck.com/posts/pqfAjx",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:36.876Z",
-      "title": "高端B2B出海官网定制 | Next.js + Strapi | 15国语言 | 预算6-8万",
-      "url": "https://eleduck.com/posts/dDfpJ5",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-27T09:37:38.455Z",
-      "title": "［招募］测试工程师 可远程要求全职",
-      "url": "https://eleduck.com/posts/z1fB0y",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-10-27T09:37:40.000Z",
       "title": "一台桌面机器人 + AI 电话，同一套自研软件全一体，不依赖第三方 AI 接口；数据和订单全在店内。",
@@ -2100,6 +2058,48 @@
       "url": "https://jobicy.com/jobs/158506-embedded-devices-software-solution-sales-account-manager",
       "source": "Jobicy·APAC",
       "score": 20
+    },
+    {
+      "at": "2026-11-03T02:10:27.838Z",
+      "title": "月薪3000起｜招聘海外短视频运营的兼职伙伴（AI短剧·远程兼职）",
+      "url": "https://eleduck.com/posts/z1fB3d",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T02:10:29.344Z",
+      "title": "【远程兼职】高级 Go 后端工程师（代码审核 / 技术把关）",
+      "url": "https://eleduck.com/posts/QZfL55",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T02:10:30.839Z",
+      "title": "Sporty招聘全职远程工作前端工程师",
+      "url": "https://yuancheng.work/7056.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T02:10:32.351Z",
+      "title": "Sporty招聘全职远程工作数据科学家",
+      "url": "https://yuancheng.work/7055.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T02:10:33.848Z",
+      "title": "Circle招聘项目远程工作意大利语翻译",
+      "url": "https://yuancheng.work/7054.html",
+      "source": "远程.work·其他",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T02:10:35.334Z",
+      "title": "Fiat Treasury Manager",
+      "url": "https://jobicy.com/jobs/158579-fiat-treasury-manager",
+      "source": "Jobicy·APAC",
+      "score": 10
     }
   ]
 }

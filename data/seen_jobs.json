@@ -1,12 +1,6 @@
 {
-  "updatedAt": "2026-11-02T19:59:32.136Z",
+  "updatedAt": "2026-11-03T02:10:36.538Z",
   "keys": [
-    "yw_dev|https://yuancheng.work/6163.html",
-    "yw_dev|https://yuancheng.work/6160.html",
-    "yw_ops|https://yuancheng.work/6167.html",
-    "yw_ops|https://yuancheng.work/6165.html",
-    "yw_mkt|https://yuancheng.work/6166.html",
-    "yw_mkt|https://yuancheng.work/6159.html",
     "yw_sales|https://yuancheng.work/6162.html",
     "v2ex_jobs|https://www.v2ex.com/t/1242692",
     "v2ex_jobs|https://www.v2ex.com/t/1242664",
@@ -2000,7 +1994,13 @@
     "jobicy|https://jobicy.com/jobs/158530-junior-quality-specialist",
     "jobicy|https://jobicy.com/jobs/158529-account-management-lead-lower-south-island",
     "jobicy|https://jobicy.com/jobs/158528-senior-customer-success-manager-apac",
-    "jobicy|https://jobicy.com/jobs/158506-embedded-devices-software-solution-sales-account-manager"
+    "jobicy|https://jobicy.com/jobs/158506-embedded-devices-software-solution-sales-account-manager",
+    "eleduck|https://eleduck.com/posts/z1fB3d",
+    "eleduck|https://eleduck.com/posts/QZfL55",
+    "yw_dev|https://yuancheng.work/7056.html",
+    "yw_dev|https://yuancheng.work/7055.html",
+    "yw_other|https://yuancheng.work/7054.html",
+    "jobicy|https://jobicy.com/jobs/158579-fiat-treasury-manager"
   ],
   "lastDigestDate": "2026-11-03"
 }
