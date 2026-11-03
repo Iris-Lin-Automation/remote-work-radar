@@ -1,195 +1,6 @@
 {
-  "updatedAt": "2026-11-03T11:38:46.082Z",
+  "updatedAt": "2026-11-03T19:06:04.471Z",
   "jobs": [
-    {
-      "at": "2026-10-27T20:27:09.896Z",
-      "title": "Regional Marketing Manager, ANZ",
-      "url": "https://jobicy.com/jobs/157421-regional-marketing-manager-anz",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-28T00:58:49.474Z",
-      "title": "[成都/Remote·全职] $3.5k–4.8k USD/月 | Owlery 硅谷AI物流 | Full Stack Engineer | English required",
-      "url": "https://eleduck.com/posts/BaflDG",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:58:51.010Z",
-      "title": "Supabase招聘全职远程工作软件工程师 – 存储",
-      "url": "https://yuancheng.work/6959.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:58:52.536Z",
-      "title": "Supabase招聘全职远程工作工程经理 – Spark",
-      "url": "https://yuancheng.work/6957.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:58:54.074Z",
-      "title": "Supabase招聘全职远程工作平台工程师 – 计算容量",
-      "url": "https://yuancheng.work/6952.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:58:55.599Z",
-      "title": "Supabase招聘全职远程工作平台工程师，边缘与网络",
-      "url": "https://yuancheng.work/6953.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:58:57.135Z",
-      "title": "Supabase招聘全职远程工作Spark 软件工程师",
-      "url": "https://yuancheng.work/6950.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:58:58.660Z",
-      "title": "Supabase招聘全职远程工作Data API 工程师",
-      "url": "https://yuancheng.work/6949.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:00.262Z",
-      "title": "Supabase招聘全职远程工作软件工程师 – Turso",
-      "url": "https://yuancheng.work/6947.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:01.801Z",
-      "title": "Supabase招聘全职远程工作计费工程经理",
-      "url": "https://yuancheng.work/6946.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:03.343Z",
-      "title": "Supabase招聘全职远程工作软件工程师 – 分支管理",
-      "url": "https://yuancheng.work/6944.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:04.877Z",
-      "title": "Supabase招聘全职远程工作软件工程师 – Functions (Compute)",
-      "url": "https://yuancheng.work/6938.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:06.402Z",
-      "title": "Supabase招聘全职远程工作发布工程师（SRE）",
-      "url": "https://yuancheng.work/6960.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:07.933Z",
-      "title": "Supabase招聘全职远程工作平台工程师",
-      "url": "https://yuancheng.work/6956.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:09.478Z",
-      "title": "Supabase招聘全职远程工作数据库支持工程师（日语）",
-      "url": "https://yuancheng.work/6954.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:11.003Z",
-      "title": "Supabase招聘全职远程工作性能工程师（性能分析与调优）",
-      "url": "https://yuancheng.work/6951.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:12.539Z",
-      "title": "Supabase招聘全职远程工作平台安全工程师",
-      "url": "https://yuancheng.work/6945.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:14.082Z",
-      "title": "Supabase招聘全职远程工作云平台工程师",
-      "url": "https://yuancheng.work/6941.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:15.618Z",
-      "title": "Supabase招聘全职远程工作站点可靠性工程师",
-      "url": "https://yuancheng.work/6939.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:17.142Z",
-      "title": "Supabase招聘全职远程工作Postgres 部署工程师",
-      "url": "https://yuancheng.work/6937.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:18.671Z",
-      "title": "Supabase招聘全职远程工作支持工程师",
-      "url": "https://yuancheng.work/6935.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:20.202Z",
-      "title": "Supabase招聘全职远程工作FinOps 工程师",
-      "url": "https://yuancheng.work/6934.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:21.736Z",
-      "title": "Supabase招聘全职远程工作产品经理（Auth方向）",
-      "url": "https://yuancheng.work/6955.html",
-      "source": "远程.work·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:23.260Z",
-      "title": "Supabase招聘全职远程工作Realtime 产品经理",
-      "url": "https://yuancheng.work/6943.html",
-      "source": "远程.work·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:24.788Z",
-      "title": "Supabase招聘全职远程工作基础设施产品负责人",
-      "url": "https://yuancheng.work/6927.html",
-      "source": "远程.work·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:26.315Z",
-      "title": "Supabase招聘全职远程工作高级数据分析师 – 市场营销",
-      "url": "https://yuancheng.work/6948.html",
-      "source": "远程.work·其他",
-      "score": 0
-    },
-    {
-      "at": "2026-10-28T00:59:27.887Z",
-      "title": "Channel Account Manager",
-      "url": "https://jobicy.com/jobs/157441-channel-account-manager-3",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
     {
       "at": "2026-10-28T07:56:04.531Z",
       "title": "AI 全栈工程师（Agent 方向）",
@@ -2100,6 +1911,195 @@
       "url": "https://jobicy.com/jobs/158602-senior-regulatory-manager",
       "source": "Jobicy·APAC",
       "score": 10
+    },
+    {
+      "at": "2026-11-03T19:05:23.788Z",
+      "title": "远程｜ Flutter｜ Golang( PHP 转 Go)｜ Go｜ PHP ｜ H5 前｜ Web 高(Flutter)｜ AI 建站｜ AI 全栈｜ UI｜ AI 剪辑｜ AI 短剧编剧｜ SEO 白帽(拒泛站/要高通过率)",
+      "url": "https://www.v2ex.com/t/1254277",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:25.343Z",
+      "title": "远程居家办公——AI Agent 支付与金融基础设施负责人（30K-50k）",
+      "url": "https://www.v2ex.com/t/1254263",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:26.923Z",
+      "title": "Kingdee ERP Project Manager (Remote, Part-time) | English & Mandarin | RMB 250–450/h",
+      "url": "https://eleduck.com/posts/gYfYwK",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:28.490Z",
+      "title": "配任务 JSON 时，这 6 类错人工根本查不出来",
+      "url": "https://eleduck.com/posts/N0fnGg",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:30.040Z",
+      "title": "大一上，真的好迷茫",
+      "url": "https://eleduck.com/posts/98f92a",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:31.600Z",
+      "title": "目前国内有没有可以接国际旅游团导游委托的平台？",
+      "url": "https://eleduck.com/posts/v5fYOq",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:33.166Z",
+      "title": "远程居家办公-大模型聚合业务负责人(30k-50k) \\AI Agent支付与金融基础设施负责人",
+      "url": "https://eleduck.com/posts/yGf5rE",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:34.722Z",
+      "title": "〖远程求职｜台湾地区｜品牌营销 / 内容运营 / AI项目助理〗",
+      "url": "https://eleduck.com/posts/W9fx2q",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:36.309Z",
+      "title": "AI coding 让开发成本大降，现在缺的是 idea：我把一个比赛的 1.4 万个作品筛了一遍",
+      "url": "https://eleduck.com/posts/ZXfBvq",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:37.872Z",
+      "title": "andyxinweimin招聘全职远程工作AI短剧创作（视频剪辑）/ AI短剧编剧 / AI内容编辑",
+      "url": "https://yuancheng.work/7062.html",
+      "source": "远程.work·其他",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:39.476Z",
+      "title": "AI Trainers Network - Latvian",
+      "url": "https://jobicy.com/jobs/158743-ai-trainers-network-latvian",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:41.030Z",
+      "title": "AI Trainers Network - Lao",
+      "url": "https://jobicy.com/jobs/158741-ai-trainers-network-lao",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-03T19:05:42.596Z",
+      "title": "AI Trainers Network - Kyrgyz",
+      "url": "https://jobicy.com/jobs/158739-ai-trainers-network-kyrgyz",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:44.162Z",
+      "title": "AI Trainers Network - Italian",
+      "url": "https://jobicy.com/jobs/158737-ai-trainers-network-italian",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:45.733Z",
+      "title": "AI Trainers Network - Irish",
+      "url": "https://jobicy.com/jobs/158734-ai-trainers-network-irish",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:47.302Z",
+      "title": "AI Trainers Network - Hungarian",
+      "url": "https://jobicy.com/jobs/158731-ai-trainers-network-hungarian",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:48.859Z",
+      "title": "AI Trainers Network - Hebrew",
+      "url": "https://jobicy.com/jobs/158726-ai-trainers-network-hebrew",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:50.416Z",
+      "title": "Product Manager - Social Features (Content)",
+      "url": "https://jobicy.com/jobs/158713-product-manager-social-features-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-03T19:05:51.974Z",
+      "title": "Investigation Analyst, Geofencing (12 months contract)",
+      "url": "https://jobicy.com/jobs/158703-investigation-analyst-geofencing-12-months-contract",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-03T19:05:53.528Z",
+      "title": "Global Crypto-as-a-Service Partnership- Senior Specialist",
+      "url": "https://jobicy.com/jobs/158695-global-crypto-as-a-service-partnership-senior-specialist",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-03T19:05:55.091Z",
+      "title": "Global Affiliate Manager",
+      "url": "https://jobicy.com/jobs/158694-global-affiliate-manager",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:56.648Z",
+      "title": "Binance Accelerator Program -Language Operations",
+      "url": "https://jobicy.com/jobs/158692-binance-accelerator-program-language-operations",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-03T19:05:58.203Z",
+      "title": "Material Supply Planner",
+      "url": "https://jobicy.com/jobs/158693-material-supply-planner",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:05:59.765Z",
+      "title": "Customer Support Associate",
+      "url": "https://jobicy.com/jobs/158691-customer-support-associate",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:06:01.327Z",
+      "title": "Finished Artist",
+      "url": "https://jobicy.com/jobs/158690-finished-artist",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:06:02.902Z",
+      "title": "Billing Analyst",
+      "url": "https://jobicy.com/jobs/158689-billing-analyst",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-03T19:06:04.471Z",
+      "title": "Account Manager (Hauraki Plains)",
+      "url": "https://jobicy.com/jobs/158688-account-manager-hauraki-plains",
+      "source": "Jobicy·APAC",
+      "score": 0
     }
   ]
 }
