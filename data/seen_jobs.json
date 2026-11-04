@@ -1,14 +1,6 @@
 {
-  "updatedAt": "2026-11-04T00:24:43.374Z",
+  "updatedAt": "2026-11-04T08:39:32.019Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/151006-dutch-sports-localization-specialist-football",
-    "jobicy|https://jobicy.com/jobs/151005-slovak-sports-localization-specialist-football",
-    "jobicy|https://jobicy.com/jobs/151004-ukrainian-sports-localization-specialist-football",
-    "jobicy|https://jobicy.com/jobs/151015-alliances-channels-leader-2",
-    "jobicy|https://jobicy.com/jobs/151014-associate-linux-support-engineer",
-    "jobicy|https://jobicy.com/jobs/151077-functional-consultant-emea",
-    "jobicy|https://jobicy.com/jobs/151075-account-executive-japan",
-    "jobicy|https://jobicy.com/jobs/151013-distributed-systems-testing-software-engineer-python-go",
     "jobicy|https://jobicy.com/jobs/146814-senior-sales-engineer-4",
     "jobicy|https://jobicy.com/jobs/146757-finnish-tech-linguistic-tester",
     "jobicy|https://jobicy.com/jobs/150277-customer-engineer-melbourne",
@@ -2000,7 +1992,15 @@
     "jobicy|https://jobicy.com/jobs/158789-ai-trainers-network-mongolian",
     "jobicy|https://jobicy.com/jobs/158788-ai-trainers-network-maori",
     "jobicy|https://jobicy.com/jobs/158787-ai-trainers-network-malay",
-    "jobicy|https://jobicy.com/jobs/158784-ai-trainers-network-lithuanian"
+    "jobicy|https://jobicy.com/jobs/158784-ai-trainers-network-lithuanian",
+    "v2ex_jobs|https://www.v2ex.com/t/1254440",
+    "v2ex_jobs|https://www.v2ex.com/t/1254351",
+    "v2ex_jobs|https://www.v2ex.com/t/1254321",
+    "eleduck|https://eleduck.com/posts/ARfdzk",
+    "eleduck|https://eleduck.com/posts/K7faXL",
+    "eleduck|https://eleduck.com/posts/JpfVRq",
+    "eleduck|https://eleduck.com/posts/laf5QJ",
+    "jobicy|https://jobicy.com/jobs/158833-ai-content-reviewer"
   ],
   "lastDigestDate": "2026-11-04"
 }
