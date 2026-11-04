@@ -1,160 +1,6 @@
 {
-  "updatedAt": "2026-11-04T08:39:30.817Z",
+  "updatedAt": "2026-11-04T17:46:18.016Z",
   "jobs": [
-    {
-      "at": "2026-10-29T08:03:59.172Z",
-      "title": "Territory Manager (North Canterbury)",
-      "url": "https://jobicy.com/jobs/157713-territory-manager-north-canterbury",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:00.659Z",
-      "title": "Binance Accelerator Program - Marketing (South East Asia)",
-      "url": "https://jobicy.com/jobs/157710-binance-accelerator-program-marketing-south-east-asia",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:02.162Z",
-      "title": "Binance Accelerator Program - Events",
-      "url": "https://jobicy.com/jobs/157704-binance-accelerator-program-events",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-29T08:04:03.647Z",
-      "title": "Product Specialist, Agriculture - Australia",
-      "url": "https://jobicy.com/jobs/157709-product-specialist-agriculture-australia",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:05.139Z",
-      "title": "Enterprise Key Account Manager (Southland)",
-      "url": "https://jobicy.com/jobs/157707-enterprise-key-account-manager-southland",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:06.635Z",
-      "title": "Business Development Executive (North Canterbury)",
-      "url": "https://jobicy.com/jobs/157705-business-development-executive-north-canterbury",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:08.121Z",
-      "title": "Account Manager (Northern Southland)",
-      "url": "https://jobicy.com/jobs/157703-account-manager-northern-southland",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:09.621Z",
-      "title": "Binance Accelerator Program - Data Scientist (User Growth)",
-      "url": "https://jobicy.com/jobs/157702-binance-accelerator-program-data-scientist-user-growth",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-29T08:04:11.103Z",
-      "title": "Binance Accelerator Program - Data Scientist (Recommendation/Square Community)",
-      "url": "https://jobicy.com/jobs/157700-binance-accelerator-program-data-scientist-recommendation-square-community",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-29T08:04:12.593Z",
-      "title": "Binance Accelerator Program - Data Scientist (LLM & Trading)",
-      "url": "https://jobicy.com/jobs/157697-binance-accelerator-program-data-scientist-llm-trading",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-29T08:04:14.101Z",
-      "title": "Regional Sales Manager (Lower North Island, Dairy)",
-      "url": "https://jobicy.com/jobs/157701-regional-sales-manager-lower-north-island-dairy",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:15.589Z",
-      "title": "Territory Manager (Roma)",
-      "url": "https://jobicy.com/jobs/157699-territory-manager-roma",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:17.082Z",
-      "title": "Accountant (Permanent work from home)",
-      "url": "https://jobicy.com/jobs/157698-accountant-permanent-work-from-home",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-29T08:04:18.574Z",
-      "title": "Renewal Specialist, Services Sales - APAC",
-      "url": "https://jobicy.com/jobs/157696-renewal-specialist-services-sales-apac",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-10-29T08:04:20.062Z",
-      "title": "Sr Customer Success Manager",
-      "url": "https://jobicy.com/jobs/157695-sr-customer-success-manager-8",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-29T08:04:21.556Z",
-      "title": "Enterprise Sales Manager (NSW)",
-      "url": "https://jobicy.com/jobs/157694-enterprise-sales-manager-nsw",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:23.050Z",
-      "title": "Junior Accountant (Permanent work from home)",
-      "url": "https://jobicy.com/jobs/157693-junior-accountant-permanent-work-from-home",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-29T08:04:24.537Z",
-      "title": "Typeform: Senior AI Engineer - EU",
-      "url": "https://weworkremotely.com/remote-jobs/typeform-senior-ai-engineer-eu",
-      "source": "WWR·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:26.033Z",
-      "title": "Typeform: Senior AI Engineer - US",
-      "url": "https://weworkremotely.com/remote-jobs/typeform-senior-ai-engineer-us",
-      "source": "WWR·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T08:04:27.522Z",
-      "title": "ZoomInfo Technologies LLC: Principal Applied AI Engineer - Entity Agents",
-      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-applied-ai-engineer-entity-agents",
-      "source": "WWR·产品",
-      "score": 12
-    },
-    {
-      "at": "2026-10-29T16:36:44.940Z",
-      "title": "大佬们看看我这简历怎么优化",
-      "url": "https://www.v2ex.com/t/1252960",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:46.460Z",
-      "title": "招聘： Rust 工程师（量化交易系统）",
-      "url": "https://www.v2ex.com/t/1252953",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
     {
       "at": "2026-10-29T16:36:47.980Z",
       "title": "[上海] 外企 Kong 核心研发扩招｜聊聊 RustChinaConf 2026 参会体会，顺带为 Kong 核心研发团队招募 4 位网络 AI 工程师 (AI/Rust /Lua /Gateway/网络系统)",
@@ -2100,6 +1946,160 @@
       "url": "https://jobicy.com/jobs/158833-ai-content-reviewer",
       "source": "Jobicy·APAC",
       "score": 18
+    },
+    {
+      "at": "2026-11-04T17:45:45.291Z",
+      "title": "[成都] 软件测试工程师（AI 产品方向）",
+      "url": "https://www.v2ex.com/t/1254553",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:46.829Z",
+      "title": "AI Agent 支付与金融基础设施负责人（远程居家办公）",
+      "url": "https://www.v2ex.com/t/1254548",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:48.367Z",
+      "title": "远程 AI 工作流工程师",
+      "url": "https://www.v2ex.com/t/1254512",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:49.892Z",
+      "title": "远程线上办公*iOS/flutter 开发工程师*高级全栈工程师（ PHP 为主， Flutter / Vue 方向*后端工程师",
+      "url": "https://www.v2ex.com/t/1254493",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:51.465Z",
+      "title": "我们在做 AI 时代的 Dropbox，寻找一位产品设计师与一位全栈工程师",
+      "url": "https://www.v2ex.com/t/1254471",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:52.997Z",
+      "title": "IOS客户端开发，有上架&快速出包经验",
+      "url": "https://eleduck.com/posts/wwfLzO",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:54.600Z",
+      "title": "【急招/全职】UPay 金融科技有限公司｜支付与汇款产品经理｜Base 迪拜",
+      "url": "https://eleduck.com/posts/74f8xr",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:56.142Z",
+      "title": "现在还有必要学基础编程语言吗，目前感觉代码都是ai写的",
+      "url": "https://eleduck.com/posts/OGf1d7",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:57.707Z",
+      "title": "【免费推荐/全职远程】时薪$15-$25/高级前端开发工程师/房地产行业信息科技服务",
+      "url": "https://eleduck.com/posts/dDfpqg",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:45:59.256Z",
+      "title": "找一名兼职软件UI设计师[线上兼职]",
+      "url": "https://eleduck.com/posts/z1fBzv",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:46:00.920Z",
+      "title": "Senior Talent Acquisition Operations Specialist (Contract)",
+      "url": "https://jobicy.com/jobs/158981-senior-talent-acquisition-operations-specialist-contract",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-04T17:46:02.525Z",
+      "title": "English to Maltese Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/158982-english-to-maltese-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-04T17:46:04.057Z",
+      "title": "Senior Card Product Manager",
+      "url": "https://jobicy.com/jobs/158977-senior-card-product-manager",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-04T17:46:05.597Z",
+      "title": "RWA Growth Specialist",
+      "url": "https://jobicy.com/jobs/158973-rwa-growth-specialist",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-04T17:46:07.132Z",
+      "title": "English to Lao Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/158980-english-to-lao-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-04T17:46:08.699Z",
+      "title": "English to Kyrgyz Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/158978-english-to-kyrgyz-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-04T17:46:10.232Z",
+      "title": "English to Korean linguist for Patent",
+      "url": "https://jobicy.com/jobs/158976-english-to-korean-linguist-for-patent",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:46:11.781Z",
+      "title": "Onboarding Consultant, Menu",
+      "url": "https://jobicy.com/jobs/158975-onboarding-consultant-menu",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:46:13.353Z",
+      "title": "Chinese Translator",
+      "url": "https://jobicy.com/jobs/158972-chinese-translator",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-04T17:46:14.892Z",
+      "title": "Senior Marketing Manager - Japan (Contract)",
+      "url": "https://jobicy.com/jobs/158971-senior-marketing-manager-japan-contract",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T17:46:16.426Z",
+      "title": "Audio Recording Project - Cantonese (Hong Kong)",
+      "url": "https://jobicy.com/jobs/158882-audio-recording-project-cantonese-hong-kong",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-04T17:46:18.015Z",
+      "title": "Zanda Health: Product Owner",
+      "url": "https://weworkremotely.com/remote-jobs/zanda-health-product-owner-1",
+      "source": "WWR·产品",
+      "score": 12
     }
   ]
 }
