@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-11-04T17:46:19.627Z",
+  "updatedAt": "2026-11-04T23:14:47.892Z",
   "keys": [
-    "eleduck|https://eleduck.com/posts/mbf13R",
-    "eleduck|https://eleduck.com/posts/2LfOGG",
-    "v2ex_jobs|https://www.v2ex.com/t/1243413",
-    "v2ex_jobs|https://www.v2ex.com/t/1243377",
-    "eleduck|https://eleduck.com/posts/z1fRRN",
-    "eleduck|https://eleduck.com/posts/Ygf5Az",
-    "eleduck|https://eleduck.com/posts/rdf4D2",
-    "jobicy|https://jobicy.com/jobs/151230-territory-manager-deniliquin-beef",
-    "jobicy|https://jobicy.com/jobs/146760-norwegian-tech-linguistic-tester",
     "jobicy|https://jobicy.com/jobs/151256-lead-solutions-engineer",
     "jobicy|https://jobicy.com/jobs/151244-technical-account-manager",
     "jobicy|https://jobicy.com/jobs/151201-commercial-insurance-specialist",
@@ -2000,7 +1991,16 @@
     "jobicy|https://jobicy.com/jobs/158972-chinese-translator",
     "jobicy|https://jobicy.com/jobs/158971-senior-marketing-manager-japan-contract",
     "jobicy|https://jobicy.com/jobs/158882-audio-recording-project-cantonese-hong-kong",
-    "wwr_product|https://weworkremotely.com/remote-jobs/zanda-health-product-owner-1"
+    "wwr_product|https://weworkremotely.com/remote-jobs/zanda-health-product-owner-1",
+    "eleduck|https://eleduck.com/posts/0XfxAr",
+    "yw_dev|https://yuancheng.work/7090.html",
+    "yw_ops|https://yuancheng.work/7103.html",
+    "yw_ops|https://yuancheng.work/7104.html",
+    "yw_ops|https://yuancheng.work/7101.html",
+    "yw_mkt|https://yuancheng.work/7100.html",
+    "yw_prod|https://yuancheng.work/7106.html",
+    "yw_prod|https://yuancheng.work/7102.html",
+    "yw_sales|https://yuancheng.work/7107.html"
   ],
   "lastDigestDate": "2026-11-05"
 }

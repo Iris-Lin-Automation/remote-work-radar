@@ -1,69 +1,6 @@
 {
-  "updatedAt": "2026-11-04T17:46:18.016Z",
+  "updatedAt": "2026-11-04T23:14:46.689Z",
   "jobs": [
-    {
-      "at": "2026-10-29T16:36:47.980Z",
-      "title": "[上海] 外企 Kong 核心研发扩招｜聊聊 RustChinaConf 2026 参会体会，顺带为 Kong 核心研发团队招募 4 位网络 AI 工程师 (AI/Rust /Lua /Gateway/网络系统)",
-      "url": "https://www.v2ex.com/t/1252914",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:49.508Z",
-      "title": "个人号、客户号来回切，分享一个免费的 Claude 环境管理工具",
-      "url": "https://eleduck.com/posts/wwfLad",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:51.032Z",
-      "title": "游戏技术大牛合伙已有Demo",
-      "url": "https://eleduck.com/posts/5Bf1lm",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:52.564Z",
-      "title": "GAP5个月了，刚在gpt上问remote的工作找到这，和大家交流一下",
-      "url": "https://eleduck.com/posts/74f8Wq",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:54.101Z",
-      "title": "【英文办公】兼职8k-12k/月｜居家办公｜后端与 DevOps 工程师（NestJS）",
-      "url": "https://eleduck.com/posts/Ygf2WO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:55.618Z",
-      "title": "我在自己电脑上造了个\"AI 员工\"：本地 Agent 工作台的架构设计和踩坑记录",
-      "url": "https://eleduck.com/posts/rdf3zv",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:57.159Z",
-      "title": "[兼职] 招募IT方向课程作者（远程/60%高分成）",
-      "url": "https://eleduck.com/posts/b2fANv",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:36:58.684Z",
-      "title": "【已结束】招聘｜兼职全栈工程师｜AI 聊天",
-      "url": "https://eleduck.com/posts/a4fbKo",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-29T16:37:00.224Z",
-      "title": "sheniandaji2026招聘全职/兼职远程工作高级产品经理",
-      "url": "https://yuancheng.work/6784.html",
-      "source": "远程.work·产品",
-      "score": 0
-    },
     {
       "at": "2026-10-29T16:37:01.732Z",
       "title": "Senior Staff Accountant",
@@ -2100,6 +2037,69 @@
       "url": "https://weworkremotely.com/remote-jobs/zanda-health-product-owner-1",
       "source": "WWR·产品",
       "score": 12
+    },
+    {
+      "at": "2026-11-04T23:14:34.578Z",
+      "title": "自由职业五个月，七八个项目还没有收入，可是我不想回去上班啊",
+      "url": "https://eleduck.com/posts/0XfxAr",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T23:14:36.091Z",
+      "title": "Circle招聘全职远程工作AI平台首席工程师",
+      "url": "https://yuancheng.work/7090.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T23:14:37.605Z",
+      "title": "Alpaca招聘全职远程工作高级DevOps工程师",
+      "url": "https://yuancheng.work/7103.html",
+      "source": "远程.work·运营",
+      "score": 12
+    },
+    {
+      "at": "2026-11-04T23:14:39.121Z",
+      "title": "Alpaca招聘全职远程工作高级站点可靠性工程师",
+      "url": "https://yuancheng.work/7104.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T23:14:40.625Z",
+      "title": "Alpaca招聘全职远程工作事件运营指挥官",
+      "url": "https://yuancheng.work/7101.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T23:14:42.144Z",
+      "title": "Supabase招聘全职远程工作资深开发者关系（Twitter 品牌代表）",
+      "url": "https://yuancheng.work/7100.html",
+      "source": "远程.work·市场",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T23:14:43.660Z",
+      "title": "Alpaca招聘全职远程工作产品经理 – 经纪业务 – 欧盟",
+      "url": "https://yuancheng.work/7106.html",
+      "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T23:14:45.172Z",
+      "title": "Alpaca招聘全职远程工作高级产品经理",
+      "url": "https://yuancheng.work/7102.html",
+      "source": "远程.work·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-11-04T23:14:46.689Z",
+      "title": "Alpaca招聘全职远程工作高级销售工程师",
+      "url": "https://yuancheng.work/7107.html",
+      "source": "远程.work·销售",
+      "score": 0
     }
   ]
 }
