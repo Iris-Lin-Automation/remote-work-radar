@@ -1,69 +1,6 @@
 {
-  "updatedAt": "2026-11-05T21:46:42.990Z",
+  "updatedAt": "2026-11-06T01:59:37.694Z",
   "jobs": [
-    {
-      "at": "2026-10-30T18:59:49.879Z",
-      "title": "Principal Solutions Architect, Japan",
-      "url": "https://jobicy.com/jobs/157981-principal-solutions-architect-japan",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-30T18:59:51.366Z",
-      "title": "Ads Quality Rater - Korean",
-      "url": "https://jobicy.com/jobs/157980-ads-quality-rater-korean",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-30T18:59:52.859Z",
-      "title": "Technical Writer – Part-Time, Fixed-Term (3 Months) – Australia",
-      "url": "https://jobicy.com/jobs/157979-technical-writer-part-time-fixed-term-3-months-australia",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-30T23:28:14.278Z",
-      "title": "我新上线一个小项目，帮大家快速查找大厂外企工作的，求职者营地： qzzyd.com。",
-      "url": "https://www.v2ex.com/t/1253332",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-10-30T23:28:15.834Z",
-      "title": "Account Executive (New Logo Hunter)",
-      "url": "https://jobicy.com/jobs/158098-account-executive-new-logo-hunter",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-30T23:28:17.388Z",
-      "title": "Field Specialist (Tasman)",
-      "url": "https://jobicy.com/jobs/158085-field-specialist-tasman",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-30T23:28:18.948Z",
-      "title": "Technical Designer",
-      "url": "https://jobicy.com/jobs/158084-technical-designer",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-30T23:28:20.500Z",
-      "title": "Field Operations Specialist (Tasmania)",
-      "url": "https://jobicy.com/jobs/158083-field-operations-specialist-tasmania",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-30T23:28:22.057Z",
-      "title": "AI & Automation Analyst",
-      "url": "https://jobicy.com/jobs/158081-ai-automation-analyst",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-10-30T23:28:23.609Z",
       "title": "Field Operations Specialist (New South Wales)",
@@ -2100,6 +2037,69 @@
       "url": "https://jobicy.com/jobs/159127-l1-hosting-tech-support-agent-2",
       "source": "Jobicy·APAC",
       "score": 0
+    },
+    {
+      "at": "2026-11-06T01:59:25.099Z",
+      "title": "招聘： C++低延迟交易系统工程师， C++ 交易引擎系统开发工程师（必须具备实际开发经验）",
+      "url": "https://www.v2ex.com/t/1254890",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T01:59:26.662Z",
+      "title": "Alpaca招聘全职远程工作高级软件工程师",
+      "url": "https://yuancheng.work/7120.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T01:59:28.226Z",
+      "title": "B12招聘全职远程工作高级软件工程师",
+      "url": "https://yuancheng.work/7118.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T01:59:29.784Z",
+      "title": "Alpaca招聘全职远程工作高级软件工程师（质量工程）",
+      "url": "https://yuancheng.work/7117.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T01:59:31.346Z",
+      "title": "Alpaca招聘全职远程工作高级软件工程师（日本市场）",
+      "url": "https://yuancheng.work/7116.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T01:59:32.905Z",
+      "title": "Alpaca招聘全职远程工作高级站点可靠性工程师 – 亚太区",
+      "url": "https://yuancheng.work/7119.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T01:59:34.566Z",
+      "title": "English to Estonian Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159220-english-to-estonian-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-06T01:59:36.146Z",
+      "title": "English to Bosnian (Cyrillic) Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159217-english-to-bosnian-cyrillic-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-06T01:59:37.694Z",
+      "title": "English to Armenian Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159215-english-to-armenian-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
     }
   ]
 }
