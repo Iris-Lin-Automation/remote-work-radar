@@ -1,55 +1,6 @@
 {
-  "updatedAt": "2026-11-06T09:15:26.545Z",
+  "updatedAt": "2026-11-06T17:12:01.796Z",
   "jobs": [
-    {
-      "at": "2026-10-31T11:43:34.238Z",
-      "title": "独立开发 AI 视频商业 SaaS 踩坑：大模型限流与长任务卡顿怎么破？",
-      "url": "https://eleduck.com/posts/ARfdvn",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T16:51:37.199Z",
-      "title": "接网站修复 / 落地页 / 网络排障 / Python 小自动化｜远程",
-      "url": "https://eleduck.com/posts/a4fbDd",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T16:51:38.762Z",
-      "title": "Software Developer",
-      "url": "https://jobicy.com/jobs/158207-software-developer-2",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T16:51:40.311Z",
-      "title": "AI Trainers Network - English",
-      "url": "https://jobicy.com/jobs/158206-ai-trainers-network-english",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-31T16:51:41.869Z",
-      "title": "Recruiter, Sales (APJ)",
-      "url": "https://jobicy.com/jobs/158205-recruiter-sales-apj",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-31T16:51:43.419Z",
-      "title": "Senior Marketing Strategist",
-      "url": "https://jobicy.com/jobs/158204-senior-marketing-strategist",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T16:51:44.996Z",
-      "title": "AI Data Quality Specialist - English (Philippines)",
-      "url": "https://jobicy.com/jobs/158203-ai-data-quality-specialist-english-philippines",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-10-31T16:51:46.565Z",
       "title": "Security Operations Analyst",
@@ -2100,6 +2051,55 @@
       "url": "https://eleduck.com/posts/qzf19V",
       "source": "电鸭社区",
       "score": 0
+    },
+    {
+      "at": "2026-11-06T17:11:52.413Z",
+      "title": "上海社招， AI Infra / Agent Infra 工程师",
+      "url": "https://www.v2ex.com/t/1255084",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T17:11:53.968Z",
+      "title": "[远程/全职] AdmitPlus 招聘 AI 应用工程师、产品经理、运营推广",
+      "url": "https://www.v2ex.com/t/1255081",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T17:11:55.589Z",
+      "title": "不想再在职场往上走，又没想清楚要做什么，怎么找方向？",
+      "url": "https://eleduck.com/posts/yGf5L4",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T17:11:57.136Z",
+      "title": "【远程兼职 / Web3】CKBA 招募 Part-time Event Coordinator",
+      "url": "https://eleduck.com/posts/5Bf1an",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T17:11:58.683Z",
+      "title": "TikTok 中东 MENA 达人经纪人，线上远程合伙，高返佣",
+      "url": "https://eleduck.com/posts/74f8VX",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T17:12:00.230Z",
+      "title": "English to German (Switzerland) Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159312-english-to-german-switzerland-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-06T17:12:01.796Z",
+      "title": "English to Georgian Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159307-english-to-georgian-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
     }
   ]
 }
