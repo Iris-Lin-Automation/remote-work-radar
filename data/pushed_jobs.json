@@ -1,76 +1,6 @@
 {
-  "updatedAt": "2026-11-06T17:12:01.796Z",
+  "updatedAt": "2026-11-06T22:44:25.084Z",
   "jobs": [
-    {
-      "at": "2026-10-31T16:51:46.565Z",
-      "title": "Security Operations Analyst",
-      "url": "https://jobicy.com/jobs/158202-security-operations-analyst-2",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-31T16:51:48.115Z",
-      "title": "Manager, Sales Recruiting (APJ)",
-      "url": "https://jobicy.com/jobs/158201-manager-sales-recruiting-apj",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-10-31T16:51:49.677Z",
-      "title": "Senior HubSpot Implementation Specialist",
-      "url": "https://jobicy.com/jobs/158200-senior-hubspot-implementation-specialist",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T16:51:51.253Z",
-      "title": "Ads Quality Rater - Vietnamese (Vietnam)",
-      "url": "https://jobicy.com/jobs/158199-ads-quality-rater-vietnamese-vietnam",
-      "source": "Jobicy·APAC",
-      "score": 8
-    },
-    {
-      "at": "2026-10-31T16:51:52.811Z",
-      "title": "Technical Manager (Kuala Lumpur, Malaysia)",
-      "url": "https://jobicy.com/jobs/158198-technical-manager-kuala-lumpur-malaysia",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-31T16:51:54.365Z",
-      "title": "Vice President, International",
-      "url": "https://jobicy.com/jobs/158146-vice-president-international",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-10-31T21:00:33.026Z",
-      "title": "Metabase招聘全职远程工作软件工程师（前端）",
-      "url": "https://yuancheng.work/7020.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T21:00:34.519Z",
-      "title": "Metabase招聘全职远程工作安全工程师",
-      "url": "https://yuancheng.work/7019.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T21:00:36.013Z",
-      "title": "Supabase招聘全职远程工作软件工程师 – AI 工具基础设施",
-      "url": "https://yuancheng.work/7016.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T21:00:37.502Z",
-      "title": "Metabase招聘全职远程工作后端软件工程师",
-      "url": "https://yuancheng.work/7015.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
     {
       "at": "2026-10-31T21:00:39.074Z",
       "title": "Metabase招聘全职远程工作工程经理",
@@ -2100,6 +2030,76 @@
       "url": "https://jobicy.com/jobs/159307-english-to-georgian-review-lead-for-ui-marketing-product-content",
       "source": "Jobicy·APAC",
       "score": 10
+    },
+    {
+      "at": "2026-11-06T22:44:11.381Z",
+      "title": "我想找个远程客服，做过3年抖音客服",
+      "url": "https://eleduck.com/posts/N0fnEX",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T22:44:12.893Z",
+      "title": "【长期远程兼职】医美软件技术型产品经理｜8K–12K/月｜每天3小时",
+      "url": "https://eleduck.com/posts/98f9k2",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-06T22:44:14.428Z",
+      "title": "Head of AI Native Operations",
+      "url": "https://jobicy.com/jobs/159382-head-of-ai-native-operations",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-06T22:44:15.942Z",
+      "title": "OrioleDB Deployment Engineer",
+      "url": "https://jobicy.com/jobs/159380-orioledb-deployment-engineer",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-06T22:44:17.445Z",
+      "title": "AWS Partner Marketing Manager",
+      "url": "https://jobicy.com/jobs/159377-aws-partner-marketing-manager",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-06T22:44:18.992Z",
+      "title": "SDK Engineer - Python",
+      "url": "https://jobicy.com/jobs/159374-sdk-engineer-python",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-06T22:44:20.504Z",
+      "title": "FinOps Engineer",
+      "url": "https://jobicy.com/jobs/159370-finops-engineer",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-06T22:44:22.065Z",
+      "title": "Platform Engineer, Edge & Networking",
+      "url": "https://jobicy.com/jobs/159366-platform-engineer-edge-networking",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-06T22:44:23.569Z",
+      "title": "Senior Developer Relations, Twitter Brand Rep",
+      "url": "https://jobicy.com/jobs/159353-senior-developer-relations-twitter-brand-rep",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-06T22:44:25.084Z",
+      "title": "Business Development Executive - Dairy (Coastal New South Wales)",
+      "url": "https://jobicy.com/jobs/159350-business-development-executive-dairy-coastal-new-south-wales",
+      "source": "Jobicy·APAC",
+      "score": 0
     }
   ]
 }
