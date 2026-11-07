@@ -1,69 +1,6 @@
 {
-  "updatedAt": "2026-11-07T18:28:55.737Z",
+  "updatedAt": "2026-11-07T23:26:11.365Z",
   "jobs": [
-    {
-      "at": "2026-11-01T16:35:46.226Z",
-      "title": "Regional Sales Manager (Central & Northern Victoria)",
-      "url": "https://jobicy.com/jobs/158325-regional-sales-manager-central-northern-victoria",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:47.736Z",
-      "title": "Territory Manager (Horsham)",
-      "url": "https://jobicy.com/jobs/158313-territory-manager-horsham",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:49.223Z",
-      "title": "AI Trainers Network - English (Philippines)",
-      "url": "https://jobicy.com/jobs/158312-ai-trainers-network-english-philippines",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:50.707Z",
-      "title": "Field Specialist (Taranaki)",
-      "url": "https://jobicy.com/jobs/158311-field-specialist-taranaki",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:52.198Z",
-      "title": "AI Trainers Network - English (New Zealand)",
-      "url": "https://jobicy.com/jobs/158310-ai-trainers-network-english-new-zealand",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:53.695Z",
-      "title": "Field Specialist (Northland)",
-      "url": "https://jobicy.com/jobs/158309-field-specialist-northland",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:55.189Z",
-      "title": "AI Trainers Network - English (Australia)",
-      "url": "https://jobicy.com/jobs/158308-ai-trainers-network-english-australia",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:56.679Z",
-      "title": "Customer Solution Architect (AU, NZ, SG)",
-      "url": "https://jobicy.com/jobs/158307-customer-solution-architect-au-nz-sg",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-11-01T16:35:58.212Z",
-      "title": "Technical Support Engineer (Shopify)",
-      "url": "https://jobicy.com/jobs/158306-technical-support-engineer-shopify",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-11-01T16:35:59.709Z",
       "title": "Solution Engineer",
@@ -2098,6 +2035,69 @@
       "at": "2026-11-07T18:28:55.737Z",
       "title": "Enterprise Account Executive",
       "url": "https://jobicy.com/jobs/159529-enterprise-account-executive-36",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-07T23:25:59.358Z",
+      "title": "【你好鸭】谷歌SEO/GEO + 海外建站（WordPress/Shopify/定制开发），帮出海企业拿海外询盘",
+      "url": "https://eleduck.com/posts/dDfpVm",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T23:26:00.839Z",
+      "title": "安全研究员｜远程",
+      "url": "https://eleduck.com/posts/z1fB5O",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T23:26:02.362Z",
+      "title": "Circle招聘全职远程工作主管工程师，会员增长",
+      "url": "https://yuancheng.work/7136.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T23:26:03.849Z",
+      "title": "Supabase招聘全职远程工作GTM战略规划主管",
+      "url": "https://yuancheng.work/7135.html",
+      "source": "远程.work·市场",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T23:26:05.328Z",
+      "title": "English to Ukrainian Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159619-english-to-ukrainian-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-07T23:26:06.897Z",
+      "title": "English to Slovenian Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159618-english-to-slovenian-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-07T23:26:08.398Z",
+      "title": "English to Slovak Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159617-english-to-slovak-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-07T23:26:09.880Z",
+      "title": "English to Serbian (Cyrillic) Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159616-english-to-serbian-cyrillic-review-lead-for-ui-marketing-product-content",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-07T23:26:11.365Z",
+      "title": "English to Latvian Review Lead for UI, Marketing & Product Content",
+      "url": "https://jobicy.com/jobs/159612-english-to-latvian-review-lead-for-ui-marketing-product-content",
       "source": "Jobicy·APAC",
       "score": 10
     }
