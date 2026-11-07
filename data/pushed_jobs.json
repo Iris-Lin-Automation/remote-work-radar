@@ -1,104 +1,6 @@
 {
-  "updatedAt": "2026-11-07T12:30:18.519Z",
+  "updatedAt": "2026-11-07T18:28:55.737Z",
   "jobs": [
-    {
-      "at": "2026-11-01T08:44:25.787Z",
-      "title": "【上海找创业合伙人】我有垂直自媒体获客与私域成交经验，寻找AI产品/技术型共同创始人",
-      "url": "https://eleduck.com/posts/jAfWaL",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T08:44:27.324Z",
-      "title": "ZoomInfo Technologies LLC: Principal Product Manager - Identity",
-      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-product-manager-identity",
-      "source": "WWR·产品",
-      "score": 12
-    },
-    {
-      "at": "2026-11-01T16:35:27.327Z",
-      "title": "招聘： CTO/Rust 量化/C++低延迟/撮合交易/市场负责人/资深视觉/UI 设计/合约产品",
-      "url": "https://www.v2ex.com/t/1253546",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:29.642Z",
-      "title": "做了个数据库文档生成工具，专治\"老项目零文档\"，开始卖钱了",
-      "url": "https://eleduck.com/posts/0Xfx2p",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:31.134Z",
-      "title": "大佬们，我最近面试了两家，技术都没过关，求大佬指点",
-      "url": "https://eleduck.com/posts/pqfAl3",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:32.626Z",
-      "title": "API中转站找一个业务合伙人",
-      "url": "https://eleduck.com/posts/dDfpyV",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:34.118Z",
-      "title": "Territory Sales Manager",
-      "url": "https://jobicy.com/jobs/158336-territory-sales-manager",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:35.612Z",
-      "title": "Territory Manager (Jericho)",
-      "url": "https://jobicy.com/jobs/158334-territory-manager-jericho",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:37.103Z",
-      "title": "AI Trainers Network - Korean and Chinese Simplified Bilingual",
-      "url": "https://jobicy.com/jobs/158333-ai-trainers-network-korean-and-chinese-simplified-bilingual",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:38.593Z",
-      "title": "Senior Support Engineer",
-      "url": "https://jobicy.com/jobs/158332-senior-support-engineer-3",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-01T16:35:40.077Z",
-      "title": "Territory Manager (Fitzroy South)",
-      "url": "https://jobicy.com/jobs/158330-territory-manager-fitzroy-south",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T16:35:41.569Z",
-      "title": "Vice President of Retail, APAC",
-      "url": "https://jobicy.com/jobs/158329-vice-president-of-retail-apac",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-11-01T16:35:43.090Z",
-      "title": "AI Trainers Network - Korean",
-      "url": "https://jobicy.com/jobs/158328-ai-trainers-network-korean",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-01T16:35:44.734Z",
-      "title": "Senior Solutions Architect- Sydney",
-      "url": "https://jobicy.com/jobs/158327-senior-solutions-architect-sydney",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-11-01T16:35:46.226Z",
       "title": "Regional Sales Manager (Central & Northern Victoria)",
@@ -2100,6 +2002,104 @@
       "url": "https://jobicy.com/jobs/159468-technical-account-manager-apj",
       "source": "Jobicy·APAC",
       "score": 12
+    },
+    {
+      "at": "2026-11-07T18:28:35.365Z",
+      "title": "【远程】【全职】Gate 招聘：高级后端/交易系统/APP开发/测试开发/SRE/AI产品经理/爬虫等，25K-50K",
+      "url": "https://eleduck.com/posts/QZfLm9",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:36.969Z",
+      "title": "用 AI 做 CSV 两表核对：重复单号为什么不能直接合并",
+      "url": "https://eleduck.com/posts/Ygf2yQ",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:38.535Z",
+      "title": "远程兼职｜资深 Java｜微服务重构 / K8s·信创 / 脱敏安全",
+      "url": "https://eleduck.com/posts/jAfWrp",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:40.077Z",
+      "title": "制造业数字化远程咨询｜ERP/MES系统、业务流程与系统集成问题诊断",
+      "url": "https://eleduck.com/posts/b2fAKZ",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:41.633Z",
+      "title": "Maps Personalization Relevance Rater - English (Australia)",
+      "url": "https://jobicy.com/jobs/159539-maps-personalization-relevance-rater-english-australia",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:43.198Z",
+      "title": "Maps Personalization Relevance Rater - Chinese (Hong Kong)",
+      "url": "https://jobicy.com/jobs/159538-maps-personalization-relevance-rater-chinese-hong-kong",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-07T18:28:44.775Z",
+      "title": "Maps Personalization Quality Reviewer - Japanese (Japan)",
+      "url": "https://jobicy.com/jobs/159537-maps-personalization-quality-reviewer-japanese-japan",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:46.329Z",
+      "title": "Korean Metadata Specialist in Japan",
+      "url": "https://jobicy.com/jobs/159536-korean-metadata-specialist-in-japan",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:47.879Z",
+      "title": "GM - Commercial Strategy and Insights",
+      "url": "https://jobicy.com/jobs/159534-gm-commercial-strategy-and-insights",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-07T18:28:49.453Z",
+      "title": "English to Japanese linguist for Patent",
+      "url": "https://jobicy.com/jobs/159533-english-to-japanese-linguist-for-patent",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:51.053Z",
+      "title": "Billing Analyst",
+      "url": "https://jobicy.com/jobs/159532-billing-analyst-2",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:52.624Z",
+      "title": "Sr Staff Site Reliability Engineer",
+      "url": "https://jobicy.com/jobs/159531-sr-staff-site-reliability-engineer",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:54.190Z",
+      "title": "Junior Data Specialist",
+      "url": "https://jobicy.com/jobs/159530-junior-data-specialist",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T18:28:55.737Z",
+      "title": "Enterprise Account Executive",
+      "url": "https://jobicy.com/jobs/159529-enterprise-account-executive-36",
+      "source": "Jobicy·APAC",
+      "score": 10
     }
   ]
 }
