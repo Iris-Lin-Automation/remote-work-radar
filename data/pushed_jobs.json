@@ -1,48 +1,6 @@
 {
-  "updatedAt": "2026-11-07T04:46:12.091Z",
+  "updatedAt": "2026-11-07T12:30:18.519Z",
   "jobs": [
-    {
-      "at": "2026-10-31T21:00:46.538Z",
-      "title": "Metabase招聘全职远程工作合作伙伴负责人",
-      "url": "https://yuancheng.work/7017.html",
-      "source": "远程.work·销售",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T21:00:48.051Z",
-      "title": "Metabase招聘全职远程工作企业客户经理",
-      "url": "https://yuancheng.work/7013.html",
-      "source": "远程.work·销售",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T21:00:49.543Z",
-      "title": "Metabase招聘全职远程工作开源社区倡导者",
-      "url": "https://yuancheng.work/7018.html",
-      "source": "远程.work·其他",
-      "score": 0
-    },
-    {
-      "at": "2026-10-31T21:00:51.028Z",
-      "title": "Director, Talent Management",
-      "url": "https://jobicy.com/jobs/158221-director-talent-management",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T08:44:22.722Z",
-      "title": "[远程/全职][内推]交易所长期招聘开发/测试/安全/运维/产品/运营等远程岗位",
-      "url": "https://www.v2ex.com/t/1253538",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T08:44:24.281Z",
-      "title": "远程兼职全栈工程师 · 海外 AI 虚拟人交互与沉浸内容平台",
-      "url": "https://eleduck.com/posts/QZfLo5",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-01T08:44:25.787Z",
       "title": "【上海找创业合伙人】我有垂直自媒体获客与私域成交经验，寻找AI产品/技术型共同创始人",
@@ -2100,6 +2058,48 @@
       "url": "https://yuancheng.work/7131.html",
       "source": "远程.work·销售",
       "score": 0
+    },
+    {
+      "at": "2026-11-07T12:30:10.964Z",
+      "title": "[南京/深圳/上海/广州] SHEIN 11 月新出 8 个技术岗，月薪 25-90K， Agent/算法/搜广推/Go/大数据",
+      "url": "https://www.v2ex.com/t/1255233",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T12:30:12.478Z",
+      "title": "南宁个人开发者冷启动 #1：给实体店做小程序前，我必做的 6 问打分法（附判断表）",
+      "url": "https://eleduck.com/posts/mbfKZq",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T12:30:13.989Z",
+      "title": "【已结束】招聘视频App开发工程师（点播/直播方向）",
+      "url": "https://eleduck.com/posts/K7faLp",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T12:30:15.503Z",
+      "title": "【外包/远程】WordPress 建站 + POS 收银库存系统（预算 5000 起，分两包报价）",
+      "url": "https://eleduck.com/posts/4lfRK0",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T12:30:17.009Z",
+      "title": "请教：全栈开发兼职项目，时薪一般怎么定？",
+      "url": "https://eleduck.com/posts/kRfZv3",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-07T12:30:18.519Z",
+      "title": "Technical Account Manager (APJ)",
+      "url": "https://jobicy.com/jobs/159468-technical-account-manager-apj",
+      "source": "Jobicy·APAC",
+      "score": 12
     }
   ]
 }
