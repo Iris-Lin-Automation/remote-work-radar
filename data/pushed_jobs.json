@@ -1,62 +1,6 @@
 {
-  "updatedAt": "2026-11-08T04:35:55.248Z",
+  "updatedAt": "2026-11-08T12:48:03.208Z",
   "jobs": [
-    {
-      "at": "2026-11-01T21:43:21.371Z",
-      "title": "Liven招聘全职远程工作创意营销经理",
-      "url": "https://yuancheng.work/7029.html",
-      "source": "远程.work·市场",
-      "score": 0
-    },
-    {
-      "at": "2026-11-01T21:43:22.888Z",
-      "title": "SKELAR招聘全职远程工作业务合伙人",
-      "url": "https://yuancheng.work/7030.html",
-      "source": "远程.work·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T08:54:59.803Z",
-      "title": "[阿里] Token Foundry Infra（Qwen 大模型底座）社招内推",
-      "url": "https://www.v2ex.com/t/1253866",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T08:55:01.337Z",
-      "title": "技术与 AI 岗位招聘｜ Go、 Java 、前端、算法及 Agent 等 30 个岗位",
-      "url": "https://www.v2ex.com/t/1253860",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T08:55:02.872Z",
-      "title": "招聘： Position ：量化交易系统工程师（Rust/Kotlin）",
-      "url": "https://www.v2ex.com/t/1253849",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T08:55:04.414Z",
-      "title": "上海｜外企｜黄浦区淮海中路｜ WLB｜ AI Agent 应用开发工程师招聘｜ 15K",
-      "url": "https://www.v2ex.com/t/1253828",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T08:55:05.959Z",
-      "title": "急招！坐班上海算法负责人/CTO--商品算法多模态大模型方向",
-      "url": "https://www.v2ex.com/t/1253785",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T08:55:07.508Z",
-      "title": "远程兼职: React Native Mobile Engineer RN 移动开发工程师",
-      "url": "https://www.v2ex.com/t/1253721",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
     {
       "at": "2026-11-02T08:55:09.050Z",
       "title": "[内推]20261102 渣打银行 广州 & 天津 | 52 个在招岗位",
@@ -2100,6 +2044,62 @@
       "url": "https://eleduck.com/posts/pqfAzm",
       "source": "电鸭社区",
       "score": 0
+    },
+    {
+      "at": "2026-11-08T12:47:52.506Z",
+      "title": "杭州下沙｜找一起做 Agent 与算法的队友，实习 / 正式均可",
+      "url": "https://www.v2ex.com/t/1255353",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T12:47:54.037Z",
+      "title": "我的第一个项目：AI张大妈，上线一个月整的访问量数据，还是不会推广",
+      "url": "https://eleduck.com/posts/L5f01o",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T12:47:55.655Z",
+      "title": "对于企业中的业务流程/功能的数据化是不是有必要的?",
+      "url": "https://eleduck.com/posts/N0fnjX",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T12:47:57.171Z",
+      "title": "大家好，我是苏不倦，35 岁，大专学历，在南昌。",
+      "url": "https://eleduck.com/posts/yGf5a4",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T12:47:58.680Z",
+      "title": "口算鸭，中年老父亲的AI自救第一步",
+      "url": "https://eleduck.com/posts/ZXfBwr",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T12:48:00.196Z",
+      "title": "【已结束】【远程兼职】独立开发者",
+      "url": "https://eleduck.com/posts/0XfxZK",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T12:48:01.706Z",
+      "title": "Marketing Lead",
+      "url": "https://jobicy.com/jobs/159748-marketing-lead",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-08T12:48:03.208Z",
+      "title": "Early Childhood Teacher",
+      "url": "https://jobicy.com/jobs/159663-early-childhood-teacher-3",
+      "source": "Jobicy·APAC",
+      "score": 12
     }
   ]
 }
