@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-11-07T23:26:11.365Z",
+  "updatedAt": "2026-11-08T04:35:55.248Z",
   "jobs": [
-    {
-      "at": "2026-11-01T16:35:59.709Z",
-      "title": "Solution Engineer",
-      "url": "https://jobicy.com/jobs/158305-solution-engineer",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
     {
       "at": "2026-11-01T21:43:21.371Z",
       "title": "Liven招聘全职远程工作创意营销经理",
@@ -2100,6 +2093,13 @@
       "url": "https://jobicy.com/jobs/159612-english-to-latvian-review-lead-for-ui-marketing-product-content",
       "source": "Jobicy·APAC",
       "score": 10
+    },
+    {
+      "at": "2026-11-08T04:35:55.248Z",
+      "title": "【案例】CSV 清洗前后对比小样：11 行 → 7 行，发现 7 类问题",
+      "url": "https://eleduck.com/posts/pqfAzm",
+      "source": "电鸭社区",
+      "score": 0
     }
   ]
 }
