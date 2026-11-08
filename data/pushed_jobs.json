@@ -1,55 +1,6 @@
 {
-  "updatedAt": "2026-11-08T18:40:09.333Z",
+  "updatedAt": "2026-11-08T23:26:16.134Z",
   "jobs": [
-    {
-      "at": "2026-11-02T08:55:29.276Z",
-      "title": "KYC & KYB Manager",
-      "url": "https://jobicy.com/jobs/158458-kyc-kyb-manager",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-02T08:55:30.812Z",
-      "title": "Earn Operation BD (Onchain Direction)",
-      "url": "https://jobicy.com/jobs/158445-earn-operation-bd-onchain-direction",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-02T08:55:32.339Z",
-      "title": "Data Product Manager, Derivatives (12 months contract)",
-      "url": "https://jobicy.com/jobs/158439-data-product-manager-derivatives-12-months-contract",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-02T08:55:33.875Z",
-      "title": "Data Analyst (12 months contract)",
-      "url": "https://jobicy.com/jobs/158437-data-analyst-12-months-contract",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-02T08:55:35.419Z",
-      "title": "Compliance Product Manager",
-      "url": "https://jobicy.com/jobs/158427-compliance-product-manager",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-02T08:55:36.966Z",
-      "title": "Community & Events Manager- APAC",
-      "url": "https://jobicy.com/jobs/158425-community-events-manager-apac",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-02T08:55:38.492Z",
-      "title": "Otter.ai: Senior Solution Architect",
-      "url": "https://weworkremotely.com/remote-jobs/otter-ai-senior-solution-architect",
-      "source": "WWR·产品",
-      "score": 0
-    },
     {
       "at": "2026-11-02T08:55:40.031Z",
       "title": "Descript: Lead Editor Product Manager",
@@ -2099,6 +2050,55 @@
       "title": "Customer Success Manager — Japan",
       "url": "https://jobicy.com/jobs/159808-customer-success-manager-japan",
       "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T23:26:06.778Z",
+      "title": "【远程兼职】招低延迟交易工程师｜Kalshi / Polymarket 下单执行层｜付费试用",
+      "url": "https://eleduck.com/posts/82fK9k",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T23:26:08.315Z",
+      "title": "IT第一份工作应该怎么找呢",
+      "url": "https://eleduck.com/posts/2LfWry",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T23:26:09.858Z",
+      "title": "Flex招聘全职远程工作高级软件开发测试工程师（SDET）",
+      "url": "https://yuancheng.work/7137.html",
+      "source": "远程.work·开发",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T23:26:11.483Z",
+      "title": "Brave招聘全职远程工作高级构建系统工程师",
+      "url": "https://yuancheng.work/7141.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T23:26:13.041Z",
+      "title": "SKELAR招聘全职远程工作VIP 支持经理",
+      "url": "https://yuancheng.work/7139.html",
+      "source": "远程.work·运营",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T23:26:14.596Z",
+      "title": "HackerRank招聘实习远程工作校园大使（学生项目）",
+      "url": "https://yuancheng.work/7140.html",
+      "source": "远程.work·市场",
+      "score": 0
+    },
+    {
+      "at": "2026-11-08T23:26:16.134Z",
+      "title": "HackerRank招聘兼职远程工作内容创作者",
+      "url": "https://yuancheng.work/7138.html",
+      "source": "远程.work·市场",
       "score": 0
     }
   ]

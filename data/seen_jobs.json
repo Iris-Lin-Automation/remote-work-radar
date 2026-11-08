@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-11-08T18:40:10.822Z",
+  "updatedAt": "2026-11-08T23:26:17.338Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/149540-staff-security-operations-engineer",
-    "jobicy|https://jobicy.com/jobs/149573-openstack-engineering-manager",
-    "jobicy|https://jobicy.com/jobs/149537-ubuntu-engineering-lead",
-    "jobicy|https://jobicy.com/jobs/149538-golang-engineer-2",
-    "jobicy|https://jobicy.com/jobs/149539-embedded-devices-software-solution-sales-all-roles",
-    "jobicy|https://jobicy.com/jobs/149578-senior-security-operations-engineer",
-    "jobicy|https://jobicy.com/jobs/149545-ubuntu-sales-engineer-entry-level",
     "jobicy|https://jobicy.com/jobs/149544-senior-site-reliability-gitops-engineer",
     "jobicy|https://jobicy.com/jobs/149541-head-of-security-operations",
     "wwr_product|https://weworkremotely.com/remote-jobs/squarespace-senior-product-director-client-engagement-group",
@@ -2000,7 +1993,14 @@
     "jobicy|https://jobicy.com/jobs/159811-msr-project-japanese-culture-expert",
     "jobicy|https://jobicy.com/jobs/159810-maps-personalization-relevance-rater-japanese-japan",
     "jobicy|https://jobicy.com/jobs/159809-head-of-ai-automation-analytics",
-    "jobicy|https://jobicy.com/jobs/159808-customer-success-manager-japan"
+    "jobicy|https://jobicy.com/jobs/159808-customer-success-manager-japan",
+    "eleduck|https://eleduck.com/posts/82fK9k",
+    "eleduck|https://eleduck.com/posts/2LfWry",
+    "yw_dev|https://yuancheng.work/7137.html",
+    "yw_ops|https://yuancheng.work/7141.html",
+    "yw_ops|https://yuancheng.work/7139.html",
+    "yw_mkt|https://yuancheng.work/7140.html",
+    "yw_mkt|https://yuancheng.work/7138.html"
   ],
   "lastDigestDate": "2026-11-09"
 }
