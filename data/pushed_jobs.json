@@ -1,62 +1,6 @@
 {
-  "updatedAt": "2026-11-08T23:26:16.134Z",
+  "updatedAt": "2026-11-09T04:46:48.486Z",
   "jobs": [
-    {
-      "at": "2026-11-02T08:55:40.031Z",
-      "title": "Descript: Lead Editor Product Manager",
-      "url": "https://weworkremotely.com/remote-jobs/descript-lead-editor-product-manager",
-      "source": "WWR·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:58:49.512Z",
-      "title": "阿里巴巴 Token Foundry Infra 团队社招",
-      "url": "https://www.v2ex.com/t/1253934",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:58:51.034Z",
-      "title": "宁波慈溪高新区招聘 AI 应用工程师",
-      "url": "https://www.v2ex.com/t/1253904",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:58:52.590Z",
-      "title": "【接单】短视频脚本 / 角色设定 / 产品上架文案，¥60 起，先给大纲不满意不收钱",
-      "url": "https://eleduck.com/posts/jAfWEL",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:58:54.103Z",
-      "title": "【远程兼职】招AIGC视频制作助理｜提供脚本｜会录屏剪辑优先",
-      "url": "https://eleduck.com/posts/b2fAVw",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:58:55.616Z",
-      "title": "面试官真正偏爱这四类求职者",
-      "url": "https://eleduck.com/posts/a4fbRd",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:58:57.157Z",
-      "title": "远程全职招聘｜UI视觉设计师 丨15K～30K/月",
-      "url": "https://eleduck.com/posts/K7fa28",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:58:58.671Z",
-      "title": "【远程】美国洛杉矶卡车公司招调度一名（英语沟通）｜在家办公",
-      "url": "https://eleduck.com/posts/oQfRJZ",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-02T19:59:00.191Z",
       "title": "远程居家办公-小红书远程运营，全远程，签劳动合同。",
@@ -2099,6 +2043,62 @@
       "title": "HackerRank招聘兼职远程工作内容创作者",
       "url": "https://yuancheng.work/7138.html",
       "source": "远程.work·市场",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T04:46:37.976Z",
+      "title": "千问事业部-助手 Agent 交互技术专家-杭州",
+      "url": "https://www.v2ex.com/t/1255478",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T04:46:39.471Z",
+      "title": "半个月前做了一个找程序员创业小需求的工具，居然已经有 30 位朋友订阅邮件了",
+      "url": "https://eleduck.com/posts/R3fv8v",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T04:46:40.961Z",
+      "title": "【免费内推】10K-15K双休 招聘门店运营经理（远程居家办公）",
+      "url": "https://eleduck.com/posts/ARfdQE",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T04:46:42.450Z",
+      "title": "【你好鸭】脚本自动化 · Cloudflare/Vercel 部署 · Linux 服务器运维 · WordPress 建站",
+      "url": "https://eleduck.com/posts/x0fX51",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T04:46:43.936Z",
+      "title": "FocusFlow：纯前端2.5ms搞定复杂架构图智能边缘吸附",
+      "url": "https://eleduck.com/posts/XNfOzN",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T04:46:45.503Z",
+      "title": "Customer.io: Senior Product Manager, Workflows",
+      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-product-manager-workflows",
+      "source": "WWR·产品",
+      "score": 6
+    },
+    {
+      "at": "2026-11-09T04:46:46.995Z",
+      "title": "FIRY: Head of Product - Beamable",
+      "url": "https://weworkremotely.com/remote-jobs/firy-head-of-product-beamable",
+      "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T04:46:48.486Z",
+      "title": "Patchstack: Senior Product Manager",
+      "url": "https://weworkremotely.com/remote-jobs/patchstack-senior-product-manager",
+      "source": "WWR·产品",
       "score": 0
     }
   ]

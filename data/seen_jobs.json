@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-11-08T23:26:17.338Z",
+  "updatedAt": "2026-11-09T04:46:49.689Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/149544-senior-site-reliability-gitops-engineer",
-    "jobicy|https://jobicy.com/jobs/149541-head-of-security-operations",
-    "wwr_product|https://weworkremotely.com/remote-jobs/squarespace-senior-product-director-client-engagement-group",
-    "v2ex_jobs|https://www.v2ex.com/t/1244365",
-    "v2ex_jobs|https://www.v2ex.com/t/1244354",
-    "v2ex_jobs|https://www.v2ex.com/t/1244352",
-    "v2ex_jobs|https://www.v2ex.com/t/1244341",
-    "eleduck|https://eleduck.com/posts/qzf8Rl",
-    "eleduck|https://eleduck.com/posts/QZfYj3",
     "eleduck|https://eleduck.com/posts/rdf48L",
     "eleduck|https://eleduck.com/posts/K7f3xB",
     "yw_dev|https://yuancheng.work/6196.html",
@@ -2000,7 +1991,16 @@
     "yw_ops|https://yuancheng.work/7141.html",
     "yw_ops|https://yuancheng.work/7139.html",
     "yw_mkt|https://yuancheng.work/7140.html",
-    "yw_mkt|https://yuancheng.work/7138.html"
+    "yw_mkt|https://yuancheng.work/7138.html",
+    "v2ex_jobs|https://www.v2ex.com/t/1255478",
+    "eleduck|https://eleduck.com/posts/R3fv8v",
+    "eleduck|https://eleduck.com/posts/ARfdQE",
+    "eleduck|https://eleduck.com/posts/x0fX51",
+    "eleduck|https://eleduck.com/posts/oQfRVB",
+    "eleduck|https://eleduck.com/posts/XNfOzN",
+    "wwr_product|https://weworkremotely.com/remote-jobs/customer-io-senior-product-manager-workflows",
+    "wwr_product|https://weworkremotely.com/remote-jobs/firy-head-of-product-beamable",
+    "wwr_product|https://weworkremotely.com/remote-jobs/patchstack-senior-product-manager"
   ],
   "lastDigestDate": "2026-11-09"
 }
