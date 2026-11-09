@@ -1,153 +1,6 @@
 {
-  "updatedAt": "2026-11-09T15:17:08.781Z",
+  "updatedAt": "2026-11-09T23:58:25.417Z",
   "jobs": [
-    {
-      "at": "2026-11-02T19:59:19.929Z",
-      "title": "Online Support Representative",
-      "url": "https://jobicy.com/jobs/158534-online-support-representative",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:59:21.459Z",
-      "title": "Territory Manager (Port Augusta)",
-      "url": "https://jobicy.com/jobs/158533-territory-manager-port-augusta",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:59:22.979Z",
-      "title": "Binance Accelerator Program - VIP Institutional Growth & Operations",
-      "url": "https://jobicy.com/jobs/158532-binance-accelerator-program-vip-institutional-growth-operations",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-02T19:59:24.497Z",
-      "title": "Engineer III",
-      "url": "https://jobicy.com/jobs/158531-engineer-iii",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:59:26.072Z",
-      "title": "Junior Quality Specialist",
-      "url": "https://jobicy.com/jobs/158530-junior-quality-specialist",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:59:27.587Z",
-      "title": "Account Management Lead - Lower South Island",
-      "url": "https://jobicy.com/jobs/158529-account-management-lead-lower-south-island",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-02T19:59:29.112Z",
-      "title": "Senior Customer Success Manager - APAC",
-      "url": "https://jobicy.com/jobs/158528-senior-customer-success-manager-apac",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-02T19:59:30.625Z",
-      "title": "Embedded Devices Software Solution Sales Account Manager",
-      "url": "https://jobicy.com/jobs/158506-embedded-devices-software-solution-sales-account-manager",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-11-03T02:10:27.838Z",
-      "title": "月薪3000起｜招聘海外短视频运营的兼职伙伴（AI短剧·远程兼职）",
-      "url": "https://eleduck.com/posts/z1fB3d",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T02:10:29.344Z",
-      "title": "【远程兼职】高级 Go 后端工程师（代码审核 / 技术把关）",
-      "url": "https://eleduck.com/posts/QZfL55",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T02:10:30.839Z",
-      "title": "Sporty招聘全职远程工作前端工程师",
-      "url": "https://yuancheng.work/7056.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T02:10:32.351Z",
-      "title": "Sporty招聘全职远程工作数据科学家",
-      "url": "https://yuancheng.work/7055.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T02:10:33.848Z",
-      "title": "Circle招聘项目远程工作意大利语翻译",
-      "url": "https://yuancheng.work/7054.html",
-      "source": "远程.work·其他",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T02:10:35.334Z",
-      "title": "Fiat Treasury Manager",
-      "url": "https://jobicy.com/jobs/158579-fiat-treasury-manager",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-03T11:38:20.432Z",
-      "title": "远程全职岗位：全栈，前端，后端，运维， Ai 工作流， Ai 应用",
-      "url": "https://www.v2ex.com/t/1254210",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T11:38:21.925Z",
-      "title": "招聘： 量化交易系统工程师（Rust/Kotlin/ Java ）",
-      "url": "https://www.v2ex.com/t/1254137",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T11:38:23.430Z",
-      "title": "[AI Agent 全栈工程师] 上海 | 顶尖 AI 公司 | P5/P6 定级 | 25K-35K",
-      "url": "https://www.v2ex.com/t/1254085",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T11:38:24.918Z",
-      "title": "新加坡头部互联网公司招聘｜高级技术专家-业务安全平台（风控、反欺诈、业务安全相关经验） ｜ base 新加坡",
-      "url": "https://www.v2ex.com/t/1254074",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T11:38:26.416Z",
-      "title": "接远程：职场PPT / 简历优化 / 周报总结（站内或闲鱼成交）",
-      "url": "https://eleduck.com/posts/3EfRGj",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T11:38:28.093Z",
-      "title": "做了一款打开就能玩的网页桌游：T字棋和极速101",
-      "url": "https://eleduck.com/posts/1nfONb",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-03T11:38:29.574Z",
-      "title": "给我们空音SomniFi项目招募技术合伙人，联合创始人",
-      "url": "https://eleduck.com/posts/5Bf1J1",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-03T11:38:31.072Z",
       "title": "【可远程】内容+调研助手｜小红书种草 / 口播脚本 / 竞品调研｜24–48h 交付",
@@ -2099,6 +1952,153 @@
       "title": "ProArch: BA/Technical Product Manager",
       "url": "https://weworkremotely.com/remote-jobs/proarch-ba-technical-product-manager",
       "source": "WWR·产品",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T23:57:53.728Z",
+      "title": "Onboarding Documents Associate",
+      "url": "https://jobicy.com/jobs/160713-onboarding-documents-associate",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-09T23:57:55.279Z",
+      "title": "Strategic Account Executive - Singapore",
+      "url": "https://jobicy.com/jobs/160712-strategic-account-executive-singapore-2",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-11-09T23:57:56.827Z",
+      "title": "Customer Billing Escalation Specialist",
+      "url": "https://jobicy.com/jobs/160711-customer-billing-escalation-specialist",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T23:57:58.377Z",
+      "title": "Customer Experience Specialist",
+      "url": "https://jobicy.com/jobs/160710-customer-experience-specialist-8",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-09T23:58:00.131Z",
+      "title": "Singapore Shipping Manager",
+      "url": "https://jobicy.com/jobs/160708-singapore-shipping-manager",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:01.712Z",
+      "title": "Director, Regional Sales",
+      "url": "https://jobicy.com/jobs/160706-director-regional-sales",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T23:58:03.625Z",
+      "title": "Integrations Engineer",
+      "url": "https://jobicy.com/jobs/160705-integrations-engineer",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-09T23:58:05.184Z",
+      "title": "Product Success Manager I (Performance, APAC)",
+      "url": "https://jobicy.com/jobs/160704-product-success-manager-i-performance-apac",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-11-09T23:58:06.747Z",
+      "title": "Key Account Executive",
+      "url": "https://jobicy.com/jobs/160703-key-account-executive",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T23:58:08.301Z",
+      "title": "Collections Specialist",
+      "url": "https://jobicy.com/jobs/160702-collections-specialist-2",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-09T23:58:09.861Z",
+      "title": "Billing Representative",
+      "url": "https://jobicy.com/jobs/160203-billing-representative",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-11-09T23:58:11.414Z",
+      "title": "Senior Manager, Strategic Accounts",
+      "url": "https://jobicy.com/jobs/160093-senior-manager-strategic-accounts",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-11-09T23:58:12.975Z",
+      "title": "Social Media Manager",
+      "url": "https://jobicy.com/jobs/160083-social-media-manager-2",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:14.541Z",
+      "title": "Senior Product Manager,Compliance(12 months contract)",
+      "url": "https://jobicy.com/jobs/160080-senior-product-managercompliance12-months-contract",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:16.094Z",
+      "title": "Payment Product Manager (Fiat)",
+      "url": "https://jobicy.com/jobs/160074-payment-product-manager-fiat",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:17.648Z",
+      "title": "LLM Applied Data Scientist (RAG/ NLP)",
+      "url": "https://jobicy.com/jobs/160069-llm-applied-data-scientist-rag-nlp",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:19.198Z",
+      "title": "Finance Analyst (12 months contract)",
+      "url": "https://jobicy.com/jobs/160057-finance-analyst-12-months-contract",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:20.749Z",
+      "title": "Business Development - Equity Capital Markets",
+      "url": "https://jobicy.com/jobs/160053-business-development-equity-capital-markets",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:22.304Z",
+      "title": "Business Analytics & Strategic Partnerships (Tokenisation) Manager",
+      "url": "https://jobicy.com/jobs/160052-business-analytics-strategic-partnerships-tokenisation-manager",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:23.856Z",
+      "title": "Binance Accelerator Program - VIP User Operations",
+      "url": "https://jobicy.com/jobs/160051-binance-accelerator-program-vip-user-operations",
+      "source": "Jobicy·APAC",
+      "score": 10
+    },
+    {
+      "at": "2026-11-09T23:58:25.417Z",
+      "title": "Manager, Customer Support Engineering",
+      "url": "https://jobicy.com/jobs/160038-manager-customer-support-engineering-2",
+      "source": "Jobicy·APAC",
       "score": 0
     }
   ]
