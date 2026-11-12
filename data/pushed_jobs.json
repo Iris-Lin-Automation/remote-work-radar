@@ -1,41 +1,6 @@
 {
-  "updatedAt": "2026-11-11T21:04:06.677Z",
+  "updatedAt": "2026-11-12T02:42:09.540Z",
   "jobs": [
-    {
-      "at": "2026-11-04T17:45:49.892Z",
-      "title": "远程线上办公*iOS/flutter 开发工程师*高级全栈工程师（ PHP 为主， Flutter / Vue 方向*后端工程师",
-      "url": "https://www.v2ex.com/t/1254493",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T17:45:51.465Z",
-      "title": "我们在做 AI 时代的 Dropbox，寻找一位产品设计师与一位全栈工程师",
-      "url": "https://www.v2ex.com/t/1254471",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T17:45:52.997Z",
-      "title": "IOS客户端开发，有上架&快速出包经验",
-      "url": "https://eleduck.com/posts/wwfLzO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T17:45:54.600Z",
-      "title": "【急招/全职】UPay 金融科技有限公司｜支付与汇款产品经理｜Base 迪拜",
-      "url": "https://eleduck.com/posts/74f8xr",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T17:45:56.142Z",
-      "title": "现在还有必要学基础编程语言吗，目前感觉代码都是ai写的",
-      "url": "https://eleduck.com/posts/OGf1d7",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-04T17:45:57.707Z",
       "title": "【免费推荐/全职远程】时薪$15-$25/高级前端开发工程师/房地产行业信息科技服务",
@@ -2100,6 +2065,41 @@
       "url": "https://jobicy.com/jobs/161291-workforce-management-real-time-analyst",
       "source": "Jobicy·APAC",
       "score": 12
+    },
+    {
+      "at": "2026-11-12T02:42:03.536Z",
+      "title": "广州招两个 go， 3 年。15k 起",
+      "url": "https://www.v2ex.com/t/1256374",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T02:42:05.018Z",
+      "title": "北京 MaaS 急招/组内直推 - 运维(k8s) /后端开发（go) ^^",
+      "url": "https://www.v2ex.com/t/1256268",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T02:42:06.505Z",
+      "title": "Kaon AI 招人｜ AI Platform 工程师",
+      "url": "https://www.v2ex.com/t/1256243",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T02:42:08.030Z",
+      "title": "D3招聘全职远程工作数字营销专员",
+      "url": "https://yuancheng.work/7189.html",
+      "source": "远程.work·市场",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T02:42:09.539Z",
+      "title": "SKELAR招聘全职/兼职远程工作产品经理",
+      "url": "https://yuancheng.work/7190.html",
+      "source": "远程.work·产品",
+      "score": 0
     }
   ]
 }
