@@ -1,132 +1,6 @@
 {
-  "updatedAt": "2026-11-12T12:13:21.287Z",
+  "updatedAt": "2026-11-12T21:19:19.715Z",
   "jobs": [
-    {
-      "at": "2026-11-04T17:46:16.426Z",
-      "title": "Audio Recording Project - Cantonese (Hong Kong)",
-      "url": "https://jobicy.com/jobs/158882-audio-recording-project-cantonese-hong-kong",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-04T17:46:18.015Z",
-      "title": "Zanda Health: Product Owner",
-      "url": "https://weworkremotely.com/remote-jobs/zanda-health-product-owner-1",
-      "source": "WWR·产品",
-      "score": 12
-    },
-    {
-      "at": "2026-11-04T23:14:34.578Z",
-      "title": "自由职业五个月，七八个项目还没有收入，可是我不想回去上班啊",
-      "url": "https://eleduck.com/posts/0XfxAr",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T23:14:36.091Z",
-      "title": "Circle招聘全职远程工作AI平台首席工程师",
-      "url": "https://yuancheng.work/7090.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T23:14:37.605Z",
-      "title": "Alpaca招聘全职远程工作高级DevOps工程师",
-      "url": "https://yuancheng.work/7103.html",
-      "source": "远程.work·运营",
-      "score": 12
-    },
-    {
-      "at": "2026-11-04T23:14:39.121Z",
-      "title": "Alpaca招聘全职远程工作高级站点可靠性工程师",
-      "url": "https://yuancheng.work/7104.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T23:14:40.625Z",
-      "title": "Alpaca招聘全职远程工作事件运营指挥官",
-      "url": "https://yuancheng.work/7101.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T23:14:42.144Z",
-      "title": "Supabase招聘全职远程工作资深开发者关系（Twitter 品牌代表）",
-      "url": "https://yuancheng.work/7100.html",
-      "source": "远程.work·市场",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T23:14:43.660Z",
-      "title": "Alpaca招聘全职远程工作产品经理 – 经纪业务 – 欧盟",
-      "url": "https://yuancheng.work/7106.html",
-      "source": "远程.work·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T23:14:45.172Z",
-      "title": "Alpaca招聘全职远程工作高级产品经理",
-      "url": "https://yuancheng.work/7102.html",
-      "source": "远程.work·产品",
-      "score": 0
-    },
-    {
-      "at": "2026-11-04T23:14:46.689Z",
-      "title": "Alpaca招聘全职远程工作高级销售工程师",
-      "url": "https://yuancheng.work/7107.html",
-      "source": "远程.work·销售",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T05:15:56.273Z",
-      "title": "济南招聘｜ Java 2-5 年 初级开发工程师｜ 8-11K | 氛围轻松，适合摸鱼养老",
-      "url": "https://www.v2ex.com/t/1254673",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T05:15:57.842Z",
-      "title": "远程招聘｜ AI、技术、产品与运营高薪岗位合集",
-      "url": "https://www.v2ex.com/t/1254613",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T05:15:59.410Z",
-      "title": "工业设备运维平台三端前端开发合作招募",
-      "url": "https://eleduck.com/posts/ZXfB0q",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T05:16:00.982Z",
-      "title": "接别人做了一半的项目，我踩过的 5 个坑",
-      "url": "https://eleduck.com/posts/1nfOvb",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T05:16:02.565Z",
-      "title": "【全职远程｜可用AI翻译】俄罗斯女装批发在线客服／客户跟进，月薪4500—6000元",
-      "url": "https://eleduck.com/posts/5Bf1Z1",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T05:16:04.128Z",
-      "title": "SEO专员 （远程）",
-      "url": "https://eleduck.com/posts/pqfArK",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:10.522Z",
-      "title": "招聘/合作资深渗透工程师----红队主攻手/红队负责人/CTO/技术合伙人",
-      "url": "https://www.v2ex.com/t/1254818",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
     {
       "at": "2026-11-05T14:02:12.108Z",
       "title": "有商业模式有投资人有客源，寻找懂开发的产品经理和懂产品的全栈开发一起创业",
@@ -2099,6 +1973,132 @@
       "title": "Claude Code 的 concise 模式：Opus 4.8 时如沐春风，Opus 5.5 后自造词频出，我改回了 default",
       "url": "https://eleduck.com/posts/a4fbgN",
       "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T21:18:54.209Z",
+      "title": "杭州 AI 短剧初创招人 算法-agent-全栈",
+      "url": "https://www.v2ex.com/t/1256642",
+      "source": "V2EX·招聘",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T21:18:55.700Z",
+      "title": "诚招咸鱼运营远程兼职",
+      "url": "https://eleduck.com/posts/OGf1mb",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T21:18:57.180Z",
+      "title": "从业十几年何去何从",
+      "url": "https://eleduck.com/posts/dDfp24",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T21:18:58.658Z",
+      "title": "大家好，20年java开发经验的工程师，求份工作",
+      "url": "https://eleduck.com/posts/z1fBlg",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T21:19:00.201Z",
+      "title": "[志愿搬运/远程兼职] 招聘线上兼职！国家旅游文创中心在线摇人",
+      "url": "https://eleduck.com/posts/Ygf2LL",
+      "source": "电鸭社区",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T21:19:01.680Z",
+      "title": "Regional BDR Team Manager",
+      "url": "https://jobicy.com/jobs/161694-regional-bdr-team-manager",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:03.170Z",
+      "title": "FinOps Data Engineer",
+      "url": "https://jobicy.com/jobs/161693-finops-data-engineer",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:04.678Z",
+      "title": "Partner Sales Manager - IHV Alliances",
+      "url": "https://jobicy.com/jobs/161692-partner-sales-manager-ihv-alliances",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:06.159Z",
+      "title": "Product Manager - Auth",
+      "url": "https://jobicy.com/jobs/161691-product-manager-auth",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:07.662Z",
+      "title": "Partner Sales Director - IHV Alliances",
+      "url": "https://jobicy.com/jobs/161689-partner-sales-director-ihv-alliances",
+      "source": "Jobicy·APAC",
+      "score": 20
+    },
+    {
+      "at": "2026-11-12T21:19:09.151Z",
+      "title": "Senior Accountant",
+      "url": "https://jobicy.com/jobs/161688-senior-accountant-10",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:10.639Z",
+      "title": "Senior Engineering Manager, Consumer / New Verticals",
+      "url": "https://jobicy.com/jobs/161687-senior-engineering-manager-consumer-new-verticals",
+      "source": "Jobicy·APAC",
+      "score": 0
+    },
+    {
+      "at": "2026-11-12T21:19:12.123Z",
+      "title": "Manager of Enterprise Open Source Sales Team",
+      "url": "https://jobicy.com/jobs/161685-manager-of-enterprise-open-source-sales-team",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:13.611Z",
+      "title": "Early Childhood Teacher (PT)",
+      "url": "https://jobicy.com/jobs/161684-early-childhood-teacher-pt-4",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:15.137Z",
+      "title": "Head of Ecosystem",
+      "url": "https://jobicy.com/jobs/161683-head-of-ecosystem",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:16.670Z",
+      "title": "Linux Cryptography and Security Engineer",
+      "url": "https://jobicy.com/jobs/161678-linux-cryptography-and-security-engineer",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:18.225Z",
+      "title": "Engineering Manager - MLOps & Analytics",
+      "url": "https://jobicy.com/jobs/161669-engineering-manager-mlops-analytics-2",
+      "source": "Jobicy·APAC",
+      "score": 12
+    },
+    {
+      "at": "2026-11-12T21:19:19.715Z",
+      "title": "Cigna Healthcare: Clinical Program Senior Advisor - Remote - Express Scripts (Academic Detailing)",
+      "url": "https://weworkremotely.com/remote-jobs/cigna-healthcare-clinical-program-senior-advisor-remote-express-scripts-academic-detailing",
+      "source": "WWR·开发",
       "score": 0
     }
   ]
