@@ -1,18 +1,6 @@
 {
-  "updatedAt": "2026-11-12T21:19:21.216Z",
+  "updatedAt": "2026-11-13T02:23:51.779Z",
   "keys": [
-    "yw_dev|https://yuancheng.work/6346.html",
-    "yw_dev|https://yuancheng.work/6344.html",
-    "yw_ops|https://yuancheng.work/6347.html",
-    "yw_ops|https://yuancheng.work/6342.html",
-    "yw_mkt|https://yuancheng.work/6345.html",
-    "yw_mkt|https://yuancheng.work/6340.html",
-    "yw_prod|https://yuancheng.work/6349.html",
-    "yw_prod|https://yuancheng.work/6348.html",
-    "yw_other|https://yuancheng.work/6350.html",
-    "jobicy|https://jobicy.com/jobs/154166-threat-detection-analyst-japanese-speaking",
-    "v2ex_jobs|https://www.v2ex.com/t/1245478",
-    "v2ex_jobs|https://www.v2ex.com/t/1245474",
     "v2ex_jobs|https://www.v2ex.com/t/1245454",
     "yw_sales|https://yuancheng.work/6355.html",
     "jobicy|https://jobicy.com/jobs/152057-multigres-engineer",
@@ -2000,7 +1988,19 @@
     "jobicy|https://jobicy.com/jobs/161683-head-of-ecosystem",
     "jobicy|https://jobicy.com/jobs/161678-linux-cryptography-and-security-engineer",
     "jobicy|https://jobicy.com/jobs/161669-engineering-manager-mlops-analytics-2",
-    "wwr_programming|https://weworkremotely.com/remote-jobs/cigna-healthcare-clinical-program-senior-advisor-remote-express-scripts-academic-detailing"
+    "wwr_programming|https://weworkremotely.com/remote-jobs/cigna-healthcare-clinical-program-senior-advisor-remote-express-scripts-academic-detailing",
+    "v2ex_jobs|https://www.v2ex.com/t/1256653",
+    "eleduck|https://eleduck.com/posts/0Xfxza",
+    "eleduck|https://eleduck.com/posts/wwfL4w",
+    "eleduck|https://eleduck.com/posts/74f8mK",
+    "eleduck|https://eleduck.com/posts/OGf1m4",
+    "yw_dev|https://yuancheng.work/7208.html",
+    "yw_dev|https://yuancheng.work/7193.html",
+    "yw_mkt|https://yuancheng.work/7205.html",
+    "yw_mkt|https://yuancheng.work/7194.html",
+    "yw_sales|https://yuancheng.work/7207.html",
+    "yw_sales|https://yuancheng.work/7206.html",
+    "yw_other|https://yuancheng.work/7195.html"
   ],
   "lastDigestDate": "2026-11-13"
 }
