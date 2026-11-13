@@ -77,7 +77,7 @@ const EN_LOW_QUALITY = [
   /\b(crowd\s*sourc|clickworker|scale\s+ai\s+contributor)\b/i,
 ];
 
-const EN_THRESHOLD = parseInt(process.env.RADAR_EN_THRESHOLD || process.env.RADAR_SCORE_THRESHOLD || '50', 10);
+const EN_THRESHOLD = parseInt(process.env.RADAR_EN_THRESHOLD || process.env.RADAR_SCORE_THRESHOLD || '40', 10);
 const CN_THRESHOLD = parseInt(process.env.RADAR_CN_THRESHOLD || '40', 10);
 
 /**
@@ -105,6 +105,8 @@ const CORE_SKILL_KEYWORDS = [
 const WEAK_ALONE = new Set([
   '远程', 'remote', 'wfh', '全职', 'full-time', '居家', '运营', 'ops', 'operations',
   'data', '数据', '增长', 'growth', 'agent', 'asia', 'apac', '海外', '产品',
+  // 单独命中不够：否则 Engineering Manager / 普通 Python 岗也会进打分
+  'python', 'typescript', 'b2b', 'llm', 'prompt', 'dashboard', 'fastapi', 'next.js', 'nextjs',
 ]);
 
 function hasCoreSkillHit(hay) {

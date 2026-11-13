@@ -80,9 +80,10 @@ jobs:
           # ── 双轨：both=中英分开跑；en/cn=只跑一轨。主推永远是英文海外优质团队
           RADAR_TRACK: ${{ github.event.inputs.track || 'both' }}
           RADAR_PRIMARY: "en"
-          RADAR_EN_THRESHOLD: "50"
+          # EN 50 太严 → 整轮常推 0；先 40，仍踢签证/地区锁/渣岗
+          RADAR_EN_THRESHOLD: "40"
           RADAR_CN_THRESHOLD: "40"
-          RADAR_EN_DETAIL_SCORE: "65"
+          RADAR_EN_DETAIL_SCORE: "60"
           RADAR_CN_DETAIL_SCORE: "75"
 
           # ── 时间窗口

@@ -548,6 +548,30 @@ async function main() {
     byTrack[job.track === 'cn' ? 'cn' : 'en'].push(job);
   }
 
+  // 0 条也推一条说明，避免「跑成功了但手机完全没动静」
+  if (toNotify.length === 0) {
+    const top = [...scored]
+      .sort((a, b) => (b.groqScore ?? 0) - (a.groqScore ?? 0))
+      .slice(0, 5)
+      .map((j, i) => `${i + 1}. ${j.groqScore ?? '?'}分 [${j.track}] ${(j.title || '').slice(0, 50)}`)
+      .join('\n');
+    const zeroMsg = [
+      '📡 <b>Radar 本轮无过阈值岗位</b>',
+      `轨道 ${RADAR_TRACK} · 扫描 ${allItems.length} · L1 ${l1Passed.length} · 可投 ${eligible.length}`,
+      `门槛 EN≥${matcher.enThreshold} / CN≥${matcher.cnThreshold} · 低分丢 ${baseStats.belowThreshold}`,
+      '',
+      top ? `<b>最高分预览（未推）：</b>\n${top}` : '本轮没有可打分岗位。',
+      '',
+      '<i>系统在跑；够分才会推英文主推/中文副线摘要。</i>',
+    ].join('\n');
+    try {
+      await sendTelegramMessage(zeroMsg, BOT_TOKEN, CHAT_ID);
+      log('📋 已推送「本轮 0 条」说明到 Telegram');
+    } catch (err) {
+      log(`   ⚠️  0 条说明推送失败：${err.message}`);
+    }
+  }
+
   const pushOrder = PRIMARY_TRACK === 'cn' ? ['cn', 'en'] : ['en', 'cn'];
   for (const track of pushOrder) {
     const list = byTrack[track];
