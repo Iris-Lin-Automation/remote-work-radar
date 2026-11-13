@@ -108,7 +108,27 @@ const SOURCE_LABELS = {
   yw_prod:             '远程.work·产品',
   yw_sales:            '远程.work·销售',
   yw_other:            '远程.work·其他',
+  jobicy_apac:         'Jobicy·APAC',
+  himalayas:           'Himalayas',
+  remotive_dev:        'Remotive·开发',
+  remotive_prod:       'Remotive·产品',
+  wwr_programming:     'WWR·开发',
+  wwr_product:         'WWR·产品',
 };
+
+const CN_SOURCES = new Set([
+  'v2ex_jobs', 'v2ex_outsourcing', 'eleduck',
+  'yuancheng_work', 'yuancheng_overseas',
+  'yw_dev', 'yw_ops', 'yw_mkt', 'yw_prod', 'yw_sales', 'yw_other',
+]);
+
+function trackOf(job) {
+  return CN_SOURCES.has(job.source) ? 'cn' : 'en';
+}
+
+function sourceLabelOf(job) {
+  return SOURCE_LABELS[job.source] || job.sourceName || job.source || '未知源';
+}
 
 /**
  * @param {object} job
@@ -276,14 +296,58 @@ function formatDailyDigest(stats) {
     '',
     `📥 抓取 <b>${s.scraped ?? 0}</b> 条`,
     `🆕 ${s.maxAgeHours ?? 24}h 新帖 <b>${s.newItems ?? 0}</b> 条`,
-    `🔍 Layer1 <b>${s.l1 ?? 0}</b> → 🌐 可投并推送 <b>${s.sent ?? 0}</b> 条（签证踢掉 ${s.rejectedElig ?? 0}）`,
+    `🔍 Layer1 <b>${s.l1 ?? 0}</b> → ✅ 过阈值 <b>${s.sent ?? 0}</b> 条（签证踢 ${s.rejectedElig ?? 0}，低分踢 ${s.belowThreshold ?? 0}）`,
     '',
   ];
   if ((s.sent ?? 0) > 0) {
-    lines.push(`本轮已单独推送 ${s.sent} 条岗位，这条只是日报。`);
+    lines.push(`本轮已按中英/平台汇总推送 ${s.sent} 条。`);
   } else {
-    lines.push('本轮没有可投新帖。有岗会直接推，这条只是报平安。');
+    lines.push('本轮没有过阈值的新帖。有岗会按分组推，这条只是报平安。');
   }
+  return lines.join('\n');
+}
+
+/**
+ * 按中文/英文轨道 + 平台分组的岗位摘要（防刷屏）。
+ * @param {'cn'|'en'} track
+ * @param {object[]} jobs  已按分数降序
+ * @param {object} meta    { threshold, replay }
+ */
+function formatTrackDigest(track, jobs, meta = {}) {
+  const trackLabel = track === 'cn' ? '中文岗' : '英文岗';
+  const flag = track === 'cn' ? '🇨🇳' : '🌍';
+  const threshold = meta.threshold ?? 40;
+  const lines = [
+    `${flag} <b>${trackLabel}精选</b>${meta.replay ? ' · 回放' : ''} · 阈值≥${threshold}`,
+    `共 <b>${jobs.length}</b> 条（按 AI 技能匹配分排序）`,
+    '',
+  ];
+
+  // 按平台分组
+  const bySource = new Map();
+  for (const job of jobs) {
+    const key = job.source || 'unknown';
+    if (!bySource.has(key)) bySource.set(key, []);
+    bySource.get(key).push(job);
+  }
+
+  for (const [src, list] of bySource) {
+    lines.push(`—— <b>${escHtml(sourceLabelOf({ source: src, sourceName: list[0]?.sourceName }))}</b> · ${list.length} 条`);
+    list.forEach((job, i) => {
+      const score = job.groqScore != null ? `${job.groqScore}` : '?';
+      const mig = job.migration === 'near' ? '↗近迁'
+        : job.migration === 'direct' ? '✓对口'
+        : job.migration === 'far' ? '✗远' : '';
+      const title = escHtml(String(job.title || '无标题').slice(0, 70));
+      const url = job.url ? String(job.url).replace(/&/g, '&amp;') : '';
+      const titlePart = url ? `<a href="${url}">${title}</a>` : title;
+      const reason = job.groqReason ? ` · <i>${escHtml(job.groqReason)}</i>` : '';
+      lines.push(`${i + 1}. <b>${score}</b>${mig ? ` ${mig}` : ''} ${titlePart}${reason}`);
+    });
+    lines.push('');
+  }
+
+  lines.push('<i>分数=画像技能匹配；near=小跨度可学，far=跨度过大已压分</i>');
   return lines.join('\n');
 }
 
@@ -292,6 +356,9 @@ module.exports = {
   extractCompany,
   formatJobMessage,
   formatDailyDigest,
+  formatTrackDigest,
+  trackOf,
+  sourceLabelOf,
   sendTelegramMessage,
   sendHeartbeat,
 };

@@ -34,6 +34,8 @@ const Parser = require('rss-parser');
 const {
   formatJobMessage,
   formatDailyDigest,
+  formatTrackDigest,
+  trackOf,
   sendTelegramMessage,
   sendHeartbeat,
 } = require('./notify-telegram');
@@ -396,6 +398,12 @@ function buildMessage(job) {
     const note = job.groqReason ? `  <i>${job.groqReason}</i>` : '';
     msg += line + note;
   }
+  if (job.migration) {
+    const migLabel = job.migration === 'direct' ? '直接对口'
+      : job.migration === 'near' ? '小跨度可学'
+      : job.migration === 'far' ? '跨度偏大' : job.migration;
+    msg += `\n🧭 <b>迁移：</b>${migLabel}`;
+  }
   if (job.eligLabels && job.eligLabels.length) {
     msg += `\n🌐 <b>地区信号：</b>${job.eligLabels.join(' · ')}`;
   }
@@ -460,6 +468,7 @@ async function main() {
     l1: l1Passed.length,
     eligible: 0,
     rejectedElig: 0,
+    belowThreshold: 0,
     sent: 0,
   };
 
@@ -489,64 +498,74 @@ async function main() {
     return;
   }
 
-  // ── Layer 2：Groq 极速打分（回放时跳过，避免几十条串行打分拖太久）
+  // ── Layer 2：Groq 全量 JD 技能匹配打分（回放仍打分，便于分组摘要）
   const scored = [];
   for (const job of eligible) {
-    if (REPLAY) {
-      scored.push({ ...job, groqScore: null, groqReason: '', groqScoreSkipped: true, hitKeywords: job.l1Hits });
-      continue;
-    }
-    const { score, reason, skipped } = await matcher.layer2(job);
+    const { score, reason, skipped, migration } = await matcher.layer2(job);
     const adjusted = skipped
       ? score
       : Math.max(0, Math.min(100, score + (job.eligBoost || 0)));
     scored.push({
       ...job,
-      groqScore:       adjusted,
-      groqReason:      reason,
+      groqScore:        adjusted,
+      groqReason:       reason,
       groqScoreSkipped: skipped,
-      hitKeywords:     job.l1Hits,
+      migration:        migration || '',
+      hitKeywords:      job.l1Hits,
+      track:            trackOf(job),
     });
     if (!skipped) {
       const boostNote = job.eligBoost ? ` boost${job.eligBoost > 0 ? '+' : ''}${job.eligBoost}` : '';
-      log(`   🤖 ${job.title.slice(0, 45)} → ${adjusted}分 (${reason}${boostNote})`);
+      const migNote = migration ? ` [${migration}]` : '';
+      log(`   🤖 ${job.title.slice(0, 45)} → ${adjusted}分 (${reason}${boostNote}${migNote})`);
     }
   }
 
-  // 分数只作参考，不再拦截。可投的全部推送（签证硬门槛仍在上面丢掉）。
-  const toNotify = scored;
-  log(`🎯 可投全部推送：${toNotify.length} 条（分数不再拦截）`);
+  // 恢复分数门槛：低于阈值的不推（默认 40）
+  const threshold = matcher.threshold;
+  const toNotify = scored
+    .filter((j) => (j.groqScore ?? 0) >= threshold)
+    .sort((a, b) => (b.groqScore ?? 0) - (a.groqScore ?? 0));
+  baseStats.belowThreshold = scored.length - toNotify.length;
+  log(`🎯 过阈值（≥${threshold}）：${toNotify.length} 条（低分丢弃 ${baseStats.belowThreshold}）`);
 
-  // ── 推送到 Telegram（先发一份目录，方便回看）
+  // ── 按中文/英文轨道分组推送摘要（防刷屏）；≥70 分额外发详情
   let sentCount = 0;
-  if (toNotify.length) {
-    const indexTitle = REPLAY ? '回放：最近可投岗位' : '本轮可投岗位';
-    const chunk = 20;
-    for (let i = 0; i < toNotify.length; i += chunk) {
-      const part = toNotify.slice(i, i + chunk);
-      const title = toNotify.length > chunk
-        ? `${indexTitle}（${i + 1}-${i + part.length}）`
-        : indexTitle;
-      try {
-        await sendTelegramMessage(formatPushIndex(part, title), BOT_TOKEN, CHAT_ID);
-        log(`📋 已推送目录 ${i + 1}-${i + part.length}`);
-        await new Promise(r => setTimeout(r, 1200));
-      } catch (err) {
-        log(`   ⚠️  目录推送失败：${err.message}`);
-      }
+  const byTrack = { cn: [], en: [] };
+  for (const job of toNotify) {
+    const t = job.track === 'cn' ? 'cn' : 'en';
+    byTrack[t].push(job);
+  }
+
+  for (const track of ['cn', 'en']) {
+    const list = byTrack[track];
+    if (!list.length) continue;
+    try {
+      const digest = formatTrackDigest(track, list, { threshold, replay: REPLAY });
+      await sendTelegramMessage(digest, BOT_TOKEN, CHAT_ID);
+      log(`📋 已推送${track === 'cn' ? '中文' : '英文'}摘要 ${list.length} 条`);
+      await new Promise((r) => setTimeout(r, 1200));
+    } catch (err) {
+      log(`   ⚠️  ${track} 摘要失败：${err.message}`);
     }
   }
-  for (const job of toNotify) {
+
+  // 高分岗（≥70）额外发详情，方便直接投
+  const DETAIL_SCORE = parseInt(process.env.RADAR_DETAIL_SCORE || '70', 10);
+  const detailJobs = toNotify.filter((j) => (j.groqScore ?? 0) >= DETAIL_SCORE);
+  for (const job of detailJobs) {
     try {
-      const msg = buildMessage(job);
-      await sendTelegramMessage(msg, BOT_TOKEN, CHAT_ID);
-      recordPushed(job);
-      sentCount++;
-      log(`   📨 已推送：${job.title.slice(0, 55)}`);
-      await new Promise(r => setTimeout(r, 1200));  // Telegram 限速保险
+      await sendTelegramMessage(buildMessage(job), BOT_TOKEN, CHAT_ID);
+      log(`   📨 高分详情：${job.title.slice(0, 55)}`);
+      await new Promise((r) => setTimeout(r, 1200));
     } catch (err) {
-      log(`   ⚠️  推送失败：${err.message}`);
+      log(`   ⚠️  详情推送失败：${err.message}`);
     }
+  }
+
+  for (const job of toNotify) {
+    recordPushed(job);
+    sentCount++;
   }
 
   baseStats.sent = sentCount;

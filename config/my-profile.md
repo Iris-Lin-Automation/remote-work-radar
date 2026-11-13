@@ -17,7 +17,8 @@
 ### 优先级 2（高匹配 / 可技能迁移）
 - 全栈开发（AI 方向）/ Full-Stack Developer (AI-focused, FastAPI + React/Next.js)
 - 电商运营 / 跨境电商运营（能用自动化/数据分析提效）
-- 数据运营 / 数据分析师 / Data Operations / Business Analyst
+- 数据运营 / 数据分析师 / Data Analyst / Data Operations / Business Analyst
+- Healthcare / FDA / 临床数据运营或生物统计向分析（统计学 + J&J 医疗数据背景，小跨度迁移）
 - 飞书 / Slack 生态开发 / Feishu Bot & Workflow Developer
 - 增长运营 / Growth Ops（获客、投放数据、报表自动化）
 
@@ -94,6 +95,8 @@
 - 台湾、香港、新加坡公司，或完全远程公司（remote-first）
 - 有薪资范围 / 直接联系方式
 - 接受技能迁移：运营岗可用自动化提效、产品岗需要 AI 落地能力
+- Data Analyst / dashboard / SQL / pandas / 报表自动化
+- FDA / clinical data / biostat / healthcare analytics（近迁，不做纯药师/护士执业）
 
 ## 减分项 / Negative Signals
 - 需坐班或迁移到特定城市
