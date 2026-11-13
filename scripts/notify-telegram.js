@@ -111,6 +111,7 @@ const SOURCE_LABELS = {
   jobicy_apac:         'Jobicy·APAC',
   himalayas:           'Himalayas',
   remotive_dev:        'Remotive·开发',
+  remotive_ai:         'Remotive·AI',
   remotive_prod:       'Remotive·产品',
   wwr_programming:     'WWR·开发',
   wwr_product:         'WWR·产品',
@@ -314,12 +315,15 @@ function formatDailyDigest(stats) {
  * @param {object} meta    { threshold, replay }
  */
 function formatTrackDigest(track, jobs, meta = {}) {
-  const trackLabel = track === 'cn' ? '中文岗' : '英文岗';
-  const flag = track === 'cn' ? '🇨🇳' : '🌍';
-  const threshold = meta.threshold ?? 40;
+  const isEn = track !== 'cn';
+  const trackLabel = isEn
+    ? (meta.primary ? '英文海外主推（优质团队）' : '英文海外')
+    : (meta.primary ? '中文主推' : '中文副线');
+  const flag = isEn ? '🌍' : '🇨🇳';
+  const threshold = meta.threshold ?? (isEn ? 50 : 40);
   const lines = [
-    `${flag} <b>${trackLabel}精选</b>${meta.replay ? ' · 回放' : ''} · 阈值≥${threshold}`,
-    `共 <b>${jobs.length}</b> 条（按 AI 技能匹配分排序）`,
+    `${flag} <b>${trackLabel}</b>${meta.replay ? ' · 回放' : ''} · 阈值≥${threshold}`,
+    `共 <b>${jobs.length}</b> 条 · ${isEn ? 'Himalayas/Remotive/Jobicy 等' : 'V2EX/电鸭/远程.work'}`,
     '',
   ];
 

@@ -67,6 +67,9 @@ const SEND_HEARTBEAT = process.env.TELEGRAM_SEND_HEARTBEAT === 'true';
 const SEND_DAILY_DIGEST = process.env.RADAR_DAILY_DIGEST !== 'false';
 // 一次性回放：忽略「已见过」，把时间窗内可投岗位再推一遍
 const REPLAY = process.env.RADAR_REPLAY === 'true';
+// 双轨：both | en | cn —— 默认 both，但英文海外优质团队为主推
+const RADAR_TRACK = (process.env.RADAR_TRACK || 'both').toLowerCase();
+const PRIMARY_TRACK = (process.env.RADAR_PRIMARY || 'en').toLowerCase();
 
 // 额外关键词（叠加在画像关键词之上，不替换）
 const EXTRA_KEYWORDS = (process.env.RADAR_KEYWORDS || '')
@@ -81,30 +84,32 @@ const MAX_AGE_HOURS = REPLAY
   ? parseInt(process.env.RADAR_REPLAY_HOURS || '168', 10)
   : parseInt(process.env.RADAR_MAX_AGE_HOURS || '4', 10);
 
-// RSS / JSON 数据源
+// RSS / JSON 数据源（track 分离：中文 / 英文海外）
 // ✅ = 经测试可用   ❌ = 封锁 GitHub Actions IP，已移除
-const SOURCES = [
-  // ── 国内中文源
-  { key: 'v2ex_jobs',       url: 'https://www.v2ex.com/feed/jobs.xml',                         name: 'V2EX·招聘'      },  // ✅
-  { key: 'eleduck',         url: 'https://eleduck.com/feed/latest.xml',                        name: '电鸭社区'       },  // ✅
-  // ── 远程.work（按分类订阅，/feed 超时 /overseas/feed 是评论空 feed）
-  { key: 'yw_dev',          url: 'https://yuancheng.work/remote-development-jobs/feed',        name: '远程.work·开发' },  // ✅
-  { key: 'yw_ops',          url: 'https://yuancheng.work/remote-operation-jobs/feed',          name: '远程.work·运营' },  // ✅
-  { key: 'yw_mkt',          url: 'https://yuancheng.work/remote-marketing-jobs/feed',          name: '远程.work·市场' },  // ✅
-  { key: 'yw_prod',         url: 'https://yuancheng.work/remote-product-jobs/feed',            name: '远程.work·产品' },  // ✅
-  { key: 'yw_sales',        url: 'https://yuancheng.work/remote-sales-jobs/feed',              name: '远程.work·销售' },  // ✅
-  { key: 'yw_other',        url: 'https://yuancheng.work/remote-other-jobs/feed',              name: '远程.work·其他' },  // ✅
-  // ── 海外英文源（垂直：APAC / 技能分类，噪音低于全站聚合）
-  { key: 'jobicy_apac',    url: 'https://jobicy.com/api/v2/remote-jobs?count=50&geo=apac', name: 'Jobicy·APAC', type: 'json', parser: 'jobicy' }, // ✅
-  { key: 'himalayas',      url: 'https://himalayas.app/jobs/api?limit=50&offset=0',        name: 'Himalayas',   type: 'json', parser: 'himalayas' }, // ✅
-  { key: 'remotive_dev',   url: 'https://remotive.com/api/remote-jobs?limit=30&category=software-dev', name: 'Remotive·开发', type: 'json', parser: 'remotive' }, // ✅
-  { key: 'remotive_prod',  url: 'https://remotive.com/api/remote-jobs?limit=20&category=product',      name: 'Remotive·产品', type: 'json', parser: 'remotive' }, // ✅
-  { key: 'wwr_programming', url: 'https://weworkremotely.com/categories/remote-programming-jobs.rss', name: 'WWR·开发' }, // ⚠️ Actions 偶发 403
-  { key: 'wwr_product',     url: 'https://weworkremotely.com/categories/remote-product-jobs.rss',     name: 'WWR·产品' }, // ⚠️ Actions 偶发 403
-  // ❌ RemoteOK       → 410 封锁云端 IP
-  // ❌ WWR 全站       → 403 封锁云端 IP（分类 RSS 有时可用）
-  // ❌ Arbeitnow      → XML 格式损坏
+const ALL_SOURCES = [
+  // ── 中文轨
+  { key: 'v2ex_jobs',       url: 'https://www.v2ex.com/feed/jobs.xml',                         name: 'V2EX·招聘',      track: 'cn' },
+  { key: 'eleduck',         url: 'https://eleduck.com/feed/latest.xml',                        name: '电鸭社区',       track: 'cn' },
+  { key: 'yw_dev',          url: 'https://yuancheng.work/remote-development-jobs/feed',        name: '远程.work·开发', track: 'cn' },
+  { key: 'yw_ops',          url: 'https://yuancheng.work/remote-operation-jobs/feed',          name: '远程.work·运营', track: 'cn' },
+  { key: 'yw_mkt',          url: 'https://yuancheng.work/remote-marketing-jobs/feed',          name: '远程.work·市场', track: 'cn' },
+  { key: 'yw_prod',         url: 'https://yuancheng.work/remote-product-jobs/feed',            name: '远程.work·产品', track: 'cn' },
+  { key: 'yw_sales',        url: 'https://yuancheng.work/remote-sales-jobs/feed',              name: '远程.work·销售', track: 'cn' },
+  { key: 'yw_other',        url: 'https://yuancheng.work/remote-other-jobs/feed',              name: '远程.work·其他', track: 'cn' },
+  // ── 英文海外轨（主推优质团队源）
+  { key: 'himalayas',      url: 'https://himalayas.app/jobs/api?limit=50&offset=0',        name: 'Himalayas',   type: 'json', parser: 'himalayas', track: 'en' },
+  { key: 'remotive_ai',    url: 'https://remotive.com/api/remote-jobs?limit=30&category=artificial-intelligence', name: 'Remotive·AI', type: 'json', parser: 'remotive', track: 'en' },
+  { key: 'remotive_dev',   url: 'https://remotive.com/api/remote-jobs?limit=25&category=software-dev', name: 'Remotive·开发', type: 'json', parser: 'remotive', track: 'en' },
+  { key: 'jobicy_apac',    url: 'https://jobicy.com/api/v2/remote-jobs?count=50&geo=apac', name: 'Jobicy·APAC', type: 'json', parser: 'jobicy', track: 'en' },
+  { key: 'wwr_programming', url: 'https://weworkremotely.com/categories/remote-programming-jobs.rss', name: 'WWR·开发', track: 'en' },
+  // ❌ RemoteOK / WWR 全站 / Arbeitnow
 ];
+
+function activeSources() {
+  if (RADAR_TRACK === 'en') return ALL_SOURCES.filter((s) => s.track === 'en');
+  if (RADAR_TRACK === 'cn') return ALL_SOURCES.filter((s) => s.track === 'cn');
+  return ALL_SOURCES;
+}
 
 // ────────────────────────────────────────────────────────────────
 // 2. 工具函数
@@ -414,7 +419,7 @@ function buildMessage(job) {
 // 5. 主流程
 // ────────────────────────────────────────────────────────────────
 async function main() {
-  log('🚀 Remote Work Radar 扫描开始');
+  log(`🚀 Remote Work Radar 扫描开始 · 轨道=${RADAR_TRACK} · 主推=${PRIMARY_TRACK}`);
 
   if (!BOT_TOKEN || !CHAT_ID) {
     log('❌ 缺少 TELEGRAM_BOT_TOKEN 或 TELEGRAM_CHAT_ID，退出。');
@@ -430,7 +435,9 @@ async function main() {
   let lastDigestDate = seenState.lastDigestDate;
   log(`📂 已记录 ${seenKeys.size} 条历史帖子`);
 
-  // ── 并行抓取所有源
+  // ── 按轨道抓取（中英分离）
+  const SOURCES = activeSources();
+  log(`📡 本轮源：${SOURCES.map((s) => s.name).join(' · ')}`);
   const allItems = (await Promise.all(SOURCES.map(fetchSource))).flat();
   log(`📥 共抓取 ${allItems.length} 条（去重前）`);
 
@@ -472,16 +479,17 @@ async function main() {
     sent: 0,
   };
 
-  // ── Layer 1.5：英文 eligibility 硬过滤（签证/地区硬门槛）
+  // ── Layer 1.5：分轨 eligibility（英文更严：地区锁 + 优质团队）
   const eligible = [];
   let rejectedElig = 0;
   for (const job of l1Passed) {
-    const elig = matcher.eligibility(job);
+    const track = trackOf(job);
+    const elig = matcher.eligibility(job, track);
     if (elig.rejected) {
       rejectedElig++;
       continue;
     }
-    eligible.push({ ...job, eligBoost: elig.boost, eligLabels: elig.labels });
+    eligible.push({ ...job, track, eligBoost: elig.boost, eligLabels: elig.labels });
   }
   baseStats.eligible = eligible.length;
   baseStats.rejectedElig = rejectedElig;
@@ -498,7 +506,7 @@ async function main() {
     return;
   }
 
-  // ── Layer 2：Groq 全量 JD 技能匹配打分（回放仍打分，便于分组摘要）
+  // ── Layer 2：Groq 全量 JD 技能匹配打分
   const scored = [];
   for (const job of eligible) {
     const { score, reason, skipped, migration } = await matcher.layer2(job);
@@ -512,51 +520,64 @@ async function main() {
       groqScoreSkipped: skipped,
       migration:        migration || '',
       hitKeywords:      job.l1Hits,
-      track:            trackOf(job),
     });
     if (!skipped) {
       const boostNote = job.eligBoost ? ` boost${job.eligBoost > 0 ? '+' : ''}${job.eligBoost}` : '';
       const migNote = migration ? ` [${migration}]` : '';
-      log(`   🤖 ${job.title.slice(0, 45)} → ${adjusted}分 (${reason}${boostNote}${migNote})`);
+      log(`   🤖 [${job.track}] ${job.title.slice(0, 40)} → ${adjusted}分 (${reason}${boostNote}${migNote})`);
     }
   }
 
-  // 恢复分数门槛：低于阈值的不推（默认 40）
-  const threshold = matcher.threshold;
+  // 分轨阈值：英文海外主推更严（默认≥50），中文副线（默认≥40）
   const toNotify = scored
-    .filter((j) => (j.groqScore ?? 0) >= threshold)
-    .sort((a, b) => (b.groqScore ?? 0) - (a.groqScore ?? 0));
+    .filter((j) => (j.groqScore ?? 0) >= matcher.thresholdFor(j.track))
+    .sort((a, b) => {
+      // 主推轨优先，再按分数
+      if (PRIMARY_TRACK === 'en' && a.track !== b.track) {
+        return a.track === 'en' ? -1 : 1;
+      }
+      return (b.groqScore ?? 0) - (a.groqScore ?? 0);
+    });
   baseStats.belowThreshold = scored.length - toNotify.length;
-  log(`🎯 过阈值（≥${threshold}）：${toNotify.length} 条（低分丢弃 ${baseStats.belowThreshold}）`);
+  log(`🎯 过阈值：EN≥${matcher.enThreshold} / CN≥${matcher.cnThreshold} → ${toNotify.length} 条（低分丢 ${baseStats.belowThreshold}）`);
 
-  // ── 按中文/英文轨道分组推送摘要（防刷屏）；≥70 分额外发详情
+  // ── 中英分开推送：先英文主推，再中文副线
   let sentCount = 0;
   const byTrack = { cn: [], en: [] };
   for (const job of toNotify) {
-    const t = job.track === 'cn' ? 'cn' : 'en';
-    byTrack[t].push(job);
+    byTrack[job.track === 'cn' ? 'cn' : 'en'].push(job);
   }
 
-  for (const track of ['cn', 'en']) {
+  const pushOrder = PRIMARY_TRACK === 'cn' ? ['cn', 'en'] : ['en', 'cn'];
+  for (const track of pushOrder) {
     const list = byTrack[track];
     if (!list.length) continue;
+    const threshold = matcher.thresholdFor(track);
+    const primary = track === PRIMARY_TRACK;
     try {
-      const digest = formatTrackDigest(track, list, { threshold, replay: REPLAY });
+      const digest = formatTrackDigest(track, list, {
+        threshold,
+        replay: REPLAY,
+        primary,
+      });
       await sendTelegramMessage(digest, BOT_TOKEN, CHAT_ID);
-      log(`📋 已推送${track === 'cn' ? '中文' : '英文'}摘要 ${list.length} 条`);
+      log(`📋 已推送${track === 'cn' ? '中文副线' : '英文主推'}摘要 ${list.length} 条`);
       await new Promise((r) => setTimeout(r, 1200));
     } catch (err) {
       log(`   ⚠️  ${track} 摘要失败：${err.message}`);
     }
   }
 
-  // 高分岗（≥70）额外发详情，方便直接投
-  const DETAIL_SCORE = parseInt(process.env.RADAR_DETAIL_SCORE || '70', 10);
-  const detailJobs = toNotify.filter((j) => (j.groqScore ?? 0) >= DETAIL_SCORE);
+  // 详情：英文主推 ≥65；中文副线仅 ≥75（少刷屏）
+  const EN_DETAIL = parseInt(process.env.RADAR_EN_DETAIL_SCORE || '65', 10);
+  const CN_DETAIL = parseInt(process.env.RADAR_CN_DETAIL_SCORE || '75', 10);
+  const detailJobs = toNotify.filter((j) =>
+    (j.groqScore ?? 0) >= (j.track === 'cn' ? CN_DETAIL : EN_DETAIL)
+  );
   for (const job of detailJobs) {
     try {
       await sendTelegramMessage(buildMessage(job), BOT_TOKEN, CHAT_ID);
-      log(`   📨 高分详情：${job.title.slice(0, 55)}`);
+      log(`   📨 [${job.track}] 详情：${job.title.slice(0, 55)}`);
       await new Promise((r) => setTimeout(r, 1200));
     } catch (err) {
       log(`   ⚠️  详情推送失败：${err.message}`);

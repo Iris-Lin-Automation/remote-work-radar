@@ -53,12 +53,32 @@ const JUNK_TITLE_PATTERNS = [
 ];
 
 const BOOST_PATTERNS = [
-  { re: /\b(worldwide|work\s+from\s+anywhere|anywhere\s+in\s+the\s+world|location[- ]independent)\b/i, boost: 10, label: 'worldwide' },
+  { re: /\b(worldwide|work\s+from\s+anywhere|anywhere\s+in\s+the\s+world|location[- ]independent|open\s+to\s+(candidates\s+from\s+)?all\s+countries)\b/i, boost: 10, label: 'worldwide' },
   { re: /\b(apac|asia[- ]pacific|asia\s+timezone|utc\+?8|gmt\+?8)\b/i, boost: 10, label: 'apac-tz' },
   { re: /\b(singapore|hong\s*kong|taiwan|sea\s+region)\b/i, boost: 8, label: 'sg-hk-tw' },
   { re: /\b(independent\s+contractor|contractor\s+(ok|welcome|friendly)|freelance\s+contract)\b/i, boost: 6, label: 'contractor' },
   { re: /\b(async(-|\s)?first|fully\s+async)\b/i, boost: 4, label: 'async' },
+  // 海外优质团队信号（英文主推）
+  { re: /\b(ai\s+automation|workflow\s+engineer|n8n|langgraph|solutions?\s+engineer|implementation\s+engineer|forward[\s-]?deployed)\b/i, boost: 8, label: 'quality-role' },
+  { re: /\b(remote[\s-]?first|distributed\s+team|product[\s-]?led|series\s+[abc]|yc\s+|well[\s-]?funded)\b/i, boost: 5, label: 'quality-team' },
 ];
+
+/** 英文轨：地区锁死且不含中国/全球 → 踢（主攻海外优质全球/APAC 团队） */
+const EN_GEO_LOCK_REJECT = [
+  /\b(latam|latin\s+america)\s+only\b/i,
+  /\b(philippines|india|nigeria|kenya|pakistan|bangladesh)\s+only\b/i,
+  /\bonly\s+(open\s+to|hiring)\s+.{0,40}\b(latam|philippines|india|nigeria|argentina|brazil|mexico)\b/i,
+  /\b(u\.?s\.?|united states)\s+based\b.*\b(citizen|authorization|must\s+reside)/i,
+];
+
+/** 英文轨：标注员 / 廉价 AI trainer 降权（不是优质产品团队） */
+const EN_LOW_QUALITY = [
+  /\b(ai\s+trainer|data\s+label|labeling|rlhf\s+rater|task\s+auditor|micro1|mindrift|outlier\s+ai)\b/i,
+  /\b(crowd\s*sourc|clickworker|scale\s+ai\s+contributor)\b/i,
+];
+
+const EN_THRESHOLD = parseInt(process.env.RADAR_EN_THRESHOLD || process.env.RADAR_SCORE_THRESHOLD || '50', 10);
+const CN_THRESHOLD = parseInt(process.env.RADAR_CN_THRESHOLD || '40', 10);
 
 /**
  * 核心技能词（Layer1 必须命中至少 1 个）。
@@ -117,7 +137,7 @@ function isJunkProfession(hay) {
   return false;
 }
 
-function checkEligibility(job) {
+function checkEligibility(job, track = 'en') {
   const hay = `${job.title || ''} ${job.contentText || ''} ${job.location || ''}`;
 
   if (isJunkProfession(hay)) {
@@ -130,6 +150,15 @@ function checkEligibility(job) {
     }
   }
 
+  // 英文主推轨：地区锁死（非全球/APAC）直接踢
+  if (track === 'en') {
+    for (const re of EN_GEO_LOCK_REJECT) {
+      if (re.test(hay)) {
+        return { rejected: true, boost: 0, labels: ['geo-lock'], reason: '地区锁死非全球/APAC' };
+      }
+    }
+  }
+
   const labels = [];
   let boost = 0;
   for (const { re, boost: b, label } of BOOST_PATTERNS) {
@@ -138,7 +167,17 @@ function checkEligibility(job) {
       labels.push(label);
     }
   }
-  boost = Math.min(boost, 16);
+
+  if (track === 'en') {
+    for (const re of EN_LOW_QUALITY) {
+      if (re.test(hay)) {
+        boost -= 18;
+        labels.push('low-quality-gig');
+      }
+    }
+  }
+
+  boost = Math.max(-20, Math.min(boost, 22));
   return { rejected: false, boost, labels, reason: labels.join('|') || 'ok' };
 }
 
@@ -151,26 +190,26 @@ function loadProfileSummary() {
 
 function groqQuickScore(jobTitle, jobJd, profileSummary, groqKey) {
   return new Promise((resolve, reject) => {
-    const systemPrompt = `你是远程求职匹配官。候选人在中国大陆（UTC+8）。
+    const systemPrompt = `你是远程求职匹配官。候选人在中国大陆（UTC+8），主攻海外英文优质团队。
 请阅读完整 JD（标题+正文），打「技能匹配分」0-100。
 
-【优先瞄准】
-- AI Agent / AI Automation / n8n·Dify·LangGraph 工作流
-- Data Analyst / 数据分析师 / 数据运营（报表、看板、SQL、pandas）
-- 小跨度：Healthcare/FDA/临床数据运营或生物统计向分析（候选人有统计学+J&J 医疗数据背景）
-- B2B 获客自动化、飞书/Slack 自动化、跨境电商数据分析
+【优先瞄准（高分）】
+- AI Automation / AI Workflow / n8n·Make·Dify·LangGraph 落地岗
+- AI Solutions / Implementation / Forward Deployed（帮客户落地 Agent/知识库）
+- Data Analyst / Data Ops（报表自动化，非纯研究）
+- B2B/RevOps 获客自动化、Slack/Notion 集成
 
-【迁移规则】
-- 允许：现有技能附近、1-2 周能补齐的工具差（Excel→SQL、飞书→Slack）
-- 禁止大跨度：纯药师/护士执业、纯律师、纯司机、纯电话销售、纯 Java/.NET 企业后端、需 5 年+ Senior
+【优质团队加分】
+- remote-first、产品型/自动化 agency、Worldwide 或 APAC、可 contractor
+- 有清晰交付物（workflow、agent、dashboard），不是标注/刷题
 
-【硬规则】
-- US/EU 公民或本地工签硬性要求且不可 contractor → ≤20
-- Worldwide/APAC/UTC+8/contractor → 可酌情 +5~10
-- 与画像几乎无关 → ≤25
+【低分】
+- AI trainer / labeling / RLHF 众包、地区锁死 LATAM/PH/India only
+- 纯 WP/HubSpot CMS、纯研究 ML infra、5年+ Senior 硬门槛
 
-只输出 JSON：{"score":整数,"reason":"18字内中文","migration":"direct|near|far"}
-migration: direct=直接对口, near=小跨度可学, far=跨度太大应低分`;
+【迁移】direct=对口 near=小跨度 far=太大(≤35)
+
+只输出 JSON：{"score":整数,"reason":"18字内中文","migration":"direct|near|far"}`;
 
     const userPrompt = `【候选人画像】
 ${profileSummary}
@@ -236,11 +275,11 @@ function createMatcher() {
   const profileSummary = loadProfileSummary();
   const groqKey = process.env.GROQ_API_KEY || '';
 
-  console.log(`[quick-match] ✅ 技能白名单 ${CORE_SKILL_KEYWORDS.length} 词；渣岗黑名单已启用`);
+  console.log(`[quick-match] ✅ 技能白名单 ${CORE_SKILL_KEYWORDS.length} 词；双轨阈值 EN≥${EN_THRESHOLD} / CN≥${CN_THRESHOLD}`);
   if (!groqKey) {
     console.log('[quick-match] ℹ️  未设置 GROQ_API_KEY，将跳过 Layer 2');
   } else {
-    console.log(`[quick-match] ⚡ Groq 全量 JD 打分（模型：${GROQ_MODEL}，阈值：${SCORE_THRESHOLD}，JD≤${JD_CHARS}字）`);
+    console.log(`[quick-match] ⚡ Groq 全量 JD 打分（模型：${GROQ_MODEL}，JD≤${JD_CHARS}字）· 英文优质团队优先`);
   }
 
   return {
@@ -250,8 +289,8 @@ function createMatcher() {
       return hits.filter((h) => !WEAK_ALONE.has(h.toLowerCase()));
     },
 
-    eligibility(job) {
-      return checkEligibility(job);
+    eligibility(job, track = 'en') {
+      return checkEligibility(job, track);
     },
 
     async layer2(job) {
@@ -267,9 +306,15 @@ function createMatcher() {
       }
     },
 
-    get threshold() { return SCORE_THRESHOLD; },
+    thresholdFor(track) {
+      return track === 'cn' ? CN_THRESHOLD : EN_THRESHOLD;
+    },
+
+    get threshold() { return EN_THRESHOLD; },
+    get enThreshold() { return EN_THRESHOLD; },
+    get cnThreshold() { return CN_THRESHOLD; },
     get l1MinHits() { return L1_MIN_HITS; },
   };
 }
 
-module.exports = { createMatcher, checkEligibility, CORE_SKILL_KEYWORDS };
+module.exports = { createMatcher, checkEligibility, CORE_SKILL_KEYWORDS, EN_THRESHOLD, CN_THRESHOLD };
