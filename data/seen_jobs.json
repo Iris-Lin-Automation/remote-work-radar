@@ -1,15 +1,6 @@
 {
-  "updatedAt": "2026-11-13T19:14:11.779Z",
+  "updatedAt": "2026-11-14T00:40:15.428Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/142152-transcription-subtitling-specialist-freelance",
-    "v2ex_jobs|https://www.v2ex.com/t/1245910",
-    "v2ex_jobs|https://www.v2ex.com/t/1245895",
-    "eleduck|https://eleduck.com/posts/z1fRw7",
-    "eleduck|https://eleduck.com/posts/qzf8Q4",
-    "eleduck|https://eleduck.com/posts/QZfYDK",
-    "eleduck|https://eleduck.com/posts/Ygf57a",
-    "jobicy|https://jobicy.com/jobs/154242-senior-network-engineer",
-    "eleduck|https://eleduck.com/posts/pqfkoD",
     "eleduck|https://eleduck.com/posts/74frpJ",
     "v2ex_jobs|https://www.v2ex.com/t/1245965",
     "eleduck|https://eleduck.com/posts/VvfpxW",
@@ -2000,7 +1991,16 @@
     "jobicy|https://jobicy.com/jobs/161791-territory-manager-matamata-taupo",
     "jobicy|https://jobicy.com/jobs/161790-helpdesk-technician-tier-1-2",
     "jobicy|https://jobicy.com/jobs/161789-staff-security-engineer-product-cloud",
-    "jobicy|https://jobicy.com/jobs/161788-coupa-technical-integration-consultant"
+    "jobicy|https://jobicy.com/jobs/161788-coupa-technical-integration-consultant",
+    "eleduck|https://eleduck.com/posts/EQfzpV",
+    "yw_dev|https://yuancheng.work/7219.html",
+    "yw_dev|https://yuancheng.work/7216.html",
+    "yw_ops|https://yuancheng.work/7222.html",
+    "yw_mkt|https://yuancheng.work/7225.html",
+    "yw_mkt|https://yuancheng.work/7223.html",
+    "yw_mkt|https://yuancheng.work/7221.html",
+    "yw_prod|https://yuancheng.work/7224.html",
+    "yw_other|https://yuancheng.work/7220.html"
   ],
   "lastDigestDate": "2026-11-14"
 }
