@@ -117,6 +117,12 @@ const SOURCE_LABELS = {
   wwr_product:         'WWR·产品',
   growix:              'Growix',
   opentrain:           'OpenTrain',
+  remoteok:            'RemoteOK',
+  wwr_fullstack:       'WWR·全栈',
+  wwr_backend:         'WWR·后端',
+  wwr_devops:          'WWR·DevOps',
+  ats_greenhouse:      'Greenhouse',
+  ats_ashby:           'Ashby',
 };
 
 const CN_SOURCES = new Set([

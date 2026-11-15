@@ -41,6 +41,7 @@ const {
 } = require('./notify-telegram');
 const { createMatcher } = require('./quick-match');
 const { fetchCareerSite } = require('./fetch-career-sites');
+const { fetchAllAtsBoards } = require('./fetch-ats-boards');
 
 // ────────────────────────────────────────────────────────────────
 // 0. 加载 .env（本地开发用，CI 里用 Secrets）
@@ -98,15 +99,26 @@ const ALL_SOURCES = [
   { key: 'yw_sales',        url: 'https://yuancheng.work/remote-sales-jobs/feed',              name: '远程.work·销售', track: 'cn' },
   { key: 'yw_other',        url: 'https://yuancheng.work/remote-other-jobs/feed',              name: '远程.work·其他', track: 'cn' },
   // ── 英文海外轨（主推优质团队源）
-  { key: 'himalayas',      url: 'https://himalayas.app/jobs/api?limit=50&offset=0',        name: 'Himalayas',   type: 'json', parser: 'himalayas', track: 'en' },
-  { key: 'remotive_ai',    url: 'https://remotive.com/api/remote-jobs?limit=30&category=artificial-intelligence', name: 'Remotive·AI', type: 'json', parser: 'remotive', track: 'en' },
-  { key: 'remotive_dev',   url: 'https://remotive.com/api/remote-jobs?limit=25&category=software-dev', name: 'Remotive·开发', type: 'json', parser: 'remotive', track: 'en' },
-  { key: 'jobicy_apac',    url: 'https://jobicy.com/api/v2/remote-jobs?count=50&geo=apac', name: 'Jobicy·APAC', type: 'json', parser: 'jobicy', track: 'en' },
+  // Himalayas 公开 JSON API：https://himalayas.app/jobs/api （优先 cursor 分页）
+  { key: 'himalayas', url: 'https://himalayas.app/jobs/api?limit=50&offset=0', name: 'Himalayas', type: 'json', parser: 'himalayas', track: 'en' },
+  // RemoteOK 免费 JSON（RSS 对云端 IP 常 410，改走 /api）
+  { key: 'remoteok', url: 'https://remoteok.com/api', name: 'RemoteOK', type: 'json', parser: 'remoteok', track: 'en' },
+  { key: 'remotive_ai', url: 'https://remotive.com/api/remote-jobs?limit=30&category=artificial-intelligence', name: 'Remotive·AI', type: 'json', parser: 'remotive', track: 'en' },
+  { key: 'remotive_dev', url: 'https://remotive.com/api/remote-jobs?limit=25&category=software-dev', name: 'Remotive·开发', type: 'json', parser: 'remotive', track: 'en' },
+  { key: 'jobicy_apac', url: 'https://jobicy.com/api/v2/remote-jobs?count=50&geo=apac', name: 'Jobicy·APAC', type: 'json', parser: 'jobicy', track: 'en' },
+  // We Work Remotely 公开分类 RSS
   { key: 'wwr_programming', url: 'https://weworkremotely.com/categories/remote-programming-jobs.rss', name: 'WWR·开发', track: 'en' },
-  // ── 英文官网 / 常青管道（HTML 抓取）
+  { key: 'wwr_fullstack', url: 'https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss', name: 'WWR·全栈', track: 'en' },
+  { key: 'wwr_backend', url: 'https://weworkremotely.com/categories/remote-back-end-programming-jobs.rss', name: 'WWR·后端', track: 'en' },
+  { key: 'wwr_devops', url: 'https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss', name: 'WWR·DevOps', track: 'en' },
+  { key: 'wwr_product', url: 'https://weworkremotely.com/categories/remote-product-jobs.rss', name: 'WWR·产品', track: 'en' },
+  // 常青 / 官网 HTML
   { key: 'growix', url: 'https://growix.com/careers', name: 'Growix', type: 'html', parser: 'growix', track: 'en' },
   { key: 'opentrain', url: 'https://www.opentrain.ai/jobs/', name: 'OpenTrain', type: 'html', parser: 'opentrain', track: 'en' },
-  // ❌ RemoteOK / WWR 全站 / Arbeitnow
+  // Greenhouse / Ashby 企业官方 ATS（Wellfound 无公开 API，改由 ATS 上游覆盖）
+  { key: 'ats_boards', url: 'config/ats-boards.json', name: 'ATS·Greenhouse/Ashby', type: 'ats', track: 'en' },
+  // ❌ Wellfound 无公开 API（Cloudflare/robots 封锁）
+  // ❌ Arbeitnow XML 损坏
 ];
 
 function activeSources() {
@@ -348,6 +360,37 @@ function normalizeHimalayasItem(job, source) {
   };
 }
 
+/** RemoteOK /api：首条常为 legal 元数据，无 position 则跳过；优先 AI/dev/python 标签 */
+function normalizeRemoteOkJobs(data, source) {
+  const list = Array.isArray(data) ? data : [];
+  const keepTag = /ai|python|dev|engineer|llm|automation|agent|data|machine learning|ml|backend|fullstack|full-stack/i;
+  const out = [];
+  for (const job of list) {
+    if (!job || !job.position) continue;
+    const tags = Array.isArray(job.tags) ? job.tags.join(' ') : '';
+    const hay = `${job.position} ${tags} ${job.description || ''}`;
+    if (!keepTag.test(hay)) continue;
+    const url = job.apply_url || job.url || null;
+    const content = stripHtml(job.description || '');
+    const publishedAt = job.date
+      ? new Date(job.date).toISOString()
+      : (job.epoch ? new Date(job.epoch * 1000).toISOString() : null);
+    out.push({
+      source: source.key,
+      sourceName: source.name,
+      title: stripHtml(job.position || ''),
+      url,
+      content,
+      contentText: content.slice(0, 4000),
+      publishedAt,
+      location: job.location || 'Remote',
+      company: job.company || '',
+      dedupKey: dedupKey('remoteok', url || job.id || job.slug, job.position),
+    });
+  }
+  return out;
+}
+
 function normalizeJsonJobs(data, source) {
   const parser = source.parser || 'remotive';
   if (parser === 'jobicy') {
@@ -356,12 +399,21 @@ function normalizeJsonJobs(data, source) {
   if (parser === 'himalayas') {
     return (data.jobs || []).map(j => normalizeHimalayasItem(j, source));
   }
+  if (parser === 'remoteok') {
+    return normalizeRemoteOkJobs(data, source);
+  }
   return (data.jobs || []).map(j => normalizeRemotiveItem(j, source));
 }
 
 async function fetchSource(source) {
   try {
     log(`📡 抓取 ${source.name} …`);
+
+    if (source.type === 'ats') {
+      const jobs = await fetchAllAtsBoards();
+      log(`   ✅ ${jobs.length} 条（ATS）`);
+      return jobs;
+    }
 
     if (source.type === 'html') {
       const jobs = await fetchCareerSite(source);
