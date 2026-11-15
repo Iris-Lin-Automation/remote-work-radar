@@ -101,7 +101,8 @@ AI Automation Engineer OR "AI Workflow" OR n8n OR "Make.com" remote worldwide
 
 - `RADAR_TRACK=both|en|cn`：中英源分开抓、分开推  
 - `RADAR_PRIMARY=en`：英文海外优质团队主推（先推 EN）  
-- 阈值：EN≥50 / CN≥40；详情：EN≥65 / CN≥75  
+- 阈值：EN≥40 / CN≥40；详情：EN≥60 / CN≥75  
 - 英文踢：LATAM/PH/India only、AI trainer/labeling 降权  
 - 英文源：Himalayas + Remotive AI + Remotive Dev + Jobicy APAC + WWR  
+  + **Growix** (`https://growix.com/careers`) + **OpenTrain** (`https://www.opentrain.ai/jobs/`)  
 - Actions 手动跑可选轨道：`track=both|en|cn`

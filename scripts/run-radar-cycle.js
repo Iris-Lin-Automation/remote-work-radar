@@ -40,6 +40,7 @@ const {
   sendHeartbeat,
 } = require('./notify-telegram');
 const { createMatcher } = require('./quick-match');
+const { fetchCareerSite } = require('./fetch-career-sites');
 
 // ────────────────────────────────────────────────────────────────
 // 0. 加载 .env（本地开发用，CI 里用 Secrets）
@@ -102,6 +103,9 @@ const ALL_SOURCES = [
   { key: 'remotive_dev',   url: 'https://remotive.com/api/remote-jobs?limit=25&category=software-dev', name: 'Remotive·开发', type: 'json', parser: 'remotive', track: 'en' },
   { key: 'jobicy_apac',    url: 'https://jobicy.com/api/v2/remote-jobs?count=50&geo=apac', name: 'Jobicy·APAC', type: 'json', parser: 'jobicy', track: 'en' },
   { key: 'wwr_programming', url: 'https://weworkremotely.com/categories/remote-programming-jobs.rss', name: 'WWR·开发', track: 'en' },
+  // ── 英文官网 / 常青管道（HTML 抓取）
+  { key: 'growix', url: 'https://growix.com/careers', name: 'Growix', type: 'html', parser: 'growix', track: 'en' },
+  { key: 'opentrain', url: 'https://www.opentrain.ai/jobs/', name: 'OpenTrain', type: 'html', parser: 'opentrain', track: 'en' },
   // ❌ RemoteOK / WWR 全站 / Arbeitnow
 ];
 
@@ -358,6 +362,12 @@ function normalizeJsonJobs(data, source) {
 async function fetchSource(source) {
   try {
     log(`📡 抓取 ${source.name} …`);
+
+    if (source.type === 'html') {
+      const jobs = await fetchCareerSite(source);
+      log(`   ✅ ${jobs.length} 条（HTML）`);
+      return jobs;
+    }
 
     if (source.type === 'json') {
       const data = await fetchJson(source.url);

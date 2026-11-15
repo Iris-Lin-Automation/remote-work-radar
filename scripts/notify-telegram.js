@@ -115,6 +115,8 @@ const SOURCE_LABELS = {
   remotive_prod:       'Remotive·产品',
   wwr_programming:     'WWR·开发',
   wwr_product:         'WWR·产品',
+  growix:              'Growix',
+  opentrain:           'OpenTrain',
 };
 
 const CN_SOURCES = new Set([
