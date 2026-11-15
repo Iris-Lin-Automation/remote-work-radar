@@ -1,0 +1,22 @@
+{
+  "_comment": "Curated AI / product ATS boards for EN radar. Greenhouse + Ashby public job APIs. Wellfound has no public API — covered upstream via these boards.",
+  "greenhouse": [
+    { "slug": "anthropic", "name": "Anthropic" },
+    { "slug": "togetherai", "name": "Together AI" },
+    { "slug": "gitlab", "name": "GitLab" },
+    { "slug": "cloudflare", "name": "Cloudflare" },
+    { "slug": "databricks", "name": "Databricks" }
+  ],
+  "ashby": [
+    { "slug": "notion", "name": "Notion" },
+    { "slug": "linear", "name": "Linear" },
+    { "slug": "cursor", "name": "Cursor" },
+    { "slug": "perplexity", "name": "Perplexity" },
+    { "slug": "n8n", "name": "n8n" },
+    { "slug": "elevenlabs", "name": "ElevenLabs" },
+    { "slug": "vapi", "name": "Vapi" }
+  ],
+  "titleKeep": "\\bai\\b|\\bllm\\b|\\bagents?\\b|automation|integration|workflow|python|fullstack|full-stack|backend|data engineer|analytics|\\brag\\b|applied ai|solutions engineer|forward deployed|machine learning|\\bml\\b engineer|software engineer.*ai|ai.*engineer",
+  "titleDrop": "account executive|sales|recruiter|people partner|counsel|attorney|facilities|office manager|accountant|external affairs|fellows program|substation|protection & automation|head of technical training|pre-training data",
+  "maxPerBoard": 15
+}
