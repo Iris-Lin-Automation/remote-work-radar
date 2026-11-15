@@ -1,10 +1,6 @@
 {
-  "updatedAt": "2026-11-14T21:59:16.841Z",
+  "updatedAt": "2026-11-15T01:43:58.992Z",
   "keys": [
-    "jobicy|https://jobicy.com/jobs/152649-customer-success-manager-asia",
-    "jobicy|https://jobicy.com/jobs/152251-ai-security-account-executive",
-    "jobicy|https://jobicy.com/jobs/152189-growth-marketing-manager-foundry",
-    "jobicy|https://jobicy.com/jobs/152178-sales-engineer-enterprise",
     "jobicy|https://jobicy.com/jobs/152180-principal-supplier-quality-engineer",
     "jobicy|https://jobicy.com/jobs/152174-lead-supplier-quality-engineer",
     "jobicy|https://jobicy.com/jobs/142189-customer-service-representative-spanish-bilingual",
@@ -2000,7 +1996,11 @@
     "eleduck|https://eleduck.com/posts/rdf3J7",
     "yw_dev|https://yuancheng.work/7235.html",
     "yw_ops|https://yuancheng.work/7227.html",
-    "yw_sales|https://yuancheng.work/7231.html"
+    "yw_sales|https://yuancheng.work/7231.html",
+    "v2ex_jobs|https://www.v2ex.com/t/1257148",
+    "eleduck|https://eleduck.com/posts/dDfpb4",
+    "eleduck|https://eleduck.com/posts/qzf1YJ",
+    "eleduck|https://eleduck.com/posts/QZfLnn"
   ],
   "lastDigestDate": "2026-11-15"
 }
