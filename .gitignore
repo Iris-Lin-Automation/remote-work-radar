@@ -74,6 +74,8 @@ config/*
 !config/my-profile.md
 # 例外：小红书痛点线索关键词（不含账号密钥）
 !config/pain-lead-keywords.json
+# 例外：ATS 公司板列表（Greenhouse/Ashby，无密钥）
+!config/ats-boards.json
 .continue/
 
 # ===== 抓取/缓存数据（岗位数据与手动采集=运行时产物）=====
