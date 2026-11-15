@@ -72,6 +72,8 @@ build/
 config/*
 # 例外：基础画像文件（不含敏感信息，Groq 打分需要）
 !config/my-profile.md
+# 例外：小红书痛点线索关键词（不含账号密钥）
+!config/pain-lead-keywords.json
 .continue/
 
 # ===== 抓取/缓存数据（岗位数据与手动采集=运行时产物）=====
