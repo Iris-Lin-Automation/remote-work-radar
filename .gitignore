@@ -10,6 +10,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.rest-grants-ok
 
 # 输出文件
 output/
@@ -76,6 +77,8 @@ config/*
 !config/pain-lead-keywords.json
 # 例外：ATS 公司板列表（Greenhouse/Ashby，无密钥）
 !config/ats-boards.json
+# 例外：评分权重（无密钥）
+!config/scoring-weights.json
 .continue/
 
 # ===== 抓取/缓存数据（岗位数据与手动采集=运行时产物）=====

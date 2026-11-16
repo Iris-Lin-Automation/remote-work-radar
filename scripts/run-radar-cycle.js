@@ -34,7 +34,7 @@ const Parser = require('rss-parser');
 const {
   formatJobMessage,
   formatDailyDigest,
-  formatTrackDigest,
+  formatStatusDigest,
   trackOf,
   sendTelegramMessage,
   sendHeartbeat,
@@ -42,6 +42,7 @@ const {
 const { createMatcher } = require('./quick-match');
 const { fetchCareerSite } = require('./fetch-career-sites');
 const { fetchAllAtsBoards } = require('./fetch-ats-boards');
+const db = require('./db');
 
 // ────────────────────────────────────────────────────────────────
 // 0. 加载 .env（本地开发用，CI 里用 Secrets）
@@ -455,15 +456,28 @@ async function fetchSource(source) {
 // 4. 格式化消息（增加 Groq 打分信息）
 // ────────────────────────────────────────────────────────────────
 function buildMessage(job) {
-  // 基础消息由 notify-telegram.js 生成
   let msg = formatJobMessage(job);
 
-  // 在底部追加 AI 打分行（如果有）
+  if (job.recommendation_status) {
+    const st = job.recommendation_status === 'apply_now' ? '✅ apply_now'
+      : job.recommendation_status === 'verify' ? '🔎 verify' : '⏭ skip';
+    msg += `\n📌 <b>建议：</b>${st}`;
+  }
+  if (job.hard || job.china_eligible) {
+    const china = job.hard?.china_eligible || job.china_eligible || '?';
+    const mode = job.hard?.work_mode || job.work_mode || '?';
+    const vehicle = job.hard?.hire_vehicle || job.hire_vehicle || '?';
+    msg += `\n🛡 <b>硬条件：</b>中国可雇=${china} · ${mode} · ${vehicle}`;
+  }
   if (job.groqScore != null && !job.groqScoreSkipped) {
     const bar  = '█'.repeat(Math.round(job.groqScore / 10)) + '░'.repeat(10 - Math.round(job.groqScore / 10));
-    const line = `\n⚡ <b>AI 快速评分：${job.groqScore}/100</b>  <code>${bar}</code>`;
+    const line = `\n⚡ <b>六维总分：${job.groqScore}/100</b>  <code>${bar}</code>`;
     const note = job.groqReason ? `  <i>${job.groqReason}</i>` : '';
     msg += line + note;
+    const d = job.dims || {};
+    if (d.tech != null) {
+      msg += `\n📊 tech ${d.tech} · delivery ${d.delivery} · level ${d.level} · workstyle ${d.workstyle} · comp ${d.comp} · trust ${d.trust}`;
+    }
   }
   if (job.migration) {
     const migLabel = job.migration === 'direct' ? '直接对口'
@@ -488,10 +502,62 @@ async function main() {
     process.exit(1);
   }
 
-  // ── 初始化两层匹配器（读画像文件，一次性）
-  const matcher = createMatcher();
+  // ── 云端 DB：pooler TCP 优先；不可用时走 Supabase REST（SERVICE_ROLE）
+  const userKey = process.env.RADAR_USER_KEY || 'iris';
+  const requireDb = process.env.RADAR_REQUIRE_CLOUD_DB === 'true'
+    || process.env.CI === 'true'
+    || !!process.env.GITHUB_ACTIONS;
+  let preferenceContext = '';
+  let weightOverrides = {};
+  let dbOk = false;
+  if (db.getPool()) {
+    try {
+      const health = await db.healthCheck();
+      dbOk = true;
+      log(`💾 DB ok (${health.hostHint}, ${health.latencyMs}ms)`);
+      preferenceContext = await db.buildScoringPreferenceContext(userKey);
+      weightOverrides = await db.getWeightOverrides(userKey);
+      if (preferenceContext) log(`📎 已加载偏好/反馈上下文 ${preferenceContext.length} 字`);
+    } catch (err) {
+      log(`❌ DATABASE_URL 不可用：${err.message}`);
+      if (db.restConfig()) {
+        try {
+          await db.restHealthCheck();
+          dbOk = true;
+          log('💾 DB ok via Supabase REST (pg failed)');
+        } catch (restErr) {
+          log(`❌ REST 也不可用：${restErr.message}`);
+          if (requireDb) throw restErr;
+        }
+      } else if (requireDb) {
+        throw err;
+      } else {
+        log('⚠️  继续本轮（仅 Telegram + JSON）；设置 RADAR_REQUIRE_CLOUD_DB=true 可强制失败');
+      }
+    }
+  } else if (db.restConfig()) {
+    try {
+      await db.restHealthCheck();
+      dbOk = true;
+      log('💾 DB ok via Supabase REST (no DATABASE_URL pool)');
+    } catch (restErr) {
+      log(`❌ REST 不可用：${restErr.message}`);
+      if (requireDb) throw restErr;
+    }
+  } else {
+    log('❌ 未设置 DATABASE_URL / SUPABASE_* — 无法写入云库');
+    if (requireDb) {
+      throw new Error('Cloud DB required: set DATABASE_URL (pooler) or SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY');
+    }
+  }
 
-  // ── 读取已见状态
+  // ── 初始化三层匹配器（画像 + 偏好）
+  const matcher = createMatcher({
+    preferenceSummary: preferenceContext,
+    weightOverrides,
+  });
+
+  // ── 读取已见状态（JSON 本地 + 可选 DB）
   const seenState = loadSeenState();
   const seenKeys = seenState.keys;
   let lastDigestDate = seenState.lastDigestDate;
@@ -568,63 +634,143 @@ async function main() {
     return;
   }
 
-  // ── Layer 2：Groq 全量 JD 技能匹配打分
+  // ── Layer 2：Groq 六维打分 + cache；失败 → score_status=error（不给假分）
   const scored = [];
+  let scoredOk = 0;
+  let scoredError = 0;
   for (const job of eligible) {
-    const { score, reason, skipped, migration } = await matcher.layer2(job);
-    const adjusted = skipped
-      ? score
-      : Math.max(0, Math.min(100, score + (job.eligBoost || 0)));
+    const bucket = db.sourceBucketOf(job);
+    const jd = String(job.contentText || '').slice(0, 2800);
+    const hash = db.jdHashOf(jd);
+    let cachedScore = null;
+    if (dbOk) {
+      try {
+        cachedScore = await db.getCachedScore({
+          dedupKey: job.dedupKey,
+          jdHash: hash,
+          profileVersion: process.env.RADAR_PROFILE_VERSION || 'v1',
+          promptVersion: process.env.RADAR_PROMPT_VERSION || 'v1',
+        });
+      } catch (e) {
+        log(`   ⚠️  score cache read: ${e.message}`);
+      }
+    }
+
+    const result = await matcher.layer2(job, {
+      eligBoost: job.eligBoost,
+      eligRejected: false,
+      source_bucket: bucket,
+      cachedScore: cachedScore
+        ? {
+          dims: cachedScore.dims,
+          total_score: cachedScore.total_score,
+          reason: cachedScore.reason,
+          migration: cachedScore.migration,
+        }
+        : null,
+    });
+    const {
+      score, reason, skipped, migration, dims, hard, recommendation_status,
+      score_status, score_error, prompt_version, profile_version, model, raw,
+    } = result;
+
+    if (score_status === 'ok' && dbOk && !cachedScore) {
+      try {
+        await db.saveScoreCache({
+          job_dedup_key: job.dedupKey,
+          jd_hash: hash,
+          profile_version: profile_version || 'v1',
+          prompt_version: prompt_version || 'v1',
+          model: model || process.env.GROQ_MODEL,
+          dims,
+          total_score: score,
+          reason,
+          migration,
+          score_status: 'ok',
+          raw_response: raw || null,
+        });
+      } catch (e) {
+        log(`   ⚠️  score cache write: ${e.message}`);
+      }
+    }
+    if (score_status === 'ok' || score_status === 'cached') scoredOk++;
+    if (score_status === 'error') scoredError++;
+
     scored.push({
       ...job,
-      groqScore:        adjusted,
-      groqReason:       reason,
-      groqScoreSkipped: skipped,
-      migration:        migration || '',
-      hitKeywords:      job.l1Hits,
+      groqScore:              score,
+      groqReason:             reason,
+      groqScoreSkipped:       skipped,
+      migration:              migration || '',
+      dims:                   dims || {},
+      hard:                   { ...(hard || {}), source_bucket: bucket },
+      recommendation_status:  recommendation_status || 'skip',
+      score_status:           score_status || 'pending',
+      score_error:            score_error || null,
+      jd_hash:                hash,
+      profile_version:        profile_version,
+      prompt_version:         prompt_version,
+      source_bucket:          bucket,
+      hitKeywords:            job.l1Hits,
+      china_eligible:         hard?.china_eligible,
+      work_mode:              hard?.work_mode,
+      hire_vehicle:           hard?.hire_vehicle,
+      evidence_snippets:      hard?.china_eligibility_reason
+        ? [hard.china_eligibility_reason]
+        : [],
     });
-    if (!skipped) {
-      const boostNote = job.eligBoost ? ` boost${job.eligBoost > 0 ? '+' : ''}${job.eligBoost}` : '';
-      const migNote = migration ? ` [${migration}]` : '';
-      log(`   🤖 [${job.track}] ${job.title.slice(0, 40)} → ${adjusted}分 (${reason}${boostNote}${migNote})`);
-    }
+    const scoreLabel = score == null ? '—' : `${score}分`;
+    log(`   🤖 [${job.track}/${bucket}] ${job.title.slice(0, 36)} → ${scoreLabel} ${recommendation_status} [${score_status}] ${reason || ''}`);
   }
 
-  // 分轨阈值：英文海外主推更严（默认≥50），中文副线（默认≥40）
+  // ── Postgres 双写；seen_jobs.json 仍始终写
+  let upserted = 0;
+  if (dbOk) {
+    for (const job of scored) {
+      const row = await db.upsertRadarJob(job, { hard: false });
+      if (row) upserted++;
+    }
+    log(`💾 Postgres upsert ${upserted}/${scored.length} 条`);
+  }
+
+  // 推送：apply_now + verify（含 score_error 的 verify）；skip 不推
+  // apply_now 仅 china_eligible=true 且 score ok（matcher 已保证）
   const toNotify = scored
-    .filter((j) => (j.groqScore ?? 0) >= matcher.thresholdFor(j.track))
+    .filter((j) => j.recommendation_status === 'apply_now' || j.recommendation_status === 'verify')
     .sort((a, b) => {
-      // 主推轨优先，再按分数
+      const rank = { apply_now: 0, verify: 1 };
+      const ra = rank[a.recommendation_status] ?? 9;
+      const rb = rank[b.recommendation_status] ?? 9;
+      if (ra !== rb) return ra - rb;
       if (PRIMARY_TRACK === 'en' && a.track !== b.track) {
         return a.track === 'en' ? -1 : 1;
       }
       return (b.groqScore ?? 0) - (a.groqScore ?? 0);
     });
-  baseStats.belowThreshold = scored.length - toNotify.length;
-  log(`🎯 过阈值：EN≥${matcher.enThreshold} / CN≥${matcher.cnThreshold} → ${toNotify.length} 条（低分丢 ${baseStats.belowThreshold}）`);
+  baseStats.belowThreshold = scored.filter((j) => j.recommendation_status === 'skip').length;
+  baseStats.applyNow = toNotify.filter((j) => j.recommendation_status === 'apply_now').length;
+  baseStats.verify = toNotify.filter((j) => j.recommendation_status === 'verify').length;
+  baseStats.scored_ok = scoredOk;
+  baseStats.scored_error = scoredError;
+  log(`🎯 推荐：apply_now ${baseStats.applyNow} · verify ${baseStats.verify} · skip ${baseStats.belowThreshold} · LLM ok ${scoredOk} err ${scoredError}`);
 
-  // ── 中英分开推送：先英文主推，再中文副线
   let sentCount = 0;
-  const byTrack = { cn: [], en: [] };
-  for (const job of toNotify) {
-    byTrack[job.track === 'cn' ? 'cn' : 'en'].push(job);
-  }
 
-  // 0 条也推一条说明，避免「跑成功了但手机完全没动静」
+  // 0 条也推说明
   if (toNotify.length === 0) {
     const top = [...scored]
       .sort((a, b) => (b.groqScore ?? 0) - (a.groqScore ?? 0))
       .slice(0, 5)
-      .map((j, i) => `${i + 1}. ${j.groqScore ?? '?'}分 [${j.track}] ${(j.title || '').slice(0, 50)}`)
+      .map((j, i) => `${i + 1}. ${j.groqScore ?? '?'}分 [${j.recommendation_status}/${j.track}] ${(j.title || '').slice(0, 48)}`)
       .join('\n');
     const zeroMsg = [
-      '📡 <b>Radar 本轮无过阈值岗位</b>',
-      `轨道 ${RADAR_TRACK} · 扫描 ${allItems.length} · L1 ${l1Passed.length} · 可投 ${eligible.length}`,
-      `门槛 EN≥${matcher.enThreshold} / CN≥${matcher.cnThreshold} · 低分丢 ${baseStats.belowThreshold}`,
+      '📡 <b>Radar 本轮无 apply_now / verify</b>',
+      `轨道 ${RADAR_TRACK} · 扫描 ${allItems.length} · L1 ${l1Passed.length} · 可评 ${eligible.length}`,
+      `skip ${baseStats.belowThreshold}（含中国不可雇 / 低分 / onsite）`,
       '',
       top ? `<b>最高分预览（未推）：</b>\n${top}` : '本轮没有可打分岗位。',
       '',
-      '<i>系统在跑；够分才会推英文主推/中文副线摘要。</i>',
+      '<i>系统在跑；Worldwide≠可雇，未确认中国可受雇不会进 apply_now。</i>',
     ].join('\n');
     try {
       await sendTelegramMessage(zeroMsg, BOT_TOKEN, CHAT_ID);
@@ -634,36 +780,43 @@ async function main() {
     }
   }
 
-  const pushOrder = PRIMARY_TRACK === 'cn' ? ['cn', 'en'] : ['en', 'cn'];
-  for (const track of pushOrder) {
-    const list = byTrack[track];
-    if (!list.length) continue;
-    const threshold = matcher.thresholdFor(track);
-    const primary = track === PRIMARY_TRACK;
-    try {
-      const digest = formatTrackDigest(track, list, {
-        threshold,
-        replay: REPLAY,
-        primary,
-      });
-      await sendTelegramMessage(digest, BOT_TOKEN, CHAT_ID);
-      log(`📋 已推送${track === 'cn' ? '中文副线' : '英文主推'}摘要 ${list.length} 条`);
-      await new Promise((r) => setTimeout(r, 1200));
-    } catch (err) {
-      log(`   ⚠️  ${track} 摘要失败：${err.message}`);
+  // ── 按 recommendation_status 推送（先 apply_now，再 verify）；轨内再分
+  for (const status of ['apply_now', 'verify']) {
+    const statusJobs = toNotify.filter((j) => j.recommendation_status === status);
+    if (!statusJobs.length) continue;
+
+    const pushOrder = PRIMARY_TRACK === 'cn' ? ['cn', 'en', 'all'] : ['en', 'cn', 'all'];
+    const byTrack = { cn: [], en: [] };
+    for (const job of statusJobs) {
+      byTrack[job.track === 'cn' ? 'cn' : 'en'].push(job);
+    }
+
+    for (const track of pushOrder) {
+      if (track === 'all') continue;
+      const list = byTrack[track];
+      if (!list.length) continue;
+      try {
+        const digest = formatStatusDigest(status, list, { track, replay: REPLAY });
+        await sendTelegramMessage(digest, BOT_TOKEN, CHAT_ID);
+        log(`📋 已推送 ${status}/${track} 摘要 ${list.length} 条`);
+        await new Promise((r) => setTimeout(r, 1200));
+      } catch (err) {
+        log(`   ⚠️  ${status}/${track} 摘要失败：${err.message}`);
+      }
     }
   }
 
-  // 详情：英文主推 ≥65；中文副线仅 ≥75（少刷屏）
-  const EN_DETAIL = parseInt(process.env.RADAR_EN_DETAIL_SCORE || '65', 10);
+  // 详情：仅 apply_now 且高分
+  const EN_DETAIL = parseInt(process.env.RADAR_EN_DETAIL_SCORE || '70', 10);
   const CN_DETAIL = parseInt(process.env.RADAR_CN_DETAIL_SCORE || '75', 10);
   const detailJobs = toNotify.filter((j) =>
+    j.recommendation_status === 'apply_now' &&
     (j.groqScore ?? 0) >= (j.track === 'cn' ? CN_DETAIL : EN_DETAIL)
   );
   for (const job of detailJobs) {
     try {
       await sendTelegramMessage(buildMessage(job), BOT_TOKEN, CHAT_ID);
-      log(`   📨 [${job.track}] 详情：${job.title.slice(0, 55)}`);
+      log(`   📨 [${job.track}] apply_now 详情：${job.title.slice(0, 55)}`);
       await new Promise((r) => setTimeout(r, 1200));
     } catch (err) {
       log(`   ⚠️  详情推送失败：${err.message}`);
@@ -678,13 +831,23 @@ async function main() {
   baseStats.sent = sentCount;
   lastDigestDate = await maybeSendDailyDigest(baseStats, lastDigestDate);
 
-  // ── 保存状态
+  if (dbOk) {
+    try {
+      await db.recordRadarRun(baseStats);
+    } catch (e) {
+      log(`⚠️  radar_runs 写入失败：${e.message}`);
+    }
+  }
+
+  // ── 保存状态（JSON 始终写；与 DB 双写）
   saveSeenState(seenKeys, { lastDigestDate });
   log(`💾 状态已保存（共记录 ${seenKeys.size} 条）`);
   log(`✅ 本轮完成：推送 ${sentCount} 条 / Layer1 ${l1Passed.length} 条 / 总扫描 ${allItems.length} 条`);
+  await db.closePool();
 }
 
-main().catch(err => {
+main().catch(async (err) => {
   console.error('💥 致命错误：', err);
+  await db.closePool().catch(() => {});
   process.exit(1);
 });

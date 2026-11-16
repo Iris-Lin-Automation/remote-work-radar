@@ -1,0 +1,18 @@
+name = "remote-job-copilot-tg"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+account_id = "db813bf1299860d05e6d4015ec8148fc"
+workers_dev = true
+
+# Secrets (wrangler secret put NAME):
+#   TELEGRAM_BOT_TOKEN
+#   ALLOWED_TELEGRAM_USER_ID   # your numeric user id (same as TELEGRAM_CHAT_ID)
+#   TELEGRAM_WEBHOOK_SECRET    # also sent as X-Telegram-Bot-Api-Secret-Token
+#   GROQ_API_KEY
+#   GROQ_MODEL                 # openai/gpt-oss-20b
+#   SUPABASE_URL
+#   SUPABASE_SERVICE_ROLE_KEY
+#
+# Optional vars:
+# [vars]
+# USER_KEY = "iris"

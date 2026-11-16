@@ -1,0 +1,10 @@
+{
+  "tech": 30,
+  "delivery": 20,
+  "level": 15,
+  "workstyle": 20,
+  "comp": 10,
+  "trust": 5,
+  "apply_now_min": 70,
+  "verify_min": 40
+}

@@ -73,17 +73,27 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
 
-          # ── Groq 极速 AI 打分（推荐填，免费）
-          # 不填则跳过 AI 打分，仅靠关键词过滤
+          # ── Groq 六维评分（失败 → score_status=error，不写假分）
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: openai/gpt-oss-20b
+
+          # ── Copilot Postgres（pooler 优先；失败可走 REST）
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RADAR_USER_KEY: "iris"
+          RADAR_REQUIRE_CLOUD_DB: "true"
+          RADAR_PROFILE_VERSION: "v1"
+          RADAR_PROMPT_VERSION: "v1"
 
           # ── 双轨：both=中英分开跑；en/cn=只跑一轨。主推永远是英文海外优质团队
           RADAR_TRACK: ${{ github.event.inputs.track || 'both' }}
           RADAR_PRIMARY: "en"
           # EN 50 太严 → 整轮常推 0；先 40，仍踢签证/地区锁/渣岗
+          # 推送现以 recommendation_status(apply_now/verify) 为准；阈值作兜底
           RADAR_EN_THRESHOLD: "40"
           RADAR_CN_THRESHOLD: "40"
-          RADAR_EN_DETAIL_SCORE: "60"
+          RADAR_EN_DETAIL_SCORE: "70"
           RADAR_CN_DETAIL_SCORE: "75"
 
           # ── 时间窗口
