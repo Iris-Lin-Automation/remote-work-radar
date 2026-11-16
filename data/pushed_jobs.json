@@ -1,125 +1,6 @@
 {
-  "updatedAt": "2026-11-12T21:19:19.715Z",
+  "updatedAt": "2026-11-16T14:52:02.087Z",
   "jobs": [
-    {
-      "at": "2026-11-05T14:02:12.108Z",
-      "title": "有商业模式有投资人有客源，寻找懂开发的产品经理和懂产品的全栈开发一起创业",
-      "url": "https://www.v2ex.com/t/1254816",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:13.708Z",
-      "title": "[北京] Harness & Agentic AI，找几位能挑大梁的资深工程师",
-      "url": "https://www.v2ex.com/t/1254733",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:15.283Z",
-      "title": "北京联想招聘： AI Infra 相关方向",
-      "url": "https://www.v2ex.com/t/1254730",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:16.936Z",
-      "title": "申报职称的论文，自己发还是找人？先把这条线划清楚",
-      "url": "https://eleduck.com/posts/K7fayL",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:18.495Z",
-      "title": "寻找一起做AI短视频的线上伙伴",
-      "url": "https://eleduck.com/posts/oQfRvO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:20.058Z",
-      "title": "从工程行业转内容运营：我把 14 年行业经验变成了能交付的作品",
-      "url": "https://eleduck.com/posts/laf5oJ",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:21.629Z",
-      "title": "Part-Time Front-End Developer & AI Video Creator",
-      "url": "https://eleduck.com/posts/EQfzQB",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:23.244Z",
-      "title": "远程居家办公-小红书远程运营，签劳动合同。",
-      "url": "https://eleduck.com/posts/L5f08p",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:24.813Z",
-      "title": "【全职远程】客户开发经理｜8-12K底薪+8-15%成交佣金｜优兔海外传播",
-      "url": "https://eleduck.com/posts/N0fnXg",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:26.372Z",
-      "title": "客户说想做个 AI 系统，你第一句话会问什么？",
-      "url": "https://eleduck.com/posts/98f9wa",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:29.183Z",
-      "title": "一个人做完跨境电商全链路系统：1688 采集 → AI 多语言 → ERP → 独立站 → 导出 Amazon/Shopify 上架模板（开源）",
-      "url": "https://eleduck.com/posts/yGf53E",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:30.754Z",
-      "title": "Regional Sales Manager, Singapore",
-      "url": "https://jobicy.com/jobs/159113-regional-sales-manager-singapore-2",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
-    {
-      "at": "2026-11-05T14:02:32.328Z",
-      "title": "Japanese Lead Multimedia Content Reviewer",
-      "url": "https://jobicy.com/jobs/159111-japanese-lead-multimedia-content-reviewer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-05T14:02:33.912Z",
-      "title": "Earn Operations Specialist (Onchain Direction)",
-      "url": "https://jobicy.com/jobs/159107-earn-operations-specialist-onchain-direction",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-05T14:02:35.472Z",
-      "title": "Developer Support Engineer",
-      "url": "https://jobicy.com/jobs/159104-developer-support-engineer",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:37.038Z",
-      "title": "Lead, SMB Onboarding, Thailand",
-      "url": "https://jobicy.com/jobs/159110-lead-smb-onboarding-thailand",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T14:02:38.606Z",
-      "title": "Regional Sales Manager, Japan (Enterprise)",
-      "url": "https://jobicy.com/jobs/159108-regional-sales-manager-japan-enterprise-2",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-11-05T14:02:40.179Z",
       "title": "Hydrus - Voice Contributor - English (AU)",
@@ -2100,6 +1981,125 @@
       "url": "https://weworkremotely.com/remote-jobs/cigna-healthcare-clinical-program-senior-advisor-remote-express-scripts-academic-detailing",
       "source": "WWR·开发",
       "score": 0
+    },
+    {
+      "at": "2026-11-16T14:52:02.067Z",
+      "title": "Chief Information Security Officer",
+      "url": "https://jobicy.com/jobs/153270-chief-information-security-officer-2",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.068Z",
+      "title": "Senior+ Backend Software Engineer - Asia",
+      "url": "https://jobicy.com/jobs/153195-senior-backend-software-engineer-asia",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.070Z",
+      "title": "Ubuntu Linux Kernel Test Engineer",
+      "url": "https://jobicy.com/jobs/145995-ubuntu-linux-kernel-test-engineer",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.071Z",
+      "title": "AI Automation Engineer",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8829033002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.072Z",
+      "title": "AI Engineer - FDE (Forward Deployed Engineer)",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8574655002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.073Z",
+      "title": "AI Engineer – Forward Deployed Engineering (AI FDE)",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8546367002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.074Z",
+      "title": "AI Engineer – Forward Deployed Engineering (AI FDE), U.S. Public Sector (Federal Focus)",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8760167002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.076Z",
+      "title": "AI Forward Deployed Engineer",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8927179002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.077Z",
+      "title": "Applied AI Architect",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8933544002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.078Z",
+      "title": "Applied AI Engineer",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8091041002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.079Z",
+      "title": "Director, Marketing Strategy and AI Transformation",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8735590002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.080Z",
+      "title": "Evergreen - AI Engineer, AI FDE",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8878946002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.081Z",
+      "title": "[内推] 广州产品经理、后端、测试等岗位招人",
+      "url": "https://www.v2ex.com/t/1257511",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.083Z",
+      "title": "招聘：急需：有开发想转 AI 质量评估的没？20-35K（AI 评测）",
+      "url": "https://www.v2ex.com/t/1257482",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.084Z",
+      "title": "远程居家办公-后端技术负责人 (API Platform)35K-65K 13薪",
+      "url": "https://eleduck.com/posts/Ygf2qL",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.085Z",
+      "title": "【全职远程】AI 软件工程师-- 巴黎 AI 创业公司 Prestance",
+      "url": "https://eleduck.com/posts/R3fvNA",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-16T14:52:02.087Z",
+      "title": "寻找熟悉 n8n / Dify 的全栈自动化开发伙伴（海外 B2B 项目协作）单笔：2500-8000",
+      "url": "https://eleduck.com/posts/oQfR8L",
+      "source": "电鸭社区",
+      "score": null
     }
   ]
 }
