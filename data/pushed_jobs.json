@@ -1,55 +1,6 @@
 {
-  "updatedAt": "2026-11-17T07:43:22.987Z",
+  "updatedAt": "2026-11-17T17:23:49.576Z",
   "jobs": [
-    {
-      "at": "2026-11-05T21:46:41.488Z",
-      "title": "Sanctions Operations Analyst (1 year contract)",
-      "url": "https://jobicy.com/jobs/159169-sanctions-operations-analyst-1-year-contract",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-05T21:46:42.990Z",
-      "title": "L1 Hosting Tech Support Agent",
-      "url": "https://jobicy.com/jobs/159127-l1-hosting-tech-support-agent-2",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T01:59:25.099Z",
-      "title": "招聘： C++低延迟交易系统工程师， C++ 交易引擎系统开发工程师（必须具备实际开发经验）",
-      "url": "https://www.v2ex.com/t/1254890",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T01:59:26.662Z",
-      "title": "Alpaca招聘全职远程工作高级软件工程师",
-      "url": "https://yuancheng.work/7120.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T01:59:28.226Z",
-      "title": "B12招聘全职远程工作高级软件工程师",
-      "url": "https://yuancheng.work/7118.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T01:59:29.784Z",
-      "title": "Alpaca招聘全职远程工作高级软件工程师（质量工程）",
-      "url": "https://yuancheng.work/7117.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T01:59:31.346Z",
-      "title": "Alpaca招聘全职远程工作高级软件工程师（日本市场）",
-      "url": "https://yuancheng.work/7116.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
     {
       "at": "2026-11-06T01:59:32.905Z",
       "title": "Alpaca招聘全职远程工作高级站点可靠性工程师 – 亚太区",
@@ -2099,6 +2050,55 @@
       "title": "Superside招聘全职远程工作高级绩效策略师",
       "url": "https://yuancheng.work/7328.html",
       "source": "远程.work·市场",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T17:23:49.570Z",
+      "title": "Platform Engineer - Compute",
+      "url": "https://jobicy.com/jobs/162979-platform-engineer-compute",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T17:23:49.571Z",
+      "title": "Customer Support Coach - RMS",
+      "url": "https://jobicy.com/jobs/162732-customer-support-coach-rms",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T17:23:49.572Z",
+      "title": "Backend Engineer (Ruby), AI Engineering: AI Catalog ",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8940898002",
+      "source": "Greenhouse·GitLab",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T17:23:49.573Z",
+      "title": "Senior Backend Engineer, Development Health",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8928675002",
+      "source": "Greenhouse·GitLab",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T17:23:49.574Z",
+      "title": "Full-Stack Engineer (Backend Leaning) - Platform Engineering",
+      "url": "https://jobs.ashbyhq.com/ElevenLabs/ce3d5a59-fb8c-482b-bc3f-60e44576c5e0",
+      "source": "Ashby·ElevenLabs",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T17:23:49.575Z",
+      "title": "Full-Stack Engineer (Backend Leaning) - Payments Engineering",
+      "url": "https://jobs.ashbyhq.com/ElevenLabs/e4e0450f-d139-4f8e-b210-2f326a680d90",
+      "source": "Ashby·ElevenLabs",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T17:23:49.576Z",
+      "title": "【线上兼职】肖像音色授权平台 MVP，寻找全栈工程师",
+      "url": "https://eleduck.com/posts/0XfxpL",
+      "source": "电鸭社区",
       "score": null
     }
   ]
