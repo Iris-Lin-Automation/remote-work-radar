@@ -1,55 +1,6 @@
 {
-  "updatedAt": "2026-11-16T23:58:58.196Z",
+  "updatedAt": "2026-11-17T07:43:22.987Z",
   "jobs": [
-    {
-      "at": "2026-11-05T21:46:30.931Z",
-      "title": "Sr. Events Manager",
-      "url": "https://jobicy.com/jobs/159178-sr-events-manager",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-05T21:46:32.436Z",
-      "title": "Talent Acquisition Specialist (12-months contract)",
-      "url": "https://jobicy.com/jobs/159181-talent-acquisition-specialist-12-months-contract",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-05T21:46:33.939Z",
-      "title": "Website Onboarding Specialist - Thailand",
-      "url": "https://jobicy.com/jobs/159179-website-onboarding-specialist-thailand",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T21:46:35.452Z",
-      "title": "Lead, Customer Support - Thailand",
-      "url": "https://jobicy.com/jobs/159177-lead-customer-support-thailand",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T21:46:36.976Z",
-      "title": "Partner Acquisition Manager",
-      "url": "https://jobicy.com/jobs/159176-partner-acquisition-manager",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-05T21:46:38.480Z",
-      "title": "Senior Product Designer - Visual Craft & AI",
-      "url": "https://jobicy.com/jobs/159175-senior-product-designer-visual-craft-ai",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-05T21:46:39.987Z",
-      "title": "Associate Director, People Operations",
-      "url": "https://jobicy.com/jobs/159174-associate-director-people-operations",
-      "source": "Jobicy·APAC",
-      "score": 20
-    },
     {
       "at": "2026-11-05T21:46:41.488Z",
       "title": "Sanctions Operations Analyst (1 year contract)",
@@ -2099,6 +2050,55 @@
       "title": "社媒获客运营专家",
       "url": "https://eleduck.com/posts/74f8YK",
       "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T07:43:22.971Z",
+      "title": "AI Technical Mentor - Independent Contractor (US Canada, Europe, MENA, APAC)",
+      "url": "https://jobicy.com/jobs/150767-ai-technical-mentor-independent-contractor-us-canada-europe-mena-india-apac-timezones",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T07:43:22.972Z",
+      "title": "Agentic AI Technical Mentor - Independent Contractor (US Canada, Europe, MENA, APAC)",
+      "url": "https://jobicy.com/jobs/150763-agentic-ai-technical-mentor-independent-contractor-us-canada-europe-mena-india-apac-timezones",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T07:43:22.984Z",
+      "title": "Digital Designer",
+      "url": "https://jobicy.com/jobs/153327-digital-designer",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T07:43:22.984Z",
+      "title": "Applied AI Agent Evaluation Research Engineer",
+      "url": "https://www.opentrain.ai/jobs/applied-ai-agent-evaluation-research-engineer--cmwkasv3n00ea08l6v73yulm6/",
+      "source": "OpenTrain",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T07:43:22.985Z",
+      "title": "Forward Deployed Engineer",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8921476002",
+      "source": "Greenhouse·Databricks",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T07:43:22.986Z",
+      "title": "[杭州] 全栈工程师（内部平台）",
+      "url": "https://www.v2ex.com/t/1257643",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-17T07:43:22.987Z",
+      "title": "Superside招聘全职远程工作高级绩效策略师",
+      "url": "https://yuancheng.work/7328.html",
+      "source": "远程.work·市场",
       "score": null
     }
   ]
