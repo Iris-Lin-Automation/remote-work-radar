@@ -1,83 +1,6 @@
 {
-  "updatedAt": "2026-11-18T00:34:34.825Z",
+  "updatedAt": "2026-11-18T06:34:52.961Z",
   "jobs": [
-    {
-      "at": "2026-11-06T09:15:20.229Z",
-      "title": "视频号运营",
-      "url": "https://eleduck.com/posts/dDfpxm",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T09:15:21.829Z",
-      "title": "【远程】AI-First Builder｜全职 / 实习",
-      "url": "https://eleduck.com/posts/z1fBdO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T09:15:23.403Z",
-      "title": "场景工坊：一个帮你把想法变成可执行项目计划的工具，可一直免费用，也提供会员订阅，大家看看有前途吗？",
-      "url": "https://eleduck.com/posts/QZfL39",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T09:15:24.973Z",
-      "title": "【短期项目合作远程办公】AI 产品设计",
-      "url": "https://eleduck.com/posts/wwfLJO",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T09:15:26.545Z",
-      "title": "15k-20k /资深产品经理｜App Store整改及产品设计",
-      "url": "https://eleduck.com/posts/qzf19V",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T17:11:52.413Z",
-      "title": "上海社招， AI Infra / Agent Infra 工程师",
-      "url": "https://www.v2ex.com/t/1255084",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T17:11:53.968Z",
-      "title": "[远程/全职] AdmitPlus 招聘 AI 应用工程师、产品经理、运营推广",
-      "url": "https://www.v2ex.com/t/1255081",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T17:11:55.589Z",
-      "title": "不想再在职场往上走，又没想清楚要做什么，怎么找方向？",
-      "url": "https://eleduck.com/posts/yGf5L4",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T17:11:57.136Z",
-      "title": "【远程兼职 / Web3】CKBA 招募 Part-time Event Coordinator",
-      "url": "https://eleduck.com/posts/5Bf1an",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T17:11:58.683Z",
-      "title": "TikTok 中东 MENA 达人经纪人，线上远程合伙，高返佣",
-      "url": "https://eleduck.com/posts/74f8VX",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T17:12:00.230Z",
-      "title": "English to German (Switzerland) Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159312-english-to-german-switzerland-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
     {
       "at": "2026-11-06T17:12:01.796Z",
       "title": "English to Georgian Review Lead for UI, Marketing & Product Content",
@@ -2099,6 +2022,83 @@
       "title": "Hardware Systems Engineer, AI Hardware",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/8325834?gh_jid=8325834",
       "source": "Greenhouse·Cloudflare",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.949Z",
+      "title": "B2B Marketing Manager (ASEAN)",
+      "url": "https://jobicy.com/jobs/153416-b2b-marketing-manager-asean",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.950Z",
+      "title": "Product Lead - Infrastructure",
+      "url": "https://jobicy.com/jobs/153453-product-lead-infrastructure",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.951Z",
+      "title": "Software Engineer - Auth",
+      "url": "https://jobicy.com/jobs/153449-software-engineer-auth",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.952Z",
+      "title": "Mantle Squad - Global",
+      "url": "https://jobicy.com/jobs/153447-mantle-squad-global",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.954Z",
+      "title": "Postgres Deployment Engineer (Nix)",
+      "url": "https://jobicy.com/jobs/153446-postgres-deployment-engineer-nix",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.955Z",
+      "title": "AI Deployment Manager",
+      "url": "https://jobicy.com/jobs/150862-ai-deployment-manager",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.956Z",
+      "title": "Enterprise Account Executive, APAC",
+      "url": "https://jobicy.com/jobs/150867-enterprise-account-executive-apac",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.957Z",
+      "title": "Senior Customer Success Manager",
+      "url": "https://jobicy.com/jobs/149315-senior-customer-success-manager-2",
+      "source": "Jobicy·APAC",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.958Z",
+      "title": "[Microsoft] AI Agent 研发实习生 - 北京",
+      "url": "https://www.v2ex.com/t/1257980",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.959Z",
+      "title": "招募人工智能方向工程师/老师兼职出题",
+      "url": "https://eleduck.com/posts/a4fb9n",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T06:34:52.961Z",
+      "title": "10 年开发，技术没退步，机会变少了",
+      "url": "https://eleduck.com/posts/JpfVQQ",
+      "source": "电鸭社区",
       "score": null
     }
   ]
