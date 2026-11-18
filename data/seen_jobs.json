@@ -1,17 +1,6 @@
 {
-  "updatedAt": "2026-11-17T17:23:50.277Z",
+  "updatedAt": "2026-11-18T00:34:35.037Z",
   "keys": [
-    "eleduck|https://eleduck.com/posts/Vvfp3G",
-    "eleduck|https://eleduck.com/posts/ZXfDnp",
-    "eleduck|https://eleduck.com/posts/GzfA1n",
-    "jobicy|https://jobicy.com/jobs/152574-solution-engineer-3",
-    "jobicy|https://jobicy.com/jobs/152573-ai-outcomes-manager",
-    "jobicy|https://jobicy.com/jobs/150234-sales-assistant",
-    "wwr_product|https://weworkremotely.com/remote-jobs/wrike-senior-data-scientist",
-    "wwr_product|https://weworkremotely.com/remote-jobs/wrike-group-product-manager-klaxoon",
-    "eleduck|https://eleduck.com/posts/82fbyy",
-    "jobicy|https://jobicy.com/jobs/154682-senior-application-security-engineer-3",
-    "jobicy|https://jobicy.com/jobs/154679-payment-operations-associate",
     "jobicy|https://jobicy.com/jobs/154674-lead-product-management",
     "wwr_product|https://weworkremotely.com/remote-jobs/semaphore-senior-product-engineer",
     "eleduck|https://eleduck.com/posts/oQfrl7",
@@ -2000,7 +1989,18 @@
     "gh|https://job-boards.greenhouse.io/gitlab/jobs/8928675002",
     "gh|https://databricks.com/company/careers/open-positions/job?gh_jid=8540455002",
     "ashby|https://jobs.ashbyhq.com/ElevenLabs/ce3d5a59-fb8c-482b-bc3f-60e44576c5e0",
-    "ashby|https://jobs.ashbyhq.com/ElevenLabs/e4e0450f-d139-4f8e-b210-2f326a680d90"
+    "ashby|https://jobs.ashbyhq.com/ElevenLabs/e4e0450f-d139-4f8e-b210-2f326a680d90",
+    "eleduck|https://eleduck.com/posts/EQfzdG",
+    "wwr_fullstack|https://weworkremotely.com/remote-jobs/careerflow-ai-code-reviewer-c-c-latam",
+    "wwr_fullstack|https://weworkremotely.com/remote-jobs/careerflow-ai-code-reviewer-golang",
+    "wwr_backend|https://weworkremotely.com/remote-jobs/elvoro-ai-creative-engineer-social-media",
+    "opentrain|https://www.opentrain.ai/jobs/software-engineer-ai-trainer-and-code-evaluator--cmwl7p0km00j008jjn3tme1me/",
+    "opentrain|https://www.opentrain.ai/jobs/clinical-psychology-and-behavioral-health-ai-evaluation-expert--cmwl4wafh005f07l67ykkeoqg/",
+    "opentrain|https://www.opentrain.ai/jobs/uk-vat-and-intrastat-ai-evaluation-specialist--cmwl3dmpl002s07idxyaxoshv/",
+    "opentrain|https://www.opentrain.ai/jobs/eu-vat-and-intrastat-ai-evaluation-specialist--cmwl3dmju002q07id0oamxvaa/",
+    "gh|https://job-boards.greenhouse.io/gitlab/jobs/8922427002",
+    "gh|https://job-boards.greenhouse.io/gitlab/jobs/8689243002",
+    "gh|https://boards.greenhouse.io/cloudflare/jobs/8325834?gh_jid=8325834"
   ],
   "lastDigestDate": "2026-11-18"
 }

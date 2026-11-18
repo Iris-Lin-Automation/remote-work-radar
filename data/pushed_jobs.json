@@ -1,48 +1,6 @@
 {
-  "updatedAt": "2026-11-17T17:23:49.576Z",
+  "updatedAt": "2026-11-18T00:34:34.825Z",
   "jobs": [
-    {
-      "at": "2026-11-06T01:59:32.905Z",
-      "title": "Alpaca招聘全职远程工作高级站点可靠性工程师 – 亚太区",
-      "url": "https://yuancheng.work/7119.html",
-      "source": "远程.work·运营",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T01:59:34.566Z",
-      "title": "English to Estonian Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159220-english-to-estonian-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-06T01:59:36.146Z",
-      "title": "English to Bosnian (Cyrillic) Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159217-english-to-bosnian-cyrillic-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-06T01:59:37.694Z",
-      "title": "English to Armenian Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159215-english-to-armenian-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-06T09:15:17.088Z",
-      "title": "招聘汇总｜ 345 个岗位，涵盖技术、AI、产品、运营与内容创作",
-      "url": "https://www.v2ex.com/t/1254939",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T09:15:18.647Z",
-      "title": "工作怎么找",
-      "url": "https://eleduck.com/posts/OGf1x2",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-06T09:15:20.229Z",
       "title": "视频号运营",
@@ -2099,6 +2057,48 @@
       "title": "【线上兼职】肖像音色授权平台 MVP，寻找全栈工程师",
       "url": "https://eleduck.com/posts/0XfxpL",
       "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T00:34:34.821Z",
+      "title": "Careerflow.ai: Code Reviewer - C++/C# (LATAM)",
+      "url": "https://weworkremotely.com/remote-jobs/careerflow-ai-code-reviewer-c-c-latam",
+      "source": "WWR·全栈",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T00:34:34.822Z",
+      "title": "Careerflow.ai: Code Reviewer - Golang",
+      "url": "https://weworkremotely.com/remote-jobs/careerflow-ai-code-reviewer-golang",
+      "source": "WWR·全栈",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T00:34:34.823Z",
+      "title": "Elvoro: AI Creative Engineer (Social Media)",
+      "url": "https://weworkremotely.com/remote-jobs/elvoro-ai-creative-engineer-social-media",
+      "source": "WWR·后端",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T00:34:34.823Z",
+      "title": "Fullstack Engineer, Source Code: Repository Services (Ruby) ",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8922427002",
+      "source": "Greenhouse·GitLab",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T00:34:34.824Z",
+      "title": "Senior Backend Engineer, Core DevOps",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8689243002",
+      "source": "Greenhouse·GitLab",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T00:34:34.825Z",
+      "title": "Hardware Systems Engineer, AI Hardware",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8325834?gh_jid=8325834",
+      "source": "Greenhouse·Cloudflare",
       "score": null
     }
   ]
