@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-11-18T09:45:35.012Z",
+  "updatedAt": "2026-11-18T18:40:13.436Z",
   "jobs": [
-    {
-      "at": "2026-11-06T22:44:11.381Z",
-      "title": "我想找个远程客服，做过3年抖音客服",
-      "url": "https://eleduck.com/posts/N0fnEX",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-06T22:44:12.893Z",
-      "title": "【长期远程兼职】医美软件技术型产品经理｜8K–12K/月｜每天3小时",
-      "url": "https://eleduck.com/posts/98f9k2",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-06T22:44:14.428Z",
       "title": "Head of AI Native Operations",
@@ -2099,6 +2085,20 @@
       "title": "行政 HRBP 薪资（源表）：8-14K",
       "url": "https://www.v2ex.com/t/1258038",
       "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T18:40:13.434Z",
+      "title": "AI自动化接单实战：我用n8n给海外小企业搭自动化工作流，从0到第一单的全过程与避坑",
+      "url": "https://eleduck.com/posts/v5fYxy",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-18T18:40:13.435Z",
+      "title": "求推荐小而美的项目管理软件（从需求-开发）",
+      "url": "https://eleduck.com/posts/3EfRx5",
+      "source": "电鸭社区",
       "score": null
     }
   ]
