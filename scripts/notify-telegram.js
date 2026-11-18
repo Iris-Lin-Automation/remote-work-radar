@@ -363,12 +363,60 @@ function formatTrackDigest(track, jobs, meta = {}) {
   return lines.join('\n');
 }
 
+/**
+ * Copilot 按 recommendation_status 分组摘要：apply_now / verify
+ * @param {'apply_now'|'verify'} status
+ * @param {object[]} jobs
+ * @param {object} meta { track, replay }
+ */
+function formatStatusDigest(status, jobs, meta = {}) {
+  const isApply = status === 'apply_now';
+  const label = isApply ? '立刻投递 apply_now' : '需核实 verify';
+  const icon = isApply ? '✅' : '🔎';
+  const trackHint = meta.track === 'cn' ? '中文' : meta.track === 'en' ? '英文' : '双轨';
+  const lines = [
+    `${icon} <b>${label}</b>${meta.replay ? ' · 回放' : ''} · ${trackHint}`,
+    `共 <b>${jobs.length}</b> 条 · ${isApply ? '中国可受雇已确认 + 高匹配' : 'Worldwide/雇佣载体待核实，勿直接当可投'}`,
+    '',
+  ];
+
+  jobs.forEach((job, i) => {
+    const score = job.groqScore != null ? `${job.groqScore}` : '?';
+    const china = job.hard?.china_eligible || job.china_eligible || '?';
+    const mode = job.hard?.work_mode || job.work_mode || '';
+    const vehicle = job.hard?.hire_vehicle || job.hire_vehicle || '';
+    const dims = job.dims || {};
+    const dimBrief = dims.tech != null
+      ? `T${dims.tech}/D${dims.delivery ?? '?'}/W${dims.workstyle ?? '?'}`
+      : '';
+    const title = escHtml(String(job.title || '无标题').slice(0, 68));
+    const url = job.url ? String(job.url).replace(/&/g, '&amp;') : '';
+    const titlePart = url ? `<a href="${url}">${title}</a>` : title;
+    const reason = job.groqReason ? ` · <i>${escHtml(job.groqReason)}</i>` : '';
+    const metaBits = [
+      `🇨🇳${china}`,
+      mode && mode !== 'unknown' ? mode : '',
+      vehicle && vehicle !== 'unknown' ? vehicle : '',
+      dimBrief,
+    ].filter(Boolean).join(' · ');
+    lines.push(`${i + 1}. <b>${score}</b> ${titlePart}`);
+    lines.push(`   ${escHtml(metaBits)}${reason}`);
+  });
+
+  lines.push('');
+  lines.push(isApply
+    ? '<i>apply_now = 硬条件过关 + 总分达标。回复 Bot 可问「为什么推荐」或记面试反馈。</i>'
+    : '<i>verify = 先核中国可受雇/EOR/contractor，再决定投不投。</i>');
+  return lines.join('\n');
+}
+
 module.exports = {
   extractContacts,
   extractCompany,
   formatJobMessage,
   formatDailyDigest,
   formatTrackDigest,
+  formatStatusDigest,
   trackOf,
   sourceLabelOf,
   sendTelegramMessage,

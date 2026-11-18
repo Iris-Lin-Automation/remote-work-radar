@@ -781,6 +781,8 @@ async function main() {
   }
 
   // ── 按 recommendation_status 推送（先 apply_now，再 verify）；轨内再分
+  // 只有 Telegram API 真正成功才计入 sentCount（避免日志「推送 N 条」但实际 0 条）
+  const notifiedOk = [];
   for (const status of ['apply_now', 'verify']) {
     const statusJobs = toNotify.filter((j) => j.recommendation_status === status);
     if (!statusJobs.length) continue;
@@ -796,9 +798,13 @@ async function main() {
       const list = byTrack[track];
       if (!list.length) continue;
       try {
+        if (typeof formatStatusDigest !== 'function') {
+          throw new Error('formatStatusDigest is not a function — notify-telegram.js export missing');
+        }
         const digest = formatStatusDigest(status, list, { track, replay: REPLAY });
         await sendTelegramMessage(digest, BOT_TOKEN, CHAT_ID);
         log(`📋 已推送 ${status}/${track} 摘要 ${list.length} 条`);
+        notifiedOk.push(...list);
         await new Promise((r) => setTimeout(r, 1200));
       } catch (err) {
         log(`   ⚠️  ${status}/${track} 摘要失败：${err.message}`);
@@ -823,9 +829,12 @@ async function main() {
     }
   }
 
-  for (const job of toNotify) {
+  for (const job of notifiedOk) {
     recordPushed(job);
-    sentCount++;
+  }
+  sentCount = notifiedOk.length;
+  if (toNotify.length && sentCount === 0) {
+    log(`❌ 本轮有 ${toNotify.length} 条待推，但 Telegram 摘要全部失败（请查上方面摘要失败日志）`);
   }
 
   baseStats.sent = sentCount;
