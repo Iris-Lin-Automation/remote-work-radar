@@ -1,104 +1,6 @@
 {
-  "updatedAt": "2026-11-19T01:43:54.716Z",
+  "updatedAt": "2026-11-19T09:55:00.286Z",
   "jobs": [
-    {
-      "at": "2026-11-06T22:44:17.445Z",
-      "title": "AWS Partner Marketing Manager",
-      "url": "https://jobicy.com/jobs/159377-aws-partner-marketing-manager",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-06T22:44:18.992Z",
-      "title": "SDK Engineer - Python",
-      "url": "https://jobicy.com/jobs/159374-sdk-engineer-python",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-06T22:44:20.504Z",
-      "title": "FinOps Engineer",
-      "url": "https://jobicy.com/jobs/159370-finops-engineer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-06T22:44:22.065Z",
-      "title": "Platform Engineer, Edge & Networking",
-      "url": "https://jobicy.com/jobs/159366-platform-engineer-edge-networking",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-06T22:44:23.569Z",
-      "title": "Senior Developer Relations, Twitter Brand Rep",
-      "url": "https://jobicy.com/jobs/159353-senior-developer-relations-twitter-brand-rep",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-06T22:44:25.084Z",
-      "title": "Business Development Executive - Dairy (Coastal New South Wales)",
-      "url": "https://jobicy.com/jobs/159350-business-development-executive-dairy-coastal-new-south-wales",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T04:46:05.756Z",
-      "title": "接外包单如何防止客户白嫖？",
-      "url": "https://eleduck.com/posts/njfD5g",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T04:46:07.341Z",
-      "title": "[远程/全职] AdmitPlus 招聘 AI 应用工程师、产品经理、运营推广",
-      "url": "https://eleduck.com/posts/XNfONN",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T04:46:08.958Z",
-      "title": "把 200 条客户留言 78 秒分类完，我踩过的几个坑",
-      "url": "https://eleduck.com/posts/gYfYr4",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T04:46:10.517Z",
-      "title": "Alpaca招聘全职远程工作高级软件工程师 – 账本团队",
-      "url": "https://yuancheng.work/7132.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T04:46:12.091Z",
-      "title": "SKELAR招聘全职远程工作客户经理",
-      "url": "https://yuancheng.work/7131.html",
-      "source": "远程.work·销售",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T12:30:10.964Z",
-      "title": "[南京/深圳/上海/广州] SHEIN 11 月新出 8 个技术岗，月薪 25-90K， Agent/算法/搜广推/Go/大数据",
-      "url": "https://www.v2ex.com/t/1255233",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T12:30:12.478Z",
-      "title": "南宁个人开发者冷启动 #1：给实体店做小程序前，我必做的 6 问打分法（附判断表）",
-      "url": "https://eleduck.com/posts/mbfKZq",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T12:30:13.989Z",
-      "title": "【已结束】招聘视频App开发工程师（点播/直播方向）",
-      "url": "https://eleduck.com/posts/K7faLp",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-07T12:30:15.503Z",
       "title": "【外包/远程】WordPress 建站 + POS 收银库存系统（预算 5000 起，分两包报价）",
@@ -2099,6 +2001,104 @@
       "title": "Solutions Engineer Manager  (US)",
       "url": "https://jobs.ashbyhq.com/n8n/c24e144d-f675-4ede-aeb8-ca804953a5a6",
       "source": "Ashby·n8n",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.268Z",
+      "title": "CircleCI: Senior Software Engineer, Query",
+      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
+      "source": "WWR·全栈",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.269Z",
+      "title": "Legion: Principal Software Engineer, DevOps",
+      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
+      "source": "WWR·全栈",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.271Z",
+      "title": "Airbnb: Engineering Manager, External Search & AI Optimization",
+      "url": "https://weworkremotely.com/remote-jobs/airbnb-engineering-manager-external-search-ai-optimization",
+      "source": "WWR·全栈",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.272Z",
+      "title": "Checkr: Solutions Architect",
+      "url": "https://weworkremotely.com/remote-jobs/checkr-solutions-architect",
+      "source": "WWR·后端",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.272Z",
+      "title": "CircleCI: Senior Support Engineer",
+      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-support-engineer",
+      "source": "WWR·DevOps",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.277Z",
+      "title": "Flexport: Security Engineer, Product Security",
+      "url": "https://weworkremotely.com/remote-jobs/flexport-security-engineer-product-security",
+      "source": "WWR·DevOps",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.278Z",
+      "title": "Flexport: Security Engineer, Corporate Security",
+      "url": "https://weworkremotely.com/remote-jobs/flexport-security-engineer-corporate-security",
+      "source": "WWR·DevOps",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.279Z",
+      "title": "Jumio: Product and Project Marketing Specialist (Temp to Hire)",
+      "url": "https://weworkremotely.com/remote-jobs/jumio-product-and-project-marketing-specialist-temp-to-hire",
+      "source": "WWR·DevOps",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.281Z",
+      "title": "Typeform: Senior IT Engineer",
+      "url": "https://weworkremotely.com/remote-jobs/typeform-senior-it-engineer",
+      "source": "WWR·产品",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.281Z",
+      "title": "LaunchDarkly: Director, People Operations",
+      "url": "https://weworkremotely.com/remote-jobs/launchdarkly-director-people-operations",
+      "source": "WWR·产品",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.282Z",
+      "title": "LaunchDarkly: Director, Internal AI Operations",
+      "url": "https://weworkremotely.com/remote-jobs/launchdarkly-director-internal-ai-operations",
+      "source": "WWR·产品",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.284Z",
+      "title": "Instacart: Bilingual Customer Experience Specialist (Spanish)",
+      "url": "https://weworkremotely.com/remote-jobs/instacart-bilingual-customer-experience-specialist-spanish",
+      "source": "WWR·产品",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.285Z",
+      "title": "Veracode: Performance Test Engineer",
+      "url": "https://weworkremotely.com/remote-jobs/veracode-performance-test-engineer",
+      "source": "WWR·产品",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T09:55:00.286Z",
+      "title": "[Microsoft] GPU Model Optimization 实习生 - 北京/苏州/上海",
+      "url": "https://www.v2ex.com/t/1258287",
+      "source": "V2EX·招聘",
       "score": null
     }
   ]
