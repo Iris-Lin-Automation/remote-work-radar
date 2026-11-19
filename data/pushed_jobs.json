@@ -1,34 +1,6 @@
 {
-  "updatedAt": "2026-11-19T09:55:00.286Z",
+  "updatedAt": "2026-11-19T18:52:50.917Z",
   "jobs": [
-    {
-      "at": "2026-11-07T12:30:15.503Z",
-      "title": "【外包/远程】WordPress 建站 + POS 收银库存系统（预算 5000 起，分两包报价）",
-      "url": "https://eleduck.com/posts/4lfRK0",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T12:30:17.009Z",
-      "title": "请教：全栈开发兼职项目，时薪一般怎么定？",
-      "url": "https://eleduck.com/posts/kRfZv3",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T12:30:18.519Z",
-      "title": "Technical Account Manager (APJ)",
-      "url": "https://jobicy.com/jobs/159468-technical-account-manager-apj",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-07T18:28:35.365Z",
-      "title": "【远程】【全职】Gate 招聘：高级后端/交易系统/APP开发/测试开发/SRE/AI产品经理/爬虫等，25K-50K",
-      "url": "https://eleduck.com/posts/QZfLm9",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-07T18:28:36.969Z",
       "title": "用 AI 做 CSV 两表核对：重复单号为什么不能直接合并",
@@ -2099,6 +2071,34 @@
       "title": "[Microsoft] GPU Model Optimization 实习生 - 北京/苏州/上海",
       "url": "https://www.v2ex.com/t/1258287",
       "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T18:52:50.912Z",
+      "title": "[徕卡显微系统] 软件工程师，外企内推",
+      "url": "https://www.v2ex.com/t/1258367",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T18:52:50.914Z",
+      "title": "remote 前端开发工程师（seo 方向）/高级全栈工程师（Web / Flutter / Go）/高级后端开发工程师",
+      "url": "https://www.v2ex.com/t/1258363",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T18:52:50.916Z",
+      "title": "全栈高级工程师（Web / Flutter / Go），AI 全栈工程师(UTC-5 至 UTC+5 时区)",
+      "url": "https://www.v2ex.com/t/1258347",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T18:52:50.917Z",
+      "title": "企业级AI自动化平台架构实战：10-Agent/149-Skill多智能体系统设计与落地",
+      "url": "https://eleduck.com/posts/GzfR0V",
+      "source": "电鸭社区",
       "score": null
     }
   ]
