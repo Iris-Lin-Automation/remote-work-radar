@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-11-18T18:40:13.436Z",
+  "updatedAt": "2026-11-19T01:43:54.716Z",
   "jobs": [
-    {
-      "at": "2026-11-06T22:44:14.428Z",
-      "title": "Head of AI Native Operations",
-      "url": "https://jobicy.com/jobs/159382-head-of-ai-native-operations",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-06T22:44:15.942Z",
-      "title": "OrioleDB Deployment Engineer",
-      "url": "https://jobicy.com/jobs/159380-orioledb-deployment-engineer",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
     {
       "at": "2026-11-06T22:44:17.445Z",
       "title": "AWS Partner Marketing Manager",
@@ -2099,6 +2085,20 @@
       "title": "求推荐小而美的项目管理软件（从需求-开发）",
       "url": "https://eleduck.com/posts/3EfRx5",
       "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T01:43:54.715Z",
+      "title": "CX Systems & Automation Lead",
+      "url": "https://jobs.ashbyhq.com/notion/a8143379-6693-4046-b8cf-1528178d0f0f",
+      "source": "Ashby·Notion",
+      "score": null
+    },
+    {
+      "at": "2026-11-19T01:43:54.716Z",
+      "title": "Solutions Engineer Manager  (US)",
+      "url": "https://jobs.ashbyhq.com/n8n/c24e144d-f675-4ede-aeb8-ca804953a5a6",
+      "source": "Ashby·n8n",
       "score": null
     }
   ]
