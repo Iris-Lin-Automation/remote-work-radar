@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-11-20T18:20:25.532Z",
+  "updatedAt": "2026-11-21T01:06:10.391Z",
   "jobs": [
-    {
-      "at": "2026-11-07T18:28:41.633Z",
-      "title": "Maps Personalization Relevance Rater - English (Australia)",
-      "url": "https://jobicy.com/jobs/159539-maps-personalization-relevance-rater-english-australia",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T18:28:43.198Z",
-      "title": "Maps Personalization Relevance Rater - Chinese (Hong Kong)",
-      "url": "https://jobicy.com/jobs/159538-maps-personalization-relevance-rater-chinese-hong-kong",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
     {
       "at": "2026-11-07T18:28:44.775Z",
       "title": "Maps Personalization Quality Reviewer - Japanese (Japan)",
@@ -2099,6 +2085,20 @@
       "title": "A Strategic Partnership Opportunity Solar Energy | New Energy Vehicles (NEV) | Advanced Battery Storage",
       "url": "https://www.v2ex.com/t/1258630",
       "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-21T01:06:10.390Z",
+      "title": "做了个完全离线的英文课堂转写+翻译工具，记录几个踩坑（Whisper / opus-mt / 浏览器里跑本地大模型）",
+      "url": "https://eleduck.com/posts/XNfORo",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-21T01:06:10.391Z",
+      "title": "转大模型接包 90 天：RAG 项目里踩过的坑和几条避灾经验",
+      "url": "https://eleduck.com/posts/gYfYlE",
+      "source": "电鸭社区",
       "score": null
     }
   ]
