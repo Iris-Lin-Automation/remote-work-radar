@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-11-21T17:07:00.326Z",
+  "updatedAt": "2026-11-22T14:05:53.835Z",
   "jobs": [
-    {
-      "at": "2026-11-07T23:26:00.839Z",
-      "title": "安全研究员｜远程",
-      "url": "https://eleduck.com/posts/z1fB5O",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T23:26:02.362Z",
-      "title": "Circle招聘全职远程工作主管工程师，会员增长",
-      "url": "https://yuancheng.work/7136.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
     {
       "at": "2026-11-07T23:26:03.849Z",
       "title": "Supabase招聘全职远程工作GTM战略规划主管",
@@ -2098,6 +2084,20 @@
       "at": "2026-11-21T17:07:00.326Z",
       "title": "前端程序员转行近三年，想重回开发工作，还有戏吗？",
       "url": "https://eleduck.com/posts/rdf3XG",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-22T14:05:53.834Z",
+      "title": "跨境电商独立站英语客服（远程办公兼职）",
+      "url": "https://eleduck.com/posts/pqfApZ",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-22T14:05:53.835Z",
+      "title": "大模型接包三个月，聊聊差点赔进去的钱",
+      "url": "https://eleduck.com/posts/OGf1oA",
       "source": "电鸭社区",
       "score": null
     }
