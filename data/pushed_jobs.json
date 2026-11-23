@@ -1,62 +1,6 @@
 {
-  "updatedAt": "2026-11-22T14:05:53.835Z",
+  "updatedAt": "2026-11-23T14:02:17.279Z",
   "jobs": [
-    {
-      "at": "2026-11-07T23:26:03.849Z",
-      "title": "Supabase招聘全职远程工作GTM战略规划主管",
-      "url": "https://yuancheng.work/7135.html",
-      "source": "远程.work·市场",
-      "score": 0
-    },
-    {
-      "at": "2026-11-07T23:26:05.328Z",
-      "title": "English to Ukrainian Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159619-english-to-ukrainian-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-07T23:26:06.897Z",
-      "title": "English to Slovenian Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159618-english-to-slovenian-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-07T23:26:08.398Z",
-      "title": "English to Slovak Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159617-english-to-slovak-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-07T23:26:09.880Z",
-      "title": "English to Serbian (Cyrillic) Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159616-english-to-serbian-cyrillic-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-07T23:26:11.365Z",
-      "title": "English to Latvian Review Lead for UI, Marketing & Product Content",
-      "url": "https://jobicy.com/jobs/159612-english-to-latvian-review-lead-for-ui-marketing-product-content",
-      "source": "Jobicy·APAC",
-      "score": 10
-    },
-    {
-      "at": "2026-11-08T04:35:55.248Z",
-      "title": "【案例】CSV 清洗前后对比小样：11 行 → 7 行，发现 7 类问题",
-      "url": "https://eleduck.com/posts/pqfAzm",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T12:47:52.506Z",
-      "title": "杭州下沙｜找一起做 Agent 与算法的队友，实习 / 正式均可",
-      "url": "https://www.v2ex.com/t/1255353",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
     {
       "at": "2026-11-08T12:47:54.037Z",
       "title": "我的第一个项目：AI张大妈，上线一个月整的访问量数据，还是不会推广",
@@ -2099,6 +2043,62 @@
       "title": "大模型接包三个月，聊聊差点赔进去的钱",
       "url": "https://eleduck.com/posts/OGf1oA",
       "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.271Z",
+      "title": "[招聘] 区块链行情开发工程师（Golang/On-Chain Data/实时计算）",
+      "url": "https://www.v2ex.com/t/1259236",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.272Z",
+      "title": "[内推]20261123 渣打银行 广州 & 天津 | 66 个在招岗位",
+      "url": "https://www.v2ex.com/t/1259153",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.273Z",
+      "title": "远程产品经理",
+      "url": "https://www.v2ex.com/t/1259130",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.274Z",
+      "title": "居家兼职｜电商广告图设计师｜60元/张",
+      "url": "https://eleduck.com/posts/x0fX09",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.276Z",
+      "title": "【全职远程】20K-25K_全栈工程师_SaaS_Chatbot智能工作流",
+      "url": "https://eleduck.com/posts/v5fYrY",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.277Z",
+      "title": "Sous Labs招聘项目远程工作AI 开源项目 Demo 开发者",
+      "url": "https://yuancheng.work/7401.html",
+      "source": "远程.work·开发",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.278Z",
+      "title": "Hipo Hipo招聘全职远程工作AI 产品全栈工程师",
+      "url": "https://yuancheng.work/7380.html",
+      "source": "远程.work·开发",
+      "score": null
+    },
+    {
+      "at": "2026-11-23T14:02:17.279Z",
+      "title": "AI公司招聘全职/兼职远程工作高级产品经理",
+      "url": "https://yuancheng.work/7405.html",
+      "source": "远程.work·产品",
       "score": null
     }
   ]
