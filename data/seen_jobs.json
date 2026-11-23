@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-11-22T21:33:06.220Z",
+  "updatedAt": "2026-11-23T02:14:52.010Z",
   "keys": [
-    "eleduck|https://eleduck.com/posts/Ygf2NN",
-    "eleduck|https://eleduck.com/posts/rdf4AA",
-    "v2ex_jobs|https://www.v2ex.com/t/1249780",
-    "eleduck|https://eleduck.com/posts/dDfpwJ",
-    "jobicy|https://jobicy.com/jobs/155709-hebrew-freelance-translator-copy-editor-product-marketing-ui-content",
-    "jobicy|https://jobicy.com/jobs/155708-english-to-burmese-myanmar-linguist-copy-editor-for-product-marketing-ui-content",
-    "jobicy|https://jobicy.com/jobs/155703-enterprise-customer-success-manager-9",
     "jobicy|https://jobicy.com/jobs/155675-catalog-content-lead",
     "jobicy|https://jobicy.com/jobs/155673-ai-automation-ops-lead",
     "jobicy|https://jobicy.com/jobs/155671-software-engineer-applied-ai",
@@ -2000,7 +1993,14 @@
     "wwr_product|https://weworkremotely.com/remote-jobs/smartsheet-sr-technical-program-manager-remote-eligible-in-bulgaria",
     "wwr_product|https://weworkremotely.com/remote-jobs/rubrik-job-board-cloud-architect-product-management",
     "wwr_product|https://weworkremotely.com/remote-jobs/natera-senior-director-ai-diagnostics",
-    "wwr_product|https://weworkremotely.com/remote-jobs/premier-global-links-llc-senior-technical-product-manager"
+    "wwr_product|https://weworkremotely.com/remote-jobs/premier-global-links-llc-senior-technical-product-manager",
+    "eleduck|https://eleduck.com/posts/njfDdX",
+    "eleduck|https://eleduck.com/posts/gYfY5q",
+    "eleduck|https://eleduck.com/posts/N0fnJY",
+    "eleduck|https://eleduck.com/posts/98f983",
+    "opentrain|https://www.opentrain.ai/jobs/remote-ai-task-contributor--cmws9q70w000008jo3v49l1yj/",
+    "gh|https://databricks.com/company/careers/open-positions/job?gh_jid=8907988002",
+    "gh|https://databricks.com/company/careers/open-positions/job?gh_jid=8910846002"
   ],
   "lastDigestDate": "2026-11-23"
 }
