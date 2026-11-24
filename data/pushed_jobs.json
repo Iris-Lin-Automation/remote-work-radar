@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-11-23T14:02:17.279Z",
+  "updatedAt": "2026-11-24T02:45:03.706Z",
   "jobs": [
-    {
-      "at": "2026-11-08T12:47:54.037Z",
-      "title": "我的第一个项目：AI张大妈，上线一个月整的访问量数据，还是不会推广",
-      "url": "https://eleduck.com/posts/L5f01o",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T12:47:55.655Z",
-      "title": "对于企业中的业务流程/功能的数据化是不是有必要的?",
-      "url": "https://eleduck.com/posts/N0fnjX",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-08T12:47:57.171Z",
       "title": "大家好，我是苏不倦，35 岁，大专学历，在南昌。",
@@ -2099,6 +2085,20 @@
       "title": "AI公司招聘全职/兼职远程工作高级产品经理",
       "url": "https://yuancheng.work/7405.html",
       "source": "远程.work·产品",
+      "score": null
+    },
+    {
+      "at": "2026-11-24T02:45:03.704Z",
+      "title": "[远程] [30K–45K] AIPower 招全栈工程师｜虚拟卡 / Online Banking / AI Agent 支付",
+      "url": "https://www.v2ex.com/t/1259298",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-24T02:45:03.706Z",
+      "title": "10年资深测试架构师，精通agent评测与RAG质量保障，承接飞书自动化/AI工作流搭建，英语可作为工作语言（辅修英语，通过TEM-8）",
+      "url": "https://eleduck.com/posts/2LfW0p",
+      "source": "电鸭社区",
       "score": null
     }
   ]
