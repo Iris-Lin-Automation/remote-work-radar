@@ -1,41 +1,6 @@
 {
-  "updatedAt": "2026-11-24T02:45:03.706Z",
+  "updatedAt": "2026-11-24T14:34:11.629Z",
   "jobs": [
-    {
-      "at": "2026-11-08T12:47:57.171Z",
-      "title": "大家好，我是苏不倦，35 岁，大专学历，在南昌。",
-      "url": "https://eleduck.com/posts/yGf5a4",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T12:47:58.680Z",
-      "title": "口算鸭，中年老父亲的AI自救第一步",
-      "url": "https://eleduck.com/posts/ZXfBwr",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T12:48:00.196Z",
-      "title": "【已结束】【远程兼职】独立开发者",
-      "url": "https://eleduck.com/posts/0XfxZK",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T12:48:01.706Z",
-      "title": "Marketing Lead",
-      "url": "https://jobicy.com/jobs/159748-marketing-lead",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
-    {
-      "at": "2026-11-08T12:48:03.208Z",
-      "title": "Early Childhood Teacher",
-      "url": "https://jobicy.com/jobs/159663-early-childhood-teacher-3",
-      "source": "Jobicy·APAC",
-      "score": 12
-    },
     {
       "at": "2026-11-08T18:39:51.483Z",
       "title": "价格低廉的公司网站个人网站小程序开发",
@@ -2098,6 +2063,41 @@
       "at": "2026-11-24T02:45:03.706Z",
       "title": "10年资深测试架构师，精通agent评测与RAG质量保障，承接飞书自动化/AI工作流搭建，英语可作为工作语言（辅修英语，通过TEM-8）",
       "url": "https://eleduck.com/posts/2LfW0p",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-24T14:34:11.614Z",
+      "title": "[深圳][MoeGo] 技术 / 产品 / 设计 / 财务社招内推 15 薪",
+      "url": "https://www.v2ex.com/t/1259525",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-24T14:34:11.617Z",
+      "title": "[Microsoft] AI Infra 工程师实习 - 北京 / 上海",
+      "url": "https://www.v2ex.com/t/1259432",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-24T14:34:11.626Z",
+      "title": "算法工程师（偏重 TTS 真人语音合成方向） 算法工程师（偏重生图生视频 & 人物一致性方向）",
+      "url": "https://www.v2ex.com/t/1259403",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-24T14:34:11.627Z",
+      "title": "做了一个垂直行业 RAG 客服 Bot：LoRA 微调 + 检索增强 + 多层越界防护（附源码与评测）",
+      "url": "https://eleduck.com/posts/ARfdJA",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-24T14:34:11.629Z",
+      "title": "[远程] [30K–45K] AIPower 招全栈工程师｜虚拟卡 / Online Banking / AI Agent 支付",
+      "url": "https://eleduck.com/posts/L5f0LJ",
       "source": "电鸭社区",
       "score": null
     }
