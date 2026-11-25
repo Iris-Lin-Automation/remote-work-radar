@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-11-24T14:34:11.629Z",
+  "updatedAt": "2026-11-25T00:22:24.775Z",
   "jobs": [
-    {
-      "at": "2026-11-08T18:39:51.483Z",
-      "title": "价格低廉的公司网站个人网站小程序开发",
-      "url": "https://eleduck.com/posts/4lfRx0",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-08T18:39:52.963Z",
       "title": "排障笔记｜Cursor 登录失败、Authentication failed、Unify Processing 卡住时我怎么查",
@@ -2098,6 +2091,13 @@
       "at": "2026-11-24T14:34:11.629Z",
       "title": "[远程] [30K–45K] AIPower 招全栈工程师｜虚拟卡 / Online Banking / AI Agent 支付",
       "url": "https://eleduck.com/posts/L5f0LJ",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-25T00:22:24.775Z",
+      "title": "Agent编排和Agent平台化讨论",
+      "url": "https://eleduck.com/posts/pqfAGy",
       "source": "电鸭社区",
       "score": null
     }
