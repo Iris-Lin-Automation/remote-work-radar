@@ -1,27 +1,6 @@
 {
-  "updatedAt": "2026-11-26T03:57:24.427Z",
+  "updatedAt": "2026-11-26T13:40:39.190Z",
   "jobs": [
-    {
-      "at": "2026-11-08T23:26:06.778Z",
-      "title": "【远程兼职】招低延迟交易工程师｜Kalshi / Polymarket 下单执行层｜付费试用",
-      "url": "https://eleduck.com/posts/82fK9k",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T23:26:08.315Z",
-      "title": "IT第一份工作应该怎么找呢",
-      "url": "https://eleduck.com/posts/2LfWry",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T23:26:09.858Z",
-      "title": "Flex招聘全职远程工作高级软件开发测试工程师（SDET）",
-      "url": "https://yuancheng.work/7137.html",
-      "source": "远程.work·开发",
-      "score": 0
-    },
     {
       "at": "2026-11-08T23:26:11.483Z",
       "title": "Brave招聘全职远程工作高级构建系统工程师",
@@ -2099,6 +2078,27 @@
       "title": "Staff Software Engineer, AI Agents",
       "url": "https://jobs.ashbyhq.com/notion/c777ed1e-e23f-4b76-bc21-039aaf06c1de",
       "source": "Ashby·Notion",
+      "score": null
+    },
+    {
+      "at": "2026-11-26T13:40:39.188Z",
+      "title": "[北京] VAST (Tripo AI) 招 AI 全栈研发实习生 | 500 元/天 + Claude/Codex Token 自由 | 附全岗位内推",
+      "url": "https://www.v2ex.com/t/1260112",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-26T13:40:39.189Z",
+      "title": "西安、宝鸡找一个 FDE，要求 Java 技术栈",
+      "url": "https://www.v2ex.com/t/1260004",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-26T13:40:39.190Z",
+      "title": "【用户举报，涉海外灰产，公开警示⚠️】【长期远程】海外数据录入全职/兼职均可,有it 基础,长期稳定工作,平均 4k-12k/月",
+      "url": "https://eleduck.com/posts/98f9Xg",
+      "source": "电鸭社区",
       "score": null
     }
   ]
