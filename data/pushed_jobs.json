@@ -1,27 +1,6 @@
 {
-  "updatedAt": "2026-11-25T21:05:57.423Z",
+  "updatedAt": "2026-11-26T03:57:24.427Z",
   "jobs": [
-    {
-      "at": "2026-11-08T18:40:06.346Z",
-      "title": "Maps Personalization Relevance Rater - Japanese (Japan)",
-      "url": "https://jobicy.com/jobs/159810-maps-personalization-relevance-rater-japanese-japan",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T18:40:07.838Z",
-      "title": "Head of AI, Automation & Analytics",
-      "url": "https://jobicy.com/jobs/159809-head-of-ai-automation-analytics",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T18:40:09.333Z",
-      "title": "Customer Success Manager — Japan",
-      "url": "https://jobicy.com/jobs/159808-customer-success-manager-japan",
-      "source": "Jobicy·APAC",
-      "score": 0
-    },
     {
       "at": "2026-11-08T23:26:06.778Z",
       "title": "【远程兼职】招低延迟交易工程师｜Kalshi / Polymarket 下单执行层｜付费试用",
@@ -2099,6 +2078,27 @@
       "title": "江门·制造业B端销售23年｜兼职合作：客户开发/低代码实施/数字化小工具｜可开票",
       "url": "https://eleduck.com/posts/rdf390",
       "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-26T03:57:24.424Z",
+      "title": "Volga Partners: Transcriptionist Reviewer - Telugu (Freelance)",
+      "url": "https://weworkremotely.com/remote-jobs/volga-partners-transcriptionist-reviewer-telugu-freelance",
+      "source": "WWR·全栈",
+      "score": null
+    },
+    {
+      "at": "2026-11-26T03:57:24.426Z",
+      "title": "Natera: Principal Software Engineer in Test",
+      "url": "https://weworkremotely.com/remote-jobs/natera-principal-software-engineer-in-test",
+      "source": "WWR·DevOps",
+      "score": null
+    },
+    {
+      "at": "2026-11-26T03:57:24.427Z",
+      "title": "Staff Software Engineer, AI Agents",
+      "url": "https://jobs.ashbyhq.com/notion/c777ed1e-e23f-4b76-bc21-039aaf06c1de",
+      "source": "Ashby·Notion",
       "score": null
     }
   ]
