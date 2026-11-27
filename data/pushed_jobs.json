@@ -1,41 +1,6 @@
 {
-  "updatedAt": "2026-11-27T06:51:50.892Z",
+  "updatedAt": "2026-11-27T17:51:40.318Z",
   "jobs": [
-    {
-      "at": "2026-11-08T23:26:14.596Z",
-      "title": "HackerRank招聘实习远程工作校园大使（学生项目）",
-      "url": "https://yuancheng.work/7140.html",
-      "source": "远程.work·市场",
-      "score": 0
-    },
-    {
-      "at": "2026-11-08T23:26:16.134Z",
-      "title": "HackerRank招聘兼职远程工作内容创作者",
-      "url": "https://yuancheng.work/7138.html",
-      "source": "远程.work·市场",
-      "score": 0
-    },
-    {
-      "at": "2026-11-09T04:46:37.976Z",
-      "title": "千问事业部-助手 Agent 交互技术专家-杭州",
-      "url": "https://www.v2ex.com/t/1255478",
-      "source": "V2EX·招聘",
-      "score": 0
-    },
-    {
-      "at": "2026-11-09T04:46:39.471Z",
-      "title": "半个月前做了一个找程序员创业小需求的工具，居然已经有 30 位朋友订阅邮件了",
-      "url": "https://eleduck.com/posts/R3fv8v",
-      "source": "电鸭社区",
-      "score": 0
-    },
-    {
-      "at": "2026-11-09T04:46:40.961Z",
-      "title": "【免费内推】10K-15K双休 招聘门店运营经理（远程居家办公）",
-      "url": "https://eleduck.com/posts/ARfdQE",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-09T04:46:42.450Z",
       "title": "【你好鸭】脚本自动化 · Cloudflare/Vercel 部署 · Linux 服务器运维 · WordPress 建站",
@@ -2099,6 +2064,41 @@
       "title": "Canonical招聘全职远程工作营收运营经理",
       "url": "https://yuancheng.work/7466.html",
       "source": "远程.work·运营",
+      "score": null
+    },
+    {
+      "at": "2026-11-27T17:51:40.312Z",
+      "title": "新媒体运营",
+      "url": "https://www.v2ex.com/t/1260463",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-27T17:51:40.314Z",
+      "title": "NVIDIA 招聘｜AI Networking 软件工程师",
+      "url": "https://www.v2ex.com/t/1260368",
+      "source": "V2EX·招聘",
+      "score": null
+    },
+    {
+      "at": "2026-11-27T17:51:40.315Z",
+      "title": "零依赖单文件前端交付实践：泛微e10门户组件隔离、Shopify汽配CRO页与离线链上解析工具",
+      "url": "https://eleduck.com/posts/GzfRAr",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-27T17:51:40.316Z",
+      "title": "早期 AI 团队 Novo AI 招 Applied AI Engineer",
+      "url": "https://eleduck.com/posts/dDfpXr",
+      "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-27T17:51:40.318Z",
+      "title": "用扣子搭建清洗去重飞书表格的工作流的失败经历",
+      "url": "https://eleduck.com/posts/pqfAKy",
+      "source": "电鸭社区",
       "score": null
     }
   ]
