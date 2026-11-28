@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-11-27T17:51:40.318Z",
+  "updatedAt": "2026-11-28T09:49:11.746Z",
   "jobs": [
-    {
-      "at": "2026-11-09T04:46:42.450Z",
-      "title": "【你好鸭】脚本自动化 · Cloudflare/Vercel 部署 · Linux 服务器运维 · WordPress 建站",
-      "url": "https://eleduck.com/posts/x0fX51",
-      "source": "电鸭社区",
-      "score": 0
-    },
     {
       "at": "2026-11-09T04:46:43.936Z",
       "title": "FocusFlow：纯前端2.5ms搞定复杂架构图智能边缘吸附",
@@ -2099,6 +2092,13 @@
       "title": "用扣子搭建清洗去重飞书表格的工作流的失败经历",
       "url": "https://eleduck.com/posts/pqfAKy",
       "source": "电鸭社区",
+      "score": null
+    },
+    {
+      "at": "2026-11-28T09:49:11.746Z",
+      "title": "具身模型算法研究员-世界模型，地点北京",
+      "url": "https://www.v2ex.com/t/1260582",
+      "source": "V2EX·招聘",
       "score": null
     }
   ]
